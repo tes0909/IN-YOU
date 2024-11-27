@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParallaxEffect : MonoBehaviour
 {
-    public Camera mainCamera;
+    public UnityEngine.Camera mainCamera;
     [Range(0, 1)]
     public float xMovementSpeed = 0.3f;
     [Range(0, 1)]
@@ -12,7 +12,7 @@ public class ParallaxEffect : MonoBehaviour
 
     private void Awake()
     {
-        mainCamera = mainCamera == null ? Camera.main : mainCamera;
+        mainCamera = mainCamera == null ? UnityEngine.Camera.main : mainCamera;
     }
 
     private void FixedUpdate()
