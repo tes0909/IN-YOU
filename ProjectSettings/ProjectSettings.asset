@@ -702,10 +702,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    Standalone: CROSS_PLATFORM_INPUT
-    Windows Store Apps: MOBILE_INPUT
-    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;DOTWEEN
+    EmbeddedLinux: DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
+    Nintendo Switch: DOTWEEN
+    PS4: DOTWEEN
+    PS5: DOTWEEN
+    QNX: DOTWEEN
+    Stadia: DOTWEEN
+    Standalone: CROSS_PLATFORM_INPUT;DOTWEEN
+    VisionOS: DOTWEEN
+    WebGL: DOTWEEN
+    Windows Store Apps: MOBILE_INPUT;DOTWEEN
+    XboxOne: DOTWEEN
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT;DOTWEEN
+    tvOS: DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -824,7 +837,7 @@ PlayerSettings:
   cloudProjectId: 4e79325a-022e-4a63-b458-3bcad406348a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 2D RPG Kit
+  projectName: In_You
   organizationId: lvoxl6
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
