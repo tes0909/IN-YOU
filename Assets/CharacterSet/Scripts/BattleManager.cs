@@ -396,7 +396,7 @@ public class BattleManager : MonoBehaviour
             GameManager.instance.battleActive = true;
 
             //Put the battle background sprite into place
-            transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
+            transform.position = new Vector3(UnityEngine.Camera.main.transform.position.x, UnityEngine.Camera.main.transform.position.y, transform.position.z);
             spriteRenderer.sprite = battleBG;
             battleScene.SetActive(true);
 
