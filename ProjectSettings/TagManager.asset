@@ -49,18 +49,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Ground0
     uniqueID: 2087213285
     locked: 0
-  - name: Player
+  - name: Ground1
     uniqueID: 4218774275
     locked: 0
-  - name: Foreground
+  - name: Ground2
     uniqueID: 2610595181
     locked: 0
-  - name: Battle Background
+  - name: Ground3
     uniqueID: 3525323429
     locked: 0
-  - name: Battle Characters
-    uniqueID: 971942665
+  - name: NPC
+    uniqueID: 742486127
+    locked: 0
+  - name: Player
+    uniqueID: 3652113335
     locked: 0
