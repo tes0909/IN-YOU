@@ -12,6 +12,7 @@ TagManager:
   - Layer 5
   - Layer 6
   - Facing Collider
+  - Grid
   layers:
   - Default
   - TransparentFX

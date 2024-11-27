@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour {
         float scaleheight = windowaspect / targetaspect;
 
         // obtain camera component so we can modify its viewport
-        Camera camera = GetComponent<Camera>();
+        UnityEngine.Camera camera = GetComponent<UnityEngine.Camera>();
 
         // if scaled height is less than current height, add letterbox
         if (scaleheight < 1.0f)
@@ -79,8 +79,8 @@ public class CameraController : MonoBehaviour {
         //target = PlayerController.instance.transform;
         player = FindObjectOfType<PlayerController>().transform;
 
-        halfHeight = Camera.main.orthographicSize;
-        halfWidth = halfHeight * Camera.main.aspect;
+        halfHeight = UnityEngine.Camera.main.orthographicSize;
+        halfWidth = halfHeight * UnityEngine.Camera.main.aspect;
 
         if (tilemap != null)
         {
