@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Scripts/BattleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Scripts/BattleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Scripts/ParallaxEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Scripts/ParallaxEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Tilemap/Osaka/Tilemap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Tilemap/Osaka/Tilemap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +88,7 @@
       <updated>1732608503772</updated>
       <workItem from="1732608505278" duration="4000" />
       <workItem from="1732671775064" duration="165000" />
-      <workItem from="1732676858661" duration="18184000" />
+      <workItem from="1732676858661" duration="19195000" />
     </task>
     <servers />
   </component>
