@@ -5,7 +5,7 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject EscUI;
 
-    private bool isPaused = false; // ÀÏ½ÃÁ¤Áö »óÅÂÀÎÁö
+    private bool isPaused = false; // ì¼ì‹œì •ì§€ ìƒíƒœì¸ì§€
 
     private static PauseManager instance;
 
@@ -37,7 +37,7 @@ public class PauseManager : MonoBehaviour
             TogglePauseMenu();
         }
     }
-    public void TogglePauseMenu() // UI È°¼º, ºñÈ°¼º
+    public void TogglePauseMenu() // UI í™œì„±, ë¹„í™œì„±
     {
         isPaused = !isPaused;
 
@@ -46,9 +46,9 @@ public class PauseManager : MonoBehaviour
             EscUI.SetActive(isPaused);
         }
 
-        Time.timeScale = isPaused ? 0f : 1f; // ½Ã°£ ÀÏ½ÃÁ¤Áö, º¹±¸
+        Time.timeScale = isPaused ? 0f : 1f; // ì‹œê°„ ì¼ì‹œì •ì§€, ë³µêµ¬
     }
 
-    // Ãß°¡·Î ÀúÀå, ºÒ·¯¿À±â , ³ª°¡±â ±â´É ±¸Çö ÇÒ °÷ 
-    // °¢ÀÚ ÇÔ¼öµéÀ» ¹öÆ°¿¡ ÇÒ´ç ÇØÁÖ±â, EventSystem È®ÀÎ ÇÒ °Í
+    // ì¶”ê°€ë¡œ ì €ì¥, ë¶ˆëŸ¬ì˜¤ê¸° , ë‚˜ê°€ê¸° ê¸°ëŠ¥ êµ¬í˜„ í•  ê³³ 
+    // ê°ì í•¨ìˆ˜ë“¤ì„ ë²„íŠ¼ì— í• ë‹¹ í•´ì£¼ê¸°, EventSystem í™•ì¸ í•  ê²ƒ
 }
