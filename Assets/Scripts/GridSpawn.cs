@@ -9,7 +9,6 @@ public class GridSpawn : MonoBehaviour
     private HashSet<Vector3> spawnPositions = new HashSet<Vector3>();
     private float xPosition;
     private float nextYposition = 20f;
-    private BoxCollider2D b2d;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
