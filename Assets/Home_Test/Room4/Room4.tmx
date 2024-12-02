@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="15">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="30" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="16">
  <tileset firstgid="1" source="../Home1/Home.tsx"/>
  <tileset firstgid="4454" source="../Home1/Home2.tsx"/>
  <layer id="1" name="Floor" width="30" height="15">
@@ -93,5 +93,8 @@
   <object id="12" x="353.667" y="68.6667" width="29" height="25.6667"/>
   <object id="13" x="444.667" y="85.6667" width="18.3333" height="37"/>
   <object id="14" x="445.333" y="167.333" width="18.3333" height="66"/>
+  <object id="15" x="15.5" y="192.5">
+   <polygon points="0,0 -0.5,-129.5 432.5,-129.5 448,-113.5 449,47 -15.5,47.5 -15,-0.5 -15.5,-192 464,-191.5 464.5,48 -15,47.5 -14.5,-2 -15,-1 -14.5,0"/>
+  </object>
  </objectgroup>
 </map>
