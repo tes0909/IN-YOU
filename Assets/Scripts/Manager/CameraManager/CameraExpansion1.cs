@@ -14,6 +14,8 @@ public class CameraExpansion1 : MonoBehaviour
     private float initialSize;        
     private float elapsedTime = 0f;
 
+    public GameObject Talk;
+
     void Start()
     {
 
@@ -41,5 +43,7 @@ public class CameraExpansion1 : MonoBehaviour
         // 목표 위치와 크기에 도달한 후 완료
         mainCamera.transform.position = targetPosition;
         mainCamera.orthographicSize = targetSize;
+        yield return new WaitForSeconds(1f);
+        Talk.SetActive(true);
     }
 }

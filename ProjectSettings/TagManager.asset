@@ -13,6 +13,7 @@ TagManager:
   - Layer 6
   - Facing Collider
   - Grid
+  - NPC
   layers:
   - Default
   - TransparentFX

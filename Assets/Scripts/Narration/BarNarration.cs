@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class LetterNarration : MonoBehaviour
+public class BarNarration : MonoBehaviour
 {
-    public TextMeshProUGUI narrationText; 
-    public Button nextButton; 
+    public TextMeshProUGUI narrationText;
+    public Button nextButton;
 
     private string[] narrationLines = {
-        "Dear",
-        "Hi",
-        "Missing you",
-        "Come Here"
+        "Test",
+        "long time no see",
+        "america",
+        "luck"
     };
 
     private int currentIndex = 0;
@@ -41,12 +41,13 @@ public class LetterNarration : MonoBehaviour
             Debug.Log("모든 문장이 출력되었습니다.");
         }
 
-        // 2초 후에 버튼 활성화
-        Invoke("EnableButton", 2f);
+        // 3초 후에 버튼 활성화
+        Invoke("EnableButton", 3f);
     }
 
     private void EnableButton()
     {
         nextButton.interactable = true; // 버튼 활성화
     }
+
 }
