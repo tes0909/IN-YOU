@@ -3199,7 +3199,8 @@ GameObject:
   - component: {fileID: 528847694}
   - component: {fileID: 528847696}
   - component: {fileID: 528847695}
-  - component: {fileID: 528847690}
+  - component: {fileID: 528847698}
+  - component: {fileID: 528847697}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3207,18 +3208,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &528847690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528847689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 834ebde2429c3b444996fb2a5be82816, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &528847691
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3347,7 +3336,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0024063587, y: -0.12994242}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3358,7 +3347,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2743235, y: 1.7989073}
   m_EdgeRadius: 0
 --- !u!95 &528847695
 Animator:
@@ -3412,6 +3401,38 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &528847697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528847689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8454c5401d87ca4c83ca15d1c82769b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &528847698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528847689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22be061e5585af4e8891b19559f5efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <PlayerSOData>k__BackingField: {fileID: 11400000, guid: 0e7cb9f785d0e534bbe1081aa6294291,
+    type: 2}
+  <AnimationData>k__BackingField:
+    idleParameterName: Idle
+    walkParameterName: Walk
+    runParameterName: Run
+    moveXParameterName: moveX
+    moveYParameterName: moveY
 --- !u!1 &650947595
 GameObject:
   m_ObjectHideFlags: 0
