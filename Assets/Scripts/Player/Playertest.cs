@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Playertest : MonoBehaviour
 {
     public void RecoverHealth(int amount)
     {
