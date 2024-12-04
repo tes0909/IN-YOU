@@ -11,8 +11,6 @@ public class PlayerStateMachine : StateMachine
     //public float rotationDamping { get; private set; }
     public float MovementSpeedModifier { get; set; } = 1f;
     
-    public Transform MainCamTransform { get; set; }
-    
     public PlayerIdleState IdleState { get; set; }
     public PlayerWalkState WalkState { get; set; }
 

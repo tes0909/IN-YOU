@@ -35,10 +35,4 @@ public class PlayerIdleState : PlayerBaseState
     {
         base.PhysicsUpdate();
     }
-
-    // protected override void OnMovementCanceld(InputAction.CallbackContext context) // 움직임 취소시
-    // {
-    //     stateMachine.changeState(stateMachine.IdleState);
-    //     base.OnMovementCanceld(context);
-    // }
 }

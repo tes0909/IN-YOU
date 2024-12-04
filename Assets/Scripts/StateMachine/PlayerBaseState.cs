@@ -64,7 +64,7 @@ public class PlayerBaseState : Istate
     }
 
     
-    protected void StartAnimation(int animationHash)
+    protected void StartAnimation(int animationHash) // 상태
     {
         stateMachine.Player.Animator.SetBool(animationHash, true);
     }
@@ -74,7 +74,7 @@ public class PlayerBaseState : Istate
         stateMachine.Player.Animator.SetBool(animationHash, false);
     }
     
-    protected void SetDirectionAnimation(Vector2 direction) // 상태에 대한것 방향에 대한로직 추가필요
+    protected void SetDirectionAnimation(Vector2 direction) // 방향
     {
         stateMachine.Player.Animator.SetFloat(stateMachine.Player.AnimationData.MoveXParameterHash, direction.x);
         stateMachine.Player.Animator.SetFloat(stateMachine.Player.AnimationData.MoveYParameterHash, direction.y);
@@ -108,16 +108,12 @@ public class PlayerBaseState : Istate
     private void applyMovement(Vector3 direction)
     {
         float movementSpeed = GetMovementSpeed();
-        if (direction != Vector3.zero)
+        if (direction != Vector3.zero) // 움직이면
         {
             SetDirectionAnimation(direction);
         }
-        stateMachine.Player.rigidbody2D.velocity = direction * 5f;
-        Debug.Log(stateMachine.Player.rigidbody2D.velocity);
+        stateMachine.Player.rigidbody2D.velocity = direction * stateMachine.movementSpeed;
     }
-    
-    // xy 값 up down 값 체크
-
 
     // private void Rotate(Vector3 direction)
     // {

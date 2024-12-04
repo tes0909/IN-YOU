@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerWalkState : PlayerIdleState
+public class PlayerWalkState : PlayerBaseState
 {
     public PlayerWalkState(PlayerStateMachine stateMachine) : base(stateMachine)
     {
@@ -24,5 +24,10 @@ public class PlayerWalkState : PlayerIdleState
     public override void Update()
     {
         base.Update();
+
+        if (stateMachine.movementInput == Vector2.zero)
+        {
+            stateMachine.changeState(stateMachine.IdleState);
+        }
     }
 }

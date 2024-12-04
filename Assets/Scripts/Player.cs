@@ -26,7 +26,6 @@ public class Player : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
 
         stateMachine = new PlayerStateMachine(this);
-        
     }
 
     void Start()
