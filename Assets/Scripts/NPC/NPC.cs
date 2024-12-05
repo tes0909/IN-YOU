@@ -11,7 +11,7 @@ public class NPC : MonoBehaviour
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            DialogueManager.Instance.StartDialogue(npcData.npcName, npcData.dialogueLines);
+            DialogueManager.Instance.StartDialogue(npcData);
         }
     }
 

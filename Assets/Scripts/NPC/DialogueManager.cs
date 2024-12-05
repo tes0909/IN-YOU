@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Xml.Linq;
+using UnityEditor.Rendering;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    public GameObject dialogueUI;      
-    public TMP_Text npcNameText;       
-    public TMP_Text dialogueText;     
+    public TextMeshProUGUI playerText; 
+    public TextMeshProUGUI npcText;
+    public TextMeshProUGUI npcNameText;
 
-    private string[] dialogueLines;
-    private int currentLineIndex = 0;
+    private NPCData currentNPCData;    
+    private int dialogueIndex = 0;
+    private int npcIndex = 0;
+    private bool isPlayerTurn = true; 
 
     private void Awake()
     {
@@ -22,30 +26,53 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void StartDialogue(string npcName, string[] dialogueLines)
+    public void StartDialogue(NPCData npcData)
     {
-        this.dialogueLines = dialogueLines;
-        currentLineIndex = 0;
-        dialogueUI.SetActive(true);
-        npcNameText.text = npcName;
-        ShowNextLine();
+        currentNPCData = npcData;  
+        dialogueIndex = 0;
+        isPlayerTurn = true;
+
+        playerText.gameObject.SetActive(false);
+        npcText.gameObject.SetActive(false);
+
+        npcNameText.text = currentNPCData.npcNames[npcIndex];
+
+        ShowNextDialogue();
     }
 
-    public void ShowNextLine()
+    public void ShowNextDialogue()
     {
-        if (currentLineIndex < dialogueLines.Length)
+        
+        if (dialogueIndex >= currentNPCData.npcDialogue.Length || dialogueIndex >= currentNPCData.playerDialogue.Length)
         {
-            dialogueText.text = dialogueLines[currentLineIndex];
-            currentLineIndex++;
+            EndDialogue();
+            return;
+        }
+
+        if (isPlayerTurn)
+        {
+            playerText.text = currentNPCData.playerDialogue[dialogueIndex];
+            playerText.gameObject.SetActive(true);
+            npcText.gameObject.SetActive(false);
         }
         else
         {
-            EndDialogue();
+            npcText.text = currentNPCData.npcDialogue[dialogueIndex];
+            npcText.gameObject.SetActive(true);
+            playerText.gameObject.SetActive(false);
+
+            dialogueIndex++; 
         }
+
+        isPlayerTurn = !isPlayerTurn; 
     }
 
     public void EndDialogue()
     {
-        dialogueUI.SetActive(false);
+        playerText.gameObject.SetActive(false);
+        npcText.gameObject.SetActive(false);
+
+        playerText.text = string.Empty;
+        npcText.text = string.Empty;
     }
 }

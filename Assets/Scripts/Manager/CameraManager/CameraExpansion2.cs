@@ -22,14 +22,13 @@ public class CameraExpansion2 : MonoBehaviour
         initialPosition = new Vector3(0f, 0f, -5f);
         initialSize = mainCamera.orthographicSize;
 
-        // 확대 효과 시작
+        
         StartCoroutine(DoZoomIn());
     }
-
     private IEnumerator DoZoomIn()
     {
         float timeElapsed = 0f;
-        // 카메라 확대 효과 시작
+        
         while (timeElapsed < transitionDuration)
         {
             float t = timeElapsed / transitionDuration;
@@ -40,7 +39,6 @@ public class CameraExpansion2 : MonoBehaviour
             yield return null;
         }
 
-        // 목표 위치와 크기에 도달한 후 완료
         mainCamera.transform.position = targetPosition;
         mainCamera.orthographicSize = targetSize;
 
