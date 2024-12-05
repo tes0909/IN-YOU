@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerInput playerInput { get; private set; }
     public PlayerInput.PlayerActions playerActions {get; private set;}
-    void Start()
+    void Awake()
     {
         playerInput = new PlayerInput();
         playerActions = playerInput.Player; // 플레이어 레이어 접근
