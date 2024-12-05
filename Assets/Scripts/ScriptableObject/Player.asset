@@ -14,6 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <GroundData>k__BackingField:
     <BaseSpeed>k__BackingField: 5
-    <BaseRoationDamping>k__BackingField: 1
     <WalkSpeedModifier>k__BackingField: 0.225
-    <RunSpeedModifier>k__BackingField: 1
