@@ -41,8 +41,8 @@ public class LetterNarration : MonoBehaviour
             Debug.Log("모든 문장이 출력되었습니다.");
         }
 
-        // 3초 후에 버튼 활성화
-        Invoke("EnableButton", 3f);
+        // 2초 후에 버튼 활성화
+        Invoke("EnableButton", 2f);
     }
 
     private void EnableButton()

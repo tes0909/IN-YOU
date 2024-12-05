@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e729411de389be84383bf687a0546bd9, type: 3}
+  m_Name: Boy
+  m_EditorClassIdentifier: 
+  npcName: Boy
+  dialogueLines:
+  - What are you doing here?
+  - I was wondering if I should pick it because I saw it on TV that it gave flowers
+    to the dead
