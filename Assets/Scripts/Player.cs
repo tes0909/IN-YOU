@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     
     public Animator Animator { get; private set; }
     public PlayerController input { get; private set; }
-    public BoxCollider2D boxCollider2D { get; private set; }
     public Rigidbody2D rigidbody2D { get; private set; }
 
     private PlayerStateMachine stateMachine;
@@ -22,7 +21,6 @@ public class Player : MonoBehaviour
         AnimationData.Initialize();
         Animator = GetComponent<Animator>();
         input = GetComponent<PlayerController>();
-        boxCollider2D = GetComponent<BoxCollider2D>();
         rigidbody2D = GetComponent<Rigidbody2D>();
 
         stateMachine = new PlayerStateMachine(this);

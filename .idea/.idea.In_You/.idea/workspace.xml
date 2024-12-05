@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Player.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +96,7 @@
       <workItem from="1732754572842" duration="11014000" />
       <workItem from="1733233621823" duration="3052000" />
       <workItem from="1733271515891" duration="1492000" />
+      <workItem from="1733377551906" duration="1377000" />
     </task>
     <servers />
   </component>
