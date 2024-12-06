@@ -25,7 +25,8 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Player>()!=null)
+        Player player = other.GetComponent<Player>();
+        if (player) 
         {
             isPlayerNearby = true;
         }
@@ -34,7 +35,8 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.GetComponent<Player>()!=null)
+        Player player = other.GetComponent<Player>();
+        if (player)
         {
             isPlayerNearby = false;
             DialogueManager.Instance.EndDialogue();
