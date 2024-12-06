@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Boy
   dialogueLines:
-  - What are you doing here?
-  - I was wondering if I should pick it because I saw it on TV that it gave flowers
-    to the dead
+  - "\uC5EC\uAE30\uB294 \uC5B4\uCA50 \uC77C\uC774\uC5D0\uC694?"
+  - "\uC774\uACF3\uC740 \uAE30\uC6B4\uC774 \uC88B\uC9C0 \uC54A\uC740 \uACF3\uC774\uC5D0\uC694..
+    \uC870\uC2EC\uD558\uC138\uC694."

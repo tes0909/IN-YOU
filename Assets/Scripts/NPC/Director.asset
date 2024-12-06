@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Director
   dialogueLines:
-  - "\uB098\uB294 \uC2A4\uD3EC\uB9E8\uC774\uB2E4."
+  - "\uB098\uB294 \uC2A4\uD3EC\uB9E8\uC774\uB2E4. \uACB0\uB9D0\uC744 \uC54C\uB824\uC8FC\uC9C0."
   - "\uACBD\uC774 \uC804\uD558\uACE0\uC790 \uD558\uB294 \uBA54\uC2DC\uC9C0\uB294..."
   - "\uBA54\uC2DC\uC9C0\uB294..."
