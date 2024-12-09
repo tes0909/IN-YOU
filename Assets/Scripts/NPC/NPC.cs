@@ -31,7 +31,6 @@ public class NPC : MonoBehaviour
             isPlayerNearby = true;
         }
     }
-    
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -42,21 +41,4 @@ public class NPC : MonoBehaviour
             DialogueManager.Instance.EndDialogue();
         }
     }
-
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         isPlayerNearby = true;
-    //     }
-    // }
-    //
-    // private void OnTriggerExit(Collider other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         isPlayerNearby = false;
-    //         DialogueManager.Instance.EndDialogue();
-    //     }
-    // }
 }
