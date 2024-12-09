@@ -13,6 +13,7 @@ public class Bird : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         idleState = new BirdIdleState();
         chasingState = new BirdChasingState();
         attackingState = new BirdAttackingState();

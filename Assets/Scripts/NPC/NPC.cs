@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,27 +6,36 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public NPCData npcData; 
-    private bool isPlayerNearby = false;
+    private bool isPlayerNearby;
 
     private void Update()
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            DialogueManager.Instance.StartDialogue(npcData);
+            if(DialogueManager.Instance.DialogueActive())
+            {
+                DialogueManager.Instance.NextDialogue();
+            }
+            else
+            {
+                DialogueManager.Instance.StartDialogue(npcData);
+            }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        Player player = other.GetComponent<Player>();
+        if (player) 
         {
             isPlayerNearby = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        Player player = other.GetComponent<Player>();
+        if (player)
         {
             isPlayerNearby = false;
             DialogueManager.Instance.EndDialogue();

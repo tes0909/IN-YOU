@@ -12,7 +12,7 @@ public class GridSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.GetComponent<PlayerController>() != null)
         {
             Vector3 spawnPostion = new Vector3(xPosition, transform.position.y + nextYposition, 0f);
     

@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Xml.Linq;
-using UnityEditor.Rendering;
+using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    public TextMeshProUGUI playerText; 
-    public TextMeshProUGUI npcText;
-    public TextMeshProUGUI npcNameText;
+    // public TextMeshProUGUI playerText; 
+    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI npcNameText;
+    [SerializeField] private GameObject dialoguePanel;
 
     private NPCData currentNPCData;    
-    private int dialogueIndex = 0;
-    private int npcIndex = 0;
-    private bool isPlayerTurn = true; 
+    private int dialogueIndex;
+    // private int npcIndex = 0;
+    // private bool isPlayerTurn = true; 
 
     private void Awake()
     {
@@ -24,55 +24,99 @@ public class DialogueManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+
+        dialoguePanel.SetActive(false);
     }
 
+    
     public void StartDialogue(NPCData npcData)
     {
-        currentNPCData = npcData;  
+        currentNPCData = npcData;
         dialogueIndex = 0;
-        isPlayerTurn = true;
+        
+        dialoguePanel.SetActive(true);
 
-        playerText.gameObject.SetActive(false);
-        npcText.gameObject.SetActive(false);
+        // NPC 이름 표시
+        npcNameText.text = currentNPCData.npcName;
 
-        npcNameText.text = currentNPCData.npcNames[npcIndex];
-
-        ShowNextDialogue();
+        // 첫 대화 출력
+        NextDialogue();
     }
 
-    public void ShowNextDialogue()
+    public void NextDialogue()
     {
-        
-        if (dialogueIndex >= currentNPCData.npcDialogue.Length || dialogueIndex >= currentNPCData.playerDialogue.Length)
+        // 대화 종료
+        if (dialogueIndex >= currentNPCData.dialogueLines.Length)
         {
             EndDialogue();
             return;
         }
 
-        if (isPlayerTurn)
-        {
-            playerText.text = currentNPCData.playerDialogue[dialogueIndex];
-            playerText.gameObject.SetActive(true);
-            npcText.gameObject.SetActive(false);
-        }
-        else
-        {
-            npcText.text = currentNPCData.npcDialogue[dialogueIndex];
-            npcText.gameObject.SetActive(true);
-            playerText.gameObject.SetActive(false);
+        // 대화 출력
+        dialogueText.text = currentNPCData.dialogueLines[dialogueIndex];
+        dialogueText.gameObject.SetActive(true);
 
-            dialogueIndex++; 
-        }
-
-        isPlayerTurn = !isPlayerTurn; 
+        dialogueIndex++;
     }
-
+    
     public void EndDialogue()
     {
-        playerText.gameObject.SetActive(false);
-        npcText.gameObject.SetActive(false);
-
-        playerText.text = string.Empty;
-        npcText.text = string.Empty;
+        dialoguePanel.gameObject.SetActive(false);
+        dialogueText.text = string.Empty;
+        npcNameText.text = string.Empty;
     }
+    
+    public bool DialogueActive()
+    {
+        return dialoguePanel.activeSelf;
+    }
+    
+    // public void StartDialogue(NPCData npcData)
+    // {
+    //     currentNPCData = npcData;  
+    //     dialogueIndex = 0;
+    //     isPlayerTurn = true;
+    //
+    //     playerText.gameObject.SetActive(false);
+    //     npcText.gameObject.SetActive(false);
+    //
+    //     npcNameText.text = currentNPCData.npcNames[npcIndex];
+    //
+    //     ShowNextDialogue();
+    // }
+    
+    // public void ShowNextDialogue()
+    // {
+    //     if (dialogueIndex >= currentNPCData.npcDialogue.Length || dialogueIndex >= currentNPCData.playerDialogue.Length)
+    //     {
+    //         EndDialogue();
+    //         return;
+    //     }
+    //
+    //     if (isPlayerTurn)
+    //     {
+    //         playerText.text = currentNPCData.playerDialogue[dialogueIndex];
+    //         playerText.gameObject.SetActive(true);
+    //         npcText.gameObject.SetActive(false);
+    //     }
+    //     else
+    //     {
+    //         npcText.text = currentNPCData.npcDialogue[dialogueIndex];
+    //         npcText.gameObject.SetActive(true);
+    //         playerText.gameObject.SetActive(false);
+    //
+    //         dialogueIndex++; 
+    //     }
+    //
+    //     isPlayerTurn = !isPlayerTurn; 
+    // }
+
+    // public void EndDialogue()
+    // {
+    //     playerText.gameObject.SetActive(false);
+    //     npcText.gameObject.SetActive(false);
+    //
+    //     playerText.text = string.Empty;
+    //     npcText.text = string.Empty;
+    // }
 }
