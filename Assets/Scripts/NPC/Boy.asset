@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e729411de389be84383bf687a0546bd9, type: 3}
   m_Name: Boy
   m_EditorClassIdentifier: 
-  npcName: Boy
-  dialogueLines:
-  - "\uC5EC\uAE30\uB294 \uC5B4\uCA50 \uC77C\uC774\uC5D0\uC694?"
-  - "\uC774\uACF3\uC740 \uAE30\uC6B4\uC774 \uC88B\uC9C0 \uC54A\uC740 \uACF3\uC774\uC5D0\uC694..
-    \uC870\uC2EC\uD558\uC138\uC694."
+  npcName: "\uB0A8\uC790"
+  playerName: "\uC8FC\uC778\uACF5"
+  playerDialogue:
+  - "\uADF8\uB0E5 \uB180\uB7EC\uC654\uC5B4\uC694."
+  - "\uB124."
+  npcDialogue:
+  - "\uC548\uB155\uD558\uC138\uC694. \uC774\uACF3\uC5D0\uB294 \uBB34\uC2A8\uC77C\uB85C
+    \uC624\uC168\uB098\uC694?"
+  - "\uC544.. \uADF8\uB807\uAD70\uC694. \uC990\uAC81\uAC8C \uB180\uB2E4\uAC00\uC138\uC694."
+  npcHeadImage: {fileID: 666718183673833869, guid: 25c66a954ad7cd441927691357c2b238,
+    type: 3}
+  npcBodyImage: {fileID: -6693822490488727825, guid: 25c66a954ad7cd441927691357c2b238,
+    type: 3}
