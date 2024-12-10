@@ -24,10 +24,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image npcBodyImage;
 
     private NPCData currentNPCData;
+    private float DOTextDelay = 1f;
     private int playerIndex;
     private int npcIndex;
     private bool PlayerTurn;
-    private bool npcAnimation = true;
+    private bool canTalking = true;
 
     private void Awake()
     {
@@ -59,12 +60,13 @@ public class DialogueManager : MonoBehaviour
 
     public void NextDialogue()
     {
-        // npcAnimation 비활성화 중이라면 종료
-        if (!npcAnimation)
+        // 타이핑중
+        if (!canTalking)
         {
+            playerDialogueText.DOComplete();
+            npcDialogueText.DOComplete();
             return;
         }
-        
         
         // 대화 종료
         if (npcIndex >= currentNPCData.npcDialogue.Length && playerIndex >= currentNPCData.playerDialogue.Length)
@@ -73,15 +75,16 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // TODO : 대화가 다 끝날시에만 넘기기
         // 대화 출력
-        npcAnimation = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
+        canTalking = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
         if (PlayerTurn)
         {
             if (playerIndex < currentNPCData.playerDialogue.Length)
             {
                 playerDialogueText.text = string.Empty;
-                playerDialogueText.DOText(currentNPCData.playerDialogue[playerIndex], 1f).OnComplete(() => npcAnimation = true); // 완료시에만 애니메이션 활성화
+                playerDialogueText.DOText(currentNPCData.playerDialogue[playerIndex], DOTextDelay)
+                    .OnComplete(() => canTalking = true); // 완료시에만 애니메이션 활성화
+                
                 playerNameText.text = currentNPCData.playerName;
                 
                 playerDialoguePanel.gameObject.SetActive(true);
@@ -94,7 +97,7 @@ public class DialogueManager : MonoBehaviour
             if (npcIndex < currentNPCData.npcDialogue.Length)
             {
                 npcDialogueText.text = string.Empty;
-                npcDialogueText.DOText(currentNPCData.npcDialogue[npcIndex], 1f).OnComplete(() => npcAnimation = true);
+                npcDialogueText.DOText(currentNPCData.npcDialogue[npcIndex], DOTextDelay).OnComplete(() => canTalking = true);
                 npcNameText.text = currentNPCData.npcName;
                 
                 npcDialoguePanel.gameObject.SetActive(true);
@@ -107,64 +110,17 @@ public class DialogueManager : MonoBehaviour
     
     public void EndDialogue()
     {
-        dialoguePanel.gameObject.SetActive(false);
         npcDialogueText.text = string.Empty;
         npcNameText.text = string.Empty;
         playerDialogueText.text = string.Empty;
         playerNameText.text = string.Empty;
+        canTalking = true; 
+        PlayerTurn = false;
+        dialoguePanel.gameObject.SetActive(false);
     }
     
     public bool DialogueActive()
     {
         return dialoguePanel.activeSelf;
     }
-    
-    // public void StartDialogue(NPCData npcData)
-    // {
-    //     currentNPCData = npcData;  
-    //     dialogueIndex = 0;
-    //     isPlayerTurn = true;
-    //
-    //     playerText.gameObject.SetActive(false);
-    //     npcText.gameObject.SetActive(false);
-    //
-    //     npcNameText.text = currentNPCData.npcNames[npcIndex];
-    //
-    //     ShowNextDialogue();
-    // }
-    
-    // public void ShowNextDialogue()
-    // {
-    //     if (dialogueIndex >= currentNPCData.npcDialogue.Length || dialogueIndex >= currentNPCData.playerDialogue.Length)
-    //     {
-    //         EndDialogue();
-    //         return;
-    //     }
-    //
-    //     if (isPlayerTurn)
-    //     {
-    //         playerText.text = currentNPCData.playerDialogue[dialogueIndex];
-    //         playerText.gameObject.SetActive(true);
-    //         npcText.gameObject.SetActive(false);
-    //     }
-    //     else
-    //     {
-    //         npcText.text = currentNPCData.npcDialogue[dialogueIndex];
-    //         npcText.gameObject.SetActive(true);
-    //         playerText.gameObject.SetActive(false);
-    //
-    //         dialogueIndex++; 
-    //     }
-    //
-    //     isPlayerTurn = !isPlayerTurn; 
-    // }
-
-    // public void EndDialogue()
-    // {
-    //     playerText.gameObject.SetActive(false);
-    //     npcText.gameObject.SetActive(false);
-    //
-    //     playerText.text = string.Empty;
-    //     npcText.text = string.Empty;
-    // }
 }
