@@ -12,8 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e729411de389be84383bf687a0546bd9, type: 3}
   m_Name: Director
   m_EditorClassIdentifier: 
-  npcName: Director
-  dialogueLines:
-  - "\uB098\uB294 \uC2A4\uD3EC\uB9E8\uC774\uB2E4. \uACB0\uB9D0\uC744 \uC54C\uB824\uC8FC\uC9C0."
-  - "\uACBD\uC774 \uC804\uD558\uACE0\uC790 \uD558\uB294 \uBA54\uC2DC\uC9C0\uB294..."
-  - "\uBA54\uC2DC\uC9C0\uB294..."
+  npcName: "\uB514\uB809\uD130"
+  playerName: "\uC8FC\uC778\uACF5"
+  playerDialogue:
+  - "\uC5EC\uAE34 \uC5B4\uB5A4\uACF3\uC778\uAC00\uC694?"
+  - "\uADF8\uB807\uAD70\uC694."
+  - "\uB124. (\uB2E4\uC74C\uC5D0 \uCDE8\uD574\uC57C \uD560 \uC561\uC158 \uBA58\uD2B8)"
+  npcDialogue:
+  - "\uC548\uB155\uD558\uC138\uC694. \uC774\uACF3\uC5D0 \uC624\uC2E0\uAC83\uC744
+    \uD658\uC601\uD569\uB2C8\uB2E4."
+  - "\uC774\uACF3\uC740 \uD3C9\uBC94\uD55C \uB18D\uC7A5\uC785\uB2C8\uB2E4."
+  - "\uB124. \uD3B8\uD558\uAC8C \uC26C\uB2E4 \uAC00\uC138\uC694."
+  npcHeadImage: {fileID: -8376917354631496389, guid: 36c11a282731b544f9695b2c3530351c,
+    type: 3}
+  npcBodyImage: {fileID: -6832834590055223189, guid: 25c66a954ad7cd441927691357c2b238,
+    type: 3}
