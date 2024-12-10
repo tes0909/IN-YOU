@@ -6,7 +6,10 @@ using UnityEngine;
 public class NPCData : ScriptableObject
 {
     public string npcName;
-    // public string[] playerDialogue;
-    // public string[] npcDialogue;
-    public string[] dialogueLines;
+    public string playerName;
+    public string[] playerDialogue;
+    public string[] npcDialogue;
+    
+    public Sprite npcHeadImage;
+    public Sprite npcBodyImage;
 }
