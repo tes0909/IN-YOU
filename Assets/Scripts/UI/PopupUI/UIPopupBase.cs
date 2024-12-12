@@ -16,16 +16,12 @@ public abstract class UIPopupBase : UIBase
     {
         base.Close(type);
         Invoke("CloseAfterAnimation", duration);
-
     }
 
     private void CloseAfterAnimation()
     {
-
         Managers.UI.ClosePopupUI(this);
-
     }
-
 
     protected void SetDraggable(GameObject targetGo)
     {

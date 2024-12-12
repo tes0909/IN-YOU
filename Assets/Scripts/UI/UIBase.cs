@@ -73,7 +73,6 @@ public abstract class UIBase : InitBase
             default:
 
                 break;
-
         }
     }
 
@@ -117,10 +116,7 @@ public abstract class UIBase : InitBase
     protected Button GetButton(Enum idx) { return Get<Button>((int)(object)idx); }
     protected Image GetImage(Enum idx) { return Get<Image>((int)(object)idx); }
     protected Toggle GetToggle(Enum idx) { return Get<Toggle>((int)(object)idx); }
-
     protected Slider GetSlider(Enum idx) { return Get<Slider>((int)(object)idx); }
-
-
 
     public static void BindEvent(GameObject go, Action action = null, Action<BaseEventData> dragAction = null, Defines.UIEvent type = Defines.UIEvent.Click)
     {
@@ -158,6 +154,7 @@ public abstract class UIBase : InitBase
                 break;
         }
     }
+
     public static void UnBindEvent(GameObject go, Action action = null, Action<BaseEventData> dragAction = null, Defines.UIEvent type = Defines.UIEvent.Click)
     {
         UIEventHandler evt = go.GetComponent<UIEventHandler>();
