@@ -32,11 +32,21 @@ public static class Defines
         Hp,
         Mp,
         AttackDamage,
-        AttackSpeed,
         MoveSpeed,
         HpRegen,
         MpRegen,
-        CooltimeReduction,
+    }
+
+    public enum UIEvent
+    {
+        None,
+        Click,
+        Pressed,
+        PointerDown,
+        PointerUp,
+        Drag,
+        BeginDrag,
+        EndDrag,
     }
 
     public enum CalcType
@@ -44,5 +54,11 @@ public static class Defines
         Add,
         Multiply,
         Override,
+    }
+
+    public enum UIAnimationType
+    {
+        None,
+        Bounce,
     }
 }
