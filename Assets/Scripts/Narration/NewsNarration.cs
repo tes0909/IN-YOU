@@ -15,7 +15,6 @@ public class NewsNarration : MonoBehaviour
         "flight",
         "911"
     };
-
     private int currentIndex = 0;
 
     void Start()
@@ -23,13 +22,9 @@ public class NewsNarration : MonoBehaviour
         nextButton.onClick.AddListener(OnNextButtonClick);
         narrationText.text = narrationLines[currentIndex];
     }
-
     public void OnNextButtonClick()
     {
-        nextButton.interactable = false; // 버튼 클릭 비활성화
-        currentIndex++;
-
-        // 텍스트 변경
+        nextButton.interactable = false;
         if (currentIndex < narrationLines.Length)
         {
             narrationText.text = narrationLines[currentIndex];
@@ -38,15 +33,11 @@ public class NewsNarration : MonoBehaviour
         else
         {
             nextButton.interactable = false;
-            Debug.Log("모든 문장이 출력되었습니다.");
         }
-
-        // 3초 후에 버튼 활성화
         Invoke("EnableButton", 3f);
     }
-
     private void EnableButton()
     {
-        nextButton.interactable = true; // 버튼 활성화
+        nextButton.interactable = true;
     }
 }

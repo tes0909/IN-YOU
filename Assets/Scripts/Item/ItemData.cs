@@ -9,8 +9,8 @@ public class ItemData : ScriptableObject
     public string description;       
     public Sprite icon;              
     public ItemType itemType;        
-
     public int attackPower;
     public int healthRecovery;
     public string additionalInfo;
+    public int quantity;
 }

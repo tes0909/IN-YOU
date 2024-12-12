@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 
 public enum ItemType
@@ -13,6 +15,8 @@ public enum ItemType
 public class Item : MonoBehaviour
 {
     public ItemData itemData;
+    public Image itemImage;
+    public TMP_Text itemDescription;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
@@ -26,10 +30,6 @@ public class Item : MonoBehaviour
         {
             UpdateVisual();
         }
-        else
-        {
-            Debug.LogWarning("ItemData is not assigned on " + gameObject.name);
-        }
     }
     public void SetData(ItemData data)
     {
@@ -41,7 +41,8 @@ public class Item : MonoBehaviour
     {
         if (itemData != null)
         {
-            spriteRenderer.sprite = itemData.icon;
+            itemImage.sprite = itemData.icon;
+            itemDescription.text = itemData.description;
             gameObject.name = itemData.itemName;
         }
     }

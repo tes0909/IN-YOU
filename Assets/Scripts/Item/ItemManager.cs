@@ -5,7 +5,8 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
     public List<ItemData> availableItems; 
-    public List<ItemData> playerInventory; 
+    public List<ItemData> playerInventory;
+    public InventoryManager inventoryManager;
 
     public void AddItemToInventory(ItemData item)
     {
@@ -19,5 +20,9 @@ public class ItemManager : MonoBehaviour
         itemObject.AddComponent<Item>().SetData(itemData); 
         itemObject.transform.position = position;
         return itemObject;
+    }
+    public void AddItemToPlayerInventory(ItemData item)
+    {
+        inventoryManager.AddItem(item);
     }
 }
