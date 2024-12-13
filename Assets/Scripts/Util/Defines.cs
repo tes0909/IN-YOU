@@ -7,9 +7,19 @@ public static class Defines
     public enum SceneType
     {
         None,
-        TitleScene,
-        GameScene,
-        IntroScene,
+        StartScene,
+        Intro,
+        Bar,
+        News,
+        Letter,
+        Lab,
+        Island_1,
+        Island_2,
+        Bridge,
+        Home_1,
+        Home_2,
+        Boss,
+        Last,
     }
 
     public enum ItemType

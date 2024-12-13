@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneManagerEx : IManager
 {
     public SceneBase CurrentScene => GameObject.FindObjectOfType<SceneBase>();
+    public int SceneNum  => (int)GameObject.FindObjectOfType<SceneBase>().SceneType - 1;
 
     public void Clear()
     {
@@ -27,5 +28,13 @@ public class SceneManagerEx : IManager
 
         Managers.Clear();
         SceneManager.LoadScene(sceneType.ToString());
+    }
+
+    public void LoadNextScene()
+    {
+        int nextSceneNum = SceneNum+1;
+        Managers.Clear();
+        SceneManager.LoadScene(nextSceneNum);
+        Debug.Log(nextSceneNum);
     }
 }
