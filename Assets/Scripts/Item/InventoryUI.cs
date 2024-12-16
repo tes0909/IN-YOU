@@ -8,6 +8,11 @@ public class InventoryUI : MonoBehaviour
 {
     public GameObject inventoryPanel;
     public GameObject itemPrefab;
+    public GameObject combinePanel;
+    public TextMeshProUGUI combineInfoText;
+    public ItemMixManager itemMixManager;
+
+
     public void UpdateInventoryUI(List<ItemData> inventory)
     {
         foreach (Transform child in inventoryPanel.transform)
@@ -35,5 +40,27 @@ public class InventoryUI : MonoBehaviour
     }
     public void OnItemClicked(ItemData item)
     {
+        // 아이템이 조합 가능한지 확인
+        foreach (var recipe in itemMixManager.itemMixList.itemMixRecipes)
+        {
+            if (recipe.requiredItems.Exists(r => r.itemName == item.itemName))
+            {
+                if (itemMixManager.CanCraft(recipe))
+                {
+                    combinePanel.SetActive(true);
+                    combineInfoText.text = $"{item.itemName}을(를) 조합할 수 있습니다!";
+                    Button combineButton = combinePanel.GetComponentInChildren<Button>();
+                    combineButton.onClick.AddListener(() => CombineItem(recipe));
+                    return;
+                }
+            }
+        }
+        combineInfoText.text = "조합할 수 없습니다.";
+    }
+
+    private void CombineItem(ItemMixRecipe recipe)
+    {
+        itemMixManager.CraftItem(recipe);
+        combinePanel.SetActive(false);
     }
 }
