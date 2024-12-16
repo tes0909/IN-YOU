@@ -32,6 +32,7 @@ public class InventoryManager : MonoBehaviour
     {
         playerInventory.Add(item);
         inventoryUI.UpdateInventoryUI(playerInventory);
+        Debug.Log($"{item.itemName}이 인벤토리에 추가되었습니다!");
     }
    
 }

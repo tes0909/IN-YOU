@@ -15,14 +15,12 @@ public class PlayerAttackState : PlayerBaseState
     {
         base.Enter();
         isAttacking = true;
-        StartAnimation(stateMachine.Player.AnimationData.AttackParameterHash);
         stateMachine.Player.StartCoroutine(AttackTime());
     }
 
     public override void Exit()
     {
         base.Exit();
-        StopAnimation(stateMachine.Player.AnimationData.AttackParameterHash);
         isAttacking = false;
     }
 
@@ -33,7 +31,6 @@ public class PlayerAttackState : PlayerBaseState
         {
             stateMachine.changeState(stateMachine.IdleState);
         }
-        OnDrawGizmos();
     }
 
     private void OnAttack()
@@ -44,7 +41,10 @@ public class PlayerAttackState : PlayerBaseState
         foreach (Collider2D enemy in hitEnemy)
         {
             Bug bug = enemy.GetComponent<Bug>();
-            bug.TakeDamage(stateMachine.Player.PlayerSOData.AttackData.AttackDamage);
+            if (bug != null)
+            {
+                bug.TakeDamage(stateMachine.Player.PlayerSOData.AttackData.AttackDamage);
+            }
         }
     }
 
@@ -59,12 +59,5 @@ public class PlayerAttackState : PlayerBaseState
         stateMachine.changeState(stateMachine.IdleState);
     }
     
-    private void OnDrawGizmos() 
-    {
-        if (stateMachine != null && stateMachine.Player != null) 
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(stateMachine.Player.transform.position, stateMachine.Player.PlayerSOData.AttackData.AttackRange);
-        }
-    }
+    
 }
