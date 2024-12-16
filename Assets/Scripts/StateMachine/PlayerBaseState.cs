@@ -43,14 +43,15 @@ public class PlayerBaseState : Istate
     {
         PlayerController input = stateMachine.Player.input;
         input.playerActions.Movement.canceled += OnMovementCanceld;
-        //input.playerActions.Run.started += OnRunStarted;
+        input.playerActions.Attack.performed += OnAttackPerformed;
     }
-    
+
+
     protected virtual void RemoveInputActionsCallback()
     {
         PlayerController input = stateMachine.Player.input;
         input.playerActions.Movement.canceled -= OnMovementCanceld;
-        //input.playerActions.Run.started -= OnRunStarted;
+        input.playerActions.Attack.canceled -= OnAttackCanceld;
     }
 
     protected virtual void OnMovementCanceld(InputAction.CallbackContext context)
@@ -58,11 +59,17 @@ public class PlayerBaseState : Istate
         
     }
     
-    protected virtual void OnRunStarted(InputAction.CallbackContext context)
+
+    private void OnAttackPerformed(InputAction.CallbackContext context)
+    {
+        stateMachine.Player.Animator.SetTrigger(stateMachine.Player.AnimationData.AttackParameterHash);
+        stateMachine.changeState(stateMachine.AttackState);
+    }
+
+    private void OnAttackCanceld(InputAction.CallbackContext context)
     {
         
     }
-
     
     protected void StartAnimation(int animationHash) // 상태
     {
@@ -90,8 +97,6 @@ public class PlayerBaseState : Istate
         Vector3 movementDirection = GetMovementDirection();
         
         applyMovement(movementDirection); // 실제 캐릭터 컨트롤러를 사용하여 이동
-        
-        //Rotate(movementDirection); // 캐릭터가 바라보는 방향을 조정
     }
 
     private Vector2 GetMovementDirection()
@@ -114,16 +119,4 @@ public class PlayerBaseState : Istate
         }
         stateMachine.Player.rigidbody2D.velocity = direction * stateMachine.movementSpeed;
     }
-
-    // private void Rotate(Vector3 direction)
-    // {
-    //     if (direction != Vector3.zero)
-    //     {
-    //         Transform playerTransform = stateMachine.Player.transform;
-    //         Quaternion targetRotation = Quaternion.LookRotation(direction); // 바라보는 방향으로 
-    //         
-    //         //서서히 돌수있게끔 보간
-    //         playerTransform.rotation = Quaternion.Slerp(playerTransform.rotation, targetRotation, stateMachine.rotationDamping * Time.deltaTime);
-    //     }
-    // }
 }

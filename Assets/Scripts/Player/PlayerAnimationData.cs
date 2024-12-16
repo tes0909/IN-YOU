@@ -12,12 +12,16 @@ public class PlayerAnimationData
 
     [SerializeField] private string moveXParameterName = "moveX";
     [SerializeField] private string moveYParameterName = "moveY";
+
+    [SerializeField] private string attackParameterName = "Attack";
     public int IdleParameterHash { get; private set; }
     public int WalkParameterHash { get; private set; }
     
     public int MoveXParameterHash { get; private set; }
     public int MoveYParameterHash { get; private set; }
-    
+
+    public int AttackParameterHash { get; private set; }
+
     public void Initialize()
     {
         IdleParameterHash = Animator.StringToHash(idleParameterName);
@@ -25,5 +29,7 @@ public class PlayerAnimationData
         
         MoveXParameterHash = Animator.StringToHash(moveXParameterName);
         MoveYParameterHash = Animator.StringToHash(moveYParameterName);
+
+        AttackParameterHash = Animator.StringToHash(attackParameterName);
     }
 }

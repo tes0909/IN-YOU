@@ -9,12 +9,13 @@ public class GridSpawn : MonoBehaviour
     private HashSet<Vector3> spawnPositions = new HashSet<Vector3>();
     private float xPosition;
     private float nextYposition = 20f;
+    private float zPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<PlayerController>() != null)
         {
-            Vector3 spawnPostion = new Vector3(xPosition, transform.position.y + nextYposition, 0f);
+            Vector3 spawnPostion = new Vector3(xPosition, transform.position.y + nextYposition, zPosition);
     
             if (!spawnPositions.Contains(spawnPostion))
             {
