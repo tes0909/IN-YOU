@@ -4,26 +4,67 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public List<ItemData> playerInventory = new List<ItemData>();
-    public InventoryManager inventoryManager;
+    public List<ItemData> bagItems = new List<ItemData>();    
+    public List<ItemData> infoItems = new List<ItemData>();   
+    public List<ItemData> missionItems = new List<ItemData>();
     public InventoryUI inventoryUI;
-    
-    private void Start()
+    public ItemMixManager itemMixManager;
+    public void AddToBag(ItemData newItem)
     {
-        inventoryUI.UpdateInventoryUI(playerInventory);
+        bagItems.Add(newItem);
+        inventoryUI.UpdateBagPanel(bagItems);
     }
-    public void AddItem(ItemData newItem)
+    public void AddToInfo(ItemData newItem)
     {
-        playerInventory.Add(newItem);
-        inventoryUI.UpdateInventoryUI(playerInventory);
+        infoItems.Add(newItem);
+        inventoryUI.UpdateInfoPanel(infoItems); 
     }
-
-    public void RemoveItem(ItemData itemToRemove)
+    public void AddToMission(ItemData newItem)
     {
-        if (playerInventory.Contains(itemToRemove))
+        missionItems.Add(newItem);
+        inventoryUI.UpdateMissionPanel(missionItems);
+    }
+    public void RemoveItem(ItemData itemToRemove, string panel)
+    {
+        switch (panel.ToLower())
         {
-            playerInventory.Remove(itemToRemove);
-            inventoryUI.UpdateInventoryUI(playerInventory);
+            case "bag":
+                if (bagItems.Contains(itemToRemove))
+                {
+                    bagItems.Remove(itemToRemove);
+                    inventoryUI.UpdateBagPanel(bagItems);
+                }
+                break;
+
+            case "info":
+                if (infoItems.Contains(itemToRemove))
+                {
+                    infoItems.Remove(itemToRemove);
+                    inventoryUI.UpdateInfoPanel(infoItems);
+                }
+                break;
+
+            case "mission":
+                if (missionItems.Contains(itemToRemove))
+                {
+                    missionItems.Remove(itemToRemove);
+                    inventoryUI.UpdateMissionPanel(missionItems);
+                }
+                break;
         }
     }
+    public void TryCombineItems(ItemMixRecipe recipe)
+    {
+        if (itemMixManager.CanCraft(recipe))
+        {
+            itemMixManager.CraftItem(recipe);
+        }
+    }
+    private void Start()
+    {
+        inventoryUI.UpdateBagPanel(bagItems);
+        inventoryUI.UpdateInfoPanel(infoItems);
+        inventoryUI.UpdateMissionPanel(missionItems);
+    }
 }
+

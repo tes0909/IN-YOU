@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public List<ItemData> playerInventory;
+    public Inventory inventory;
     public InventoryUI inventoryUI;
     private bool isInventoryActive = false;
 
@@ -28,11 +28,21 @@ public class InventoryManager : MonoBehaviour
         Debug.Log(isInventoryActive);
     }
 
-    public void AddItem(ItemData item)
+    public void AddItem(ItemData item, string panel)
     {
-        playerInventory.Add(item);
-        inventoryUI.UpdateInventoryUI(playerInventory);
-        Debug.Log($"{item.itemName}이 인벤토리에 추가되었습니다!");
+        switch (panel.ToLower())
+        {
+            case "bag":
+                inventory.AddToBag(item);
+                break;
+
+            case "info":
+                inventory.AddToInfo(item);
+                break;
+
+            case "mission":
+                inventory.AddToMission(item);
+                break;
+        }
     }
-   
 }
