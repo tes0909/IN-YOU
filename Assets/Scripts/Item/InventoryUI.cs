@@ -6,22 +6,44 @@ using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
-    public GameObject inventoryPanel;
+    public GameObject bagPanel;
+    public GameObject infoPanel;
+    public GameObject missionPanel;
+
+    public Button bagButton;
+    public Button infoButton;
+    public Button missionButton;
+
     public GameObject itemPrefab;
     public GameObject combinePanel;
     public TextMeshProUGUI combineInfoText;
     public ItemMixManager itemMixManager;
 
 
-    public void UpdateInventoryUI(List<ItemData> inventory)
+    public void UpdateBagPanel(List<ItemData> items)
     {
-        foreach (Transform child in inventoryPanel.transform)
+        UpdateInventoryUI(items, bagPanel);
+    }
+
+    public void UpdateInfoPanel(List<ItemData> items)
+    {
+        UpdateInventoryUI(items, infoPanel);
+    }
+
+    public void UpdateMissionPanel(List<ItemData> items)
+    {
+        UpdateInventoryUI(items, missionPanel);
+    }
+
+    public void UpdateInventoryUI(List<ItemData> inventory, GameObject panel)
+    {
+        foreach (Transform child in panel.transform)
         {
             Destroy(child.gameObject);
         }
         foreach (ItemData item in inventory)
         {
-            GameObject newItem = Instantiate(itemPrefab, inventoryPanel.transform);
+            GameObject newItem = Instantiate(itemPrefab, panel.transform);
             newItem.name = item.itemName;
 
             Image itemImage = newItem.GetComponentInChildren<Image>();
@@ -33,14 +55,15 @@ public class InventoryUI : MonoBehaviour
             {
                 itemImage.sprite = item.icon;
                 itemDescription.text = item.description;
-                itemButton.onClick.AddListener(() => OnItemClicked(item));
                 itemQuantityText.text = item.quantity.ToString();
+
+                itemButton.onClick.RemoveAllListeners();
+                itemButton.onClick.AddListener(() => OnItemClicked(item));
             }
         }
     }
     public void OnItemClicked(ItemData item)
     {
-        // 아이템이 조합 가능한지 확인
         foreach (var recipe in itemMixManager.itemMixList.itemMixRecipes)
         {
             if (recipe.requiredItems.Exists(r => r.itemName == item.itemName))
@@ -51,6 +74,7 @@ public class InventoryUI : MonoBehaviour
                     combineInfoText.text = $"{item.itemName}을(를) 조합할 수 있습니다!";
                     Button combineButton = combinePanel.GetComponentInChildren<Button>();
                     combineButton.onClick.AddListener(() => CombineItem(recipe));
+                    combineButton.onClick.RemoveAllListeners();
                     return;
                 }
             }

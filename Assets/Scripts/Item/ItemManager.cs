@@ -11,7 +11,7 @@ public class ItemManager : MonoBehaviour
     public void AddItemToInventory(ItemData item)
     {
         playerInventory.Add(item);
-        Debug.Log($"{item.itemName}AddItemComplete");
+
     }
     public GameObject CreateItemObject(ItemData itemData, Vector3 position)
     {
@@ -20,9 +20,5 @@ public class ItemManager : MonoBehaviour
         itemObject.AddComponent<Item>().SetData(itemData); 
         itemObject.transform.position = position;
         return itemObject;
-    }
-    public void AddItemToPlayerInventory(ItemData item)
-    {
-        inventoryManager.AddItem(item);
     }
 }
