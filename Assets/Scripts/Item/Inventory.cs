@@ -8,6 +8,8 @@ public class Inventory : MonoBehaviour
     public List<ItemData> playerInventory = new List<ItemData>();
     public InventoryManager inventoryManager;
     public InventoryUI inventoryUI;
+    public ItemMixManager itemMixManager;
+
     public void AddItem(ItemData newItem)
     {
         playerInventory.Add(newItem);
@@ -21,6 +23,10 @@ public class Inventory : MonoBehaviour
             playerInventory.Remove(itemToRemove);
             inventoryUI.UpdateInventoryUI(playerInventory);
         }
+    }
+    public void TryCombineItems(ItemData item)
+    {
+        itemMixManager.TryCombineItems(item);
     }
     private void Start()
     {
