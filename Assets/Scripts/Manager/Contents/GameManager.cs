@@ -24,7 +24,7 @@ public class GameManager : IManager
         //Player.Input.InputEnable();
     }
 
-    public void CreatePlayer(int jobid)
+    public void CreatePlayer()
     {
         //Player player = GameObject.FindObjectOfType<Player>();
 
