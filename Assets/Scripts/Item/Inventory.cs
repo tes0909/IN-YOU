@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    
     public List<ItemData> playerInventory = new List<ItemData>();
     public InventoryManager inventoryManager;
     public InventoryUI inventoryUI;
+    
+    private void Start()
+    {
+        inventoryUI.UpdateInventoryUI(playerInventory);
+    }
     public void AddItem(ItemData newItem)
     {
         playerInventory.Add(newItem);
@@ -21,9 +25,5 @@ public class Inventory : MonoBehaviour
             playerInventory.Remove(itemToRemove);
             inventoryUI.UpdateInventoryUI(playerInventory);
         }
-    }
-    private void Start()
-    {
-        inventoryUI.UpdateInventoryUI(playerInventory);
     }
 }

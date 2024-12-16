@@ -6,17 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Effects/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Effects/Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Effects/Attack.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Effects/Attack.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Enemy_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Enemy_Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Home_Test/Bug/Bug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Home_Test/Bug/Bug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawn/GridSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawn/GridSpawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

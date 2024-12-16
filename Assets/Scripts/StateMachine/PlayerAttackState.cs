@@ -33,6 +33,7 @@ public class PlayerAttackState : PlayerBaseState
         {
             stateMachine.changeState(stateMachine.IdleState);
         }
+        OnDrawGizmos();
     }
 
     private void OnAttack()

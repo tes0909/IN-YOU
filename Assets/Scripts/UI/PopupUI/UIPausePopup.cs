@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,21 +8,22 @@ public class UIPausePopup : UIPopupBase
 
     private bool isPaused = false; // 일시정지 상태인지
 
-    //private void Start()
-    //{
-    //    if (EscUI != null)
-    //    {
-    //        EscUI.SetActive(false);
-    //    }
-    //}
+    private void Start()
+    {
+        if (EscUI != null)
+        {
+            EscUI.SetActive(false);
+        }
+    }
 
-    //private void Update()
-    //{
-    //    if (Keyboard.current.escapeKey.wasPressedThisFrame)
-    //    {
-    //        TogglePauseMenu();
-    //    }
-    //}
+    private void Update()
+    {
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            TogglePauseMenu();
+        }
+    }
+    
 
     public void TogglePauseMenu() // UI 활성, 비활성
     {
