@@ -19,11 +19,6 @@ public class Item : MonoBehaviour
     public TMP_Text itemDescription;
     private SpriteRenderer spriteRenderer;
 
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
     private void Start()
     {
         if (itemData != null)

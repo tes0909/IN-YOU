@@ -6,8 +6,6 @@ public class ItemMixManager : MonoBehaviour
 {
     public Inventory inventory;
     public ItemMixList itemMixList;
-   
-
     void Start()
     {
         if (inventory == null)
