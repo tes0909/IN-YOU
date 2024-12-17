@@ -28,7 +28,7 @@ public class GameManager : IManager
         Player player = GameObject.FindObjectOfType<Player>();
 
         if (player == null)
-            player = Managers.Resource.Instantiate("Player")?.GetComponent<Player>();
+            player = Managers.Resource.Instantiate("Player/Player")?.GetComponent<Player>();
 
         if (player == null)
         {

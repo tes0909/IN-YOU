@@ -8,7 +8,9 @@ public class Island_1 : SceneBase
     {
         Managers.UI.Init();
         Managers.Sound.Init();
+        Managers.Resource.Init();
         Managers.Game.Init();
+        Managers.Game.CreatePlayer();
 
         Managers.UI.LoadSceneUI<UIGameScene>();
     }
@@ -17,7 +19,7 @@ public class Island_1 : SceneBase
     {
         Managers.Sound.PlayBGM("BGM");
         Managers.Sound.SetMasterVolume();
-        Managers.Resource.Instantiate("Map/Isaland_1");
+        Managers.Resource.Instantiate("Map/IslandMap");
     }
 
     protected override void OnSceneUnload()

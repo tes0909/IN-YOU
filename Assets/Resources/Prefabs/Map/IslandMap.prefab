@@ -3196,7 +3196,7 @@ GameObject:
   - component: {fileID: 4334645975142842920}
   - component: {fileID: 8002752806320968837}
   m_Layer: 0
-  m_Name: Island Map
+  m_Name: IslandMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
