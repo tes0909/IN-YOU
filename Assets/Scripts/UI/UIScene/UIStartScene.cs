@@ -20,7 +20,7 @@ public class UIStartScene : UISceneBase
         BindButton(typeof(Buttons));
 
         GetButton(Buttons.StartButton).gameObject.BindEvent(LoadStartScene);
-        GetButton(Buttons.LoadButton).gameObject.BindEvent(LoadSave);
+        //GetButton(Buttons.LoadButton).gameObject.BindEvent(LoadSave);
         GetButton(Buttons.SettingButton).gameObject.BindEvent(SettingPopupButtonEvent);
         GetButton(Buttons.QuitButton).gameObject.BindEvent(QuitButtonEvent);
         return true;
@@ -29,7 +29,7 @@ public class UIStartScene : UISceneBase
     public void LoadStartScene()
     {     
         // 게임시작시 씬 불러오기 전 저장 데이터 삭제
-        //Managers.Scene.LoadScene(Defines.SceneType.StartScene);
+        Managers.Scene.LoadScene(Defines.SceneType.Intro);
         gameObject.SetActive(false);
     }
 

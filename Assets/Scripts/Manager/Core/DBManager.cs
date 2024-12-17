@@ -13,8 +13,8 @@ public class DBManager : IManager
 
     public void Init()
     {
-        LoadItemDb();
-        LoadMonsterDb();
+        //LoadItemDb();
+        //LoadMonsterDb();
     }
 
     public void Clear()

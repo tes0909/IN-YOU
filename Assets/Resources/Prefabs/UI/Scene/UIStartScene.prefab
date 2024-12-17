@@ -389,6 +389,7 @@ GameObject:
   - component: {fileID: 259467665710614362}
   - component: {fileID: 6623699327523210267}
   - component: {fileID: 131923272989057971}
+  - component: {fileID: 6869393534770303483}
   m_Layer: 5
   m_Name: UIStartScene
   m_TagString: Untagged
@@ -483,6 +484,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6869393534770303483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006504232528464239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a830411d86f4d648b4f2cf3515d3a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 0.1
+  duration: 0.2
+  animationRoot: {fileID: 0}
 --- !u!1 &3139595336346185511
 GameObject:
   m_ObjectHideFlags: 0
