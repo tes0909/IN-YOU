@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneManagerEx : IManager
 {
     public SceneBase CurrentScene => GameObject.FindObjectOfType<SceneBase>();
-    public int SceneNum  => (int)GameObject.FindObjectOfType<SceneBase>().SceneType - 1;
+    public int SceneNum => SceneManager.GetActiveScene().buildIndex;
+    //public int SceneNum  => (int)GameObject.FindObjectOfType<SceneBase>().SceneType - 1;
+    private FadeScript fade;
 
     public void Clear()
     {
@@ -15,7 +17,7 @@ public class SceneManagerEx : IManager
 
     public void Init()
     {
-
+        fade = GameObject.FindObjectOfType<FadeScript>();
     }
 
     public void LoadScene(Defines.SceneType sceneType)
@@ -32,9 +34,14 @@ public class SceneManagerEx : IManager
 
     public void LoadNextScene()
     {
-        int nextSceneNum = SceneNum+1;
+        int nextSceneNum = SceneNum + 1;
         Managers.Clear();
         SceneManager.LoadScene(nextSceneNum);
         Debug.Log(nextSceneNum);
+        if (fade == null)
+        {
+            fade = GameObject.FindObjectOfType<FadeScript>();
+        }
+        fade.Fade();
     }
 }
