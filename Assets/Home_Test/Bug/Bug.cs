@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 public class Bug : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class Bug : MonoBehaviour
         chasingState = new BugChasingState();
         attackingState = new BugAttackingState();
 
+        if (bugStats != null)
+        {
+            bugStats.currentHealth = bugStats.maxHealth;
+        }
+
         idleState.SetBug(this);
         appearingState.SetBug(this);
         chasingState.SetBug(this);
@@ -27,6 +33,7 @@ public class Bug : MonoBehaviour
 
         currentState = idleState;
     }
+    
 
     private void Update()
     {
