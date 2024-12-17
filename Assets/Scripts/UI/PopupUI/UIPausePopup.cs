@@ -61,15 +61,17 @@ public class UIPausePopup : UIPopupBase
 
         if (EscUI != null)
         {
-            EscUI.SetActive(isPaused);
+            //EscUI.SetActive(isPaused);
         }
 
-        Time.timeScale = isPaused ? 0f : 1f; // 시간 일시정지, 복구
+        //Time.timeScale = isPaused ? 0f : 1f; // 시간 일시정지, 복구
     }
 
     public void SettingMenu()
     {
+        Time.timeScale = 0.1f;
         Managers.UI.ShowPopupUI<UISettingPopup>();
+        Time.timeScale = 0f;
     }
 
     public void SaveCurrentCondition()
