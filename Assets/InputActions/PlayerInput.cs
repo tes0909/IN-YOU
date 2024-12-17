@@ -46,18 +46,27 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Attack"",
+                    ""name"": ""Interact"",
                     ""type"": ""Button"",
-                    ""id"": ""3d35c779-1c61-45ae-a283-2acd5ec6c8b0"",
+                    ""id"": ""31490992-0588-472e-aad3-19bc019bb08e"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Interact"",
+                    ""name"": ""Attack"",
                     ""type"": ""Button"",
-                    ""id"": ""31490992-0588-472e-aad3-19bc019bb08e"",
+                    ""id"": ""5a679110-03dd-40cd-8133-f5a996112f1b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PickUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""9de4076b-408b-432f-ab6d-6d23d80f6f85"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -133,8 +142,19 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""423a1650-0402-4644-8cbc-d1e366328399"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""id"": ""20cad76e-93df-4976-9910-c6265510d2db"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""04eecb13-3d0e-4161-8e5b-05021548efa3"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -144,12 +164,12 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""20cad76e-93df-4976-9910-c6265510d2db"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""id"": ""972572a1-13ce-443c-879e-02c5427657d3"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Interact"",
+                    ""action"": ""PickUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -162,8 +182,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
-        m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
+        m_Player_PickUp = m_Player.FindAction("PickUp", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -227,16 +248,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Run;
-    private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_Attack;
+    private readonly InputAction m_Player_PickUp;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
         public PlayerActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Run => m_Wrapper.m_Player_Run;
-        public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @Attack => m_Wrapper.m_Player_Attack;
+        public InputAction @PickUp => m_Wrapper.m_Player_PickUp;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -252,12 +275,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Run.started += instance.OnRun;
             @Run.performed += instance.OnRun;
             @Run.canceled += instance.OnRun;
-            @Attack.started += instance.OnAttack;
-            @Attack.performed += instance.OnAttack;
-            @Attack.canceled += instance.OnAttack;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
+            @PickUp.started += instance.OnPickUp;
+            @PickUp.performed += instance.OnPickUp;
+            @PickUp.canceled += instance.OnPickUp;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -268,12 +294,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Run.started -= instance.OnRun;
             @Run.performed -= instance.OnRun;
             @Run.canceled -= instance.OnRun;
-            @Attack.started -= instance.OnAttack;
-            @Attack.performed -= instance.OnAttack;
-            @Attack.canceled -= instance.OnAttack;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
+            @PickUp.started -= instance.OnPickUp;
+            @PickUp.performed -= instance.OnPickUp;
+            @PickUp.canceled -= instance.OnPickUp;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -295,7 +324,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
-        void OnAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
+        void OnPickUp(InputAction.CallbackContext context);
     }
 }

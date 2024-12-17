@@ -24,18 +24,27 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Attack",
+                    "name": "Interact",
                     "type": "Button",
-                    "id": "3d35c779-1c61-45ae-a283-2acd5ec6c8b0",
+                    "id": "31490992-0588-472e-aad3-19bc019bb08e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interact",
+                    "name": "Attack",
                     "type": "Button",
-                    "id": "31490992-0588-472e-aad3-19bc019bb08e",
+                    "id": "5a679110-03dd-40cd-8133-f5a996112f1b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PickUp",
+                    "type": "Button",
+                    "id": "9de4076b-408b-432f-ab6d-6d23d80f6f85",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -111,8 +120,19 @@
                 },
                 {
                     "name": "",
-                    "id": "423a1650-0402-4644-8cbc-d1e366328399",
-                    "path": "<Mouse>/leftButton",
+                    "id": "20cad76e-93df-4976-9910-c6265510d2db",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "04eecb13-3d0e-4161-8e5b-05021548efa3",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -122,12 +142,12 @@
                 },
                 {
                     "name": "",
-                    "id": "20cad76e-93df-4976-9910-c6265510d2db",
-                    "path": "<Keyboard>/e",
+                    "id": "972572a1-13ce-443c-879e-02c5427657d3",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "PickUp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

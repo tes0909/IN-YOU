@@ -39,4 +39,16 @@ public class Bug : MonoBehaviour
         currentState = newState;
         currentState.Enter();
     }
+
+    public void TakeDamage(float damage)
+    {
+        bugStats.currentHealth -= damage;
+        Debug.Log($"{bugStats.name}가 {damage}의 데미지를 받았습니다. 현재 체력: {bugStats.currentHealth}");
+
+        if (bugStats.currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("사망");
+        }
+    }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D rigidbody2D { get; private set; }
 
     private PlayerStateMachine stateMachine;
+    private bool isPlayerNearby;
+    public Item item;
 
     void Awake()
     {
@@ -51,5 +54,45 @@ public class Player : MonoBehaviour
     public void EquipItem(ItemData itemData)
     {
         Debug.Log($"Equipped {itemData.itemName}");
+    }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Item"))
+        {
+            item = collision.GetComponent<Item>();
+        }
+    }
+//todo: 다른방식체크, 인풋시스템점검
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Item"))
+        {
+            item = null;
+        }
+    }
+    public Inventory inventory;
+    public void PickUpItem()
+    {
+        if (item == null) return;
+
+        if (inventory == null)
+            inventory = FindObjectOfType<Inventory>();
+        
+        if (item != null && inventory != null)
+        {
+            //inventory.AddToBag(item);
+            Debug.Log($"{item.itemData.itemName}을(를) 획득했습니다!");
+            Destroy(item.gameObject); // 아이템 오브젝트 삭제
+        }
+    }
+    
+    private void OnDrawGizmos() 
+    {
+        if (stateMachine != null && stateMachine.Player != null) 
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(stateMachine.Player.transform.position, stateMachine.Player.PlayerSOData.AttackData.AttackRange);
+        }
     }
 }

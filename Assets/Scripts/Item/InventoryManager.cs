@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,13 @@ public class InventoryManager : MonoBehaviour
 {
     public Inventory inventory;
     public InventoryUI inventoryUI;
-    private bool isInventoryActive = false; 
+    private bool isInventoryActive = false;
+
+    private void Start()
+    {
+        inventoryUI.gameObject.SetActive(false);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -18,6 +25,7 @@ public class InventoryManager : MonoBehaviour
     {
         isInventoryActive = !isInventoryActive;
         inventoryUI.gameObject.SetActive(isInventoryActive);
+        Debug.Log(isInventoryActive);
     }
 
     public void AddItem(ItemData item, string panel)

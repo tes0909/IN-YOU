@@ -13,13 +13,15 @@ public class PlayerStateMachine : StateMachine
     
     public PlayerIdleState IdleState { get; set; }
     public PlayerWalkState WalkState { get; set; }
+    
+    public PlayerAttackState AttackState { get; set; }
 
     public PlayerStateMachine(Player player)
     {
         this.Player = player;
         movementSpeed = player.PlayerSOData.GroundData.BaseSpeed;
-        //rotationDamping = player.PlayerSOData.GroundData.BaseRoationDamping;
         IdleState = new PlayerIdleState(this); // this statemachine
         WalkState = new PlayerWalkState(this);
+        AttackState = new PlayerAttackState(this);
     }
 }

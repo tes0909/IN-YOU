@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Bag
   m_EditorClassIdentifier: 
-  itemName: Bag
-  description: Bag
-  icon: {fileID: 0}
+  itemName: "\uAC00\uBC29"
+  description: "\uAC00\uBC29\uC785\uB2C8\uB2E4."
+  icon: {fileID: 21300000, guid: a619ce539c5f46a4d8c0b69ae95e5623, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
+  quantity: 1
