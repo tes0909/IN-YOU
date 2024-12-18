@@ -12,4 +12,5 @@ public class NPCData : ScriptableObject
     
     public Sprite npcHeadImage;
     public Sprite npcBodyImage;
+    
 }

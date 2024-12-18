@@ -8,7 +8,7 @@ public class CameraExpansion1 : MonoBehaviour
 
     public Vector3 targetPosition = new Vector3(2, 2, -5); 
     public float targetSize = 2.0f; 
-    public float transitionDuration = 4.0f; 
+    public float transitionDuration = 2.0f; 
 
     private Vector3 initialPosition;  
     private float initialSize;        

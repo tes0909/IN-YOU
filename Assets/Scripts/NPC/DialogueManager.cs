@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
 
        npcHeadImage.sprite = currentNPCData.npcHeadImage;
        npcBodyImage.sprite = currentNPCData.npcBodyImage;
-
+       
         // 첫 대화 출력
         NextDialogue();
     }
