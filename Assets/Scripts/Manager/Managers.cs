@@ -37,6 +37,7 @@ public class Managers : MonoBehaviour
 
             //Initialize all managers
             DB?.Init();
+            Resource?.Init();
             Sound?.Init();
         }
     }

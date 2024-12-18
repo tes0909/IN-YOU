@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : IManager
 {
-    //public Player Player { get; private set; }
+    public Player Player { get; private set; }
     //private MonsterSpawner monsterSpawner;
 
     public void Clear()
@@ -21,31 +21,30 @@ public class GameManager : IManager
     {
         //// 실제로 게임을 시작하는 함수
         //monsterSpawner = new MonsterSpawner();
-        //Player.Input.InputEnable();
     }
 
     public void CreatePlayer()
     {
-        //Player player = GameObject.FindObjectOfType<Player>();
+        Player player = GameObject.FindObjectOfType<Player>();
 
-        //if (player == null)
-        //    player = Managers.Resource.Instantiate("Player")?.GetComponent<Player>();
+        if (player == null)
+            player = Managers.Resource.Instantiate("Player/Player")?.GetComponent<Player>();
 
-        //if (player == null)
-        //{
-        //    Debug.LogWarning("Player 프리팹이 없습니다.");
-        //    return;
-        //}
+        if (player == null)
+        {
+            Debug.LogWarning("Player 프리팹이 없습니다.");
+            return;
+        }
 
-        //player.gameObject.name = nameof(Player);
+        player.gameObject.name = nameof(Player);
         //player.Condition.OnDead += GameOver;
-        //Player = player;
+        Player = player;
     }
 
     public void GameOver()
     {
-        //// 실제로 게임이 종료되었을때 함수
-        //Managers.UI.ShowPopupUI<UIGameOverPopup>();
+        // 실제로 게임이 종료되었을때 함수
+        Managers.UI.ShowPopupUI<UIGameOverPopup>();
     }
 
     public void GameClear()
@@ -64,5 +63,15 @@ public class GameManager : IManager
     {
         Time.timeScale = 1f;
         //인풋 활성화
+    }
+
+    public void SaveGame()
+    {
+        //게임 저장 로직
+    }
+
+    public void LoadGame()
+    {
+        //게임 불러오기 로직
     }
 }

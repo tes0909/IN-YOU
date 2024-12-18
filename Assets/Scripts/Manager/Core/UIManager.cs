@@ -56,6 +56,7 @@ public class UIManager : IManager
         }
         string name = typeof(T).Name;
         GameObject go = Managers.Resource.Instantiate($"UI/Scene/{name}", Root.transform);
+        Debug.Log(name);
         if (go == null)
         {
             Debug.LogError("Failed to load scene UI : " + typeof(T).Name);
@@ -67,6 +68,7 @@ public class UIManager : IManager
 
         return currentSceneUI as T;
     }
+
     public T GetCurrentSceneUI<T>() where T : UISceneBase
     {
         return currentSceneUI as T;
@@ -101,6 +103,7 @@ public class UIManager : IManager
 
         return popup as T;
     }
+
     public void ClosePopupUI<T>() where T : UIPopupBase
     {
         if (popupDict.TryGetValue(typeof(T).Name, out UIPopupBase popup))
@@ -108,6 +111,7 @@ public class UIManager : IManager
             popup.Close();
         }
     }
+
     public void ClosePopupUI(UIPopupBase popup)
     {
         popupOrder--;
@@ -115,6 +119,7 @@ public class UIManager : IManager
         popup.gameObject.SetActive(false);
 
     }
+
     public void CloseAllPopup()
     {
         foreach (var popup in popupDict.Values)

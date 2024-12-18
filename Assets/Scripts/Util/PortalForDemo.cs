@@ -1,10 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class PortalForDemo : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.CompareTag("Player"))
+        Debug.Log($"충돌 : {other.name}");
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("플레이어는 포탈에 들어갔습니다.");
             Managers.Scene.LoadNextScene();
+        }
     }
 }

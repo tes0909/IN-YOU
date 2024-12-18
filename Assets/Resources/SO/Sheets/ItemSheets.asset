@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemList: []
   EquipableList: []
-  ConsumableList: []
+  ConsumableList:
+  - itemId: 11
+    consumableType: 0
+    amount: 11
+    duration: 11
+    calcType: 0

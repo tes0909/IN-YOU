@@ -13,8 +13,8 @@ public class DBManager : IManager
 
     public void Init()
     {
-        LoadItemDb();
-        LoadMonsterDb();
+        //LoadItemDb();
+        //LoadMonsterDb();
     }
 
     public void Clear()
@@ -26,7 +26,7 @@ public class DBManager : IManager
     {
         T dataList = Resources.Load<T>($"{dataListDirPath}/{typeof(T).Name}");
         if (dataList == null)
-            Debug.LogError($"Failed to load {nameof(dataListDirPath)}");
+            Debug.Log($"Failed to load {nameof(dataListDirPath)}");
 
         return dataList;
     }
@@ -34,18 +34,22 @@ public class DBManager : IManager
     private void LoadItemDb()
     {
         ItemDataList itemDataList = LoadDataList<ItemDataList>();
-        foreach (ItemEntity itemEntity in itemDataList.ItemList)
-            itemDb.Add(itemEntity.id, itemEntity);
-
+        if (itemDataList != null)
+        {
+            foreach (ItemEntity itemEntity in itemDataList.ItemList)
+                itemDb.Add(itemEntity.id, itemEntity);
+        }
         Debug.Log($"Item Loaded Count : {itemDb.Count}");
     }
 
     private void LoadMonsterDb()
     {
         MonsterDataList monsterDataList = LoadDataList<MonsterDataList>();
-        foreach (MonsterEntity monsterEntity in monsterDataList.MonsterList)
-            monsterDb.Add(monsterEntity.id, monsterEntity);
-
+        if (monsterDataList != null)
+        {
+            foreach (MonsterEntity monsterEntity in monsterDataList.MonsterList)
+                monsterDb.Add(monsterEntity.id, monsterEntity);
+        }
         Debug.Log($"Monster Loaded Count : {monsterDb.Count}");
     }
 
