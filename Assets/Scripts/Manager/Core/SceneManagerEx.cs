@@ -1,23 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneManagerEx : IManager
 {
-    public SceneBase CurrentScene => GameObject.FindObjectOfType<SceneBase>();
-    public int SceneNum => SceneManager.GetActiveScene().buildIndex;
-    //public int SceneNum  => (int)GameObject.FindObjectOfType<SceneBase>().SceneType - 1;
+    public SceneBase CurrentScene => GameObject.FindObjectOfType<SceneBase>(); // 현재 씬 정보 반환
+    public int SceneNum => SceneManager.GetActiveScene().buildIndex; // 현재 씬 번호 반환
     private FadeScript fade;
 
-    public void Clear()
-    {
-
-    }
 
     public void Init()
     {
         fade = GameObject.FindObjectOfType<FadeScript>();
+    }
+    
+    public void Clear()
+    {
+
     }
 
     public void LoadScene(Defines.SceneType sceneType)
@@ -32,16 +33,32 @@ public class SceneManagerEx : IManager
         SceneManager.LoadScene(sceneType.ToString());
     }
 
+    private IEnumerator CorLoadNextScene()
+    {
+        if (fade == null)
+        {
+            fade = GameObject.FindObjectOfType<FadeScript>();
+        }
+
+        if (fade != null)
+        {
+            fade.Fade();
+            yield return new WaitForSeconds(fade.Ftime);
+        }
+        LoadScene();
+    }
+
     public void LoadNextScene()
+    {
+        Managers.Instance.StartCoroutine(CorLoadNextScene());
+    }
+
+
+    public void LoadScene()
     {
         int nextSceneNum = SceneNum + 1;
         Managers.Clear();
         SceneManager.LoadScene(nextSceneNum);
         Debug.Log(nextSceneNum);
-        if (fade == null)
-        {
-            fade = GameObject.FindObjectOfType<FadeScript>();
-        }
-        fade.Fade();
     }
 }
