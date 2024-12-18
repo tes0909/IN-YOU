@@ -19,7 +19,23 @@ public class InventoryUI : MonoBehaviour
     public TextMeshProUGUI combineInfoText;
     public ItemMixManager itemMixManager;
 
+    private void Start()
+    {
+        bagButton.onClick.AddListener(() => ShowPanel(bagPanel));
+        infoButton.onClick.AddListener(() => ShowPanel(infoPanel));
+        missionButton.onClick.AddListener(() => ShowPanel(missionPanel));
 
+        ShowPanel(bagPanel);
+    }
+
+    private void ShowPanel(GameObject panelToShow)
+    {
+        bagPanel.SetActive(false);
+        infoPanel.SetActive(false);
+        missionPanel.SetActive(false);
+
+        panelToShow.SetActive(true);
+    }
     public void UpdateBagPanel(List<ItemData> items)
     {
         UpdateInventoryUI(items, bagPanel);
