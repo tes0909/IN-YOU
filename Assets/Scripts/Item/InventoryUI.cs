@@ -24,7 +24,6 @@ public class InventoryUI : MonoBehaviour
         bagButton.onClick.AddListener(() => ShowPanel(bagPanel));
         infoButton.onClick.AddListener(() => ShowPanel(infoPanel));
         missionButton.onClick.AddListener(() => ShowPanel(missionPanel));
-
         ShowPanel(bagPanel);
     }
 
@@ -55,7 +54,7 @@ public class InventoryUI : MonoBehaviour
     {
         foreach (Transform child in panel.transform)
         {
-            Destroy(child.gameObject);
+            //Destroy(child.gameObject);
         }
         foreach (ItemData item in inventory)
         {
