@@ -97,9 +97,9 @@ public class UIManager : IManager
         popup.GetComponent<Canvas>().sortingOrder = popupOrder++;
 
         // 애니메이션 효과 없는 버전
-        popup.Open();
+        //popup.Open();
         //애니메이션 효과 있는 버전
-        //popup.Open(Defines.UIAnimationType.Bounce);
+        popup.Open(Defines.UIAnimationType.Bounce);
 
         return popup as T;
     }
