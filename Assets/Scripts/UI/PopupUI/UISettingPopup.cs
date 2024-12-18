@@ -32,7 +32,7 @@ public class UISettingPopup : UIPopupBase
         BindToggle(typeof(Toggle));
         BindSlider(typeof(Slider));
 
-        GetButton(Buttons.CloseButton).gameObject.BindEvent(() => { Close(Defines.UIAnimationType.Bounce); });
+        GetButton(Buttons.CloseButton).gameObject.BindEvent(CloseSettingUI);
         GetToggle(Toggle.MuteToggle).gameObject.BindEvent(OnMuteClick);
 
         GetSlider(Slider.BGMSlider).onValueChanged.AddListener(SetBGMVolume);
@@ -43,6 +43,13 @@ public class UISettingPopup : UIPopupBase
         Managers.Sound.PrevSoundSfxValue = GetSlider(Slider.SFXSlider).value;
 
         return true;
+    }
+
+    public void CloseSettingUI()
+    {
+        Managers.Game.ResumeGame();
+        Close(Defines.UIAnimationType.None);
+        Managers.Game.StopGame();
     }
 
     public void SetBGMVolume(float value)
