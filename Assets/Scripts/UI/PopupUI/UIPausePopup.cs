@@ -46,7 +46,6 @@ public class UIPausePopup : UIPopupBase
             EscUI.SetActive(false);
         }
     }
-
     private void Update()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
@@ -54,14 +53,14 @@ public class UIPausePopup : UIPopupBase
             TogglePauseMenu();
         }
     }
-    
+
     public void TogglePauseMenu() // UI 활성, 비활성
     {
         isPaused = !isPaused;
 
         if (EscUI != null)
         {
-            //EscUI.SetActive(isPaused);
+            EscUI.SetActive(isPaused);
         }
 
         //Time.timeScale = isPaused ? 0f : 1f; // 시간 일시정지, 복구

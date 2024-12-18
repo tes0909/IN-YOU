@@ -32,7 +32,7 @@ public class UISettingPopup : UIPopupBase
         BindToggle(typeof(Toggle));
         BindSlider(typeof(Slider));
 
-        GetButton(Buttons.CloseButton).gameObject.BindEvent(() => { Close(Defines.UIAnimationType.Bounce); });
+        GetButton(Buttons.CloseButton).gameObject.BindEvent(() => { Close(Defines.UIAnimationType.None); });
         GetToggle(Toggle.MuteToggle).gameObject.BindEvent(OnMuteClick);
 
         GetSlider(Slider.BGMSlider).onValueChanged.AddListener(SetBGMVolume);

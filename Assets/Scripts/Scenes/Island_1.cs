@@ -6,10 +6,6 @@ public class Island_1 : SceneBase
 {
     protected override void OnSceneLoad()
     {
-        Managers.UI.Init();
-        Managers.Sound.Init();
-        Managers.Resource.Init();
-        Managers.Game.Init();
         Managers.Game.CreatePlayer();
 
         Managers.UI.LoadSceneUI<UIGameScene>();
