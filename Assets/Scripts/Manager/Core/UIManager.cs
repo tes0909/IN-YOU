@@ -56,6 +56,7 @@ public class UIManager : IManager
         }
         string name = typeof(T).Name;
         GameObject go = Managers.Resource.Instantiate($"UI/Scene/{name}", Root.transform);
+        Debug.Log(name);
         if (go == null)
         {
             Debug.LogError("Failed to load scene UI : " + typeof(T).Name);
