@@ -11,7 +11,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
-        //inventoryUI.gameObject.SetActive(false);
+        inventoryUI.gameObject.SetActive(false);
     }
 
     private void Update()
