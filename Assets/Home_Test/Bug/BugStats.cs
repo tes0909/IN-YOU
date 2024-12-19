@@ -9,5 +9,5 @@ public class BugStats : ScriptableObject
     public float attackPower = 10f; 
     public float moveSpeed = 3f;
     public float aggroRange = 5f;
-    public float attackRange = 1f;
+    public float attackRange = 1.5f;
 }
