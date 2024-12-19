@@ -62,6 +62,14 @@ public class Inventory : MonoBehaviour
     }
     private void Start()
     {
+        if (inventoryUI == null)
+        {
+            inventoryUI = GetComponentInChildren<InventoryUI>();
+            if (inventoryUI == null)
+            {
+                return;
+            }
+        }
         inventoryUI.UpdateBagPanel(bagItems);
         inventoryUI.UpdateInfoPanel(infoItems);
         inventoryUI.UpdateMissionPanel(missionItems);
