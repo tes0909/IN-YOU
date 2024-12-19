@@ -47,10 +47,6 @@ public class UIPausePopup : UIPopupBase
         {
             TogglePauseMenu();
             Managers.UI.CloseAllPopup();
-            if (isPaused)
-            {
-                
-            }
         }
     }
 
