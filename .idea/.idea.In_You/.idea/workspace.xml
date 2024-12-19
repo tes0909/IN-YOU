@@ -6,19 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Portal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/Portal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Portal.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/Portal.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Square.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Square.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/ItemSheets.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/ItemSheets.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/portal-pixel-art.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/portal-pixel-art.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +125,7 @@
       <workItem from="1734397136593" duration="6456000" />
       <workItem from="1734444418341" duration="301000" />
       <workItem from="1734482185702" duration="4909000" />
+      <workItem from="1734567744677" duration="1077000" />
     </task>
     <servers />
   </component>

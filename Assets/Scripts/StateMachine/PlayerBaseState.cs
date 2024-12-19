@@ -42,9 +42,10 @@ public class PlayerBaseState : Istate
     protected virtual void AddInputActionsCallback()
     {
         PlayerController input = stateMachine.Player.input;
-        input.playerActions.Movement.canceled += OnMovementCanceld;
+        input.playerActions.Movement.performed += OnMovementCanceld;
         input.playerActions.Attack.performed += OnAttackPerformed;
         input.playerActions.PickUp.performed += OnPickUpPerformed;
+        input.playerActions.ESC.started += OnEscStarted;
     }
 
 
@@ -55,6 +56,16 @@ public class PlayerBaseState : Istate
         input.playerActions.Movement.canceled -= OnMovementCanceld;
         input.playerActions.Attack.canceled -= OnAttackCanceld;
         input.playerActions.PickUp.canceled -= OnPickUpCanceld;
+        input.playerActions.ESC.canceled -= OnEscCanceld;
+    }
+    private void OnEscStarted(InputAction.CallbackContext context)
+    {
+        stateMachine.Player.EscPopupInput();
+    }
+
+    private void OnEscCanceld(InputAction.CallbackContext context)
+    {
+        
     }
 
     private void OnPickUpPerformed(InputAction.CallbackContext context)
