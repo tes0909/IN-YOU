@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,7 +18,11 @@ public class Player : MonoBehaviour
 
     private PlayerStateMachine stateMachine;
     private bool isPlayerNearby;
-    public Item item;
+    
+    private Item item;
+    private Inventory inventory;
+    private UIPausePopup currentPausePopup;
+    private const string filePath = "Prefabs/UI/Popup/UIPausePopup";
 
     void Awake()
     {
@@ -58,20 +63,17 @@ public class Player : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Item"))
-        {
-            item = collision.GetComponent<Item>();
-        }
+        item = collision.GetComponent<Item>();
     }
-//todo: 다른방식체크, 인풋시스템점검
+    
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Item"))
+        if (item != null && collision.GetComponent<Item>() == item)
         {
             item = null;
         }
     }
-    public Inventory inventory;
+    
     public void PickUpItem()
     {
         if (item == null) return;
@@ -84,6 +86,20 @@ public class Player : MonoBehaviour
             //inventory.AddToBag(item);
             Debug.Log($"{item.itemData.itemName}을(를) 획득했습니다!");
             Destroy(item.gameObject); // 아이템 오브젝트 삭제
+        }
+    }
+    
+    public void EscPopupInput()
+    {
+        if (currentPausePopup == null)
+        {
+            UIPausePopup prefab = Resources.Load<UIPausePopup>(filePath);
+            currentPausePopup = Instantiate(prefab);
+        }
+        else
+        {
+            Destroy(currentPausePopup.gameObject);
+            currentPausePopup = null;
         }
     }
     
