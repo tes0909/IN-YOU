@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : IManager
 {
     public Player Player { get; private set; }
+    public bool IsPaused = false;
     //private MonsterSpawner monsterSpawner;
 
     public void Clear()
@@ -14,7 +16,7 @@ public class GameManager : IManager
 
     public void Init()
     {
-
+        
     }
 
     public void GameStart()
@@ -41,6 +43,28 @@ public class GameManager : IManager
         Player = player;
     }
 
+    private void Update()
+    {
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            OpenPauseUI();
+        }
+    }
+
+    public void OpenPauseUI()
+    {
+        if (!IsPaused)
+        {
+            IsPaused = true;
+            Managers.UI.ShowPopupUI<UIPausePopup>();
+        }
+        else
+        {
+            IsPaused = false;
+            Managers.UI.ClosePopupUI<UIPausePopup>();
+        }
+    }
+    
     public void GameOver()
     {
         // 실제로 게임이 종료되었을때 함수

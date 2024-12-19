@@ -15,7 +15,7 @@ public abstract class UIPopupBase : UIBase
     public override void Close(Defines.UIAnimationType type = Defines.UIAnimationType.None)
     {
         base.Close(type);
-        Invoke("CloseAfterAnimation", duration);
+        Invoke("CloseAfterAnimation", 0);//duration);
     }
 
     private void CloseAfterAnimation()

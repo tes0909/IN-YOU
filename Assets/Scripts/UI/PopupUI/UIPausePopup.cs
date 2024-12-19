@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class UIPausePopup : UIPopupBase
 {
     public GameObject EscUI;
+    UISettingPopup UISettingPopup;
 
     private bool isPaused = false; // 일시정지 상태인지
 
@@ -25,18 +26,12 @@ public class UIPausePopup : UIPopupBase
         BindButton(typeof(Buttons));
 
         GetButton(Buttons.Resume).gameObject.BindEvent(TogglePauseMenu);
-        GetButton(Buttons.Setting).gameObject.BindEvent(SettingMenu);
-        GetButton(Buttons.Save).gameObject.BindEvent(SaveCurrentCondition);
+        GetButton(Buttons.Setting).gameObject.BindEvent(OpenSettingMenu);
+        GetButton(Buttons.Save).gameObject.BindEvent(SaveGameInMenu);
         GetButton(Buttons.Load).gameObject.BindEvent(LoadSave);
         GetButton(Buttons.Quit).gameObject.BindEvent(GoToStartScene);
 
         return true;
-    }
-
-    public override void Open(Defines.UIAnimationType type = Defines.UIAnimationType.None)
-    {
-        base.Open(type);
-        Managers.Game.StopGame();
     }
 
     private void Start()
@@ -46,35 +41,39 @@ public class UIPausePopup : UIPopupBase
             EscUI.SetActive(false);
         }
     }
-
     private void Update()
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             TogglePauseMenu();
+            Managers.UI.CloseAllPopup();
+            if (isPaused)
+            {
+                
+            }
         }
     }
-    
+
     public void TogglePauseMenu() // UI 활성, 비활성
     {
         isPaused = !isPaused;
 
         if (EscUI != null)
         {
-            //EscUI.SetActive(isPaused);
+            EscUI.SetActive(isPaused);
         }
 
-        //Time.timeScale = isPaused ? 0f : 1f; // 시간 일시정지, 복구
+        Time.timeScale = isPaused ? 0f : 1f; // 시간 일시정지, 복구
     }
 
-    public void SettingMenu()
+    public void OpenSettingMenu()
     {
-        Time.timeScale = 0.1f;
+        Managers.Game.ResumeGame();
         Managers.UI.ShowPopupUI<UISettingPopup>();
-        Time.timeScale = 0f;
+        Managers.Game.StopGame();
     }
 
-    public void SaveCurrentCondition()
+    public void SaveGameInMenu()
     {
         Managers.Game.SaveGame();
     }
