@@ -58,4 +58,10 @@ public class Bug : MonoBehaviour
             Debug.Log("사망");
         }
     }
+    
+    private void OnDrawGizmos() 
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, bugStats.attackRange);
+    }
 }

@@ -18,4 +18,4 @@ MonoBehaviour:
   attackPower: 10
   moveSpeed: 2
   aggroRange: 5
-  attackRange: 1
+  attackRange: 2.2
