@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playerDialogueText;
     [SerializeField] private TextMeshProUGUI npcDialogueText;
     [SerializeField] private TextMeshProUGUI npcNameText;
+    [SerializeField] private TextMeshProUGUI tutorialText;
     
     [SerializeField] private GameObject npcDialoguePanel;
     [SerializeField] private GameObject playerDialoguePanel;
@@ -37,6 +38,8 @@ public class DialogueManager : MonoBehaviour
         else
             Destroy(gameObject);
         dialoguePanel.gameObject.SetActive(false);
+        tutorialText.text = $"W, A, S, D 키로 원장님께 이동하여 [E]키로 대화를 시도하자.";
+        //TODO: 추후 튜토리얼 panel 제작하기
     }
     
     public void StartDialogue(NPCData npcData)
@@ -46,6 +49,7 @@ public class DialogueManager : MonoBehaviour
         npcIndex = 0;
         
         dialoguePanel.SetActive(true);
+        tutorialText.gameObject.SetActive(false);
 
         // 이름 표시
        npcNameText.text = currentNPCData.npcName;
