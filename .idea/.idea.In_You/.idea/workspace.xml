@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Home_Test/Bug/Bug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Home_Test/Bug/Bug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Sprite Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Sprite Atlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Town.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Town.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Home_Test/Bug/BugAttackingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Home_Test/Bug/BugAttackingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Home_Test/Bug/BugStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Home_Test/Bug/BugStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Home_Test/ScriptableObjects/BugStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Home_Test/ScriptableObjects/BugStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/PlayerCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/PlayerCondition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <workItem from="1734567744677" duration="1077000" />
       <workItem from="1734592923207" duration="138000" />
       <workItem from="1734593255446" duration="17000" />
-      <workItem from="1734593275231" duration="615000" />
+      <workItem from="1734593275231" duration="12449000" />
     </task>
     <servers />
   </component>
@@ -159,24 +161,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Home_Test/Bug/BugChasingState.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\Unity\2D project\In_You\Assets\Home_Test\Bug\BugChasingState.cs" containingFunctionPresentation="메서드 'Update'">
-            <startOffsets>
-              <option value="374" />
-            </startOffsets>
-            <endOffsets>
-              <option value="468" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
