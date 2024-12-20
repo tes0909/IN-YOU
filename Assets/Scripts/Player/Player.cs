@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     private bool isPlayerNearby;
     
     private Item item;
-    private Inventory inventory;
+    public Inventory inventory;
     private UIPausePopup currentPausePopup;
     private const string filePath = "Prefabs/UI/Popup/UIPausePopup";
 
@@ -76,11 +76,6 @@ public class Player : MonoBehaviour
     
     public void PickUpItem()
     {
-        if (item == null) return;
-
-        if (inventory == null)
-            inventory = FindObjectOfType<Inventory>();
-        
         if (item != null && inventory != null)
         {
             //inventory.AddToBag(item);
