@@ -14,6 +14,7 @@ TagManager:
   - Facing Collider
   - Grid
   - NPC
+  - Item
   layers:
   - Default
   - TransparentFX

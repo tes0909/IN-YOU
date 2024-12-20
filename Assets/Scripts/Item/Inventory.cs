@@ -12,17 +12,17 @@ public class Inventory : MonoBehaviour
     public void AddToBag(ItemData newItem)
     {
         bagItems.Add(newItem);
-        inventoryUI.UpdateBagPanel(bagItems);
+        
     }
     public void AddToInfo(ItemData newItem)
     {
         infoItems.Add(newItem);
-        inventoryUI.UpdateInfoPanel(infoItems); 
+         
     }
     public void AddToMission(ItemData newItem)
     {
         missionItems.Add(newItem);
-        inventoryUI.UpdateMissionPanel(missionItems);
+        
     }
     public void RemoveItem(ItemData itemToRemove, string panel)
     {
@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour
                 if (bagItems.Contains(itemToRemove))
                 {
                     bagItems.Remove(itemToRemove);
-                    inventoryUI.UpdateBagPanel(bagItems);
+                   
                 }
                 break;
 
@@ -40,7 +40,7 @@ public class Inventory : MonoBehaviour
                 if (infoItems.Contains(itemToRemove))
                 {
                     infoItems.Remove(itemToRemove);
-                    inventoryUI.UpdateInfoPanel(infoItems);
+                    
                 }
                 break;
 
@@ -48,7 +48,7 @@ public class Inventory : MonoBehaviour
                 if (missionItems.Contains(itemToRemove))
                 {
                     missionItems.Remove(itemToRemove);
-                    inventoryUI.UpdateMissionPanel(missionItems);
+                   
                 }
                 break;
         }
@@ -62,9 +62,14 @@ public class Inventory : MonoBehaviour
     }
     private void Start()
     {
-        inventoryUI.UpdateBagPanel(bagItems);
-        inventoryUI.UpdateInfoPanel(infoItems);
-        inventoryUI.UpdateMissionPanel(missionItems);
+        if (inventoryUI == null)
+        {
+            inventoryUI = GetComponentInChildren<InventoryUI>();
+            if (inventoryUI == null)
+            {
+                return;
+            }
+        }
     }
 }
 

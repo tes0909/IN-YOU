@@ -19,3 +19,4 @@ MonoBehaviour:
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
+  quantity: 0

@@ -27,22 +27,4 @@ public class InventoryManager : MonoBehaviour
         inventoryUI.gameObject.SetActive(isInventoryActive);
         Debug.Log(isInventoryActive);
     }
-
-    public void AddItem(ItemData item, string panel)
-    {
-        switch (panel.ToLower())
-        {
-            case "bag":
-                inventory.AddToBag(item);
-                break;
-
-            case "info":
-                inventory.AddToInfo(item);
-                break;
-
-            case "mission":
-                inventory.AddToMission(item);
-                break;
-        }
-    }
 }
