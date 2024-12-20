@@ -23,9 +23,17 @@ public class PlayerAttackData
     [field: SerializeField] public float AttackDuration { get; private set; } = 0.7f;
 }
 
+[Serializable]
+public class PlayerStatData
+{
+    [field: SerializeField] public float MaxHealth { get; private set; } = 100f;
+    [field: SerializeField] public float CurrentHealth { get; private set; } = 100f;
+}
+
 [CreateAssetMenu(fileName = "Player", menuName = "Characters/Player")]
 public class PlayerSO : ScriptableObject
 {
     [field: SerializeField] public PlayerGroundData GroundData { get; private set; }
     [field: SerializeField] public PlayerAttackData AttackData { get; private set; }
+    [field: SerializeField] public PlayerStatData StatData { get; private set; }
 }
