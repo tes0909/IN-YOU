@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
     public void AddToBag(ItemData newItem)
     {
         bagItems.Add(newItem);
-        
+        inventoryUI.UpdateBagPanel(bagItems);
     }
     public void AddToInfo(ItemData newItem)
     {

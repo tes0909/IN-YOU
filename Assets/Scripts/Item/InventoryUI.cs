@@ -19,7 +19,7 @@ public class InventoryUI : MonoBehaviour
     public TextMeshProUGUI combineInfoText;
     public ItemMixManager itemMixManager;
 
-    private void Start()
+    public void Start()
     {
         bagButton.onClick.AddListener(() => ShowPanel(bagPanel));
         infoButton.onClick.AddListener(() => ShowPanel(infoPanel));
@@ -27,7 +27,7 @@ public class InventoryUI : MonoBehaviour
         ShowPanel(bagPanel);
     }
 
-    private void ShowPanel(GameObject panelToShow)
+    public void ShowPanel(GameObject panelToShow)
     {
         bagPanel.SetActive(false);
         infoPanel.SetActive(false);
@@ -61,19 +61,20 @@ public class InventoryUI : MonoBehaviour
             GameObject newItem = Instantiate(itemPrefab, panel.transform);
             newItem.name = item.itemName;
 
-            Image itemImage = newItem.GetComponentInChildren<Image>();
-            TMP_Text itemDescription = newItem.GetComponentInChildren<TMP_Text>();
-            Button itemButton = newItem.GetComponentInChildren<Button>();
-            TMP_Text itemQuantityText = newItem.GetComponentInChildren<TMP_Text>();
+            Image itemImage = newItem.transform.Find("ItemImage").GetComponent<Image>();
+            TMP_Text itemDescription = newItem.transform.Find("ImageDescription/Description").GetComponent<TMP_Text>();
+            TMP_Text itemQuantityText = newItem.transform.Find("ItemImage/Quantity").GetComponent<TMP_Text>();
 
-            if (itemImage != null && itemDescription != null && itemButton != null && itemQuantityText != null)
+            //Button itemButton = newItem.GetComponentInChildren<Button>();
+
+            if (itemImage != null && itemDescription != null && itemQuantityText != null) //itemButton != null  
             {
                 itemImage.sprite = item.icon;
                 itemDescription.text = item.description;
                 itemQuantityText.text = item.quantity.ToString();
 
-                itemButton.onClick.RemoveAllListeners();
-                itemButton.onClick.AddListener(() => OnItemClicked(item));
+                //itemButton.onClick.RemoveAllListeners();
+                //itemButton.onClick.AddListener(() => OnItemClicked(item));
             }
         }
     }
