@@ -118,7 +118,7 @@ public class PlayerBaseState : Istate
     {
         Vector3 movementDirection = GetMovementDirection();
         
-        applyMovement(movementDirection); // 실제 캐릭터 컨트롤러를 사용하여 이동
+        applyMovement(movementDirection);
     }
 
     private Vector2 GetMovementDirection()

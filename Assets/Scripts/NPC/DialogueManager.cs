@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Mime;
+using System.Text;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
@@ -30,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     private int npcIndex;
     private bool PlayerTurn;
     private bool canTalking = true;
+    
 
     private void Awake()
     {
@@ -38,7 +40,12 @@ public class DialogueManager : MonoBehaviour
         else
             Destroy(gameObject);
         dialoguePanel.gameObject.SetActive(false);
-        tutorialText.text = $"W, A, S, D 키로 원장님께 이동하여 [E]키로 대화를 시도하자.";
+        
+        StringBuilder sb = new StringBuilder();
+        sb.Append("W, A, S, D 키로 원장님께 이동하여 ");
+        sb.Append("[E]키로 대화를 시도하자.");
+        tutorialText.text = sb.ToString();
+        
         //TODO: 추후 튜토리얼 panel 제작하기
     }
     

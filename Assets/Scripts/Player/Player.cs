@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
     {
         if (item != null && inventory != null)
         {
-            //inventory.AddToBag(item);
+            inventory.AddToBag(item.itemData);
             Debug.Log($"{item.itemData.itemName}을(를) 획득했습니다!");
             Destroy(item.gameObject); // 아이템 오브젝트 삭제
         }
