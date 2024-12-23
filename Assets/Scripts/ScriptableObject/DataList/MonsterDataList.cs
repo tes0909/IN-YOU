@@ -14,13 +14,6 @@ public class MonsterDataList : ScriptableObject
         if (sheet is MonsterSheets monsterSheets)
         {
             monsterDataList.MonsterList = monsterSheets.MonsterList;
-            foreach (var monster in monsterDataList.MonsterList)
-            {
-                monster.skillEntities = new List<MonsterSkillEntity>();
-                foreach (var skill in monsterSheets.SkillList)
-                    if (skill.monsterId == monster.id)
-                        monster.skillEntities.Add(skill);
-            }
         }
 
         return monsterDataList;

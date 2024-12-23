@@ -5,5 +5,4 @@ using System.Collections.Generic;
 public class MonsterSheets : Sheet
 {
     public List<MonsterEntity> MonsterList;
-    public List<MonsterSkillEntity> SkillList;
 }
