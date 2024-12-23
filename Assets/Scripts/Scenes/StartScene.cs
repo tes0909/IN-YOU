@@ -6,8 +6,10 @@ public class StartScene : SceneBase
 {
     protected override void OnSceneLoad()
     {
+        Managers.UI.Init();
+        Managers.Sound.Init();
+        Managers.Game.Init();
         Managers.UI.LoadSceneUI<UIStartScene>();
-        Managers.UI.LoadSceneUI<UIGameScene>();
     }
 
     protected override void OnSceneLoaded()

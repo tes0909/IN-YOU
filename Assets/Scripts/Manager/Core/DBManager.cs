@@ -14,7 +14,7 @@ public class DBManager : IManager
     public void Init()
     {
         //LoadItemDb();
-        //LoadMonsterDb();
+        LoadMonsterDb();
     }
 
     public void Clear()

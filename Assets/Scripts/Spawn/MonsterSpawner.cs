@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //몬스터 소환 플레이어 기준 원 방향으로 NevMash 사용해서 스폰이 가능한 곳에서만 스폰 될 수 있도록 할 것
 }
