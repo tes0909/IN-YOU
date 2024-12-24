@@ -2,11 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class NPC : MonoBehaviour
 {
     public NPCData npcData; 
     private bool isPlayerNearby;
+    private SortingGroup sortingGroup;
+    private readonly int sortingOrderModifier = -10;
+
+    private void Start()
+    {
+        sortingGroup = GetComponent<SortingGroup>();
+        if (sortingGroup != null)
+        {
+            sortingGroup.sortingOrder = (int)(transform.position.y * sortingOrderModifier);
+        }
+    }
 
     private void Update()
     {
