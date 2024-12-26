@@ -25,17 +25,18 @@ public class Managers : MonoBehaviour
 
     private static void Initialize()
     {
-        if (instance == null && initialized == false)
+        if (instance == null && initialized == false) // instance가 null이거나 초기화 되지 않은 경우 실행
         {
             initialized = true;
             instance = FindObjectOfType<Managers>();
             if (instance == null)
             {
+                // managers 객체 동적 생성, 씬 전환 유지
                 instance = new GameObject($"@Managers").AddComponent<Managers>();
                 DontDestroyOnLoad(instance.gameObject);
             }
 
-            //Initialize all managers
+            // 각 매니저 초기화
             DB?.Init();
             Resource?.Init();
             Sound?.Init();
@@ -79,6 +80,7 @@ public class Managers : MonoBehaviour
         get { return Instance?._game; }
     }
 
+    // 매니저 정리 메서드
     public static void Clear()
     {
         UI?.Clear();
