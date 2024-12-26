@@ -117,7 +117,6 @@ public class UIManager : IManager
         popupOrder--;
         popup.GetComponent<Canvas>().sortingOrder = 0;
         popup.gameObject.SetActive(false);
-
     }
 
     public void CloseAllPopup()

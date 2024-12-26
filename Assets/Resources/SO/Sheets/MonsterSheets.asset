@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c36b44e369f9be4fbfef4bbef2a6463, type: 3}
+  m_Name: MonsterSheets
+  m_EditorClassIdentifier: 
+  MonsterList:
+  - id: 10001
+    displayTitle: Raven
+    description: Raven
+    level: 0
+    prefabPath: 
+    iconPath: 
+    colliderRadius: 0
+    colliderHeight: 0
+    maxHp: 0
+    moveSpeed: 0
+    staggerDamage: 0
+    attractDistance: 0
+    chasePeriod: 0
+    skillEntities: []
+  - id: 10002
+    displayTitle: Bug
+    description: Bug
+    level: 0
+    prefabPath: 
+    iconPath: 
+    colliderRadius: 0
+    colliderHeight: 0
+    maxHp: 0
+    moveSpeed: 0
+    staggerDamage: 0
+    attractDistance: 0
+    chasePeriod: 0
+    skillEntities: []
+  - id: 10003
+    displayTitle: Spider
+    description: Spider
+    level: 0
+    prefabPath: 
+    iconPath: 
+    colliderRadius: 0
+    colliderHeight: 0
+    maxHp: 0
+    moveSpeed: 0
+    staggerDamage: 0
+    attractDistance: 0
+    chasePeriod: 0
+    skillEntities: []
+  - id: 10004
+    displayTitle: RedZombie
+    description: RedZombie
+    level: 0
+    prefabPath: 
+    iconPath: 
+    colliderRadius: 0
+    colliderHeight: 0
+    maxHp: 0
+    moveSpeed: 0
+    staggerDamage: 0
+    attractDistance: 0
+    chasePeriod: 0
+    skillEntities: []
+  - id: 10005
+    displayTitle: PurpleZombie
+    description: PurpleZombie
+    level: 0
+    prefabPath: 
+    iconPath: 
+    colliderRadius: 0
+    colliderHeight: 0
+    maxHp: 0
+    moveSpeed: 0
+    staggerDamage: 0
+    attractDistance: 0
+    chasePeriod: 0
+    skillEntities: []
+  - id: 10006
+    displayTitle: CrawlZombie
+    description: CrawlZombie
+    level: 0
+    prefabPath: 
+    iconPath: 
+    colliderRadius: 0
+    colliderHeight: 0
+    maxHp: 0
+    moveSpeed: 0
+    staggerDamage: 0
+    attractDistance: 0
+    chasePeriod: 0
+    skillEntities: []
+  SkillList: []
