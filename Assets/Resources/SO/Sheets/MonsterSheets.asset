@@ -16,90 +16,85 @@ MonoBehaviour:
   - id: 10001
     displayTitle: Raven
     description: Raven
+    level: 0
     prefabPath: 
     iconPath: 
     colliderRadius: 0
     colliderHeight: 0
     maxHp: 0
     moveSpeed: 0
+    staggerDamage: 0
     attractDistance: 0
     chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    skillEntities: []
   - id: 10002
     displayTitle: Bug
     description: Bug
+    level: 0
     prefabPath: 
     iconPath: 
     colliderRadius: 0
     colliderHeight: 0
     maxHp: 0
     moveSpeed: 0
+    staggerDamage: 0
     attractDistance: 0
     chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    skillEntities: []
   - id: 10003
     displayTitle: Spider
     description: Spider
+    level: 0
     prefabPath: 
     iconPath: 
     colliderRadius: 0
     colliderHeight: 0
     maxHp: 0
     moveSpeed: 0
+    staggerDamage: 0
     attractDistance: 0
     chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    skillEntities: []
   - id: 10004
     displayTitle: RedZombie
     description: RedZombie
+    level: 0
     prefabPath: 
     iconPath: 
     colliderRadius: 0
     colliderHeight: 0
     maxHp: 0
     moveSpeed: 0
+    staggerDamage: 0
     attractDistance: 0
     chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    skillEntities: []
   - id: 10005
     displayTitle: PurpleZombie
     description: PurpleZombie
+    level: 0
     prefabPath: 
     iconPath: 
     colliderRadius: 0
     colliderHeight: 0
     maxHp: 0
     moveSpeed: 0
+    staggerDamage: 0
     attractDistance: 0
     chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    skillEntities: []
   - id: 10006
     displayTitle: CrawlZombie
     description: CrawlZombie
+    level: 0
     prefabPath: 
     iconPath: 
     colliderRadius: 0
     colliderHeight: 0
     maxHp: 0
     moveSpeed: 0
+    staggerDamage: 0
     attractDistance: 0
     chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    skillEntities: []
+  SkillList: []
