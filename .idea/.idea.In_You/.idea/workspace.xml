@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCondition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__JBR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature-JBR&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
