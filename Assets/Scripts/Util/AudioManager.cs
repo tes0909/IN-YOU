@@ -50,6 +50,11 @@ public class AudioManager : MonoBehaviour
         Destroy(audio, clip.length);
     }
 
-    
-
+    public void PlayBackgroundSound(AudioClip clip)
+    {
+        backgroundMusic.clip = clip;
+        backgroundMusic.loop = true;
+        backgroundMusic.volume = 1f;
+        backgroundMusic.Play();
+    }
 }
