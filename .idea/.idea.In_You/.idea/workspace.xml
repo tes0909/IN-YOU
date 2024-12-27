@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Down.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Left.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Right.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Idle_Up.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Walk_Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Walk_Down.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Walk_Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Walk_Left.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Walk_Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_Walk_Right.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_World.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_World.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Scene/UIStartScene.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Scene/UIStartScene.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/0_StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/0_StartScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +30,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerAttackState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/2D/Light2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/2D/Light2DManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f6a8d7b3a4f40e2811fc8b63b80c54510200/04/79552647/AudioSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b89611000504a9585efec19be4faf3b27800/b5/c6ed81cb/Animator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bff907ed581f483ab4bd129472866e971fe00/b6/3ea93fa5/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/4f/c259a23a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/d2/cca88413/MonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -36,6 +58,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
     "git-widget-placeholder": "feature-JBR",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -47,7 +70,7 @@
     "독립실행형 플레이어.Unity 시작.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="독립실행형 플레이어.Unity 시작">
+  <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Unity\2D project\In_You&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
@@ -64,10 +87,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="33832">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="33832" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -123,6 +146,7 @@
       <workItem from="1734593255446" duration="17000" />
       <workItem from="1734593275231" duration="12449000" />
       <workItem from="1734873240452" duration="1313000" />
+      <workItem from="1735260889829" duration="25632000" />
     </task>
     <servers />
   </component>
