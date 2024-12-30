@@ -64,13 +64,9 @@ public class CharacterMovement : MonoBehaviour
         // text 참조해서 flip 고정 MATHF.ABS
         //speechText.transform.localScale = isMovingRight ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
 
-        Mathf.Abs(speechText.transform.localScale.x);
-        Vector3 scale = speechText.transform.localScale;
-        scale.x = Mathf.Abs(scale.x) * (isMovingRight ? 1 : -1);
-        speechText.transform.localScale = scale;
-        
-        Debug.Log($"이건 그냥 트랜스폼 localScale: {transform.localScale.x}");
-        Debug.Log($"이건 그냥 speechText localScale: {speechText.transform.localScale.x}");
+        Vector3 speechTextscale = speechText.transform.localScale;
+        speechTextscale.x = Mathf.Abs(speechTextscale.x) * (isMovingRight ? 1 : -1);
+        speechText.transform.localScale = speechTextscale;
     }
     
   

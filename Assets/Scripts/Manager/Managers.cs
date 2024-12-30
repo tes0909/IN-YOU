@@ -87,6 +87,5 @@ public class Managers : MonoBehaviour
         Sound?.Clear();
         Game?.Clear();
     }
-
 }
 
