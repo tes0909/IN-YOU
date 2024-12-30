@@ -379,9 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c544c297b103ab489e06a9db86d8f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 1116247996}
-  backgroundMusicLists:
-  - {fileID: 8300000, guid: 397bf8c85e1a9cd428eec53e32eea669, type: 3}
 --- !u!4 &1116247995
 Transform:
   m_ObjectHideFlags: 0

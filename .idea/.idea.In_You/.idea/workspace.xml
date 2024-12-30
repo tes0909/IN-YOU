@@ -5,65 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/0_StartScene.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/0_StartScene.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Battle_Theme_Intro.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Battle_Theme_Intro.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Battle_Theme_Loop.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Battle_Theme_Loop.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Boss_Battle_Intro.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Boss_Battle_Intro.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Boss_Battle_Loop.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Boss_Battle_Loop.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Deep_Forest.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Deep_Forest.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Evil_Gloating_Intro.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Evil_Gloating_Intro.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Evil_Gloating_Loop.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Evil_Gloating_Loop.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Game Over.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Game Over.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Lullaby_Loop.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Lullaby_Loop.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Overworld_Theme.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Overworld_Theme.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Time_Cave.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Time_Cave.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Title_Screen.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Title_Screen.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Town_Theme.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Town_Theme.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Victory_Fanfare_Intro.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Victory_Fanfare_Intro.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Victory_Fanfare_Loop.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Music/Victory_Fanfare_Loop.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Hit.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Hit.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Item Confirm.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Item Confirm.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Item Discard.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Item Discard.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Item Use.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Item Use.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Menu Cancel.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Menu Cancel.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Menu Confirm.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Menu Confirm.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Menu Move.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Menu Move.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Open.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Open.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Prompt.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Prompt.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Recover.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Audio/Sounds/Recover.ogg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/CharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/AudioManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/AudioManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_World.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem2_World/Rem2_World.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/MasterMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/MasterMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/0_StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/0_StartScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
