@@ -10,6 +10,7 @@ public class StartScene : SceneBase
         Managers.Sound.Init();
         Managers.Game.Init();
         Managers.UI.LoadSceneUI<UIStartScene>();
+        Managers.Sound.PlayBGM("0_StartScene");
     }
 
     protected override void OnSceneLoaded()

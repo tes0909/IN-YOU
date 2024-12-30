@@ -5,7 +5,10 @@ using UnityEngine.Audio;
 
 public class SoundManager : IManager
 {
+    // SFX(효과음) 오디오 클립들을 저장하는 딕셔너리
     private Dictionary<string, AudioClip> sfxClips = new Dictionary<string, AudioClip>();
+    
+    // BGM(배경음악) 오디오 클립들을 저장하는 딕셔너리
     private Dictionary<string, AudioClip> bgmClips = new Dictionary<string, AudioClip>();
 
     private AudioSource _bgmSource;
@@ -15,9 +18,13 @@ public class SoundManager : IManager
         {
             if (_bgmSource == null)
             {
+                // BGM 재생용 GameObject 생성
                 GameObject bgmSourceObject = new GameObject { name = "@BGM" };
                 _bgmSource = bgmSourceObject.AddComponent<AudioSource>();
+                
+                // AudioMixer의 BGM 그룹 연결
                 _bgmSource.outputAudioMixerGroup = masterMixer?.FindMatchingGroups("BGM")[0];
+                
                 _bgmSource.loop = true;
                 Object.DontDestroyOnLoad(bgmSourceObject);
             }
@@ -32,7 +39,7 @@ public class SoundManager : IManager
     private int defaultCapacity = 10;
     private int maxSize = 20;
 
-    private bool initialized;
+    private bool initialized; // 초기화 상태 확인
 
     protected bool isSoundOn;
     protected float prevSoundSfxValue;
@@ -63,38 +70,38 @@ public class SoundManager : IManager
         set { prevSoundMasterValue = value; }
     }
 
-
+    // 사운드 매니저 초기화
     public void Init()
     {
         if (initialized) return;
 
         initialized = true;
+        
+        // 오디오 믹서 로드
         masterMixer = Managers.Resource.Load<AudioMixer>("Sounds/MasterMixer");
+       
+        // BGM 클립 로드 및 추가
         AudioClip[] bgms = Managers.Resource.LoadAll<AudioClip>("Sounds/BGM");
-
         foreach (var clip in bgms)
             bgmClips.Add(clip.name, clip);
-
         Debug.Log($"BGM Loaded Count : {bgmClips.Count}");
 
+        // SFX 클립 로드 및 추가
         AudioClip[] sfxs = Managers.Resource.LoadAll<AudioClip>("Sounds/SFX");
-
         foreach (var clip in sfxs)
             sfxClips.Add(clip.name, clip);
-
         Debug.Log($"SFX Loaded Count : {sfxClips.Count}");
 
-
+        // AudioSourcePool 초기화
         var sfxGroup = masterMixer?.FindMatchingGroups("SFX")[0];
-        // AudioSource Ǯ ����
         audioSourcePool = new AudioSourcePool(
             masterMixerGroup: sfxGroup,
             defaultCapacity: defaultCapacity,
             maxSize: maxSize
         );
 
+        PrevSoundSfxValue = 1f;
         prevSoundBgmValue = 1f;
-        prevSoundMasterValue = 1f;
         prevSoundMasterValue = 1f;
     }
     public void Clear()
@@ -102,7 +109,7 @@ public class SoundManager : IManager
         audioSourcePool?.Clear();
     }
 
-    // ��ġ ��� SFX ���
+    // SFX 재생
     public void PlaySFX(string name, Vector3 position)
     {
         if (sfxClips.TryGetValue(name, out AudioClip clip))
@@ -112,7 +119,7 @@ public class SoundManager : IManager
             source.clip = clip;
             source.Play();
 
-            // ���尡 ������ ��ȯ
+            // ���尡 ������ ��ȯ
             //Managers.Coroutine.StartCoroutine(name, ReturnSourceWhenFinished(source, clip.length));
         }
         else
@@ -121,13 +128,13 @@ public class SoundManager : IManager
         }
     }
 
-    private System.Collections.IEnumerator ReturnSourceWhenFinished(AudioSource source, float delay)
+    private IEnumerator ReturnSourceWhenFinished(AudioSource source, float delay)
     {
         yield return new WaitForSeconds(delay);
         audioSourcePool.Push(source);
     }
 
-    // BGM ��� (���� ����)
+    // BGM 재생
     public void PlayBGM(string name)
     {
         if (bgmClips.TryGetValue(name, out AudioClip clip))
@@ -146,6 +153,7 @@ public class SoundManager : IManager
         BgmSource.Stop();
     }
 
+    // SFX 볼륨 조절
     public void SetSFXVolume()
     {
         if (masterMixer == null) return;
@@ -158,6 +166,7 @@ public class SoundManager : IManager
         masterMixer.SetFloat("SFX", LinearToDecibel(volume));
     }
 
+    // BGM 볼륨 조절
     public void SetBGMVolume()
     {
         if (masterMixer == null) return;
@@ -170,6 +179,7 @@ public class SoundManager : IManager
         masterMixer.SetFloat("BGM", LinearToDecibel(volume));
     }
 
+    // Master 볼륨 조절
     public void SetMasterVolume(float volume)
     {
         if (masterMixer == null) return;
@@ -190,7 +200,7 @@ public class SoundManager : IManager
         if (linear != 0)
             dB = 20f * Mathf.Log10(linear);
         else
-            dB = -80f; // ���Ұ� ����
+            dB = -80f; // 음소거 상태
         return dB;
     }
 

@@ -66,7 +66,6 @@ public class UIPausePopup : UIPopupBase
     {
         Managers.Game.ResumeGame();
         Managers.UI.ShowPopupUI<UISettingPopup>();
-        Managers.Game.StopGame();
     }
 
     public void SaveGameInMenu()
