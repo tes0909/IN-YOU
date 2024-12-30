@@ -40,11 +40,11 @@ public class PlayerAttackState : PlayerBaseState
 
         foreach (Collider2D enemy in hitEnemy)
         {
-            //Bug bug = enemy.GetComponent<Bug>();
-            //if (bug != null)
-            //{
-            //    bug.TakeDamage(stateMachine.Player.PlayerSOData.AttackData.AttackDamage);
-            //}
+            // Bug bug = enemy.GetComponent<Bug>();
+            // if (bug != null)
+            // {
+            //     bug.TakeDamage(stateMachine.Player.PlayerSOData.AttackData.AttackDamage);
+            // }
         }
     }
 
