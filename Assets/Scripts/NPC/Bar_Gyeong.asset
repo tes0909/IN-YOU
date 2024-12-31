@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e729411de389be84383bf687a0546bd9, type: 3}
+  m_Name: Bar_Gyeong
+  m_EditorClassIdentifier: 
+  npcName: "\uACBD"
+  playerName: "\uB2F4"
+  playerDialogue:
+  - "...\uB098\uB3C4 \uB108 \uCC3E\uC73C\uB7EC \uC5F0\uBABB\uAE4C\uC9C0 \uAC14\uB2E4\uC654\uAC70\uB4E0?"
+  - "\uADF8\uB7FC~ \uB2F9\uC5F0\uD558\uC9C0"
+  - "\uADF8\uB7EC\uAC8C \uB9D0\uC774\uC57C. \uC2F1\uC22D\uC0DD\uC22D\uD558\uB124"
+  - "\uC2E4\uC5C6\uB294 \uC18C\uB9AC\uD558\uAE30\uB294. \uC6B0\uB9B0 \uD615\uC81C\uC796\uC544."
+  - "\uAC00\uC790!"
+  npcDialogue:
+  - "\uC57C, \uC5B4\uB514\uAC14\uB2E4 \uC628\uAC70\uC57C. \uD55C\uCC38 \uCC3E\uC558\uC796\uC544"
+  - "\uC900\uBE44\uB294 \uB2E4 \uB410\uC5B4?"
+  - "\uC544~\uB098\uAC00\uAE30 \uC2EB\uB2E4~"
+  - "\uC6B0\uB9AC \uB098\uAC00\uC11C\uB3C4 \uD568\uAED8\uD558\uB294\uAC70\uC57C.
+    \uC54C\uACA0\uC9C0?"
+  - "\uD6C4...\uAC00\uC790. \uBC16\uC73C\uB85C"
+  npcHeadImage: {fileID: 666718183673833869, guid: 25c66a954ad7cd441927691357c2b238,
+    type: 3}
+  npcBodyImage: {fileID: 7243568032972742785, guid: 25c66a954ad7cd441927691357c2b238,
+    type: 3}

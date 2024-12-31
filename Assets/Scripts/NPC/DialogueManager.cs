@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playerDialogueText;
     [SerializeField] private TextMeshProUGUI npcDialogueText;
     [SerializeField] private TextMeshProUGUI npcNameText;
-    [SerializeField] private TextMeshProUGUI tutorialText;
+    //[SerializeField] private TextMeshProUGUI tutorialText;
     
     [SerializeField] private GameObject npcDialoguePanel;
     [SerializeField] private GameObject playerDialoguePanel;
@@ -36,15 +36,18 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else
             Destroy(gameObject);
         dialoguePanel.gameObject.SetActive(false);
         
-        StringBuilder sb = new StringBuilder();
-        sb.Append("W, A, S, D 키로 원장님께 이동하여 ");
-        sb.Append("[E]키로 대화를 시도하자.");
-        tutorialText.text = sb.ToString();
+        // StringBuilder sb = new StringBuilder();
+        // sb.Append("W, A, S, D 키로 원장님께 이동하여 ");
+        // sb.Append("[E]키로 대화를 시도하자.");
+        //tutorialText.text = sb.ToString();
         
         //TODO: 추후 튜토리얼 panel 제작하기
     }
@@ -56,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         npcIndex = 0;
         
         dialoguePanel.SetActive(true);
-        tutorialText.gameObject.SetActive(false);
+        //tutorialText.gameObject.SetActive(false);
 
         // 이름 표시
        npcNameText.text = currentNPCData.npcName;
@@ -90,6 +93,10 @@ public class DialogueManager : MonoBehaviour
         canTalking = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
         if (PlayerTurn)
         {
+            if (currentNPCData.playerDialogue[playerIndex].Contains("Next Scene"))
+            {
+                //다음씬으로이동
+            }
             if (playerIndex < currentNPCData.playerDialogue.Length)
             {
                 playerDialogueText.text = string.Empty;
@@ -105,6 +112,10 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            if (currentNPCData.npcDialogue[playerIndex].Contains("Next Scene"))
+            {
+                //다음씬으로이동
+            }
             if (npcIndex < currentNPCData.npcDialogue.Length)
             {
                 npcDialogueText.text = string.Empty;
