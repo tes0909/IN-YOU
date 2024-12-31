@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Branch1
   description: Branch1
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: acb7132f8acfacc4b8babe1365154ac5, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0

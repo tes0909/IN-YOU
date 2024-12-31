@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: FlowerPot
   description: FlowerPot
-  icon: {fileID: 0}
+  icon: {fileID: 161794222, guid: e09a4527e4f1271488fac58fca49fd4b, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
+  quantity: 0

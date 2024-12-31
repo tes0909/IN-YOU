@@ -1,19 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ItemMixManager : MonoBehaviour
 {
     public Inventory inventory;
-    public ItemMixList itemMixList;
-    void Start()
+    private ItemMixRecipe recipe;
+    private ItemMixList mixList;
+    public CraftItemUI craftButton;
+    public int needRecipeIdx;
+
+    public TextMeshProUGUI popUpText;
+
+    private void Start()
     {
-        if (inventory == null)
+        if (IsSceneAllowed())
         {
-            inventory = FindObjectOfType<Inventory>();
+            if (inventory == null)
+            {
+                inventory = FindObjectOfType<Inventory>();
+            }
+            mixList = GetComponent<ItemMixList>();
+            recipe = mixList.itemMixRecipes[needRecipeIdx];
+            craftButton.UpdateUI(recipe);
+            HidePopUp();
+        }
+        else
+        {
+            this.enabled = false;
         }
     }
-    public bool CanCraft(ItemMixRecipe recipe)
+    private bool IsSceneAllowed()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        string[] allowedScenes = { "Intro", "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
+        return System.Array.Exists(allowedScenes, name => name == currentSceneName);
+    }
+
+    public bool CanCraft()
     {
         List<ItemData> playerInventory = inventory.bagItems;
 
@@ -31,14 +57,18 @@ public class ItemMixManager : MonoBehaviour
             }
             if (itemCount < requiredAmount)
             {
+                int missingAmount = requiredAmount - itemCount;
+                ShowPopUp(recipe.requiredItems[i].itemName + "아이템이 " + missingAmount + "개 더 필요합니다.");
                 return false;
             }
         }
+        ShowPopUp("Crafting is possible!");
         return true;
+        
     }
-    public void CraftItem(ItemMixRecipe recipe)
+    public void CraftItem()
     {
-        if (CanCraft(recipe))
+        if (CanCraft())
         {
             List<ItemData> playerInventory = inventory.missionItems;
             for (int i = 0; i < recipe.requiredItems.Count; i++)
@@ -56,9 +86,18 @@ public class ItemMixManager : MonoBehaviour
                     }
                 }
             }
-            inventory.AddToBag(recipe.resultItem);
-            inventory.inventoryUI.UpdateBagPanel(inventory.bagItems);
+            inventory.AddToInfo(recipe.resultItem);
         }
     }
- }
+    private void ShowPopUp(string message)
+    {
+        popUpText.text = message; 
+        popUpText.gameObject.SetActive(true);
+        Invoke("HidePopUp", 3f);
+    }
+    private void HidePopUp()
+    {
+        popUpText.gameObject.SetActive(false);
+    }
+}
 

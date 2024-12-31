@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Chain
   description: Chain
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 5a22bca8268e17f4b8e3557823234231, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
+  quantity: 0
