@@ -4,7 +4,7 @@ using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerBaseState : Istate
+public class PlayerBaseState : IState
 {
     public PlayerStateMachine stateMachine;
     protected readonly PlayerGroundData groundData;
@@ -85,7 +85,7 @@ public class PlayerBaseState : Istate
     private void OnAttackPerformed(InputAction.CallbackContext context)
     {
         stateMachine.Player.Animator.SetTrigger(stateMachine.Player.AnimationData.AttackParameterHash);
-        stateMachine.changeState(stateMachine.AttackState);
+        stateMachine.ChangeState(stateMachine.AttackState);
     }
 
     private void OnAttackCanceld(InputAction.CallbackContext context)

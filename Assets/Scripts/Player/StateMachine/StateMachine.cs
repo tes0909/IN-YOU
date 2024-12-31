@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Istate
+public interface IState
 {
     public void Enter();
     public void Exit();
@@ -13,9 +13,9 @@ public interface Istate
 
 public abstract class StateMachine
 {
-    protected Istate currentState;
+    protected IState currentState;
 
-    public void changeState(Istate State)
+    public void ChangeState(IState State)
     {
         currentState?.Exit();
         currentState = State;

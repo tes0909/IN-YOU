@@ -27,7 +27,7 @@ public class PlayerIdleState : PlayerBaseState
         base.Update();
         if (stateMachine.movementInput != Vector2.zero)
         {
-            stateMachine.changeState(stateMachine.WalkState);
+            stateMachine.ChangeState(stateMachine.WalkState);
         }
     }
 

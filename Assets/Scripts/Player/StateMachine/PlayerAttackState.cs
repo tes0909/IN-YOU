@@ -29,7 +29,7 @@ public class PlayerAttackState : PlayerBaseState
         base.Update();
         if (!isAttacking)
         {
-            stateMachine.changeState(stateMachine.IdleState);
+            stateMachine.ChangeState(stateMachine.IdleState);
         }
     }
 
@@ -40,11 +40,11 @@ public class PlayerAttackState : PlayerBaseState
 
         foreach (Collider2D enemy in hitEnemy)
         {
-            Bug bug = enemy.GetComponent<Bug>();
-            if (bug != null)
-            {
-                bug.TakeDamage(stateMachine.Player.PlayerSOData.AttackData.AttackDamage);
-            }
+            //Bug bug = enemy.GetComponent<Bug>();
+            //if (bug != null)
+            //{
+            //    bug.TakeDamage(stateMachine.Player.PlayerSOData.AttackData.AttackDamage);
+            //}
         }
     }
 
@@ -56,6 +56,6 @@ public class PlayerAttackState : PlayerBaseState
         isAttacking = false;
         yield return new WaitForSeconds(stateMachine.Player.PlayerSOData.AttackData.AttackCooltime);
         
-        stateMachine.changeState(stateMachine.IdleState);
+        stateMachine.ChangeState(stateMachine.IdleState);
     }
 }
