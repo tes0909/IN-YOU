@@ -11,7 +11,17 @@ public class Inventory : MonoBehaviour
     public ItemMixManager itemMixManager;
     public void AddToBag(ItemData newItem)
     {
-        bagItems.Add(newItem);
+        ItemData existingItem = bagItems.Find(item => item.itemName == newItem.itemName);
+
+        if (existingItem != null)
+        {
+            existingItem.quantity++;
+        }
+        else
+        {
+            newItem.quantity = 1;
+            bagItems.Add(newItem);
+        }
         inventoryUI.UpdateBagPanel(bagItems);
     }
     public void AddToInfo(ItemData newItem)
@@ -51,13 +61,6 @@ public class Inventory : MonoBehaviour
                    
                 }
                 break;
-        }
-    }
-    public void TryCombineItems(ItemMixRecipe recipe)
-    {
-        if (itemMixManager.CanCraft())
-        {
-            itemMixManager.CraftItem();
         }
     }
     private void Start()

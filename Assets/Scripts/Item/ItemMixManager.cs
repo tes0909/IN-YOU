@@ -62,7 +62,7 @@ public class ItemMixManager : MonoBehaviour
                 return false;
             }
         }
-        ShowPopUp("Crafting is possible!");
+        ShowPopUp("미션 성공");
         return true;
         
     }
