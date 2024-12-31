@@ -15,9 +15,7 @@ public class InventoryUI : MonoBehaviour
     public Button missionButton;
 
     public GameObject itemPrefab;
-    public GameObject combinePanel;
-    public TextMeshProUGUI combineInfoText;
-    public ItemMixManager itemMixManager;
+   
 
     public void Start()
     {
@@ -54,7 +52,7 @@ public class InventoryUI : MonoBehaviour
     {
         foreach (Transform child in panel.transform)
         {
-            //Destroy(child.gameObject);
+            
         }
         foreach (ItemData item in inventory)
         {
@@ -65,42 +63,14 @@ public class InventoryUI : MonoBehaviour
             TMP_Text itemDescription = newItem.transform.Find("ImageDescription/Description").GetComponent<TMP_Text>();
             TMP_Text itemQuantityText = newItem.transform.Find("ItemImage/Quantity").GetComponent<TMP_Text>();
 
-            //Button itemButton = newItem.GetComponentInChildren<Button>();
-
-            if (itemImage != null && itemDescription != null && itemQuantityText != null) //itemButton != null  
+            if (itemImage != null && itemDescription != null && itemQuantityText != null) 
             {
                 itemImage.sprite = item.icon;
                 itemDescription.text = item.description;
                 itemQuantityText.text = item.quantity.ToString();
 
-                //itemButton.onClick.RemoveAllListeners();
-                //itemButton.onClick.AddListener(() => OnItemClicked(item));
             }
         }
     }
-    public void OnItemClicked(ItemData item)
-    {
-        foreach (var recipe in itemMixManager.itemMixList.itemMixRecipes)
-        {
-            if (recipe.requiredItems.Exists(r => r.itemName == item.itemName))
-            {
-                if (itemMixManager.CanCraft(recipe))
-                {
-                    combinePanel.SetActive(true);
-                    combineInfoText.text = $"{item.itemName}을(를) 조합할 수 있습니다!";
-                    Button combineButton = combinePanel.GetComponentInChildren<Button>();
-                    combineButton.onClick.AddListener(() => CombineItem(recipe));
-                    combineButton.onClick.RemoveAllListeners();
-                    return;
-                }
-            }
-        }
-        combineInfoText.text = "조합할 수 없습니다.";
-    }
-
-    private void CombineItem(ItemMixRecipe recipe)
-    {
-        itemMixManager.CraftItem(recipe);
-        combinePanel.SetActive(false);
-    }
+   
 }

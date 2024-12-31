@@ -55,9 +55,9 @@ public class Inventory : MonoBehaviour
     }
     public void TryCombineItems(ItemMixRecipe recipe)
     {
-        if (itemMixManager.CanCraft(recipe))
+        if (itemMixManager.CanCraft())
         {
-            itemMixManager.CraftItem(recipe);
+            itemMixManager.CraftItem();
         }
     }
     private void Start()

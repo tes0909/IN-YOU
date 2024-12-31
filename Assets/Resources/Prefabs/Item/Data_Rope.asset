@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Rope
   description: Rope
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: fa75afd77159af54db48d2385813e8c1, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
+  quantity: 0

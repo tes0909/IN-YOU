@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: DiaryPiece
   description: DiaryPiece
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b5d712f04156a7e488484c3850298046, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
