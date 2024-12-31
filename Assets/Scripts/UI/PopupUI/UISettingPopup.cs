@@ -49,7 +49,6 @@ public class UISettingPopup : UIPopupBase
     {
         Managers.Game.ResumeGame();
         Close(Defines.UIAnimationType.None);
-        Managers.Game.StopGame();
     }
 
     public void SetBGMVolume(float value)
@@ -67,40 +66,40 @@ public class UISettingPopup : UIPopupBase
         Managers.Sound.SetMasterVolume(value);
     }
 
-    // À½¼Ò°Å ÀÌº¥Æ®
+    // ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½Ìºï¿½Æ®
     public void OnMuteClick()
     {
         if (Managers.Sound.IsSoundOn)
         {
-            // ¸ÕÀú IsSoundOn »óÅÂ¸¦ º¯°æ
+            // ï¿½ï¿½ï¿½ï¿½ IsSoundOn ï¿½ï¿½ï¿½Â¸ï¿½ ï¿½ï¿½ï¿½ï¿½
             Managers.Sound.IsSoundOn = false;
 
-            // ±× ´ÙÀ½ ½½¶óÀÌ´õ °ª º¯°æ
+            // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             GetSlider(Slider.BGMSlider).value = Managers.Sound.PrevSoundBgmValue;
             GetSlider(Slider.SFXSlider).value = Managers.Sound.PrevSoundSfxValue;
             GetSlider(Slider.MasterSlider).value = Managers.Sound.PrevSoundMasterValue;
 
-            // Á÷Á¢ º¼·ý ¼³Á¤
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             Managers.Sound.SetBGMVolume(Managers.Sound.PrevSoundBgmValue);
             Managers.Sound.SetSFXVolume(Managers.Sound.PrevSoundSfxValue);
             Managers.Sound.SetMasterVolume(Managers.Sound.PrevSoundMasterValue);
         }
         else
         {
-            // ÇöÀç °ª ÀúÀå
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             Managers.Sound.PrevSoundBgmValue = GetSlider(Slider.BGMSlider).value;
             Managers.Sound.PrevSoundSfxValue = GetSlider(Slider.SFXSlider).value;
             Managers.Sound.PrevSoundMasterValue = GetSlider(Slider.MasterSlider).value;
 
-            // IsSoundOn »óÅÂ º¯°æ
+            // IsSoundOn ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             Managers.Sound.IsSoundOn = true;
 
-            // ½½¶óÀÌ´õ °ªÀ» 0À¸·Î
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½
             GetSlider(Slider.BGMSlider).value = 0f;
             GetSlider(Slider.SFXSlider).value = 0f;
             GetSlider(Slider.MasterSlider).value = 0f;
 
-            // Á÷Á¢ º¼·ý 0À¸·Î ¼³Á¤
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             Managers.Sound.SetBGMVolume(0);
             Managers.Sound.SetSFXVolume(0);
             Managers.Sound.SetMasterVolume(0);
