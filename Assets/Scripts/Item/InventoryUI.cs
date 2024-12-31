@@ -45,12 +45,10 @@ public class InventoryUI : MonoBehaviour
     {
         foreach (ItemData item in inventory)
         {
-           
-            Transform existingItem = panel.transform.Find(item.itemName);
+            Transform existingItem = panel.transform.GetChild(0).GetChild(0).Find(item.itemName);
 
             if (existingItem != null)
             {
-               
                 TMP_Text itemQuantityText = existingItem.Find("ItemImage/Quantity").GetComponent<TMP_Text>();
                 if (itemQuantityText != null)
                 {
@@ -59,7 +57,7 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                GameObject newItem = Instantiate(itemPrefab, panel.transform);
+                GameObject newItem = Instantiate(itemPrefab, panel.transform.GetChild(0).GetChild(0));
                 newItem.name = item.itemName;
 
                 Image itemImage = newItem.transform.Find("ItemImage").GetComponent<Image>();
