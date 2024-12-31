@@ -33,7 +33,7 @@ public class ItemMixList : MonoBehaviour
             resultItem = new ItemData
             {
                 itemName = "무덤",
-                description = "너를 내 안에 묻었으니, 이건 네 무덤이 아니야.",
+                description = "너는 내 안에 있어",
                 icon = null,
                 itemType = ItemType.Info,
                 attackPower = 0,
@@ -54,7 +54,7 @@ public class ItemMixList : MonoBehaviour
             resultItem = new ItemData
             {
                 itemName = "꽃다발",
-                description = "죽은 사람에게는 꽃을 주었던 것 같은데, 이거면 괜찮겠지",
+                description = "죽은 사람에게는 꽃을 주었던 것 같은데",
                 icon = null,
                 itemType = ItemType.Info,
                 attackPower = 0,
