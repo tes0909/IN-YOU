@@ -5578,7 +5578,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneType: 3
-  npcData: {fileID: 11400000, guid: d07408cde2166b441aa451c520b5d536, type: 2}
 --- !u!1 &1525684216
 GameObject:
   m_ObjectHideFlags: 0
