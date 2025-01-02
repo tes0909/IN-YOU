@@ -12,6 +12,7 @@ public class ItemMixManager : MonoBehaviour
     public MixeditemUI mixedItemUI;
     public int needRecipeIdx;
     public TextMeshProUGUI popUpText;
+    private bool isCrafting;
     private void Start()
     {
         if (IsSceneAllowed())
@@ -59,13 +60,14 @@ public class ItemMixManager : MonoBehaviour
                 return false;
             }
         }
-        ShowPopUp("固记 己傍");
         return true;
     }
     public void CraftItem()
     {
+        if (isCrafting) return;
         if (CanCraft())
         {
+            isCrafting = true;
             List<ItemData> playerInventory = inventory.missionItems;
             for (int i = 0; i < recipe.requiredItems.Count; i++)
             {
@@ -84,7 +86,8 @@ public class ItemMixManager : MonoBehaviour
             }
             inventory.AddToInfo(recipe.resultItem);
             mixedItemUI.UpdateUI(recipe.resultItem);
-            NextMission();
+            ShowPopUp("固记 己傍");
+            Invoke("NextMission", 2f);
         }
     }
     private void ShowPopUp(string message)
