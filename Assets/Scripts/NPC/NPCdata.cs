@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewNPCData", menuName = "Dialogue/NPC Data")]
-public class NPCData : ScriptableObject
+[Serializable]
+public class DialogueData
 {
-    public string npcName;
-    public string playerName;
-    public string[] playerDialogue;
-    public string[] npcDialogue;
-    
-    public Sprite npcHeadImage;
-    public Sprite npcBodyImage;
+    public int characterIndex;
+    public string[] characterName;
+    public string[] dialogue;
+    public string[] position; //left  right
+    public string imageSprite;
+}
+
+[Serializable]
+public class DialogueInfo
+{
+    public DialogueData[] DialogueDatas;
 }

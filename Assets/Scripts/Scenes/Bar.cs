@@ -8,7 +8,7 @@ public class Bar : SceneBase
 
     protected override void OnSceneLoad()
     {
-       
+       Invoke("SetStart", 3f);
     }
 
     protected override void OnSceneLoaded()
@@ -17,5 +17,10 @@ public class Bar : SceneBase
 
     protected override void OnSceneUnload()
     {
+    }
+
+    void SetStart()
+    {
+        // DialogueManager.Instance.StartDialogue();
     }
 }

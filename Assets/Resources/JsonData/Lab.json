@@ -1,0 +1,316 @@
+﻿{
+  "Lab": [
+    {
+      "characterName": "주박사",
+      "dialogue": "반갑습니다. 성함이 '담' 맞으시죠?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "안녕하세요. 제가 맞습니다만..누구..?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "저는 ㈜리버스에서 일하고 있는 주박사 라고 합니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "경'님의 의뢰를 받아 이곳에서 당신을 기다렸지요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "저를요?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "네, 당신이 할 일이 있거든요. 여기, 의뢰인의 편지입니다. 읽어보세요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "편지",
+      "dialogue": "잘 왔네 담아. 다행이야. 잘 왔어..",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "편지",
+      "dialogue": "여기까지 온 이상 내 말을 들어줄 생각이 있다는 거겠지?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "편지",
+      "dialogue": "이곳에 있는 사람들의 도움을 받아서 내 기억을 들여다보면 좋겠어",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "편지",
+      "dialogue": "자세한건 박사님이 설명해주실거야",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "기억을..들여다본다구요? 이게 무슨..?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "설명을 해주실 수 있을까요?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그럼요. 물론이죠.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "저희 제품중에 [브레인커넥팅] 이라는 기계가 있습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "[브레인커넥팅]은 이번에 새로 나온 신제품인데,",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "죽은지 하루가 되지 않은 시체 혹은 뇌사상태에 빠져있는 사람의 머리를 열어",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "제품을 뇌에 직접적으로 연결하면 잠시동안 기억을 엿볼 수 있습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "유서를 남기지 않았거나, 기억을 보길 원하는 유족에게 도의적으로 제공될 예정이지요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "시체 혹은 뇌사상태의 '뇌'가 유족이 원하는 기억을 보여주진 않습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "지금까지의 테스트로는 뇌가 보여주는 기억은 고인이 겪었던 경험 중",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "강렬했거나 그에 버금가는 어떤 일들이었습니다만, 아직 정확하진 않습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "게다가 인간의 기억이란 대부분 완벽하지 않기에",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "어떤 부분은 흐릿하게 보이기도 하고, 중간중간 건너뛰어 지기도 합니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "당연한 말이지만 기억을 '보는' 것이기에 어떠한 간섭도 불가능하지요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "아, 뇌에 접속할 수 있는 순간은 5분 30초가 최대입니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "그런 신기술이..",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "아쉽게도 이 기술은 아직 완벽하지 않습니다. 아니면 신체의 한계..일지도 모르지만요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "지금 의뢰인께서는 생명유지장치로 간신히 연명하고 계십니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그마저도 생명유지장치로 살 수 있는 의뢰인의 살 날은 길어야 오늘..",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "이라는 것이 이곳에서 도와주시는 세 분의 의사들이 내린 판단이지요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그래서 의뢰를 받아들일 수 있었습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "…",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "브레인커넥팅은 전기적인 충격을 가해 뇌에 과부화를 겁니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그 때문에 일시적으로 뇌가 활성화되지만..",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "뇌는 이를 받아들이지 못하고 전기충격을 막기 위해 모든 신경계를 스스로 차단합니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "이 과정이 끝나면 확실하게 죽는다는 뜻이죠.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "우리는 뇌에서 나오는 이 전기신호를 영상화하여 당신께 보여드릴 겁니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "다시는 보고 싶어도 못 보는 단 한 번 뿐인 마지막 기억을 말이죠.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "이걸 그 친구가 원했다구요?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "저야 정확한 사정은 모릅니다만, 아마 그러지 않을까 싶긴 합니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "보여주고 싶었던 기억이나 남기고 싶은 말이 있지 않았을까요?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그래서 저희에게 의뢰를 하신 것으로 생각합니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "…후",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "…",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "…알겠습니다. ",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "기억이 유언인 셈이군요.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "…",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "마음의 준비는 되셨나요?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "담",
+      "dialogue": "네, 되었습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그럼 오른쪽에 보이는 여기에 누워주시면 되고,",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "시간은 말씀드린 것 처럼 5분 30초입니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "주박사",
+      "dialogue": "그럼, 잘 보고 오시기를.",
+      "position": "",
+      "imageSprite": ""
+    }
+  ]
+}

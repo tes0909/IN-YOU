@@ -14,9 +14,6 @@ public class CameraExpansion1 : MonoBehaviour
     private float initialSize;        
     private float elapsedTime = 0f;
 
-    public GameObject Talk;
-    public NPCData npcData;
-
     void Start()
     {
         initialPosition = new Vector3(0f, 0f, -5f);
@@ -41,8 +38,6 @@ public class CameraExpansion1 : MonoBehaviour
         
         mainCamera.transform.position = targetPosition;
         mainCamera.orthographicSize = targetSize;
-        yield return new WaitForSeconds(1f);
-        Talk.gameObject.SetActive(true);
-        DialogueManager.Instance.StartDialogue(npcData);
+       
     }
 }

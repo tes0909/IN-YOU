@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 
 public class NPC : MonoBehaviour
 {
-    public NPCData npcData; 
+    //public NPCData npcData; 
     private bool isPlayerNearby;
     private SortingGroup sortingGroup;
     private readonly int sortingOrderModifier = -10;
@@ -22,17 +22,17 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
-        {
-            if(DialogueManager.Instance.DialogueActive())
-            {
-                DialogueManager.Instance.NextDialogue();
-            }
-            else
-            {
-                DialogueManager.Instance.StartDialogue(npcData);
-            }
-        }
+        // if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
+        // {
+        //     if(DialogueManager.Instance.DialogueActive())
+        //     {
+        //         DialogueManager.Instance.NextDialogue();
+        //     }
+        //     else
+        //     {
+        //         DialogueManager.Instance.StartDialogue(npcData);
+        //     }
+        // }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -50,7 +50,7 @@ public class NPC : MonoBehaviour
         if (player)
         {
             isPlayerNearby = false;
-            DialogueManager.Instance.EndDialogue();
+            // DialogueManager.Instance.EndDialogue();
         }
     }
 }
