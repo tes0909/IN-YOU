@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 
 public class NPC : MonoBehaviour
 {
-    public NPCData npcData; 
+    public DialogueData dialogueData;
     private bool isPlayerNearby;
     private SortingGroup sortingGroup;
     private readonly int sortingOrderModifier = -10;
@@ -30,7 +30,7 @@ public class NPC : MonoBehaviour
             }
             else
             {
-                DialogueManager.Instance.StartDialogue(npcData);
+                DialogueManager.Instance.StartDialogue();
             }
         }
     }

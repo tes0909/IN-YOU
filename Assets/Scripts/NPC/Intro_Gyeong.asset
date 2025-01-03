@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e729411de389be84383bf687a0546bd9, type: 3}
-  m_Name: Boy
+  m_Name: Intro_Gyeong
   m_EditorClassIdentifier: 
   npcName: "\uACBD"
   playerName: "\uB2F4"
