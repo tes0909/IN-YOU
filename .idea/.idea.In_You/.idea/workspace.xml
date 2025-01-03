@@ -7,23 +7,7 @@
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Characters/Character 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Characters/Character 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bar_1/Free Japanese City Game Assets/Tilemap/Tilemap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bar_1/Free Japanese City Game Assets/Tilemap/Tilemap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Bar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Bar.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Lab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Lab.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Letter.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Letter.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/News.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/News.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DataManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPCdata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/DIaloguedata.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPCdata.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/DIaloguedata.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

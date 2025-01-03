@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
 
     public DialogueData currentDialogueData;
     public DialogueInfo currentDialogueInfo;
-    private float DOTextDelay = 1f;
+    private float DOTextDelay = 1.5f;
     private int dialogueIndex;
     private bool canTalking = true;
     private string filePath;
@@ -82,19 +82,12 @@ public class DialogueManager : MonoBehaviour
             //다음씬으로이동
         }
 
-        if (currentDialogueData.DIdx == 8)
-        {
-            disPlayImage.gameObject.SetActive(true);
-        }
+        if (currentDialogueData.DIdx == 8) disPlayImage.gameObject.SetActive(true);
+        else disPlayImage.gameObject.SetActive(false);
         
         if (dialogueIndex < currentDialogueInfo.dialogueDatas.Length)
         {
             playerDialogueText.text = string.Empty;
-
-            if (currentDialogueData.DIdx == 9)
-            {
-                
-            }
             
             if (currentDialogueData.position == "left")
             {
