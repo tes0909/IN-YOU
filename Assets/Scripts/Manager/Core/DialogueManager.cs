@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -15,13 +16,15 @@ public class DialogueManager : MonoBehaviour
     
     [SerializeField] private GameObject playerDialoguePanel;
 
-    [SerializeField] private Image npcImage;
+    [SerializeField] private Image playerImage;
 
     public DialogueData currentDialogueData;
     public DialogueInfo currentDialogueInfo;
     private float DOTextDelay = 1f;
     private int dialogueIndex;
     private bool canTalking = true;
+    private string filePath;
+    public GameObject disPlay;
 
     private void Awake()
     {
@@ -31,17 +34,22 @@ public class DialogueManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else
+        {
             Destroy(gameObject);
+        }
         playerDialoguePanel.gameObject.SetActive(false);
     }
 
-    public void StartDialogue(DialogueData dialogueData)
+    private void Start()
     {
-        currentDialogueData = dialogueData;
-        dialogueIndex = 0;
-        playerDialoguePanel.SetActive(true);
+        currentDialogueInfo = DataManager.instance.dialogueInfo;
+        filePath = "JsonData/";
+    }
 
-        npcImage.sprite = Resources.Load<Sprite>(currentDialogueData.imageSprite);
+    public void StartDialogue()
+    {
+        dialogueIndex = 0;
+        playerDialoguePanel.gameObject.SetActive(true);
        
         // 첫 대화 출력
         NextDialogue();
@@ -49,7 +57,7 @@ public class DialogueManager : MonoBehaviour
 
     public void NextDialogue()
     {
-        // 타이핑중
+        // 대화 중 타이핑 방지
         if (!canTalking)
         {
             playerDialogueText.DOComplete();
@@ -57,47 +65,46 @@ public class DialogueManager : MonoBehaviour
         }
         
         // 대화 종료
-        if (dialogueIndex >= currentDialogueInfo.DialogueDatas.Length)
+        if (dialogueIndex >= currentDialogueInfo.dialogueDatas.Length)
         {
             EndDialogue();
             return;
         }
 
+        currentDialogueData = currentDialogueInfo.dialogueDatas[dialogueIndex];
+
         // 대화 출력
         canTalking = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
         
-
-        if (currentDialogueData.dialogue[dialogueIndex].Contains("Next Scene"))
-        {
-            
-        }
-        
-        if (currentDialogueData.dialogue[dialogueIndex].Contains("Next Scene"))
+        if (currentDialogueData.dialogue.Contains("Next Scene"))
         {
             //다음씬으로이동
         }
         
-        if (dialogueIndex < currentDialogueData.dialogue.Length)
+        if (dialogueIndex < currentDialogueInfo.dialogueDatas.Length)
         {
             playerDialogueText.text = string.Empty;
-            playerDialogueText.DOText(currentDialogueData.dialogue[dialogueIndex], DOTextDelay)
-                .OnComplete(() => canTalking = true); // 완료시에만 애니메이션 활성화
-                
-            playerNameText.text = currentDialogueData.characterName[dialogueIndex];
-            
-            playerDialogueText.transform.SetAsFirstSibling();
-            dialogueIndex++;
-        }
-        
-        else if (dialogueIndex < currentDialogueData.dialogue.Length)
-        {
-            playerDialogueText.text = string.Empty;
-            playerDialogueText.DOText(currentDialogueData.dialogue[dialogueIndex], DOTextDelay)
-                .OnComplete(() => canTalking = true); // 완료시에만 애니메이션 활성화
 
-            playerNameText.text = currentDialogueData.characterName[dialogueIndex];
+            if (currentDialogueData.DIdx == 9)
+            {
                 
-            playerDialogueText.transform.SetAsLastSibling();
+            }
+            
+            if (currentDialogueData.position == "left")
+            {
+                playerDialogueText.transform.SetAsLastSibling();
+            }
+            else
+            {
+                playerDialogueText.transform.SetAsFirstSibling();
+            }
+            
+            playerDialogueText.DOText(currentDialogueData.dialogue, DOTextDelay)
+                .OnComplete(() => canTalking = true); // 완료시에만 애니메이션 활성화
+                
+            playerNameText.text = currentDialogueData.characterName;
+            string imagePath = $"{filePath}{currentDialogueData.imageSprite}";
+            playerImage.sprite = Resources.Load<Sprite>(imagePath);
             dialogueIndex++;
         }
     }

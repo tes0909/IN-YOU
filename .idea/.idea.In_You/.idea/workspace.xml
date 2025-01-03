@@ -6,20 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Characters/NPCs_UPDATED.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Characters/NPCs_UPDATED.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Characters/Character 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Characters/Character 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bar_1/Free Japanese City Game Assets/Tilemap/Tilemap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bar_1/Free Japanese City Game Assets/Tilemap/Tilemap.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Bar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Bar.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Lab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Lab.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Letter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Letter.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/News.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/News.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/Bar_Dam.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/Bar_Dam.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/Bar_Gyeong.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/Bar_Gyeong.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/Boy.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/Boy.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/DialogueManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/DialogueManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPCdata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPCdata.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPCdata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/DIaloguedata.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPCdata.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/DIaloguedata.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f6a8d7b3a4f40e2811fc8b63b80c54510200/04/79552647/AudioSource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f6a8d7b3a4f40e2811fc8b63b80c54510200/f9/66fb3283/AudioMixer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5e6ebaa7d75c4d5399dc81ecead6b43f952600/0a/879b78b2/UnityBeeDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b89611000504a9585efec19be4faf3b27800/b5/c6ed81cb/Animator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bff907ed581f483ab4bd129472866e971fe00/b6/3ea93fa5/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f7237cf7abef49bfbb552d7eb076e422174200/4f/c259a23a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
@@ -96,10 +101,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="53876">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="53876" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -162,6 +167,7 @@
       <workItem from="1735744529363" duration="2340000" />
       <workItem from="1735778361615" duration="25058000" />
       <workItem from="1735817819902" duration="465000" />
+      <workItem from="1735864608432" duration="30533000" />
     </task>
     <servers />
   </component>

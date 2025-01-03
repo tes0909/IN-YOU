@@ -38,6 +38,5 @@ public class CameraExpansion1 : MonoBehaviour
         
         mainCamera.transform.position = targetPosition;
         mainCamera.orthographicSize = targetSize;
-       
     }
 }

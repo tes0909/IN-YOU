@@ -21,6 +21,6 @@ public class Bar : SceneBase
 
     void SetStart()
     {
-        // DialogueManager.Instance.StartDialogue();
+        DialogueManager.Instance.StartDialogue();
     }
 }

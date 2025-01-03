@@ -1,5 +1,251 @@
 ﻿{
-  "Lab": [
+  "dialogueDatas": [
+    {
+      "characterName": "경",
+      "dialogue": "오랜만이야, 잘 지냈어?",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "그럼~ 잘 지냈지.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "다행이네. 그거 알아? 우리가 거길 나온지 벌써 10년이 흘렀더라.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "벌써? 시간 참 빠르네.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "그러게 말이야.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "시시콜콜한 이야기나 나누려고 부르진 않았을 것 같고, 또 무슨 자랑거리가 있어 부르셨나 그래.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "하여튼 눈치가 빨라요. 나 결혼할 것 같은 사람이 생겼어.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "너를 구제해 줄 사람이 생겼단 말이야? 어디 봐봐.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "구제는 무슨… 자, 이 사람이야.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "이쁘시네, 이름이?",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "하나.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "하나?.. 꽃? 일본 사람인가?",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "역시… 담이 넌 일본어랑 친한 것 같아. 영상을 많이 봐서 그런가? ",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "… 그거랑 상관없거든.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "다음 주에 미국으로 여행을 가려고 해. 다녀와서 소개해줄게.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "다음 주? 보자… 크리스마스 이브구나? 부럽다~ 잘 다녀와.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "뭐 갖고 싶은 건 없어? 가다가 보이면 하나쯤 사줄 수도 있는데.",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "에이, 됐어. 둘이 잘 놀다 와.",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "나 세 번은 말 안 하는거 알지? 마지막으로 물어볼게. 정말 없어?",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "담",
+      "dialogue": "크흠... 그렇게까지 말한다면야... 승리의 여신이라는 게임이 있는데 거기서 나오는 한정판 련이가 뉴욕에…",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "경",
+      "dialogue": "(마무리 멘트 필요)",
+      "position": "right",
+      "imageSprite": "Gyeong_2_3"
+    },
+    {
+      "characterName": "",
+      "dialogue": "Next Scene…",
+      "position": "left",
+      "imageSprite": "protagonist_sprite_5"
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "Breaking News,",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "긴급속보입니다.,",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "인천공항을 출발해 미국 뉴욕으로 가던 ㅁㅁ항공 보잉 530이 태평양 한가운데서 폭발을 일으켰습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "현재 미군은 해군와 군용기를 급파해 추적에 나섰습니다,",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "12월 24일 오후 8시에 출발한 이 비행기에는 한국인 27명, 일본인 3명, 미국인 17명이 탑승하고 있었으며,",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "탑승자 명단은 방송 이후 항공사와 저희 KTN 홈페이지에서 다시 확인할 수 있습니다.",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Anker",
+      "dialogue": "한국인 탑승자 명단에는 '박수연,김유민,이건호...담...",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "나의 유일한 가족이자 친구, 담에게",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "미안해 담아",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "죽기 전에야 멀리서 용기를 낸 나를 용서하길 바랄게",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "이 편지를 읽게 될 즈음이라면...",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "아마 나는 죽었을거야",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "하루가 채 지나진 않았겠지",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "너에게 부탁할 것이 하나 있어",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "우리의 약속을 잊지 않았다면..",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "편지가 발송된 곳으로 찾아와 나의 유서를 읽어주지 않겠어?",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "갑작스레 이런 부탁을 해서 미안해",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": "너 밖에 없더라구",
+      "position": "",
+      "imageSprite": ""
+    },
+    {
+      "characterName": "Letter",
+      "dialogue": " -경-",
+      "position": "",
+      "imageSprite": ""
+    },
     {
       "characterName": "주박사",
       "dialogue": "반갑습니다. 성함이 '담' 맞으시죠?",
