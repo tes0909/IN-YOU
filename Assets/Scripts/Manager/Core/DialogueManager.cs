@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -24,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private int dialogueIndex;
     private bool canTalking = true;
     private string filePath;
-    public GameObject disPlay;
+    public Image disPlayImage;
 
     private void Awake()
     {
@@ -79,6 +80,11 @@ public class DialogueManager : MonoBehaviour
         if (currentDialogueData.dialogue.Contains("Next Scene"))
         {
             //다음씬으로이동
+        }
+
+        if (currentDialogueData.DIdx == 8)
+        {
+            disPlayImage.gameObject.SetActive(true);
         }
         
         if (dialogueIndex < currentDialogueInfo.dialogueDatas.Length)

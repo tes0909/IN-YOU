@@ -3501,12 +3501,14 @@ MonoBehaviour:
   playerDialoguePanel: {fileID: 2872269502015372409}
   playerImage: {fileID: 3537880516475586487}
   currentDialogueData:
+    DIdx: 0
     characterName: 
     dialogue: 
     position: 
     imageSprite: 
   currentDialogueInfo:
     dialogueDatas: []
+  disPlayImage: {fileID: 542955494}
 --- !u!4 &707289005
 Transform:
   m_ObjectHideFlags: 0
@@ -4303,6 +4305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData:
+    DIdx: 0
     characterName: 
     dialogue: 
     position: 
@@ -4935,8 +4938,8 @@ Transform:
   m_GameObject: {fileID: 2009588761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.721, y: 3.902, z: 1.1036006}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 3.806, y: 4.092, z: 1.1036006}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
