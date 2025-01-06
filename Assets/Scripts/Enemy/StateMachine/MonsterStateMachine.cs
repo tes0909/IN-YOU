@@ -24,6 +24,5 @@ public class MonsterStateMachine : StateMachine
         ChasingState = new MonsterChasingState(this);
 
         MovementSpeed = monster.Stat.moveSpeed;
-        RotationDamping = monster.Stat.baseRotationDamping;
     }
 }

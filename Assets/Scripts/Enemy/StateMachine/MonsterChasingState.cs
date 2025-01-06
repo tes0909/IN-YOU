@@ -15,13 +15,11 @@ public class MonsterChasingState : MonsterBaseState
     {
         stateMachine.MovementSpeedModifier = groundData.WalkSpeedModifier * 1.3f;
         base.Enter();
-        StartAnimation(stateMachine.Monster.AnimationData.WalkParameterHash);
     }
 
     public override void Exit()
     {
         base.Exit();
-        StopAnimation(stateMachine.Monster.AnimationData.WalkParameterHash);
     }
 
     public override void Update()
@@ -29,7 +27,7 @@ public class MonsterChasingState : MonsterBaseState
         base.Update();
 
         LookAtPlayer();
-        stateMachine.Monster.navAgent.SetDestination(stateMachine.Target.transform.position);
+        stateMachine.Monster.NavAgent.SetDestination(stateMachine.Target.transform.position);
 
         if (!IsInChasingRange())
         {
