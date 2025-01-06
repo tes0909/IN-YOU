@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
-  m_Name: Data_FireWood1
+  m_Name: Data_test5
   m_EditorClassIdentifier: 
-  itemName: FireWood1
-  description: "\uC7A5\uC791"
-  icon: {fileID: 21300000, guid: 31bc71692c88ec445a37a9dd949d68af, type: 3}
+  itemName: Data_test5
+  description: 1111111111
+  icon: {fileID: 0}
   itemType: 2
   attackPower: 0
   healthRecovery: 0

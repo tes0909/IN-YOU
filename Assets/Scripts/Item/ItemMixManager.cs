@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-
 public class ItemMixManager : MonoBehaviour
 {
     public Inventory inventory;
     private ItemMixRecipe recipe;
     private ItemMixList mixList;
     public CraftItemUI craftButton;
+    public MixeditemUI mixedItemUI;
     public int needRecipeIdx;
-
     public TextMeshProUGUI popUpText;
-
+    private bool isCrafting;
     private void Start()
     {
         if (IsSceneAllowed())
@@ -38,7 +37,6 @@ public class ItemMixManager : MonoBehaviour
         string[] allowedScenes = { "Intro", "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
         return System.Array.Exists(allowedScenes, name => name == currentSceneName);
     }
-
     public bool CanCraft()
     {
         List<ItemData> playerInventory = inventory.bagItems;
@@ -62,14 +60,14 @@ public class ItemMixManager : MonoBehaviour
                 return false;
             }
         }
-        ShowPopUp("Crafting is possible!");
         return true;
-        
     }
     public void CraftItem()
     {
+        if (isCrafting) return;
         if (CanCraft())
         {
+            isCrafting = true;
             List<ItemData> playerInventory = inventory.missionItems;
             for (int i = 0; i < recipe.requiredItems.Count; i++)
             {
@@ -87,17 +85,32 @@ public class ItemMixManager : MonoBehaviour
                 }
             }
             inventory.AddToInfo(recipe.resultItem);
+            mixedItemUI.UpdateUI(recipe.resultItem);
+            ShowPopUp("미션 성공");
+            Invoke("NextMission", 2f);
         }
     }
     private void ShowPopUp(string message)
     {
         popUpText.text = message; 
         popUpText.gameObject.SetActive(true);
-        Invoke("HidePopUp", 3f);
+        Invoke("HidePopUp", 2f);
+    }
+    public void NextMission()
+    {
+        needRecipeIdx++;
+        if (needRecipeIdx < mixList.itemMixRecipes.Count)
+        {
+            recipe = mixList.itemMixRecipes[needRecipeIdx];
+            craftButton.UpdateUI(recipe);
+        }
+        else
+        {
+            ShowPopUp("Clear");
+        }
     }
     private void HidePopUp()
     {
         popUpText.gameObject.SetActive(false);
     }
 }
-
