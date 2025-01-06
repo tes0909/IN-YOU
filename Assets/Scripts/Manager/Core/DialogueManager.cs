@@ -6,6 +6,7 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -49,7 +50,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        dialogueIndex = 0;
+        dialogueIndex = currentDialogueData.DIdx;
         playerDialoguePanel.gameObject.SetActive(true);
        
         // 첫 대화 출력
@@ -79,7 +80,7 @@ public class DialogueManager : MonoBehaviour
         
         if (currentDialogueData.dialogue.Contains("Next Scene"))
         {
-            //다음씬으로이동
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if (currentDialogueData.DIdx == 8) disPlayImage.gameObject.SetActive(true);

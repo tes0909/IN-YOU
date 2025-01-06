@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 208658282}
   - component: {fileID: 208658281}
   - component: {fileID: 208658280}
+  - component: {fileID: 208658284}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -262,6 +263,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &208658284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208658279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1fed184a43976747a646f8153d5c3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271543896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,8 +1300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 185}
-  m_SizeDelta: {x: 854, y: 688}
+  m_AnchoredPosition: {x: -4, y: 198}
+  m_SizeDelta: {x: 1028, y: 928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &542955494
 MonoBehaviour:
@@ -4220,13 +4233,12 @@ SpriteRenderer:
   m_SortingLayerID: -642853961
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3081374114918330275, guid: 60d41c8e959b26b4e850900b1d005ce3,
-    type: 3}
+  m_Sprite: {fileID: -2145919882, guid: 60d41c8e959b26b4e850900b1d005ce3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.6875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4283,8 +4295,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 2}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 1.6875}
+    newSize: {x: 1, y: 1.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4351,7 +4363,7 @@ GameObject:
   - component: {fileID: 1291451197}
   - component: {fileID: 1291451193}
   - component: {fileID: 1291451195}
-  - component: {fileID: 1291451196}
+  - component: {fileID: 1291451198}
   m_Layer: 0
   m_Name: Dam
   m_TagString: Untagged
@@ -4486,27 +4498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8454c5401d87ca4c83ca15d1c82769b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1291451196
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291451190}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &1291451197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4552,6 +4543,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.25, y: 1.9375}
   m_EdgeRadius: 0
+--- !u!95 &1291451198
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291451190}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1359112534
 GameObject:
   m_ObjectHideFlags: 0
