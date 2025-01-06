@@ -10,6 +10,7 @@ public class ItemMixList : MonoBehaviour
     private void Awake()
     {
         Sprite campfireIcon = Resources.Load<Sprite>("Campfire36_0");
+        Sprite grave = Resources.Load<Sprite>("ExtraObjects@64x648_150");
         Sprite flowerpot = Resources.Load<Sprite>("Tilemap_66");
         Sprite olddiary = Resources.Load<Sprite>("rpg_item_icon_book_132");
 
@@ -38,7 +39,7 @@ public class ItemMixList : MonoBehaviour
             {
                 itemName = "¹«´ý",
                 description = "¹«´ý¼³¸íÅ×½ºÆ®",
-                icon = null,
+                icon = grave,
                 itemType = ItemType.Info,
                 quantity = 1
             },

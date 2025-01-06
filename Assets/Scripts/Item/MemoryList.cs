@@ -10,8 +10,6 @@ public class MemoryList : MonoBehaviour
 {
     public List<ItemData> memoryItems = new List<ItemData>();
     public Inventory inventory;
-    public TextMeshProUGUI Memory;
-    public TextMeshProUGUI Description;
     private string[] itemNames;
  
 
@@ -32,7 +30,6 @@ public class MemoryList : MonoBehaviour
             "Data_test9",
             };
         }
-
         foreach (var itemName in itemNames)
         {
             memoryItems.Add(Resources.Load<ItemData>($"Prefabs/Item/{itemName}"));
@@ -40,8 +37,6 @@ public class MemoryList : MonoBehaviour
         SceneManager.activeSceneChanged += OnSceneChanged;
     }
   
-       
-    
     private void OnDestroy()
     {
         SceneManager.activeSceneChanged -= OnSceneChanged;
@@ -72,19 +67,5 @@ public class MemoryList : MonoBehaviour
             inventory.infoItems.Add(memoryItems[9]);
         }
         inventory.inventoryUI.UpdateInfoPanel(inventory.infoItems);
-    }
-
-    private void AddToInfo(List<ItemData> items)
-    {
-        string memoryText = "";
-        string descriptionText = "";
-
-        foreach (var item in items)
-        {
-            memoryText += $"{item.itemName}\n";
-            descriptionText += $"{item.description}\n\n";
-        }
-        Memory.text = memoryText;
-        Description.text = descriptionText;
     }
 }
