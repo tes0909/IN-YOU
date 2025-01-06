@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lab : MonoBehaviour
+public class Lab : SceneBase
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public DialogueUI dialogueUI;
+
+    protected override void OnSceneLoad()
+    {  
+        Invoke("SetStart", 1f);
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnSceneLoaded()
     {
-        
+    }
+
+    protected override void OnSceneUnload()
+    {
+    }
+
+    void SetStart()
+    {
+        DialogueManager.Instance.dialogueUI = dialogueUI;
+        DialogueManager.Instance.StartDialogue();
     }
 }

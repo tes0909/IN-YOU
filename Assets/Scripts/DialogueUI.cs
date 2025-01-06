@@ -40,6 +40,13 @@ public class DialogueUI : MonoBehaviour
         if (currentDialogueData.dialogue.Contains("Next Scene"))
         {
             DialogueManager.Instance.dialogueIndex++;
+            StartCoroutine(LoadNextScene()); 
+            return; 
+        }
+        
+        IEnumerator LoadNextScene()
+        {
+            yield return new WaitForSeconds(0.5f); // Optional delay for smoother transition
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
