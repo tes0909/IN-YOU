@@ -1173,7 +1173,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc2f0c740db55b42bac0a7e7cdf0c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcData: {fileID: 0}
+  dialogueData:
+    DIdx: 0
+    characterName: 
+    dialogue: 
+    position: 
+    imageSprite: 
+    uiType: 
 --- !u!4 &439995884
 Transform:
   m_ObjectHideFlags: 0
@@ -1448,7 +1454,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &638974858
@@ -1545,7 +1551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &643317102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1738,7 +1744,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc2f0c740db55b42bac0a7e7cdf0c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcData: {fileID: 0}
+  dialogueData:
+    DIdx: 0
+    characterName: 
+    dialogue: 
+    position: 
+    imageSprite: 
+    uiType: 
 --- !u!4 &747927849
 Transform:
   m_ObjectHideFlags: 0
@@ -2485,7 +2497,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1368652551

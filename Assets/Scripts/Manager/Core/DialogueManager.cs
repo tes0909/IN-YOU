@@ -13,12 +13,13 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
-    [SerializeField] private TextMeshProUGUI playerNameText;
-    [SerializeField] private TextMeshProUGUI playerDialogueText;
+    public TextMeshProUGUI playerNameText;
+    public TextMeshProUGUI playerDialogueText;
     
-    [SerializeField] private GameObject playerDialoguePanel;
+    public GameObject playerDialoguePanel;
+    public GameObject dialoguePrefab;
 
-    [SerializeField] private Image playerImage;
+    public Image playerImage;
 
     public DialogueData currentDialogueData;
     public DialogueInfo currentDialogueInfo;
@@ -26,7 +27,7 @@ public class DialogueManager : MonoBehaviour
     private int dialogueIndex;
     private bool canTalking = true;
     private string filePath;
-    public Image disPlayImage;
+    // public Image disPlayImage;
 
     private void Awake()
     {
@@ -39,7 +40,7 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        playerDialoguePanel.gameObject.SetActive(false);
+        dialoguePrefab.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -50,8 +51,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        dialogueIndex = currentDialogueData.DIdx;
-        playerDialoguePanel.gameObject.SetActive(true);
+        dialoguePrefab.gameObject.SetActive(true);
        
         // 첫 대화 출력
         NextDialogue();
@@ -77,14 +77,24 @@ public class DialogueManager : MonoBehaviour
 
         // 대화 출력
         canTalking = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
+
+        switch (currentDialogueData.uiType)
+        {
+            case "News":
+            case "letter":
+            case "Lab":
+                LoadUI();
+                break;
+        }
         
         if (currentDialogueData.dialogue.Contains("Next Scene"))
         {
+            dialogueIndex++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (currentDialogueData.DIdx == 8) disPlayImage.gameObject.SetActive(true);
-        else disPlayImage.gameObject.SetActive(false);
+        // if (currentDialogueData.DIdx == 8) disPlayImage.gameObject.SetActive(true);
+        // else disPlayImage.gameObject.SetActive(false);
         
         if (dialogueIndex < currentDialogueInfo.dialogueDatas.Length)
         {
@@ -106,6 +116,19 @@ public class DialogueManager : MonoBehaviour
             string imagePath = $"{filePath}{currentDialogueData.imageSprite}";
             playerImage.sprite = Resources.Load<Sprite>(imagePath);
             dialogueIndex++;
+        }
+    }
+
+    public void LoadUI()
+    {
+        if (dialoguePrefab != null)
+        {
+            Destroy(dialoguePrefab);
+        }
+        GameObject uiPrefab = Resources.Load<GameObject>($"Prefabs/UI/DialogueUI/{currentDialogueData.uiType}");
+        if (uiPrefab != null) // 기존 로드된게 있으면
+        {
+            dialoguePrefab = Instantiate(uiPrefab, transform);
         }
     }
     
