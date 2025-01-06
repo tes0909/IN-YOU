@@ -28,7 +28,7 @@ public class FadeScript : MonoBehaviour
         DOTween.To(() => color, x => light2d.color = x, Color.white, Ftime);
     }
 
-    public void Fade()
+    public void FadeOut()
     {
         Color color = light2d.color;
         DOTween.To(() => color, x => light2d.color = x, Color.black, Ftime).OnComplete(() => FadeIn());

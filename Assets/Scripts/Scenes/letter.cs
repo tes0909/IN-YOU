@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class News : SceneBase
+public class letter : SceneBase
 {
     public DialogueUI dialogueUI;
-    FadeScript fade;
     protected override void OnSceneLoad()
     {
-        Invoke("SetStart", 3f);
+        Invoke("SetStart", 1f);
     }
 
     protected override void OnSceneLoaded()

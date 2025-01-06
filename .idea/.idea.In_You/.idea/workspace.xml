@@ -6,37 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/news.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Image/news.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/testimage.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Image/testimage.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Gyeong_2_3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/Gyeong_2_3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/protagonist_sprite_5.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/protagonist_sprite_5.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Bloodsilk Spider Sprite Sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Bloodsilk Spider Sprite Sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Raven_Sprite_Sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Raven_Sprite_Sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Scarab Sprite Sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Scarab Sprite Sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Web Sprite Sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Web Sprite Sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Zombie Townsfolk 1 Sprite Sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MosterPack/Zombie Townsfolk 1 Sprite Sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Player_Dialogue_Panel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/Player_Dialogue_Panel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/Bar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/Bar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/letter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/letter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/letter.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/letter.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_News.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_News.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/4_Letter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/4_Letter.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/5_Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/5_Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DontDestroyOnLoadUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DontDestroyOnLoadUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/DIaloguedata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/DIaloguedata.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/News.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/News.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/letter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerAttackState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -184,7 +167,7 @@
       <workItem from="1735817819902" duration="465000" />
       <workItem from="1735864608432" duration="30533000" />
       <workItem from="1736123817152" duration="9041000" />
-      <workItem from="1736134452899" duration="12621000" />
+      <workItem from="1736134452899" duration="23376000" />
     </task>
     <servers />
   </component>

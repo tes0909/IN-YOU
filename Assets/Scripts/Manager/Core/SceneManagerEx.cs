@@ -42,7 +42,7 @@ public class SceneManagerEx : IManager
 
         if (fade != null)
         {
-            fade.Fade();
+            fade.FadeOut();
             yield return new WaitForSeconds(fade.Ftime);
         }
         LoadScene();
