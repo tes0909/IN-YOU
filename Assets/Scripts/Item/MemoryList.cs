@@ -13,10 +13,10 @@ public class MemoryList : MonoBehaviour
     public TextMeshProUGUI Memory;
     public TextMeshProUGUI Description;
     private string[] itemNames;
+ 
 
     private void Awake()
-    {
-        
+    {    
         if (itemNames == null)
         {
             itemNames = new string[]
@@ -37,13 +37,11 @@ public class MemoryList : MonoBehaviour
         {
             memoryItems.Add(Resources.Load<ItemData>($"Prefabs/Item/{itemName}"));
         }
-
         SceneManager.activeSceneChanged += OnSceneChanged;
     }
-    private void Update()
-    {
-        gameObject.SetActive(true);
-    }
+  
+       
+    
     private void OnDestroy()
     {
         SceneManager.activeSceneChanged -= OnSceneChanged;
@@ -51,31 +49,29 @@ public class MemoryList : MonoBehaviour
 
     private void OnSceneChanged(Scene oldScene, Scene newScene)
     {
-        List<ItemData> itemsToAdd = new List<ItemData>();
-
         if (newScene.buildIndex == 1)
         {
-            itemsToAdd.Add(memoryItems[0]);
-            itemsToAdd.Add(memoryItems[1]);
-            itemsToAdd.Add(memoryItems[2]);
+            inventory.infoItems.Add(memoryItems[0]);
+            inventory.infoItems.Add(memoryItems[1]);
+            inventory.infoItems.Add(memoryItems[2]);
         }
         else if (newScene.buildIndex == 2)
         {
-            itemsToAdd.Add(memoryItems[3]);
-            itemsToAdd.Add(memoryItems[4]);
+            inventory.infoItems.Add(memoryItems[3]);
+            inventory.infoItems.Add(memoryItems[4]);
         }
         else if (newScene.buildIndex == 3)
         {
-            itemsToAdd.Add(memoryItems[5]);
-            itemsToAdd.Add(memoryItems[6]);
-            itemsToAdd.Add(memoryItems[7]);
-            itemsToAdd.Add(memoryItems[8]);
+            inventory.infoItems.Add(memoryItems[5]);
+            inventory.infoItems.Add(memoryItems[6]);
+            inventory.infoItems.Add(memoryItems[7]);
+            inventory.infoItems.Add(memoryItems[8]);
         }
         else if (newScene.buildIndex == 4)
         {
-            itemsToAdd.Add(memoryItems[9]);
+            inventory.infoItems.Add(memoryItems[9]);
         }
-        
+        inventory.inventoryUI.UpdateInfoPanel(inventory.infoItems);
     }
 
     private void AddToInfo(List<ItemData> items)
