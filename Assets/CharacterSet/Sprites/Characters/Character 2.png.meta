@@ -57,7 +57,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -148,85 +148,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gyeong_2_0
+      name: Character 2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 24
-        height: 32
+        width: 18
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f71752693638664485a072f23b2870b
-      internalID: -5523310493559919428
+      spriteID: 03ef56be61bc8624db588c0d6d37c2b6
+      internalID: 1643194401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gyeong_2_1
+      name: Character 2_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 26
         y: 0
-        width: 24
-        height: 32
+        width: 18
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5ea8adb075570b42914ce9aaea54091
-      internalID: 3210466312625128415
+      spriteID: 185b8f2cc03440b488cb025805c26054
+      internalID: -124082543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gyeong_2_2
+      name: Character 2_2
       rect:
         serializedVersion: 2
-        x: 48
+        x: 52
         y: 0
-        width: 24
-        height: 32
+        width: 16
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db34f7f8326412449ba3514d37056e47
-      internalID: 6969935306566248009
+      spriteID: c5a944dfa5fc18b43bd574085506b1ad
+      internalID: 1324732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gyeong_2_3
+      name: Character 2_3
       rect:
         serializedVersion: 2
-        x: 72
+        x: 76
         y: 0
-        width: 24
-        height: 32
+        width: 16
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33c2a0e8c3cfbd846b15f4c471cecda5
-      internalID: 3081374114918330275
+      spriteID: 6a2e3652259fcd04699aaff54a868433
+      internalID: -2145919882
       vertices: []
       indices: 
       edges: []
@@ -242,10 +242,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Gyeong_2_0: -5523310493559919428
-      Gyeong_2_1: 3210466312625128415
-      Gyeong_2_2: 6969935306566248009
-      Gyeong_2_3: 3081374114918330275
+      Character 2_0: 1643194401
+      Character 2_1: -124082543
+      Character 2_2: 1324732
+      Character 2_3: -2145919882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
