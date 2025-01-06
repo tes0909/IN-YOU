@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,1930 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84141ba74ae2ea84888b5f924ca52da5
+      internalID: -2125346368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea669ad0afa8ec41972f69db5521da0
+      internalID: 624652849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeff30e5ffab75e4f9346f73abf4f5b8
+      internalID: 245415316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a28ab6aee339fa45bfa1e1eb8fdee80
+      internalID: -1005173515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd1a875f7b1ee1458e9b9731bde3ba3
+      internalID: -62398098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d56c7d48a23f64fbc7989b13f307de
+      internalID: 343533154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afcba61bebc4eb498bcb9d38c45a3d5
+      internalID: 1952669931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 448
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf547fdb41b2a54c9094b13b19f0fc6
+      internalID: -671688329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 416
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32209911c11a26468fbe92ece115938
+      internalID: -549685515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 416
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a937afb8443b54f8cfe67c0074c599
+      internalID: 544827418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 416
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c9f79424a12534088ad0607413c83f
+      internalID: -729199009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 416
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1d9f1c3d7e82b44a48f835ee60b87e
+      internalID: -285022620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 416
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc66332a1e4314743933d1b9e5e9694d
+      internalID: -1990635428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 416
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708c43d248215bd45882201db3ffaaa6
+      internalID: 2143081957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc87298149456ef4fb6986b200279bc6
+      internalID: 1765832747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c033c642f1ed4994da96698538b92ff0
+      internalID: -143682943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f7c051fbf471d4d891658b938477f6
+      internalID: -1958008123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7773cd83dcf852a4abc43f6d3b660a89
+      internalID: 487268887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee802a6bca4a544fb450eb4efeae99e
+      internalID: 832380124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b8f54c70bc01440b8c3782abdb342d
+      internalID: -1377828102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 384
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3672f298506d0f44bb7f36f4c84e22a
+      internalID: -657058079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 352
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd624b003998b35469d6fdb8aab9f30f
+      internalID: 288795022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 352
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad20262b412935f4d9665858141de84e
+      internalID: 290352502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 352
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5f78037e1a8c340a8419793c29555f
+      internalID: 1474237565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 352
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565236504b3ed804f916284562d75d6e
+      internalID: 2081475984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 320
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974ebc4805aece84ea5b310b6be9c6a0
+      internalID: 269645541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 320
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c78cd6de47f54458e0bf8bafe274eb
+      internalID: -1519209179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 320
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e576966e767f79c4c9858106b4e61eae
+      internalID: 1330447798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 320
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c120b3e84cfb55c4a9199410a174a854
+      internalID: 169923056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 320
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1dbd920baf41684487f680819bce8ae
+      internalID: -1607426174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1682b527e42f245bcc5d6b694e553e
+      internalID: -36097869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c9bee840aea1e4483e06d88c2b5726
+      internalID: 582338300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1693050c13978c44b240b687bfed8dc
+      internalID: -1192798080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc058b0a2de3cc448c22901c720cb95
+      internalID: -714246243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efad6e0ce2154f645b26cfb2bf328a3b
+      internalID: -130259326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a02f1109064ede4ea1f6a065652dc63
+      internalID: -1736198494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 288
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10ed0049d8b1d244a788fe1329de88d
+      internalID: -1116558451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 288
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb0f9c92ec444a4a8f6f6b63643b909
+      internalID: 698303142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 256
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711ff4f19666d8b4d864210bbe2da38c
+      internalID: 350339072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 256
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05651d242cfb5834282e7889b58d1889
+      internalID: 337160787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 256
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139c8344e4cc6c84e81047e47ca17c22
+      internalID: 219663362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 256
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7011317163036245bc78d5166bb1420
+      internalID: 692894506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 256
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7457a27308be5c74bb0d34f525567762
+      internalID: -118116154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 256
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba82f2a864f45704a8e068c6c4bcc9ee
+      internalID: -650048993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 256
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39440b8f4bb88d943aed513d21f83408
+      internalID: 694836582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 256
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ee46eef16b27244a8b03931285fbaa
+      internalID: 1453910142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772dd8fa99c2fde4f9ef82296a082692
+      internalID: 1570953431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259a6437c06390341bb422adfdc9e67f
+      internalID: 1638849164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f9afef03d2aeb4cab47d914b37f8bb
+      internalID: -723355601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c04bd9c1d641d4bb741f73054447cd
+      internalID: -1073648976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f135bc644c9935a4289499b5aaec6a46
+      internalID: 188536319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac92724aef0f3754b939805525a029c8
+      internalID: -3325959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 224
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af4fc08772750643bb7d25c147e3308
+      internalID: 942046547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 192
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826965b188f08134d87bd7148d776c9a
+      internalID: -941317647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 192
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0384bd0234cdc4c935627553e413c2
+      internalID: -2007231176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 192
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a88fc36de833443a75b1187c6e0c6f
+      internalID: -525236958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 192
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ee78bafdbea5f4384f1ed1f4906745
+      internalID: -1905115625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b330eb2d5879ec54fb85e19875b4438b
+      internalID: -564970626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5bbc5ada1e2be4fbb0019a19513a21
+      internalID: 1645569303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68d8d8e96ff16c42850f187b4a209aa
+      internalID: -610473738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f63724f6faedb4684de35c75c3471b
+      internalID: 132972509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b721fe3a8ca5f53478c13bd3da1e3415
+      internalID: 1818130737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ec6d0a14904334dbf61815ac2d699f
+      internalID: 1563633990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 160
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eecf094ed99c8843baeebf5027a3ebe
+      internalID: -1329913954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 128
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ec3c62f0ddfc841983454e1cbb7098
+      internalID: -87784986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 128
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb48d1a8da433794ea2c7e5b0790b10b
+      internalID: 1743022679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 128
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234edda3742a1fd4491b9565faf5affb
+      internalID: -1710322314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 128
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199eda42c49e0c843a422454a1b2067b
+      internalID: -1400774532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 128
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4678f48dd8862804d996ce626ef63c4c
+      internalID: -1486860514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fdd05365c514248a552c0ee11b4a83
+      internalID: 85782879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf14f90c606e25f44ac99beb9df08914
+      internalID: 317549943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d38f064c561c4e4984ef171b2c1c5e6
+      internalID: -865288443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d1d1bf41bf80743b0e440efba360e8
+      internalID: 108324206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99d5dc3e49f17447bbef727e0f3f31a
+      internalID: 752456871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2458a387da5797489abe46a44432611
+      internalID: -533777775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d28d030b170b24fa6f445bc5383316
+      internalID: 345759370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b32ba7193e2db4db81b2823d5a9df0
+      internalID: -1824627403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 64
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9847266c075a4f444904b3c026700a86
+      internalID: -1430797133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360869cb55725ce4a83f674eb2dc2e02
+      internalID: 1444160651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 64
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1041989ad24256047a438d2a6e7cf3b9
+      internalID: -594548291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 64
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d0114f97187944e9924674d9cb964d
+      internalID: -468016542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 64
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec706b866d4b8b44487b402b24fdf334
+      internalID: 274168854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9161d34b6136a77409740edf759b1d40
+      internalID: 1189149356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 32
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef32d7f952296dc4b97ced1c3ec4c06c
+      internalID: -1465432785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 32
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98aeccb41bc0a2946bf71ff39b07b49c
+      internalID: -851649309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b5eb5c5af7f5d4a8027ec21e795891
+      internalID: 978253381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85e898319fbc1d4d82ee9d5aa6d2b69
+      internalID: -1092461189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bd52c1020ebc54594e4f83231c947c
+      internalID: -1955734662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie Townsfolk 1 Sprite Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee14ae87294a6e42bbe082daaeadd75
+      internalID: 1758744055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +2040,97 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zombie Townsfolk 1 Sprite Sheet_0: -2125346368
+      Zombie Townsfolk 1 Sprite Sheet_1: 624652849
+      Zombie Townsfolk 1 Sprite Sheet_10: -729199009
+      Zombie Townsfolk 1 Sprite Sheet_11: -285022620
+      Zombie Townsfolk 1 Sprite Sheet_12: -1990635428
+      Zombie Townsfolk 1 Sprite Sheet_13: 2143081957
+      Zombie Townsfolk 1 Sprite Sheet_14: 1765832747
+      Zombie Townsfolk 1 Sprite Sheet_15: -143682943
+      Zombie Townsfolk 1 Sprite Sheet_16: -1958008123
+      Zombie Townsfolk 1 Sprite Sheet_17: 487268887
+      Zombie Townsfolk 1 Sprite Sheet_18: 832380124
+      Zombie Townsfolk 1 Sprite Sheet_19: -1377828102
+      Zombie Townsfolk 1 Sprite Sheet_2: 245415316
+      Zombie Townsfolk 1 Sprite Sheet_20: -657058079
+      Zombie Townsfolk 1 Sprite Sheet_21: 288795022
+      Zombie Townsfolk 1 Sprite Sheet_22: 290352502
+      Zombie Townsfolk 1 Sprite Sheet_23: 1474237565
+      Zombie Townsfolk 1 Sprite Sheet_24: 2081475984
+      Zombie Townsfolk 1 Sprite Sheet_25: 269645541
+      Zombie Townsfolk 1 Sprite Sheet_26: -1519209179
+      Zombie Townsfolk 1 Sprite Sheet_27: 1330447798
+      Zombie Townsfolk 1 Sprite Sheet_28: 169923056
+      Zombie Townsfolk 1 Sprite Sheet_29: -1607426174
+      Zombie Townsfolk 1 Sprite Sheet_3: -1005173515
+      Zombie Townsfolk 1 Sprite Sheet_30: -36097869
+      Zombie Townsfolk 1 Sprite Sheet_31: 582338300
+      Zombie Townsfolk 1 Sprite Sheet_32: -1192798080
+      Zombie Townsfolk 1 Sprite Sheet_33: -714246243
+      Zombie Townsfolk 1 Sprite Sheet_34: -130259326
+      Zombie Townsfolk 1 Sprite Sheet_35: -1736198494
+      Zombie Townsfolk 1 Sprite Sheet_36: -1116558451
+      Zombie Townsfolk 1 Sprite Sheet_37: 698303142
+      Zombie Townsfolk 1 Sprite Sheet_38: 350339072
+      Zombie Townsfolk 1 Sprite Sheet_39: 337160787
+      Zombie Townsfolk 1 Sprite Sheet_4: -62398098
+      Zombie Townsfolk 1 Sprite Sheet_40: 219663362
+      Zombie Townsfolk 1 Sprite Sheet_41: 692894506
+      Zombie Townsfolk 1 Sprite Sheet_42: -118116154
+      Zombie Townsfolk 1 Sprite Sheet_43: -650048993
+      Zombie Townsfolk 1 Sprite Sheet_44: 694836582
+      Zombie Townsfolk 1 Sprite Sheet_45: 1453910142
+      Zombie Townsfolk 1 Sprite Sheet_46: 1570953431
+      Zombie Townsfolk 1 Sprite Sheet_47: 1638849164
+      Zombie Townsfolk 1 Sprite Sheet_48: -723355601
+      Zombie Townsfolk 1 Sprite Sheet_49: -1073648976
+      Zombie Townsfolk 1 Sprite Sheet_5: 343533154
+      Zombie Townsfolk 1 Sprite Sheet_50: 188536319
+      Zombie Townsfolk 1 Sprite Sheet_51: -3325959
+      Zombie Townsfolk 1 Sprite Sheet_52: 942046547
+      Zombie Townsfolk 1 Sprite Sheet_53: -941317647
+      Zombie Townsfolk 1 Sprite Sheet_54: -2007231176
+      Zombie Townsfolk 1 Sprite Sheet_55: -525236958
+      Zombie Townsfolk 1 Sprite Sheet_56: -1905115625
+      Zombie Townsfolk 1 Sprite Sheet_57: -564970626
+      Zombie Townsfolk 1 Sprite Sheet_58: 1645569303
+      Zombie Townsfolk 1 Sprite Sheet_59: -610473738
+      Zombie Townsfolk 1 Sprite Sheet_6: 1952669931
+      Zombie Townsfolk 1 Sprite Sheet_60: 132972509
+      Zombie Townsfolk 1 Sprite Sheet_61: 1818130737
+      Zombie Townsfolk 1 Sprite Sheet_62: 1563633990
+      Zombie Townsfolk 1 Sprite Sheet_63: -1329913954
+      Zombie Townsfolk 1 Sprite Sheet_64: -87784986
+      Zombie Townsfolk 1 Sprite Sheet_65: 1743022679
+      Zombie Townsfolk 1 Sprite Sheet_66: -1710322314
+      Zombie Townsfolk 1 Sprite Sheet_67: -1400774532
+      Zombie Townsfolk 1 Sprite Sheet_68: -1486860514
+      Zombie Townsfolk 1 Sprite Sheet_69: 85782879
+      Zombie Townsfolk 1 Sprite Sheet_7: -671688329
+      Zombie Townsfolk 1 Sprite Sheet_70: 317549943
+      Zombie Townsfolk 1 Sprite Sheet_71: -865288443
+      Zombie Townsfolk 1 Sprite Sheet_72: 108324206
+      Zombie Townsfolk 1 Sprite Sheet_73: 752456871
+      Zombie Townsfolk 1 Sprite Sheet_74: -533777775
+      Zombie Townsfolk 1 Sprite Sheet_75: 345759370
+      Zombie Townsfolk 1 Sprite Sheet_76: -1824627403
+      Zombie Townsfolk 1 Sprite Sheet_77: -1430797133
+      Zombie Townsfolk 1 Sprite Sheet_78: 1444160651
+      Zombie Townsfolk 1 Sprite Sheet_79: -594548291
+      Zombie Townsfolk 1 Sprite Sheet_8: -549685515
+      Zombie Townsfolk 1 Sprite Sheet_80: -468016542
+      Zombie Townsfolk 1 Sprite Sheet_81: 274168854
+      Zombie Townsfolk 1 Sprite Sheet_82: 1189149356
+      Zombie Townsfolk 1 Sprite Sheet_83: -1465432785
+      Zombie Townsfolk 1 Sprite Sheet_84: -851649309
+      Zombie Townsfolk 1 Sprite Sheet_85: 978253381
+      Zombie Townsfolk 1 Sprite Sheet_86: -1092461189
+      Zombie Townsfolk 1 Sprite Sheet_87: -1955734662
+      Zombie Townsfolk 1 Sprite Sheet_88: 1758744055
+      Zombie Townsfolk 1 Sprite Sheet_89: -1976645542
+      Zombie Townsfolk 1 Sprite Sheet_9: 544827418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

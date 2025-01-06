@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,2287 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 544
+        width: 15
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4971a263d6ccea44abd358a8b726c212
+      internalID: -19654440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 544
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7154ce0b54a1b434d87adbd840c0ea21
+      internalID: 1654604799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 544
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbd50c1b55a44241bf89214c3745368
+      internalID: -132509749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 544
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eac9fe9491142147b2fe4376c3e195d
+      internalID: 1095201856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 544
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ec2846f7cba074cab47e309b110015
+      internalID: 863362546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 544
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbeef714d8bdbc941af440386bc12c2a
+      internalID: 148919739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 544
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ed4c500b618764594eb187ff73e3a4
+      internalID: -399711747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 544
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e7bb2ae4fa2df41835a380c8ab48ae
+      internalID: 47205635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 512
+        width: 15
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e8bd766f4064140b1baa58a2daeab8
+      internalID: 1105283789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 513
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f7612e4b2d8fe4da3676d8725331ef
+      internalID: 1104650602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 514
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8dd571a05cd6c4bb9172ff729af55f
+      internalID: -980443058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 512
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae2ccc9ee8956744860f86f497c9715
+      internalID: -75188018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 480
+        width: 13
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e2d48b7a4d1874b8d5e49ce8bb87aa
+      internalID: 1562844895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 480
+        width: 12
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724b967a75e9107469fa24658480df37
+      internalID: -1963139561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 480
+        width: 22
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45495922a9dfaa44191685b10172abcf
+      internalID: 407966433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 480
+        width: 17
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808f7cde71709a5439980e8eeb93fee6
+      internalID: -1554053204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 480
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a842f2c5fc57a4aab8883e863d4131
+      internalID: -1021241962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 448
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2294d92030bffa0428f48c6ff46cff17
+      internalID: 1274161612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 449
+        width: 18
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47c2f4f48a0ff74580a20a7d753679d
+      internalID: -1679287355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 448
+        width: 15
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaa1cf88cb906344a83095c4c56afcf
+      internalID: 791450805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 448
+        width: 13
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad3f5d12d820e540afe15cddf1b84d2
+      internalID: 1496734063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 416
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356c03904ab5fb94e9f01c715e14c523
+      internalID: 608254511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 417
+        width: 18
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7265be58610a3478c6102c284d0fc8
+      internalID: -1027715053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 416
+        width: 15
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d05cd5db0a264a990b8160a4c62f7
+      internalID: -156440566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 416
+        width: 15
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58447368dc2e4314a8806e6154a71c72
+      internalID: -698710904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 416
+        width: 17
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9992ed8aff46a4347987df8a3df5700e
+      internalID: -939575690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef733b0e1aabb940b25b9ce444871c5
+      internalID: -2030374458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 387
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537ebb18d4cd7984886b1390d3f2b563
+      internalID: -510157733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 387
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a304b893fdea56644b8b911e4906865c
+      internalID: -1152084997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 387
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582518eac1de01542b1352c49b664d90
+      internalID: -144169319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 387
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be45191e1e4056344a5d382b89240660
+      internalID: -2065707666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 360
+        width: 20
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1453e0a2dd57cd64e926b5a8ff8fe77d
+      internalID: 1121454684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 359
+        width: 19
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce8553c34e371f4aaf500686df11c1e
+      internalID: 1028156724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 357
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831a9902959f2ae42ae58b2f80c1843c
+      internalID: -1794074794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 358
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99978448da1649f4a91f5773feed03e7
+      internalID: 2137462552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 363
+        width: 16
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3115d5bf6efd7904384a4872240e7223
+      internalID: 1169031507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 324
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fb095dfc9e6bf409e4e6e15b3d5408
+      internalID: -896126300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 324
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb5f061fddb26e4291ddc6b78892094
+      internalID: -1633446683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 324
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c59cea73981725439c0d8951bdcc8c8
+      internalID: 1298478270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 324
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea0202976675ce48a1c9edc0a2649f8
+      internalID: 1751209956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 324
+        width: 27
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7865b8d286b504d48aea43149471c711
+      internalID: -1469924120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 316
+        width: 30
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d8687d3facee34987aa9abd8b21251
+      internalID: 1623471605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 316
+        width: 30
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8380151dfc9fbe42883f6cdddeaea13
+      internalID: 1100703516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 289
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e7e3d7e31c1d149bbb3a071dffe0c4
+      internalID: 225419327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 288
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edd177f887509b45810fa64caea3489
+      internalID: 64599917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 289
+        width: 16
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382b659717950c14097fda576cf8038d
+      internalID: -1972899946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 288
+        width: 18
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c539c58c699582448cc6b269a2a9e40
+      internalID: 398045275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 288
+        width: 15
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6df06d999539b48a9949e60b900a39
+      internalID: 675824867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 288
+        width: 15
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa9bb32ee9b4014dae0ac619bfce479
+      internalID: -1430211178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 288
+        width: 17
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea57de7da0bb354bac96755f2595a7f
+      internalID: 1183738202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 256
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb9804d40c60b44cb481eaa4b32e6b6
+      internalID: 1752996102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 256
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9072383d49331b54784f219d6a7b4d8f
+      internalID: 1701515056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 256
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4082b28a3d8035f42ab5e3cc60db31db
+      internalID: -474319908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 256
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52e4fef6f5b0ed4fac58bb5fbe56be7
+      internalID: -439558667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 256
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460ef7d599e795548ae4874895bcdbc9
+      internalID: -536762335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 256
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bdae833aab9db47884336a7eb40e66
+      internalID: -1771373933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 256
+        width: 14
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96216d981a5d4a14abec19fbcbf1c4c7
+      internalID: -419473259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 256
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad3333f55a843f4fac6b0b9090ea62e
+      internalID: -31059522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 224
+        width: 15
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a6a53baf5665e4db5aaf6be8d03d6d
+      internalID: 574902666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 225
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f53c73603a4e48af73723291d0e51
+      internalID: 1770860474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 226
+        width: 16
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246457058c8634e4582f8a4f057d999b
+      internalID: -61365373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 224
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a8024dfb3a03e4980af54602b80a60
+      internalID: 758943759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 192
+        width: 13
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b17542760401604caebe9b6f17fe1f4
+      internalID: -925033328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 192
+        width: 12
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4db43428b6463049bf2fe6c119e50ce
+      internalID: 1784932221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 192
+        width: 22
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b393aaf0d7d0794ca43390bb8641444
+      internalID: -612426140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 192
+        width: 17
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2076b6f21f6a82448a8acdaedbf25278
+      internalID: 2018701954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 192
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae3182f3aaae064694d6bb1c465a51c
+      internalID: -75815969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 160
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75b9c1a6990ec744b4bfff3ee35c586
+      internalID: 708107302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 161
+        width: 18
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235600769a2d7d6448c22c1db0b6d0f2
+      internalID: 636747711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 160
+        width: 15
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a7e07e30a3b294ba274bab0c6f3ef3
+      internalID: -918862923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 160
+        width: 13
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e62dbfe5c16a04a91b999baf2622c5
+      internalID: 598723131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 128
+        width: 15
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b5ee3de66443e4d8b84978ef2d073f
+      internalID: 996261282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 129
+        width: 18
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9670e0231d4006f4e98980a0efaa6740
+      internalID: -2126802130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 128
+        width: 15
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e009cfbeb55613438d45180648d6544
+      internalID: -1110063740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 128
+        width: 15
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de47fb76fdf80a14fa45edb9dbf414d5
+      internalID: 252073636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 128
+        width: 17
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f39129a463c0af489fa7f6d459113db
+      internalID: 925525685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 20
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9df26cf59706634493f1e6e24b553a8
+      internalID: 968336472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 103
+        width: 19
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c540dfdcf4b46f48812f265d7a7c90c
+      internalID: 399484641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 101
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc4194f029b5a144ab8b13c36fc8fda
+      internalID: -1246108220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 102
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bb10d367cef8642be8f0818997042a
+      internalID: 1205187613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 105
+        width: 16
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbeffd3ce5cd86b48af7274eea18aefd
+      internalID: -1948716573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 72
+        width: 20
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f99356b2909fbc4b9b1dbdd20ca822e
+      internalID: 555110634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 71
+        width: 19
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a9d7100ac092144a2fe048fcdc8093
+      internalID: -398971410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 69
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29293ffe0ab31ea4a9c5f4e42ee83b00
+      internalID: 132460768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 70
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8baae0849b82f2f419b656bea60bf6a0
+      internalID: 239389675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 74
+        width: 16
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f11bb1de1d5db4fbd505812f2edee6
+      internalID: -674789756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 20
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1741986d94d56a44a9fa3d79cb6dc83a
+      internalID: 772190201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 39
+        width: 19
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55ef0c4722b60e48b06271b8b3969c5
+      internalID: -699676791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 39
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f92bf701d6e2e47a5d4e11dff80696
+      internalID: 2072507398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 42
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8b174601510aa4f9c9db2380aca732
+      internalID: -1033156540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 45
+        width: 20
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcc3df93b76586409e1ef61f9751802
+      internalID: 2029544094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 46
+        width: 18
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a6af6bacf44eb45a5a7b3ab9ef280f
+      internalID: -375734684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 38
+        width: 17
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a257023f42c8154db49526048c1ae7c
+      internalID: -949041744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 37
+        width: 17
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51011e313071ffd42ae94bc653cc82ca
+      internalID: -509559677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 35
+        width: 20
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba13ae283fa454459250b5c47d52a78
+      internalID: 1030438145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 33
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afad89c94303fe42b26e173c1a5abbf
+      internalID: 1526731407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c92d08087da804e9ad49671e5f6f84
+      internalID: 902692529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 16
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8b03583293c5843964379b45e170af
+      internalID: -986472852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1
+        width: 16
+        height: 13
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48934d622210e945a1997557505c59a
+      internalID: 159831821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 18
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5ebbf82fba1d54fafaec86735c1f15
+      internalID: -682002364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 15
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2369e6459b5611a419fa79c769c15d3d
+      internalID: -875979295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 15
+        height: 8
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a022be5ef71f9294c9c4d496e4f88d3a
+      internalID: 1770622444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 17
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a772ae215668445874edcb12c4ee7b
+      internalID: 797710073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dade0eac7be088a4a84e8d3a76fb5d89
+      internalID: -1276414112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 324
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b8e03f33ad6944982e3d37f194b8b3
+      internalID: -176442445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_Sprite_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 324
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e067b2ce3670445479e00279bf7b24c2
+      internalID: 1834271989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +2397,113 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Raven_Sprite_Sheet_0: -19654440
+      Raven_Sprite_Sheet_1: 1654604799
+      Raven_Sprite_Sheet_10: -980443058
+      Raven_Sprite_Sheet_100: -986472852
+      Raven_Sprite_Sheet_101: 159831821
+      Raven_Sprite_Sheet_102: -682002364
+      Raven_Sprite_Sheet_103: -875979295
+      Raven_Sprite_Sheet_104: 1770622444
+      Raven_Sprite_Sheet_105: 797710073
+      Raven_Sprite_Sheet_11: -75188018
+      Raven_Sprite_Sheet_12: 1562844895
+      Raven_Sprite_Sheet_13: -1963139561
+      Raven_Sprite_Sheet_14: 407966433
+      Raven_Sprite_Sheet_15: -1554053204
+      Raven_Sprite_Sheet_16: -1021241962
+      Raven_Sprite_Sheet_17: 1274161612
+      Raven_Sprite_Sheet_18: -1679287355
+      Raven_Sprite_Sheet_19: 791450805
+      Raven_Sprite_Sheet_2: -132509749
+      Raven_Sprite_Sheet_20: 1496734063
+      Raven_Sprite_Sheet_21: 608254511
+      Raven_Sprite_Sheet_22: -1027715053
+      Raven_Sprite_Sheet_23: -156440566
+      Raven_Sprite_Sheet_24: -698710904
+      Raven_Sprite_Sheet_25: -939575690
+      Raven_Sprite_Sheet_26: -2030374458
+      Raven_Sprite_Sheet_27: -510157733
+      Raven_Sprite_Sheet_28: -1152084997
+      Raven_Sprite_Sheet_29: -144169319
+      Raven_Sprite_Sheet_3: 1095201856
+      Raven_Sprite_Sheet_30: -2065707666
+      Raven_Sprite_Sheet_31: 1121454684
+      Raven_Sprite_Sheet_32: 1028156724
+      Raven_Sprite_Sheet_33: -1794074794
+      Raven_Sprite_Sheet_34: 2137462552
+      Raven_Sprite_Sheet_35: 1169031507
+      Raven_Sprite_Sheet_36: -1276414112
+      Raven_Sprite_Sheet_37: -896126300
+      Raven_Sprite_Sheet_38: 1834271989
+      Raven_Sprite_Sheet_39: -1633446683
+      Raven_Sprite_Sheet_4: 863362546
+      Raven_Sprite_Sheet_40: 1106665113
+      Raven_Sprite_Sheet_41: 1298478270
+      Raven_Sprite_Sheet_42: 1751209956
+      Raven_Sprite_Sheet_43: -1469924120
+      Raven_Sprite_Sheet_44: 1623471605
+      Raven_Sprite_Sheet_45: 1100703516
+      Raven_Sprite_Sheet_46: 225419327
+      Raven_Sprite_Sheet_47: 64599917
+      Raven_Sprite_Sheet_48: -1972899946
+      Raven_Sprite_Sheet_49: 398045275
+      Raven_Sprite_Sheet_5: 148919739
+      Raven_Sprite_Sheet_50: 675824867
+      Raven_Sprite_Sheet_51: -1430211178
+      Raven_Sprite_Sheet_52: 1183738202
+      Raven_Sprite_Sheet_53: 1752996102
+      Raven_Sprite_Sheet_54: 1701515056
+      Raven_Sprite_Sheet_55: -474319908
+      Raven_Sprite_Sheet_56: -439558667
+      Raven_Sprite_Sheet_57: -536762335
+      Raven_Sprite_Sheet_58: -1771373933
+      Raven_Sprite_Sheet_59: -419473259
+      Raven_Sprite_Sheet_6: -399711747
+      Raven_Sprite_Sheet_60: -31059522
+      Raven_Sprite_Sheet_61: 574902666
+      Raven_Sprite_Sheet_62: 1770860474
+      Raven_Sprite_Sheet_63: -61365373
+      Raven_Sprite_Sheet_64: 758943759
+      Raven_Sprite_Sheet_65: -925033328
+      Raven_Sprite_Sheet_66: 1784932221
+      Raven_Sprite_Sheet_67: -612426140
+      Raven_Sprite_Sheet_68: 2018701954
+      Raven_Sprite_Sheet_69: -75815969
+      Raven_Sprite_Sheet_7: 47205635
+      Raven_Sprite_Sheet_70: 708107302
+      Raven_Sprite_Sheet_71: 636747711
+      Raven_Sprite_Sheet_72: -918862923
+      Raven_Sprite_Sheet_73: 598723131
+      Raven_Sprite_Sheet_74: 996261282
+      Raven_Sprite_Sheet_75: -2126802130
+      Raven_Sprite_Sheet_76: -1110063740
+      Raven_Sprite_Sheet_77: 252073636
+      Raven_Sprite_Sheet_78: 925525685
+      Raven_Sprite_Sheet_79: 968336472
+      Raven_Sprite_Sheet_8: 1105283789
+      Raven_Sprite_Sheet_80: 399484641
+      Raven_Sprite_Sheet_81: -1246108220
+      Raven_Sprite_Sheet_82: 1205187613
+      Raven_Sprite_Sheet_83: -1948716573
+      Raven_Sprite_Sheet_84: 555110634
+      Raven_Sprite_Sheet_85: -398971410
+      Raven_Sprite_Sheet_86: 132460768
+      Raven_Sprite_Sheet_87: 239389675
+      Raven_Sprite_Sheet_88: -674789756
+      Raven_Sprite_Sheet_89: 772190201
+      Raven_Sprite_Sheet_9: 1104650602
+      Raven_Sprite_Sheet_90: -699676791
+      Raven_Sprite_Sheet_91: 2072507398
+      Raven_Sprite_Sheet_92: -1033156540
+      Raven_Sprite_Sheet_93: 2029544094
+      Raven_Sprite_Sheet_94: -375734684
+      Raven_Sprite_Sheet_95: -949041744
+      Raven_Sprite_Sheet_96: -509559677
+      Raven_Sprite_Sheet_97: 1030438145
+      Raven_Sprite_Sheet_98: 1526731407
+      Raven_Sprite_Sheet_99: 902692529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

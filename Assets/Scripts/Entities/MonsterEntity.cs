@@ -12,6 +12,7 @@ public class MonsterEntity : EntityBase
 
     public float maxHp;
     public float moveSpeed;
+    public float baseRotationDamping;
 
     public float attractDistance;
     public float chasePeriod;

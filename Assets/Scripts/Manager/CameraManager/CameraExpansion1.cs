@@ -14,14 +14,10 @@ public class CameraExpansion1 : MonoBehaviour
     private float initialSize;        
     private float elapsedTime = 0f;
 
-    public GameObject Talk;
-
     void Start()
     {
-
         initialPosition = new Vector3(0f, 0f, -5f);
         initialSize = mainCamera.orthographicSize;
-
         
         StartCoroutine(DoZoomIn());
     }
@@ -39,11 +35,8 @@ public class CameraExpansion1 : MonoBehaviour
             timeElapsed += Time.deltaTime;
             yield return null;
         }
-
         
         mainCamera.transform.position = targetPosition;
         mainCamera.orthographicSize = targetSize;
-        yield return new WaitForSeconds(1f);
-        Talk.SetActive(true);
     }
 }
