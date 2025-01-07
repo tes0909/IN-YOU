@@ -1,15 +1,14 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bar : SceneBase
+public class Lab : SceneBase
 {
     public DialogueUI dialogueUI;
 
     protected override void OnSceneLoad()
     {  
-       Invoke("SetStart", 3f);
+        Invoke("SetStart", 1f);
     }
 
     protected override void OnSceneLoaded()

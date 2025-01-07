@@ -1,15 +1,15 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Bar : SceneBase
+public class News : SceneBase
 {
     public DialogueUI dialogueUI;
-
     protected override void OnSceneLoad()
-    {  
-       Invoke("SetStart", 3f);
+    {
+        Invoke("SetStart", 3f);
     }
 
     protected override void OnSceneLoaded()
@@ -19,7 +19,7 @@ public class Bar : SceneBase
     protected override void OnSceneUnload()
     {
     }
-
+    
     void SetStart()
     {
         DialogueManager.Instance.dialogueUI = dialogueUI;
