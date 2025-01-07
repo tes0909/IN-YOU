@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Rock1
   m_EditorClassIdentifier: 
-  itemName: Rock1
-  description: "\uB2E8\uB2E8\uD55C \uB3CC"
+  itemName: "\uD070 \uB3CC"
+  description: 
   icon: {fileID: 21300000, guid: 28d8264b780b5b344861fb0815cd1ee7, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
-  quantity: 3
+  quantity: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Fire
   m_EditorClassIdentifier: 
-  itemName: Fire
-  description: Fire
+  itemName: "\uBAA8\uB2E5\uBD88"
+  description: "\uC27D\uAC8C \uAEBC\uC9C8 \uAC83 \uAC19\uC774 \uC544\uC2AC\uC544\uC2AC\uD558\uB2E4."
   icon: {fileID: 1307877346, guid: 4d0cf8406a877c842b59ccd5f4230763, type: 3}
   itemType: 2
   attackPower: 0

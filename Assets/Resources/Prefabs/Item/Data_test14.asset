@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
+  m_Name: Data_test14
+  m_EditorClassIdentifier: 
+  itemName: "\uACBD\uC758 \uC77C\uAE30\uC7A5_6"
+  description: "\uB108\uB97C \uB0B4 \uC548\uC5D0 \uB2F4\uC744\uB54C\uB9C8\uB2E4 \uB108\uC640\uC758
+    \uCD94\uC5B5\uC744 \uACF1\uC539\uAC8C \uB418\uC5C8\uB2E4. \uBB49\uD06C\uB369
+    \uD37C\uC838\uB098\uAC00\uB294 \uAC83\uACFC \uD568\uAED8, \uC9C8\uAC85\uB300\uB294
+    \uBE44\uB9BF\uD568\uACFC \uD568\uAED8, \uC624\uB3C4\uB3C5\uD558\uB294 \uAC10\uCD09\uACFC
+    \uD568\uAED8. \uC5B4\uB290 \uB54C\uBCF4\uB2E4 \uCC9C\uCC9C\uD788 \uACFC\uAC70\uAC00
+    \uC7AC\uC0DD\uB418\uC5C8\uB2E4."
+  icon: {fileID: 21300000, guid: b5d712f04156a7e488484c3850298046, type: 3}
+  itemType: 2
+  attackPower: 0
+  healthRecovery: 0
+  additionalInfo: 
+  quantity: 0

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_FlowerPot
   m_EditorClassIdentifier: 
-  itemName: FlowerPot
-  description: FlowerPot
-  icon: {fileID: 161794222, guid: e09a4527e4f1271488fac58fca49fd4b, type: 3}
+  itemName: "\uAD6D\uD654\uB2E4\uBC1C"
+  description: "\uAD6D\uD654\uB2E4\uBC1C"
+  icon: {fileID: 21300000, guid: 2ecce21d260e0ac4db91d09432ba4294, type: 2}
   itemType: 2
   attackPower: 0
   healthRecovery: 0

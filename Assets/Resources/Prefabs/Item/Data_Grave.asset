@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Grave
   m_EditorClassIdentifier: 
-  itemName: Grave
-  description: "\uBB34\uB364"
+  itemName: "\uBB34\uB364"
+  description: "\uC788\uC5B4\uC57C \uD560 \uACF3\uC740 \uC5EC\uAE30\uAC00 \uC544\uB2CC\uB370"
   icon: {fileID: 21300300, guid: b90c9ee8b8ef38d43bcf937d0b9c4656, type: 3}
   itemType: 2
   attackPower: 0

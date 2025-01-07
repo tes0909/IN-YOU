@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
-  m_Name: Data_Bag
+  m_Name: Data_test10
   m_EditorClassIdentifier: 
-  itemName: "\uAC00\uBC29"
-  description: "\uAC00\uBC29\uC785\uB2C8\uB2E4."
-  icon: {fileID: 21300000, guid: a619ce539c5f46a4d8c0b69ae95e5623, type: 3}
+  itemName: "\uACBD\uC758 \uC77C\uAE30\uC7A5_2"
+  description: "\uC794\uB729 \uAE4C\uB9E4\uC9C4 \uB098\uB97C \uB3C4\uB824\uB0B4\uB3C4
+    \uB098\uB294 \uB108\uB97C \uBABB\uB0B4 \uC0AC\uB791\uD588\uC744 \uD130. \uC0AC\uB791\uD574,
+    \uC774\uAC83\uB3C4 \uAC70\uC9D3\uB9D0\uC774\uC57C"
+  icon: {fileID: 21300000, guid: b5d712f04156a7e488484c3850298046, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0
   additionalInfo: 
-  quantity: 1
+  quantity: 0
