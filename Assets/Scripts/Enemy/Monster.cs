@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -22,13 +23,18 @@ public class Monster : MonoBehaviour
 
     public NavMeshAgent NavAgent;
 
+    public event Action<int> OnDead;
+
     private void Awake()
     {
+        AnimationData.Initialize();
         NavAgent = GetComponent<NavMeshAgent>();
         HitCollider = GetComponent<BoxCollider2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        Condition = GetComponent<MonsterCondition>();
 
+        Condition.OnDead += Die;
         stateMachine = new MonsterStateMachine(this);
     }
 
@@ -44,12 +50,23 @@ public class Monster : MonoBehaviour
 
         Stat = monsterEntity;
         Condition.SetData(Stat.maxHp);
-
+        Debug.Log("!!");
         return true;
     }
 
     private void Update()
     {
         stateMachine.Update();
+    }
+
+    private void Die()
+    {
+        Animator.SetTrigger("Dead");
+        Invoke("DisableAfterDeath", 1);
+    }
+
+    private void DisableAfterDeath()
+    {
+        gameObject.SetActive(false);
     }
 }

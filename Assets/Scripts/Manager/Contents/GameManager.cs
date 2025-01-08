@@ -7,7 +7,8 @@ public class GameManager : IManager
 {
     public Player Player { get; private set; }
     public bool IsPaused = false;
-    //private MonsterSpawner monsterSpawner;
+
+    private MonsterSpawner monsterSpawner;
 
     public void Clear()
     {
@@ -21,8 +22,11 @@ public class GameManager : IManager
 
     public void GameStart()
     {
-        //// 실제로 게임을 시작하는 함수
-        //monsterSpawner = new MonsterSpawner();
+        // 실제로 게임을 시작하는 함수
+        monsterSpawner = new MonsterSpawner();
+        LevelContainer level = GameObject.FindFirstObjectByType<LevelContainer>();
+        monsterSpawner.Initialize(level);
+        monsterSpawner.StartMonsterSpawn();
     }
 
     public void CreatePlayer()

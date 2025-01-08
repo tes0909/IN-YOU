@@ -1,12 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MonsterSpawner : MonoBehaviour
 {
     private List<List<Vector3>> spawnPoints;
     private Dictionary<int, GameObject> WorldMonster;
+    public static List<int> pointNum = new List<int>();
+
     private int Identifier;
+    public int pointGroup;
+    public int monsterID;
+    public int monsterCount;
+
+    public int spawnCount { get; private set; }
+    [SerializeField] private float spawnTime = 5.0f;
 
     public void Initialize(LevelContainer levelContainer)
     {
@@ -20,6 +30,7 @@ public class MonsterSpawner : MonoBehaviour
                 spawnPointsInner.Add(transform.position);
             }
             spawnPoints.Add(spawnPointsInner);
+            pointNum.Add(spawnPointsInner.Count);
         }
 
         WorldMonster = new Dictionary<int, GameObject>();
@@ -58,13 +69,15 @@ public class MonsterSpawner : MonoBehaviour
 
         Identifier++;
         Vector3 spawnPoint = spawnPoints[pointGroup][point];
-        spawnPoint += new Vector3(Random.Range(-2f, 2f), 0, Random.Range(-2f, 2f));
+        spawnPoint += new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0 );
         if (monster.Initialize(Identifier, monsterID, spawnPoint) == false)
         {
             Despawn(go);
             return;
         }
 
+        monster.OnDead += Die;
+        spawnCount++;
         WorldMonster.Add(Identifier, go);
     }
 
@@ -74,4 +87,31 @@ public class MonsterSpawner : MonoBehaviour
     }
 
     //NevMash 사용해서 스폰이 가능한 곳에서만 스폰 될 수 있도록 할 것
+    public void MonsterSpawn()
+    {
+        for (int i = 0; i < pointNum[pointGroup]; i++)
+        {
+            SpawnEntity(pointGroup, i, monsterID);
+        }
+    }
+
+    private void Die(int identifier)
+    {
+        spawnCount--;
+        Debug.Log(identifier);
+    }
+
+    private IEnumerator SpawnMonsters()
+    {
+        while (spawnCount < 5.0f)
+        {
+            MonsterSpawn();
+        }
+        yield return 5.0f;
+    }
+
+    public void StartMonsterSpawn()
+    {
+        StartCoroutine(SpawnMonsters());
+    }
 }

@@ -12,4 +12,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a6cabbe7fb58f44bdb962d0831b9e5, type: 3}
   m_Name: MonsterDataList
   m_EditorClassIdentifier: 
-  MonsterList: []
+  MonsterList:
+  - id: 10001
+    displayTitle: Raven
+    description: Raven
+    prefabPath: /Prefabs/Monster/Raven
+    iconPath: 
+    maxHp: 5
+    moveSpeed: 1.1
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10003
+    displayTitle: Spider
+    description: Spider
+    prefabPath: /Prefabs/Monster/Spider
+    iconPath: 
+    maxHp: 5
+    moveSpeed: 0.8
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10004
+    displayTitle: RedZombie
+    description: RedZombie
+    prefabPath: /Prefabs/Monster/RedZombie
+    iconPath: 
+    maxHp: 5
+    moveSpeed: 1
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10005
+    displayTitle: PurpleZombie
+    description: PurpleZombie
+    prefabPath: /Prefabs/Monster/PurpleZombie
+    iconPath: 
+    maxHp: 5
+    moveSpeed: 1
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10006
+    displayTitle: CrawlZombie
+    description: CrawlZombie
+    prefabPath: /Prefabs/Monster/CrawlZombie
+    iconPath: 
+    maxHp: 5
+    moveSpeed: 0.7
+    attractDistance: 1
+    attackDamage: 1

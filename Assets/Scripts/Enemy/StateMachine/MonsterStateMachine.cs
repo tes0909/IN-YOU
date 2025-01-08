@@ -5,7 +5,6 @@ public class MonsterStateMachine : StateMachine
     public Monster Monster { get; private set; }
 
     public float MovementSpeed { get; private set; }
-    public float RotationDamping { get; private set; }
     public float MovementSpeedModifier { get; set; } = 1.0f;
 
     public PlayerCondition Target { get; private set; }
@@ -22,7 +21,7 @@ public class MonsterStateMachine : StateMachine
         WanderingState = new MonsterWanderingState(this);
         AttackState = new MonsterAttackState(this);
         ChasingState = new MonsterChasingState(this);
-
+        Debug.Log(Monster.Stat);
         MovementSpeed = monster.Stat.moveSpeed;
     }
 }
