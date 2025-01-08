@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerEx : IManager
 {
-    public SceneBase CurrentScene => GameObject.FindObjectOfType<SceneBase>(); // 현재 씬 정보 반환
-    public int SceneNum => SceneManager.GetActiveScene().buildIndex; // 현재 씬 번호 반환
+    public SceneBase CurrentScene => GameObject.FindObjectOfType<SceneBase>(); 
+    public int SceneNum => SceneManager.GetActiveScene().buildIndex; 
     private FadeScript fade;
 
 
