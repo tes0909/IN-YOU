@@ -15,6 +15,8 @@ public class DialogueUI : MonoBehaviour
     private bool canTalking = true;
     private float DOTextDelay = 1.5f;
     private string filePath = "JsonData/";
+    private string NextScene = "Next Scene";
+    private string Left = "left";
    
     public void NextDialogue(DialogueInfo currentDialogueInfo)
     {
@@ -37,7 +39,7 @@ public class DialogueUI : MonoBehaviour
         // 대화 출력
         canTalking = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
 
-        if (currentDialogueData.dialogue.Contains("Next Scene"))
+        if (currentDialogueData.dialogue.Contains(NextScene))
         {
             DialogueManager.Instance.dialogueIndex++;
             StartCoroutine(LoadNextScene()); 
@@ -50,14 +52,14 @@ public class DialogueUI : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (currentDialogueData.DIdx == 8) disPlayImage.gameObject.SetActive(true);
+        if (currentDialogueData.Action == "Hana") disPlayImage.gameObject.SetActive(true);
         else disPlayImage.gameObject.SetActive(false);
         
         if (DialogueManager.Instance.dialogueIndex < currentDialogueInfo.dialogueDatas.Length)
         {
             DialogueText.text = string.Empty;
             
-            if (currentDialogueData.position == "left")
+            if (currentDialogueData.position == Left)
             {
                 DialogueText.transform.SetAsLastSibling();
             }

@@ -13,6 +13,7 @@ public class DialogueData
     public string position;
     public string imageSprite;
     public string uiType;
+    public string Action;
 }
 
 [Serializable]
