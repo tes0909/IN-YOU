@@ -6,29 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/Bar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/Bar.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/letter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/UI/DialogueUI/letter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/MonsterSheets.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/MonsterSheets.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_News.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_News.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/4_Letter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/4_Letter.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/5_Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/5_Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion3.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager/CameraExpansion3.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/BarNarration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/BarNarration.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/LabNarration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/LabNarration.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/LetterNarration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/LetterNarration.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/NewsNarration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Narration/NewsNarration.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Lab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Lab.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/News.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/News.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Item/Item_Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Item/Item_Fire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +26,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BonfireLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/letter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/PlayerSO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerAttackState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerBaseState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.9/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/2D/Light2D.cs" root0="SKIP_HIGHLIGHTING" />
@@ -179,6 +161,7 @@
       <workItem from="1736123817152" duration="9041000" />
       <workItem from="1736134452899" duration="23376000" />
       <workItem from="1736170867707" duration="8574000" />
+      <workItem from="1736235177377" duration="7402000" />
     </task>
     <servers />
   </component>
