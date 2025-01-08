@@ -10,22 +10,11 @@ public abstract class SceneBase : MonoBehaviour
         OnSceneLoad();
         OnSceneLoaded();
     }
-
     private void OnDestroy()
     {
         OnSceneUnload();
     }
-
-    /// <summary>
-    /// 1. 씬 로드시 필요한 로직을 수행
-    /// </summary>
     protected abstract void OnSceneLoad();
-    /// <summary>
-    /// 2. 씬 로드가 완료된 후 필요한 로직을 수행
-    /// </summary>
     protected abstract void OnSceneLoaded();
-    /// <summary>
-    /// 3. 씬 언로드시 필요한 로직을 수행
-    /// </summary>
     protected abstract void OnSceneUnload();
 }

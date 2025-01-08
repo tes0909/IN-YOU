@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_FireWood2
   m_EditorClassIdentifier: 
-  itemName: FireWood2
-  description: FireWood2
+  itemName: "\uD070 \uB098\uBB47\uC870\uAC01"
+  description: 
   icon: {fileID: 21300000, guid: e4d21be2355a2de428aa6a77b1bbf028, type: 3}
   itemType: 2
   attackPower: 0

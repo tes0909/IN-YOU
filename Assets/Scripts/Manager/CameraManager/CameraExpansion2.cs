@@ -14,8 +14,6 @@ public class CameraExpansion2 : MonoBehaviour
     private float initialSize;
     private float elapsedTime = 0f;
 
-    public GameObject News;
-
     void Start()
     {
 
@@ -41,9 +39,6 @@ public class CameraExpansion2 : MonoBehaviour
 
         mainCamera.transform.position = targetPosition;
         mainCamera.orthographicSize = targetSize;
-
-        yield return new WaitForSeconds(1f);
-        News.SetActive(true);
     }
 }
 

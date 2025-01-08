@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_OldDiary
   m_EditorClassIdentifier: 
-  itemName: OldDiary
-  description: OldDiary
+  itemName: "\uC624\uB798\uB41C \uC77C\uAE30\uC7A5"
+  description: "\uBA87 \uBC88\uC744 \uBC18\uBCF5\uD574\uB3C4 \uCCAB\uB9C8\uB514\uB294
+    '\uBBF8\uC548\uD569\uB2C8\uB2E4' \uC600\uB2E4."
   icon: {fileID: 21300000, guid: 22a122dd5eb52404393633d2774f954e, type: 3}
   itemType: 2
   attackPower: 0

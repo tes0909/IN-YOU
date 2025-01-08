@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Branch1
   m_EditorClassIdentifier: 
-  itemName: Branch1
-  description: Branch1
+  itemName: "\uB098\uBB47\uAC00\uC9C0"
+  description: "\uC27D\uAC8C \uBD88\uD0C8 \uAC83 \uCC98\uB7FC \uBA54\uB9D0\uB77C\uC788\uB2E4."
   icon: {fileID: 21300000, guid: acb7132f8acfacc4b8babe1365154ac5, type: 3}
   itemType: 2
   attackPower: 0

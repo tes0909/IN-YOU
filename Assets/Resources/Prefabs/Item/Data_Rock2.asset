@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Rock2
   m_EditorClassIdentifier: 
-  itemName: Rock2
-  description: Rock2
+  itemName: "\uC791\uC740 \uB3CC"
+  description: 
   icon: {fileID: 21300000, guid: 8b8719a8324cc25448d7b59cf21e433b, type: 3}
   itemType: 2
   attackPower: 0

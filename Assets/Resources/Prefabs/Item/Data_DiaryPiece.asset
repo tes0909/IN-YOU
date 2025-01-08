@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_DiaryPiece
   m_EditorClassIdentifier: 
-  itemName: DiaryPiece
-  description: DiaryPiece
+  itemName: "\uCC22\uACA8\uC9C4 \uC77C\uAE30\uC7A5"
+  description: "\uC870\uAC01\uB09C \uACFC\uAC70."
   icon: {fileID: 21300000, guid: b5d712f04156a7e488484c3850298046, type: 3}
   itemType: 2
   attackPower: 0

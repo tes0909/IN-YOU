@@ -24,14 +24,7 @@ public class NPC : MonoBehaviour
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            if(DialogueManager.Instance.DialogueActive())
-            {
-                DialogueManager.Instance.NextDialogue();
-            }
-            else
-            {
-                DialogueManager.Instance.StartDialogue();
-            }
+            DialogueManager.Instance.StartDialogue();
         }
     }
 

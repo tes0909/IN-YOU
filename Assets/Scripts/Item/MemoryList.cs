@@ -10,13 +10,11 @@ public class MemoryList : MonoBehaviour
 {
     public List<ItemData> memoryItems = new List<ItemData>();
     public Inventory inventory;
-    public TextMeshProUGUI Memory;
-    public TextMeshProUGUI Description;
     private string[] itemNames;
+ 
 
     private void Awake()
-    {
-        
+    {    
         if (itemNames == null)
         {
             itemNames = new string[]
@@ -30,20 +28,20 @@ public class MemoryList : MonoBehaviour
             "Data_test7",
             "Data_test8",
             "Data_test9",
+            "Data_test10",
+            "Data_test11",
+            "Data_test12",
+            "Data_test13",
+            "Data_test14"
             };
         }
-
         foreach (var itemName in itemNames)
         {
             memoryItems.Add(Resources.Load<ItemData>($"Prefabs/Item/{itemName}"));
         }
-
         SceneManager.activeSceneChanged += OnSceneChanged;
     }
-    private void Update()
-    {
-        gameObject.SetActive(true);
-    }
+  
     private void OnDestroy()
     {
         SceneManager.activeSceneChanged -= OnSceneChanged;
@@ -51,44 +49,55 @@ public class MemoryList : MonoBehaviour
 
     private void OnSceneChanged(Scene oldScene, Scene newScene)
     {
-        List<ItemData> itemsToAdd = new List<ItemData>();
-
         if (newScene.buildIndex == 1)
         {
-            itemsToAdd.Add(memoryItems[0]);
-            itemsToAdd.Add(memoryItems[1]);
-            itemsToAdd.Add(memoryItems[2]);
+            inventory.infoItems.Add(memoryItems[0]);
+           
         }
         else if (newScene.buildIndex == 2)
         {
-            itemsToAdd.Add(memoryItems[3]);
-            itemsToAdd.Add(memoryItems[4]);
+            inventory.infoItems.Add(memoryItems[1]);
+            
         }
         else if (newScene.buildIndex == 3)
         {
-            itemsToAdd.Add(memoryItems[5]);
-            itemsToAdd.Add(memoryItems[6]);
-            itemsToAdd.Add(memoryItems[7]);
-            itemsToAdd.Add(memoryItems[8]);
+            inventory.infoItems.Add(memoryItems[2]);
+            
         }
         else if (newScene.buildIndex == 4)
         {
-            itemsToAdd.Add(memoryItems[9]);
+            inventory.infoItems.Add(memoryItems[3]);
+            
         }
-        
-    }
-
-    private void AddToInfo(List<ItemData> items)
-    {
-        string memoryText = "";
-        string descriptionText = "";
-
-        foreach (var item in items)
+        else if (newScene.buildIndex == 5)
         {
-            memoryText += $"{item.itemName}\n";
-            descriptionText += $"{item.description}\n\n";
+            inventory.infoItems.Add(memoryItems[4]);
+           
         }
-        Memory.text = memoryText;
-        Description.text = descriptionText;
+        else if (newScene.buildIndex == 6)
+        {
+            inventory.infoItems.Add(memoryItems[5]);
+           
+        }
+        else if (newScene.buildIndex == 7)
+        {
+            inventory.infoItems.Add(memoryItems[6]);
+           
+        }
+        else if (newScene.buildIndex == 8)
+        {
+            inventory.infoItems.Add(memoryItems[7]);
+           
+        }
+        else if (newScene.buildIndex == 9)
+        {
+            inventory.infoItems.Add(memoryItems[8]);
+            inventory.infoItems.Add(memoryItems[9]);
+            inventory.infoItems.Add(memoryItems[10]);
+            inventory.infoItems.Add(memoryItems[11]);
+            inventory.infoItems.Add(memoryItems[12]);
+            inventory.infoItems.Add(memoryItems[13]);
+        }
+        inventory.inventoryUI.UpdateInfoPanel(inventory.infoItems);
     }
 }

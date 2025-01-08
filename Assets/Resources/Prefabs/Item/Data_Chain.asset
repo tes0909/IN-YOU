@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Chain
   m_EditorClassIdentifier: 
-  itemName: Chain
-  description: Chain
+  itemName: "\uCCB4\uC778"
+  description: "\uAE30\uC5B5\uC740 \uD76C\uBBF8\uD574\uC838\uB3C4, \uC57D\uC18D\uC740
+    \uC601\uC6D0\uD788."
   icon: {fileID: 21300000, guid: 5a22bca8268e17f4b8e3557823234231, type: 3}
   itemType: 2
   attackPower: 0

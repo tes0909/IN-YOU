@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_Eye
   m_EditorClassIdentifier: 
-  itemName: Eye
-  description: Eye
+  itemName: "\uB208"
+  description: "\uC624\uB798 \uBCF4\uC544\uC57C, \uC624\uB798 \uB2F4\uC544\uC57C."
   icon: {fileID: 21300000, guid: 6b97b71d1bf262e469cfede2c11e5495, type: 3}
   itemType: 2
   attackPower: 0

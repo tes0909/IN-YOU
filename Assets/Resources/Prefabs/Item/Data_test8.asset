@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eddea832030a468f10701ee6212cf, type: 3}
   m_Name: Data_test8
   m_EditorClassIdentifier: 
-  itemName: Data_test8
-  description: 1
-  icon: {fileID: 0}
+  itemName: "\uACBD\uC758 \uAE30\uC5B5_3"
+  description: "\uD558\uC580 \uB4E4\uAF43\uC744 \uAC00\uB9CC\uD788 \uB4E4\uC5EC\uB2E4\uBCF4\uB2E4
+    \uC5EC\uB7EC \uC1A1\uC774\uB97C \uAEBE\uC5B4 \uC8FC\uBA38\uB2C8\uC5D0 \uB123\uC5C8\uB2E4."
+  icon: {fileID: 21300398, guid: b90c9ee8b8ef38d43bcf937d0b9c4656, type: 3}
   itemType: 2
   attackPower: 0
   healthRecovery: 0

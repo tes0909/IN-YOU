@@ -10,6 +10,7 @@ public class ItemMixList : MonoBehaviour
     private void Awake()
     {
         Sprite campfireIcon = Resources.Load<Sprite>("Campfire36_0");
+        Sprite grave = Resources.Load<Sprite>("ExtraObjects@64x648_150");
         Sprite flowerpot = Resources.Load<Sprite>("Tilemap_66");
         Sprite olddiary = Resources.Load<Sprite>("rpg_item_icon_book_132");
 
@@ -19,15 +20,15 @@ public class ItemMixList : MonoBehaviour
             resultItem = new ItemData
             {
                 itemName = "모닥불",
-                description = "모닥불설명테스트",
+                description = "쉽게 꺼질 것 같이 아슬아슬하다.",
                 icon = campfireIcon,
                 itemType = ItemType.Info,
                 quantity = 1
             },
             requiredItems = new List<ItemData>
             {
-                Resources.Load<ItemData>("Prefabs/Item/Data_FireWood1"),
-                Resources.Load<ItemData>("Prefabs/Item/Data_Rock1")
+                Resources.Load<ItemData>("Prefabs/Item/Data_Branch1"),
+                Resources.Load<ItemData>("Prefabs/Item/Data_Rock2")
             },
             requiredQuantity = new List<int> { 5, 3 }
         });
@@ -37,15 +38,15 @@ public class ItemMixList : MonoBehaviour
             resultItem = new ItemData
             {
                 itemName = "무덤",
-                description = "무덤설명테스트",
-                icon = null,
+                description = "있어야 할 곳은 여기가 아닌데.",
+                icon = grave,
                 itemType = ItemType.Info,
                 quantity = 1
             },
             requiredItems = new List<ItemData>
             {
                 Resources.Load<ItemData>("Prefabs/Item/Data_FireWood2"),
-                Resources.Load<ItemData>("Prefabs/Item/Data_Born"),
+                Resources.Load<ItemData>("Prefabs/Item/Data_Rock1"),
             },
             requiredQuantity = new List<int> { 10, 14 }
         });
@@ -54,8 +55,8 @@ public class ItemMixList : MonoBehaviour
         {
             resultItem = new ItemData
             {
-                itemName = "꽃다발",
-                description = "꽃다발설명테스트",
+                itemName = "국화다발",
+                description = "죽은 사람에게는 꽃을 주었던 것 같은데.",
                 icon = flowerpot,
                 itemType = ItemType.Info,
                 quantity = 1
@@ -73,7 +74,7 @@ public class ItemMixList : MonoBehaviour
             resultItem = new ItemData
             {
                 itemName = "오래된 일기장",
-                description = "일기장설명테스트",
+                description = "몇 번을 반복해도 첫마디는 '미안합니다' 였다.",
                 icon = olddiary,
                 itemType = ItemType.Info,
                 quantity = 1
