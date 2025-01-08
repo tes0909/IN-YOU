@@ -10,9 +10,10 @@ public class SceneManagerEx : IManager
     public int SceneNum => SceneManager.GetActiveScene().buildIndex; 
     private FadeScript fade;
 
-
+    public static SceneManagerEx Instance { get; private set; }
     public void Init()
     {
+        if (Instance == null) Instance = this;
         fade = GameObject.FindObjectOfType<FadeScript>();
     }
     
