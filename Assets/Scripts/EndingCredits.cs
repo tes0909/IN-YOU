@@ -12,8 +12,11 @@ public class EndingCredits : MonoBehaviour
     private Vector3 startPosition;
     public Image[] creditImages;
     public Vector3[] imagePositions;
-    public float imageDisplayTime = 2f;
-    public float delayBeforeStart = 3f;
+    public float fadeDuration = 2f;
+    public float imageDisplayTime = 5f;
+    public float delayBeforeStart = 10f;
+    public AudioSource bgmSource; 
+    public AudioClip bgmClip;
 
     private void Start()
     {
@@ -22,15 +25,23 @@ public class EndingCredits : MonoBehaviour
             return;
         }
         startPosition = creditsText.localPosition;
+        if (bgmSource != null && bgmClip != null)
+        {
+            bgmSource.clip = bgmClip;
+            bgmSource.loop = false; 
+            bgmSource.Play();
+        }
+
         StartCoroutine(DisplayImagesSequentially());
     }
 
     private void Update()
     {
         creditsText.localPosition += Vector3.up * scrollSpeed * Time.deltaTime;
+
         float textHeight = creditsText.rect.height;
         float canvasHeight = creditsText.parent.GetComponent<RectTransform>().rect.height;
-        if (creditsText.localPosition.y >= textHeight + canvasHeight / 2)
+        if (creditsText.localPosition.y >= (textHeight * 10) + (canvasHeight / 2))
         {
             enabled = false;
         }
@@ -46,8 +57,29 @@ public class EndingCredits : MonoBehaviour
         {
             creditImages[i].gameObject.SetActive(true);
             creditImages[i].rectTransform.localPosition = imagePositions[i];
+            yield return StartCoroutine(FadeImage(creditImages[i], 0f, 1f, fadeDuration));
             yield return new WaitForSeconds(imageDisplayTime);
+            yield return StartCoroutine(FadeImage(creditImages[i], 1f, 0f, fadeDuration));
+
             creditImages[i].gameObject.SetActive(false);
         }
+        yield return new WaitForSeconds(6f);
+        //Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
+    private IEnumerator FadeImage(Image image, float startAlpha, float endAlpha, float duration)
+    {
+        Color color = image.color;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / duration);
+            image.color = new Color(color.r, color.g, color.b, alpha);
+            yield return null;
+        }
+
+        image.color = new Color(color.r, color.g, color.b, endAlpha); 
     }
 }

@@ -12,6 +12,7 @@ public class Choice : MonoBehaviour
     public TextMeshProUGUI outputText;
     private SceneManagerEx sceneManagerEx;
 
+
     public void Start()
     {
         
@@ -30,11 +31,11 @@ public class Choice : MonoBehaviour
     {
         if (isEating)
         {
-            outputText.text = "A";
+            outputText.text = "네가 원한 건 먹는 거겠지. 그래, 먹어줄게";
         }
         else
         {
-            outputText.text = "B";
+            outputText.text = "네가 바란거지만, 난 못해. 안먹겠어";
         }
         eatButton.gameObject.SetActive(false);
         doNotEatButton.gameObject.SetActive(false);
@@ -44,9 +45,8 @@ public class Choice : MonoBehaviour
     private IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(3f);
-        if (SceneManagerEx.Instance != null)
-        {
-            SceneManagerEx.Instance.LoadNextScene();
-        }
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene("12_EndingCredits");
+
     }
 }
