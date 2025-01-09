@@ -11,7 +11,7 @@ public class ItemMixList : MonoBehaviour
     {
         Sprite campfireIcon = Resources.Load<Sprite>("Campfire36_0");
         Sprite grave = Resources.Load<Sprite>("ExtraObjects@64x648_150");
-        Sprite flowerpot = Resources.Load<Sprite>("Tilemap_66");
+        Sprite flowerpot = Resources.Load<Sprite>("ExtraObjects@64x648_199");
         Sprite olddiary = Resources.Load<Sprite>("rpg_item_icon_book_132");
 
 
@@ -48,7 +48,7 @@ public class ItemMixList : MonoBehaviour
                 Resources.Load<ItemData>("Prefabs/Item/Data_FireWood2"),
                 Resources.Load<ItemData>("Prefabs/Item/Data_Rock1"),
             },
-            requiredQuantity = new List<int> { 10, 14 }
+            requiredQuantity = new List<int> { 4, 8 }
         });
 
         itemMixRecipes.Add(new ItemMixRecipe
@@ -66,7 +66,7 @@ public class ItemMixList : MonoBehaviour
                Resources.Load<ItemData>("Prefabs/Item/Data_WhiteFlower"),
                Resources.Load<ItemData>("Prefabs/Item/Data_Chain")
             },
-            requiredQuantity = new List<int> { 8, 1 }
+            requiredQuantity = new List<int> { 4, 1 }
         });
 
         itemMixRecipes.Add(new ItemMixRecipe

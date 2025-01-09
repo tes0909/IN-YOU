@@ -13,6 +13,8 @@ public class ItemMixManager : MonoBehaviour
     public int needRecipeIdx;
     public TextMeshProUGUI popUpText;
     private bool isCrafting;
+    private SceneManagerEx sceneManager;
+
     private void Start()
     {
         if (IsSceneAllowed())
@@ -34,7 +36,7 @@ public class ItemMixManager : MonoBehaviour
     private bool IsSceneAllowed()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-        string[] allowedScenes = { "Intro", "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
+        string[] allowedScenes = { "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
         return System.Array.Exists(allowedScenes, name => name == currentSceneName);
     }
     public bool CanCraft()
@@ -85,9 +87,16 @@ public class ItemMixManager : MonoBehaviour
                 }
             }
             inventory.AddToInfo(recipe.resultItem);
-            mixedItemUI.UpdateUI(recipe.resultItem);
             ShowPopUp("미션 성공");
             Invoke("NextMission", 2f);
+            Invoke("LoadNextScene", 3f);
+        }
+    }
+    private void LoadNextScene()
+    {
+        if (sceneManager != null)
+        {
+            sceneManager.LoadNextScene();
         }
     }
     private void ShowPopUp(string message)
