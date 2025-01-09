@@ -5,10 +5,17 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-   public DialogueInfo dialogueInfo;
-
    public static DataManager instance;
+   public DialogueInfo dialogueInfo;
+   
+   private const string DialogueJsonDataPath = "JsonData/dialogueDatas";
    private void Awake()
+   {
+       InitializeSingleton();
+       LoadDialogueData();
+   }
+   
+   private void InitializeSingleton()
    {
        if (instance == null)
        {
@@ -21,9 +28,9 @@ public class DataManager : MonoBehaviour
        }
    }
 
-   private void Start()
+   private void LoadDialogueData()
    {
-       var dialogueJson = Resources.Load("JsonData/dialogueDatas") as TextAsset;
+       var dialogueJson = Resources.Load(DialogueJsonDataPath) as TextAsset;
        if (dialogueJson != null)
        {
            dialogueInfo = JsonUtility.FromJson<DialogueInfo>(dialogueJson.ToString());

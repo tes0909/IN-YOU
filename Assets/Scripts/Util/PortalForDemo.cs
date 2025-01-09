@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PortalForDemo : MonoBehaviour
 {
+    private void Start()
+    {
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log($"충돌 : {other.name}");

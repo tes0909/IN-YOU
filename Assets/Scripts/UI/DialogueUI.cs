@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,34 +13,39 @@ public class DialogueUI : MonoBehaviour
     public TextMeshProUGUI NameText;
     public Image image;
     public Image disPlayImage;
-    private bool canTalking = true;
+    public bool typing; // 텍스트 출력 중 여부
     private float DOTextDelay = 1.5f;
-    private string filePath = "JsonData/";
-    private string NextScene = "Next Scene";
-    private string Left = "left";
+    private readonly string filePath = "JsonData/";
+    private readonly string nextScene = "Next Scene";
+    private readonly string left = "left";
+    private readonly string Hana = "Hana";
    
     public void NextDialogue(DialogueInfo currentDialogueInfo)
     {
-        // 대화 중 타이핑 방지
-        if (!canTalking)
+        // 텍스트 출력 중 애니메이션 완료 후 반환
+        if (typing)
         {
-            DialogueText.DOComplete();  
+            DialogueText.DOComplete(); // 애니메이션 즉시 완료
+            typing = false;
             return;
         }
         
-        // 대화 종료
+        // 대화 종료(인덱스 길이 초과시)
         if (DialogueManager.Instance.dialogueIndex >= currentDialogueInfo.dialogueDatas.Length)
         {
             EndDialogue();
             return;
         }
-
+        
+        // 대화데이터 로드 및 인덱스 증가
         DialogueData currentDialogueData = currentDialogueInfo.dialogueDatas[DialogueManager.Instance.dialogueIndex];
+        DialogueManager.Instance.dialogueIndex++;
+        
+        // 텍스트 출력
+        DialogueText.text = string.Empty;
+        typing = true; // 출력 상태
 
-        // 대화 출력
-        canTalking = false; // 대화 출력전 애니메이션 비활성화, 대화 출력 중 다른 대화로 넘어가는것 방지
-
-        if (currentDialogueData.dialogue.Contains(NextScene))
+        if (currentDialogueData.dialogue.Contains(nextScene))
         {
             DialogueManager.Instance.dialogueIndex++;
             StartCoroutine(LoadNextScene()); 
@@ -48,41 +54,49 @@ public class DialogueUI : MonoBehaviour
         
         IEnumerator LoadNextScene()
         {
-            yield return new WaitForSeconds(0.5f); // Optional delay for smoother transition
+            yield return new WaitForSeconds(0.5f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (currentDialogueData.Action == "Hana") disPlayImage.gameObject.SetActive(true);
-        else disPlayImage.gameObject.SetActive(false);
-        
-        if (DialogueManager.Instance.dialogueIndex < currentDialogueInfo.dialogueDatas.Length)
+        if (currentDialogueData.specialAction == "Portal")
         {
-            DialogueText.text = string.Empty;
-            
-            if (currentDialogueData.position == Left)
+            PortalForDemo portalForDemo = FindObjectOfType<PortalForDemo>();
+            if (portalForDemo != null)
             {
-                DialogueText.transform.SetAsLastSibling();
+                SpriteRenderer portalRenderer = portalForDemo.GetComponent<SpriteRenderer>();
+                portalRenderer.enabled = true;
             }
-            else
-            {
-                DialogueText.transform.SetAsFirstSibling();
-            }
-            
-            DialogueText.DOText(currentDialogueData.dialogue, DOTextDelay)
-                .OnComplete(() => canTalking = true); // 완료시에만 애니메이션 활성화
-                
-            NameText.text = currentDialogueData.characterName;
-            string imagePath = $"{filePath}{currentDialogueData.imageSprite}";
-            image.sprite = Resources.Load<Sprite>(imagePath);
-            DialogueManager.Instance.dialogueIndex++;
         }
+
+        if (currentDialogueData.specialAction == Hana)
+            disPlayImage.gameObject.SetActive(true);
+        else 
+            disPlayImage.gameObject.SetActive(false);
+        
+        // todo find 추천하지않는다. 만약쓸경우 null 체크(find에만 한정되지않음), findobjectbytype 사용권유
+        
+        if (currentDialogueData.position == left)
+        {
+            DialogueText.transform.SetAsLastSibling();
+        }
+        else
+        {
+            DialogueText.transform.SetAsFirstSibling();
+        }   
+
+        DialogueText.DOText(currentDialogueData.dialogue, DOTextDelay)
+            .OnComplete(() => typing = false); // 완료시에만 애니메이션 활성화    
+        
+        // 캐릭터 이름, 이미지 로드
+        NameText.text = currentDialogueData.characterName;
+        string imagePath = $"{filePath}{currentDialogueData.imageSprite}";
+        image.sprite = Resources.Load<Sprite>(imagePath);    
     }
     
     public void EndDialogue()
     {
         DialogueText.text = string.Empty;
         NameText.text = string.Empty;
-        canTalking = true; 
         gameObject.SetActive(false);
     }
 }

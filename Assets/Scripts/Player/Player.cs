@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
     public Inventory inventory;
     private UIPausePopup currentPausePopup;
     private const string filePath = "Prefabs/UI/Popup/UIPausePopup";
-
     void Awake()
     {
         AnimationData.Initialize();

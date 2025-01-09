@@ -13,12 +13,12 @@ public class PlayerController : MonoBehaviour
         playerActions = playerInput.Player; // 플레이어 레이어 접근
     }
 
-    private void OnEnable()
+    public void OnEnable()
     {
         playerInput.Enable();
     }
 
-    private void OnDisable()
+    public void OnDisable()
     {
         playerInput.Disable();
     }
