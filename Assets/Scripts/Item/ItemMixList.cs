@@ -11,7 +11,7 @@ public class ItemMixList : MonoBehaviour
     {
         Sprite campfireIcon = Resources.Load<Sprite>("Campfire36_0");
         Sprite grave = Resources.Load<Sprite>("ExtraObjects@64x648_150");
-        Sprite flowerpot = Resources.Load<Sprite>("Tilemap_66");
+        Sprite flowerpot = Resources.Load<Sprite>("ExtraObjects@64x648_199");
         Sprite olddiary = Resources.Load<Sprite>("rpg_item_icon_book_132");
 
 
