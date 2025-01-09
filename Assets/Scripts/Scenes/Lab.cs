@@ -9,6 +9,7 @@ public class Lab : SceneBase
     protected override void OnSceneLoad()
     {  
         Invoke("SetStart", 1f);
+        Managers.Sound.PlayBGM("5_Laboratory");
     }
 
     protected override void OnSceneLoaded()

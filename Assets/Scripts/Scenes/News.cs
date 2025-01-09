@@ -10,6 +10,7 @@ public class News : SceneBase
     protected override void OnSceneLoad()
     {
         Invoke("SetStart", 3f);
+        Managers.Sound.PlayBGM("3_Disapperance");
     }
 
     protected override void OnSceneLoaded()
