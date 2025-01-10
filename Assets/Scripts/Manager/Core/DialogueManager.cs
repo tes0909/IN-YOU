@@ -14,13 +14,10 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
 
     public DialogueInfo currentDialogueInfo;
-
     public int dialogueIndex;
-
     public DialogueUI dialogueUI;
-    
-    FadeScript fade;
-
+    private FadeScript fade;
+    private PlayerController playerController;
     private void Awake()
     {
         if (Instance == null)
@@ -37,18 +34,22 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         currentDialogueInfo = DataManager.instance.dialogueInfo;
+        playerController = FindObjectOfType<PlayerController>();
     }
 
     public void StartDialogue()
     {
         dialogueUI.gameObject.SetActive(true);
-
         dialogueUI.NextDialogue(currentDialogueInfo);
         // 첫 대화 출력
+        
+        playerController.OnDisable();
     }
 
     public void EndDialogue()
     {
         dialogueUI.gameObject.SetActive(false);
+        playerController.OnEnable();
     }
+
 }

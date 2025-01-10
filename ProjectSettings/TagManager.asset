@@ -15,6 +15,7 @@ TagManager:
   - Grid
   - NPC
   - Item
+  - Portal
   layers:
   - Default
   - TransparentFX

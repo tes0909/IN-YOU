@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Island_2 : SceneBase
 {
+    public DialogueUI dialogueUI;
     protected override void OnSceneLoad()
     {
+        Invoke("SetStart", 1f);
         Managers.Game.CreatePlayer();
 
         Managers.UI.LoadSceneUI<UIGameScene>();
@@ -21,5 +23,11 @@ public class Island_2 : SceneBase
     protected override void OnSceneUnload()
     {
 
+    }
+    
+    void SetStart()
+    {
+        DialogueManager.Instance.dialogueUI = dialogueUI;
+        DialogueManager.Instance.StartDialogue();
     }
 }

@@ -8,6 +8,7 @@ public class letter : SceneBase
     protected override void OnSceneLoad()
     {
         Invoke("SetStart", 1f);
+        Managers.Sound.PlayBGM("4_Window");
     }
 
     protected override void OnSceneLoaded()

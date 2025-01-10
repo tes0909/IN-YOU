@@ -99,7 +99,7 @@ TextureImporter:
       213: 21300062
     second: protagonist_sprite_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,11 +116,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -159,10 +160,12 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -170,6 +173,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -182,6 +186,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -194,6 +199,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -206,6 +212,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -218,6 +225,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -230,6 +238,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -918,41 +927,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      protagonist_sprite_12: 21300024
-      protagonist_sprite_23: 21300046
-      protagonist_sprite_13: 21300026
-      protagonist_sprite_26: 21300052
-      protagonist_sprite_15: 21300030
       protagonist_sprite_0: 21300000
       protagonist_sprite_1: 21300002
-      protagonist_sprite_3: 21300006
-      protagonist_sprite_19: 21300038
-      protagonist_sprite_2: 21300004
+      protagonist_sprite_10: 21300020
+      protagonist_sprite_11: 21300022
+      protagonist_sprite_12: 21300024
+      protagonist_sprite_13: 21300026
+      protagonist_sprite_14: 21300028
+      protagonist_sprite_15: 21300030
       protagonist_sprite_16: 21300032
       protagonist_sprite_17: 21300034
-      protagonist_sprite_8: 21300016
-      protagonist_sprite_28: 21300056
-      protagonist_sprite_4: 21300008
-      protagonist_sprite_25: 21300050
-      protagonist_sprite_22: 21300044
-      protagonist_sprite_7: 21300014
-      protagonist_sprite_11: 21300022
-      protagonist_sprite_21: 21300042
-      protagonist_sprite_31: 21300062
-      protagonist_sprite_6: 21300012
-      protagonist_sprite_27: 21300054
-      protagonist_sprite_20: 21300040
-      protagonist_sprite_14: 21300028
       protagonist_sprite_18: 21300036
-      protagonist_sprite_5: 21300010
-      protagonist_sprite_29: 21300058
-      protagonist_sprite_30: 21300060
-      protagonist_sprite_10: 21300020
+      protagonist_sprite_19: 21300038
+      protagonist_sprite_2: 21300004
+      protagonist_sprite_20: 21300040
+      protagonist_sprite_21: 21300042
+      protagonist_sprite_22: 21300044
+      protagonist_sprite_23: 21300046
       protagonist_sprite_24: 21300048
+      protagonist_sprite_25: 21300050
+      protagonist_sprite_26: 21300052
+      protagonist_sprite_27: 21300054
+      protagonist_sprite_28: 21300056
+      protagonist_sprite_29: 21300058
+      protagonist_sprite_3: 21300006
+      protagonist_sprite_30: 21300060
+      protagonist_sprite_31: 21300062
+      protagonist_sprite_4: 21300008
+      protagonist_sprite_5: 21300010
+      protagonist_sprite_6: 21300012
+      protagonist_sprite_7: 21300014
+      protagonist_sprite_8: 21300016
       protagonist_sprite_9: 21300018
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -2,747 +2,1693 @@
   "dialogueDatas": [
     {
       "DIdx": 0,
-      "characterName": "경",
-      "dialogue": "오랜만이야, 잘 지냈어?",
-      "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "characterName": "개발자",
+      "dialogue": "안녕하세요! In You에 오신것을 진심으로 환영합니다. 대화는 [E]키를 눌러 진행하실 수 있습니다.",
+      "position": "left",
+      "imageSprite": "Admin",
+      "uiType": "Intro",
+      "Action": "Start",
+      "specialAction": ""
     },
     {
       "DIdx": 1,
-      "characterName": "담",
-      "dialogue": "그럼~ 잘 지냈지.",
+      "characterName": "개발자",
+      "dialogue": "In You는 스토리 추리게임 입니다. 당신은 이 게임에서 주인공인 [담] 입니다. ",
       "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Bar"
+      "imageSprite": "Admin",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 2,
-      "characterName": "경",
-      "dialogue": "다행이네. 그거 알아? 우리가 거길 나온지 벌써 10년이 흘렀더라.",
-      "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "characterName": "개발자",
+      "dialogue": "W, A, S, D키를 이용하여 이동하실 수 있습니다. 위쪽에 있는 원장님께 대화를 걸어 시작해보시죠!",
+      "position": "left",
+      "imageSprite": "Admin",
+      "uiType": "Intro",
+      "Action": "End",
+      "specialAction": ""
     },
     {
       "DIdx": 3,
       "characterName": "담",
-      "dialogue": "벌써? 시간 참 빠르네.",
+      "dialogue": "안녕하세요, 원장님.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "Start",
+      "specialAction": ""
     },
     {
       "DIdx": 4,
-      "characterName": "경",
-      "dialogue": "그러게 말이야.",
+      "characterName": "샛별고아원 원장",
+      "dialogue": "그래, 담이 왔느냐. 경이를 찾고 있나 보구나.",
       "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "imageSprite": "Director",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 5,
       "characterName": "담",
-      "dialogue": "시시콜콜한 이야기나 나누려고 부르진 않았을 것 같고, 또 무슨 자랑거리가 있어 부르셨나 그래.",
+      "dialogue": "네, 맞아요. 혹시 어디 있는지 아시나요?",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 6,
-      "characterName": "경",
-      "dialogue": "하여튼 눈치가 빨라요. 나 결혼할 것 같은 사람이 생겼어.",
+      "characterName": "샛별고아원 원장",
+      "dialogue": "보자···. 좀 전에 왼쪽에 있는 연못에 있던 것 같은데 그리로 가보려무나.",
       "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "imageSprite": "Director",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 7,
-      "characterName": "담",
-      "dialogue": "너를 구제해 줄 사람이 생겼단 말이야? 어디 봐봐.",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Bar"
+      "characterName": "샛별고아원 원장",
+      "dialogue": "준비는 잘 되었니?",
+      "position": "right",
+      "imageSprite": "Director",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 8,
-      "characterName": "경",
-      "dialogue": "구제는 무슨···. 자, 이 사람이야.",
-      "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "characterName": "담",
+      "dialogue": "아하하···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 9,
       "characterName": "담",
-      "dialogue": "이쁘시네, 이름이?",
+      "dialogue": "네, 준비되었습니다! 지금까지 돌봐주셔서 정말 감사했습니다.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 10,
-      "characterName": "경",
-      "dialogue": "하나.",
+      "characterName": "샛별고아원 원장",
+      "dialogue": "뭘···. 나라에서 기간이 오늘까지로 정해진 게 너희들에겐 미안할 따름이지.",
       "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "imageSprite": "Director",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 11,
       "characterName": "담",
-      "dialogue": "하나···? 꽃? 일본 사람인가?",
+      "dialogue": "···가볼게요. 원장님.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 12,
-      "characterName": "경",
-      "dialogue": "역시···. 담이 넌 일본어랑 친한 것 같아. 영상을 많이 봐서 그런가? ",
+      "characterName": "샛별고아원 원장",
+      "dialogue": "그래, 잘 먹고 아프지 말고.",
       "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "imageSprite": "Director",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 13,
       "characterName": "담",
-      "dialogue": "···. 그거랑 상관없거든.",
+      "dialogue": "네, 안녕히 계세요.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "End",
+      "specialAction": ""
     },
     {
       "DIdx": 14,
-      "characterName": "경",
-      "dialogue": "다음 주에 미국으로 여행을 가려고 해. 다녀와서 소개해줄게.",
-      "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "characterName": "담",
+      "dialogue": "안녕. 연아~",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Start",
+      "specialAction": ""
     },
     {
       "DIdx": 15,
       "characterName": "담",
-      "dialogue": "다음 주? 보자···. 크리스마스 이브구나? 부럽다~ 잘 다녀와.",
+      "dialogue": "혹시 경이 못 봤어?",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 16,
-      "characterName": "경",
-      "dialogue": "뭐 갖고 싶은 건 없어? 가다가 보이면 하나쯤 사줄 수도 있는데.",
+      "characterName": "홍연",
+      "dialogue": "경이? 걔 아까 내려갔어. 밑으로 내려가 봐. 바빠 보이던데?",
       "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "imageSprite": "HongYeon",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 17,
       "characterName": "담",
-      "dialogue": "에이, 됐어. 둘이 잘 놀다 와.",
+      "dialogue": "길이 엇갈렸나···.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Bar"
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 18,
-      "characterName": "경",
-      "dialogue": "나 세 번은 말 안 하는거 알지? 마지막으로 물어볼게. 정말 없어?",
-      "position": "right",
-      "imageSprite": "Gyeong",
-      "uiType": "Bar"
+      "characterName": "담",
+      "dialogue": "넌 여기서 뭐 하고 있었어?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 19,
-      "characterName": "담",
-      "dialogue": "크흠···. 그렇게까지 말한다면야···. 승리의 여신이라는 게임이 있는데 거기서 나오는 한정판 련이가 뉴욕에···.",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Bar"
+      "characterName": "홍연",
+      "dialogue": "별건 아니고, 동생 생각이 나서 그냥 있었어.",
+      "position": "right",
+      "imageSprite": "HongYeon",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 20,
-      "characterName": "",
-      "dialogue": "Next Scene…",
+      "characterName": "담",
+      "dialogue": "···.",
       "position": "left",
-      "imageSprite": "",
-      "uiType": "News"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 21,
-      "characterName": "Anchor",
-      "dialogue": "Breaking News",
-      "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "characterName": "홍연",
+      "dialogue": "TV를 봤는데 죽은 사람에게는 꽃을, 그것도 흰 꽃을 주는 거라길래",
+      "position": "right",
+      "imageSprite": "HongYeon",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 22,
-      "characterName": "Anchor",
-      "dialogue": "긴급 속보입니다.",
-      "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "characterName": "홍연",
+      "dialogue": "여기 있는 이 하얀 들꽃을 꺾을까 고민하고 있었지.",
+      "position": "right",
+      "imageSprite": "HongYeon",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 23,
-      "characterName": "Anchor",
-      "dialogue": "인천공항을 출발해 미국 뉴욕으로 가던 IY항공 보잉 530편이 태평양 상공에서 원인을 알 수 없는 폭발이 발생했습니다.",
-      "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "characterName": "홍연",
+      "dialogue": "그것보다 너 오늘 간다고 들었는데 언제가?",
+      "position": "right",
+      "imageSprite": "HongYeon",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 24,
-      "characterName": "Anchor",
-      "dialogue": "현재 정부는 미군과 협력하여 승객 구출을 위해 해군 및 군용 항공기를 급파했다고 밝혔습니다.",
+      "characterName": "담",
+      "dialogue": "어···. 이제 가야지. 경이 찾으면 바로 갈 거야.",
       "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 25,
-      "characterName": "Anchor",
-      "dialogue": "12월 24일 오후 8시에 출발한 이 비행기에는 한국인 27명, 일본인 3명, 미국인 17명이 탑승하고 있었으며,",
-      "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "characterName": "홍연",
+      "dialogue": "그렇구나. 지금까지 잘 지내줘서 고마웠어. 잘 가. 언젠가 또 볼 수 있겠지.",
+      "position": "right",
+      "imageSprite": "HongYeon",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 26,
-      "characterName": "Anchor",
-      "dialogue": "탑승자 명단은 방송 이후 항공사와 KTN 홈페이지를 통해 다시 확인할 수 있습니다.",
+      "characterName": "담",
+      "dialogue": "그래···. 너도 잘 지내고. 꼭 다시 보자.",
       "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "End",
+      "specialAction": ""
     },
     {
       "DIdx": 27,
-      "characterName": "Anchor",
-      "dialogue": "한국인 탑승자 명단에는 '박수연, 김유민, 이건호···, 담···",
+      "characterName": "담",
+      "dialogue": "야 이···. 너 어딜 그렇게 돌아다닌 거야. 한참 찾았잖아.",
       "position": "left",
-      "imageSprite": "NewsAnchor",
-      "uiType": "News"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Start",
+      "specialAction": ""
     },
     {
       "DIdx": 28,
-      "characterName": "",
-      "dialogue": "Next Scene…",
-      "position": "left",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "바빴어! 인마~",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 29,
-      "characterName": "Letter",
-      "dialogue": "나의 유일한 가족이자 친구, 담에게",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "넌 준비가 다 된 거야?",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 30,
-      "characterName": "Letter",
-      "dialogue": "미안해, 담아.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "담",
+      "dialogue": "당연하지!",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 31,
-      "characterName": "Letter",
-      "dialogue": "죽기 전에야 멀리서 용기를 낸 나를 용서하길 바랄게.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "담",
+      "dialogue": "그러는 넌?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 32,
-      "characterName": "Letter",
-      "dialogue": "이 편지를 읽게 될 즈음이라면···.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "나도 다 됐어. 이제 나가기만 하면 돼.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 33,
-      "characterName": "Letter",
-      "dialogue": "아마 나는 죽었을거야.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "담",
+      "dialogue": "후···. 막상 나가려니 기분이 이상하네.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 34,
-      "characterName": "Letter",
-      "dialogue": "하루가 채 지나진 않았겠지.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "그렇지? 참 묘해.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 35,
-      "characterName": "Letter",
-      "dialogue": "너에게 부탁할 것이 하나 있어.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "담",
+      "dialogue": "그러게 말이야.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 36,
-      "characterName": "Letter",
-      "dialogue": "우리의 약속을 잊지 않았다면···.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "자, 이곳을 나서는 순간부터 우리는 죽는 한이 있어도 서로서로 도와주는 거다. 알겠지?",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 37,
-      "characterName": "Letter",
-      "dialogue": "편지가 발송된 곳으로 찾아와 나의 유서를 읽어주지 않겠어?",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "담",
+      "dialogue": "죽는 건 좀···?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 38,
-      "characterName": "Letter",
-      "dialogue": "갑작스레 이런 부탁을 해서 미안해.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "그··· 그럼 어려울 땐 무조건 도와주는 거다. 알겠지?",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 39,
-      "characterName": "Letter",
-      "dialogue": "너 밖에 없더라구.",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "담",
+      "dialogue": "무조건도 좀···?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 40,
-      "characterName": "Letter",
-      "dialogue": " - 경 -",
-      "position": "",
-      "imageSprite": "",
-      "uiType": "letter"
+      "characterName": "경",
+      "dialogue": "···.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 41,
-      "characterName": "",
-      "dialogue": "Next Scene…",
+      "characterName": "담",
+      "dialogue": "에이, 장난이야. 장난.",
       "position": "left",
-      "imageSprite": "",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 42,
-      "characterName": "주박사",
-      "dialogue": "반갑습니다. 성함이 [담]님 맞으시죠?",
+      "characterName": "담",
+      "dialogue": "당연히 도와야지. 둘도 없는 동생이 이렇게까지 얘기를 하는데.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 43,
-      "characterName": "담",
-      "dialogue": "안녕하세요. 제가 맞습니다만···. 누구...?",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "아니 무슨 소리야! 네가 동생이지.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 44,
-      "characterName": "주박사",
-      "dialogue": "저는 (주) 리버스에서 일하고 있는 주 박사라고 합니다.",
+      "characterName": "담",
+      "dialogue": "뭐래~ 네가 나보다 키가 작으니까 동생이지.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 45,
-      "characterName": "주박사",
-      "dialogue": "[경]님의 의뢰를 받아 이곳에서 당신을 기다렸지요.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "어휴 시답잖은 소리 말고 이제 진짜 가자. 가야지.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Intro",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 46,
       "characterName": "담",
-      "dialogue": "저를요?",
+      "dialogue": "그래, 가자. 밖으로.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Lab"
+      "uiType": "Intro",
+      "Action": "End",
+      "specialAction": "Portal"
     },
     {
       "DIdx": 47,
-      "characterName": "주박사",
-      "dialogue": "네, 당신이 할 일이 있거든요. 여기, 의뢰인의 편지입니다. 읽어보세요.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "오랜만이야, 잘 지냈어?",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Start",
+      "specialAction": ""
     },
     {
       "DIdx": 48,
-      "characterName": "편지",
-      "dialogue": "잘 왔네. 담아. 다행이야. 잘 왔어···.",
+      "characterName": "담",
+      "dialogue": "그럼~ 잘 지냈지.",
       "position": "left",
-      "imageSprite": "Letter",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 49,
-      "characterName": "편지",
-      "dialogue": "여기까지 온 이상 내 말을 들어줄 생각이 있다는 거겠지?",
-      "position": "left",
-      "imageSprite": "Letter",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "다행이네. 그거 알아? 우리가 거길 나온지 벌써 10년이 흘렀더라.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 50,
-      "characterName": "편지",
-      "dialogue": "이곳에 있는 사람들의 도움을 받아서 내 기억을 들여다보면 좋겠어.",
+      "characterName": "담",
+      "dialogue": "벌써? 시간 참 빠르네.",
       "position": "left",
-      "imageSprite": "Letter",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 51,
-      "characterName": "편지",
-      "dialogue": "자세한 건 박사님이 설명해 주실 거야.",
-      "position": "left",
-      "imageSprite": "Letter",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "그러게 말이야.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 52,
       "characterName": "담",
-      "dialogue": "기억을...들여다본다구요? 이게 무슨···?",
+      "dialogue": "시시콜콜한 이야기나 나누려고 부르진 않았을 것 같고, 또 무슨 자랑거리가 있어 부르셨나 그래.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Lab"
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 53,
-      "characterName": "담",
-      "dialogue": "설명을 해주실 수 있을까요?",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "하여튼 눈치가 빨라요. 나 결혼할 것 같은 사람이 생겼어.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 54,
-      "characterName": "주박사",
-      "dialogue": "그럼요. 물론이죠.",
+      "characterName": "담",
+      "dialogue": "너를 구제해 줄 사람이 생겼단 말이야? 어디 봐봐.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 55,
-      "characterName": "주박사",
-      "dialogue": "저희 제품 중에 [브레인커넥팅] 이라는 의료기기가 있습니다. ",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "구제는 무슨···. 자, 이 사람이야.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": "Hana"
     },
     {
       "DIdx": 56,
-      "characterName": "주박사",
-      "dialogue": "[브레인커넥팅]은 이번에 새로 나온 신제품인데,",
+      "characterName": "담",
+      "dialogue": "이쁘시네, 이름이?",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 57,
-      "characterName": "주박사",
-      "dialogue": "사망한지 하루가 채 되지 않은 사람이거나 뇌사 판정을 받은 사람의 뇌에 제품을 직접 연결하면",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "하나.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 58,
-      "characterName": "주박사",
-      "dialogue": "잠시동안 기억을 볼 수 있습니다.",
+      "characterName": "담",
+      "dialogue": "하나···? 꽃? 일본 사람인가?",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 59,
-      "characterName": "주박사",
-      "dialogue": "유서를 남기지 않았거나, 기억을 보길 원하는 유족에게 도의적으로 제공될 예정이지요.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "역시···. 담이 넌 일본어랑 친한 것 같아. 영상을 많이 봐서 그런가? ",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 60,
-      "characterName": "주박사",
-      "dialogue": "사망했거나 뇌사상태인 '뇌'가 유족이 원하는 기억을 보여주진 않습니다.",
+      "characterName": "담",
+      "dialogue": "···. 그거랑 상관없거든.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 61,
-      "characterName": "주박사",
-      "dialogue": "지금까지의 테스트로는 뇌가 보여주는 기억은···.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "다음 주에 미국으로 여행을 가려고 해. 다녀와서 소개해줄게.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 62,
-      "characterName": "주박사",
-      "dialogue": "고인이 겪었던 경험 중 강렬했거나 그에 버금가는 어떤 일들이었습니다만, 아직 정확하진 않습니다.",
+      "characterName": "담",
+      "dialogue": "다음 주? 보자···. 크리스마스 이브구나? 부럽다~ 잘 다녀와.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 63,
-      "characterName": "주박사",
-      "dialogue": "게다가 인간의 기억이란 대부분 완벽하지 않기에···.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "뭐 갖고 싶은 건 없어? 가다가 보이면 하나쯤 사줄 수도 있는데.",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 64,
-      "characterName": "주박사",
-      "dialogue": "어떤 부분은 흐릿하게 보이기도 하고, 중간중간 건너뛰어 지기도 합니다.",
+      "characterName": "담",
+      "dialogue": "에이, 됐어. 둘이 잘 놀다 와.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "Dam",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 65,
-      "characterName": "주박사",
-      "dialogue": "당연한 말이지만 기억을 '보는' 것이기에 어떠한 간섭도 불가능하지요.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "경",
+      "dialogue": "나 세 번은 말 안 하는거 알지? 마지막으로 물어볼게. 정말 없어?",
+      "position": "right",
+      "imageSprite": "Gyeong",
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 66,
       "characterName": "담",
-      "dialogue": "그런 놀라운 기술이···.",
+      "dialogue": "크흠···. 그렇게까지 말한다면야···. 승리의 여신이라는 게임이 있는데 거기서 나오는 한정판 련이가 뉴욕에···.",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Lab"
+      "uiType": "Bar",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 67,
-      "characterName": "주박사",
-      "dialogue": "안타깝게도 이 기술은 아직 완벽하지 않습니다. 뇌에 연결할 수 있는 시간이 짧기 때문입니다.",
+      "characterName": "",
+      "dialogue": "Next Scene…",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 68,
-      "characterName": "주박사",
-      "dialogue": "뇌에 연결할 수 있는 최대 시간은 5분 30초입니다. 어쩌면 신체의 한계···. 일지도 모르지만요.",
+      "characterName": "Anchor",
+      "dialogue": "Breaking News",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 69,
-      "characterName": "주박사",
-      "dialogue": "지금 의뢰인께서는 생명유지장치로 간신히 연명하고 계십니다.",
+      "characterName": "Anchor",
+      "dialogue": "긴급 속보입니다.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 70,
-      "characterName": "주박사",
-      "dialogue": "그마저도 생명유지장치로 연명할 수 있는 의뢰인의 남은 수명은 길어야 오늘...",
+      "characterName": "Anchor",
+      "dialogue": "인천공항을 출발해 미국 뉴욕으로 가던 IY항공 보잉 530편이 태평양 상공에서 원인을 알 수 없는 폭발이 발생했습니다.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 71,
-      "characterName": "주박사",
-      "dialogue": "이것이 이곳에서 도와주시는 세 분의 의사들이 내린 결론이지요.",
+      "characterName": "Anchor",
+      "dialogue": "현재 정부는 미군과 협력하여 승객 구출을 위해 해군 및 군용 항공기를 급파했다고 밝혔습니다.",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 72,
-      "characterName": "주박사",
-      "dialogue": "그래서 의뢰를 받아들일 수 있었습니다.",
+      "characterName": "Anchor",
+      "dialogue": "12월 24일 오후 8시에 출발한 이 비행기에는 한국인 27명, 일본인 3명, 미국인 17명이 탑승하고 있었으며,",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 73,
-      "characterName": "담",
-      "dialogue": "···.",
+      "characterName": "Anchor",
+      "dialogue": "탑승자 명단은 방송 이후 항공사와 KTN 홈페이지를 통해 다시 확인할 수 있습니다.",
       "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 74,
-      "characterName": "주박사",
-      "dialogue": "브레인커넥팅은 전기적인 충격을 가해 뇌에 과부하를 겁니다.",
+      "characterName": "Anchor",
+      "dialogue": "한국인 탑승자 명단에는 '박수연, 김유민, 이건호···, 담···",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "NewsAnchor",
+      "uiType": "News",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 75,
-      "characterName": "주박사",
-      "dialogue": "그 때문에 일시적으로 뇌가 활성화되지만···.",
+      "characterName": "",
+      "dialogue": "Next Scene…",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 76,
-      "characterName": "주박사",
-      "dialogue": "뇌는 이를 받아들이지 못하고 전기충격을 막기 위해 모든 신경계를 스스로 차단합니다.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "나의 유일한 가족이자 친구, 담에게",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 77,
-      "characterName": "주박사",
-      "dialogue": "이 과정이 끝나면 확실하게 죽는다는 뜻이죠.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "미안해, 담아.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 78,
-      "characterName": "주박사",
-      "dialogue": "우리는 뇌에서 나오는 이 전기신호를 영상화하여 당신께 보여드릴 겁니다.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "죽기 전에야 멀리서 용기를 낸 나를 용서하길 바랄게.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 79,
-      "characterName": "주박사",
-      "dialogue": "다시는 보고 싶어도 못 보는 단 한 번 뿐인 마지막 기억을 말이죠.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "이 편지를 읽게 될 즈음이라면···.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 80,
-      "characterName": "담",
-      "dialogue": "이걸 제 친구가 원했다구요?",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "아마 나는 죽었을거야.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 81,
-      "characterName": "주박사",
-      "dialogue": "그렇습니다. 정확한 이유는 의뢰인이 말씀하지 않으셨기에 저희도 알지 못합니다.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "하루가 채 지나진 않았겠지.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 82,
-      "characterName": "담",
-      "dialogue": "보여주고 싶었던 기억이나 남기고 싶은 말이 있지 않았을까요?",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "너에게 부탁할 것이 하나 있어.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 83,
-      "characterName": "주박사",
-      "dialogue": "저희도 그런 이유로 의뢰하신 것으로 짐작하지만, 정확한 이유는 직접 보셔야 아실 거예요.",
-      "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "우리의 약속을 잊지 않았다면···.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 84,
-      "characterName": "담",
-      "dialogue": "후···.",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "편지가 발송된 곳으로 찾아와 나의 유서를 읽어주지 않겠어?",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 85,
-      "characterName": "담",
-      "dialogue": "···.",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "갑작스레 이런 부탁을 해서 미안해.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 86,
-      "characterName": "담",
-      "dialogue": "···. 알겠습니다. ",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": "너 밖에 없더라구.",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 87,
-      "characterName": "담",
-      "dialogue": "기억이 유언인 셈이군요.",
-      "position": "left",
-      "imageSprite": "Dam",
-      "uiType": "Lab"
+      "characterName": "Letter",
+      "dialogue": " - 경 -",
+      "position": "",
+      "imageSprite": "",
+      "uiType": "letter",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 88,
-      "characterName": "주박사",
-      "dialogue": "네, 그렇습니다.",
+      "characterName": "",
+      "dialogue": "Next Scene…",
       "position": "left",
-      "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "imageSprite": "",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 89,
       "characterName": "주박사",
-      "dialogue": "마음의 준비는 되셨나요?",
+      "dialogue": "반갑습니다. 성함이 [담]님 맞으시죠?",
       "position": "left",
       "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 90,
       "characterName": "담",
-      "dialogue": "네, 되었습니다.",
+      "dialogue": "안녕하세요. 제가 맞습니다만···. 누구...?",
       "position": "left",
       "imageSprite": "Dam",
-      "uiType": "Lab"
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 91,
       "characterName": "주박사",
-      "dialogue": "그럼, 우측에 보이는 기계 내부에 누워주시면 되고, 시간은 말씀드린 것처럼 최대 5분 30초만 보실 수 있습니다.",
+      "dialogue": "저는 (주) 리버스에서 일하고 있는 주 박사라고 합니다.",
       "position": "left",
       "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
     },
     {
       "DIdx": 92,
       "characterName": "주박사",
+      "dialogue": "[경]님의 의뢰를 받아 이곳에서 당신을 기다렸지요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 93,
+      "characterName": "담",
+      "dialogue": "저를요?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 94,
+      "characterName": "주박사",
+      "dialogue": "네, 당신이 할 일이 있거든요. 여기, 의뢰인의 편지입니다. 읽어보세요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 95,
+      "characterName": "편지",
+      "dialogue": "잘 왔네. 담아. 다행이야. 잘 왔어···.",
+      "position": "left",
+      "imageSprite": "Letter",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 96,
+      "characterName": "편지",
+      "dialogue": "여기까지 온 이상 내 말을 들어줄 생각이 있다는 거겠지?",
+      "position": "left",
+      "imageSprite": "Letter",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 97,
+      "characterName": "편지",
+      "dialogue": "이곳에 있는 사람들의 도움을 받아서 내 기억을 들여다보면 좋겠어.",
+      "position": "left",
+      "imageSprite": "Letter",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 98,
+      "characterName": "편지",
+      "dialogue": "자세한 건 박사님이 설명해 주실 거야.",
+      "position": "left",
+      "imageSprite": "Letter",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 99,
+      "characterName": "담",
+      "dialogue": "기억을...들여다본다구요? 이게 무슨···?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 100,
+      "characterName": "담",
+      "dialogue": "설명을 해주실 수 있을까요?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 101,
+      "characterName": "주박사",
+      "dialogue": "그럼요. 물론이죠.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 102,
+      "characterName": "주박사",
+      "dialogue": "저희 제품 중에 [브레인커넥팅] 이라는 의료기기가 있습니다. ",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 103,
+      "characterName": "주박사",
+      "dialogue": "[브레인커넥팅]은 이번에 새로 나온 신제품인데,",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 104,
+      "characterName": "주박사",
+      "dialogue": "사망한지 하루가 채 되지 않은 사람이거나 뇌사 판정을 받은 사람의 뇌에 제품을 직접 연결하면",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 105,
+      "characterName": "주박사",
+      "dialogue": "잠시동안 기억을 볼 수 있습니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 106,
+      "characterName": "주박사",
+      "dialogue": "유서를 남기지 않았거나, 기억을 보길 원하는 유족에게 도의적으로 제공될 예정이지요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 107,
+      "characterName": "주박사",
+      "dialogue": "사망했거나 뇌사상태인 '뇌'가 유족이 원하는 기억을 보여주진 않습니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 108,
+      "characterName": "주박사",
+      "dialogue": "지금까지의 테스트로는 뇌가 보여주는 기억은···.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 109,
+      "characterName": "주박사",
+      "dialogue": "고인이 겪었던 경험 중 강렬했거나 그에 버금가는 어떤 일들이었습니다만, 아직 정확하진 않습니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 110,
+      "characterName": "주박사",
+      "dialogue": "게다가 인간의 기억이란 대부분 완벽하지 않기에···.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 111,
+      "characterName": "주박사",
+      "dialogue": "어떤 부분은 흐릿하게 보이기도 하고, 중간중간 건너뛰어 지기도 합니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 112,
+      "characterName": "주박사",
+      "dialogue": "당연한 말이지만 기억을 '보는' 것이기에 어떠한 간섭도 불가능하지요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 113,
+      "characterName": "담",
+      "dialogue": "그런 놀라운 기술이···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 114,
+      "characterName": "주박사",
+      "dialogue": "안타깝게도 이 기술은 아직 완벽하지 않습니다. 뇌에 연결할 수 있는 시간이 짧기 때문입니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 115,
+      "characterName": "주박사",
+      "dialogue": "뇌에 연결할 수 있는 최대 시간은 5분 30초입니다. 어쩌면 신체의 한계···. 일지도 모르지만요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 116,
+      "characterName": "주박사",
+      "dialogue": "지금 의뢰인께서는 생명유지장치로 간신히 연명하고 계십니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 117,
+      "characterName": "주박사",
+      "dialogue": "그마저도 생명유지장치로 연명할 수 있는 의뢰인의 남은 수명은 길어야 오늘...",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 118,
+      "characterName": "주박사",
+      "dialogue": "이것이 이곳에서 도와주시는 세 분의 의사들이 내린 결론이지요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 119,
+      "characterName": "주박사",
+      "dialogue": "그래서 의뢰를 받아들일 수 있었습니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 120,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 121,
+      "characterName": "주박사",
+      "dialogue": "브레인커넥팅은 전기적인 충격을 가해 뇌에 과부하를 겁니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 122,
+      "characterName": "주박사",
+      "dialogue": "그 때문에 일시적으로 뇌가 활성화되지만···.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 123,
+      "characterName": "주박사",
+      "dialogue": "뇌는 이를 받아들이지 못하고 전기충격을 막기 위해 모든 신경계를 스스로 차단합니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 124,
+      "characterName": "주박사",
+      "dialogue": "이 과정이 끝나면 확실하게 죽는다는 뜻이죠.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 125,
+      "characterName": "주박사",
+      "dialogue": "우리는 뇌에서 나오는 이 전기신호를 영상화하여 당신께 보여드릴 겁니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 126,
+      "characterName": "주박사",
+      "dialogue": "다시는 보고 싶어도 못 보는 단 한 번 뿐인 마지막 기억을 말이죠.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 127,
+      "characterName": "담",
+      "dialogue": "이걸 제 친구가 원했다구요?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 128,
+      "characterName": "주박사",
+      "dialogue": "그렇습니다. 정확한 이유는 의뢰인이 말씀하지 않으셨기에 저희도 알지 못합니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 129,
+      "characterName": "담",
+      "dialogue": "보여주고 싶었던 기억이나 남기고 싶은 말이 있지 않았을까요?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 130,
+      "characterName": "주박사",
+      "dialogue": "저희도 그런 이유로 의뢰하신 것으로 짐작하지만, 정확한 이유는 직접 보셔야 아실 거예요.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 131,
+      "characterName": "담",
+      "dialogue": "후···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 132,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 133,
+      "characterName": "담",
+      "dialogue": "···. 알겠습니다. ",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 134,
+      "characterName": "담",
+      "dialogue": "기억이 유언인 셈이군요.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 135,
+      "characterName": "주박사",
+      "dialogue": "네, 그렇습니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 136,
+      "characterName": "주박사",
+      "dialogue": "마음의 준비는 되셨나요?",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 137,
+      "characterName": "담",
+      "dialogue": "네, 되었습니다.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 138,
+      "characterName": "주박사",
+      "dialogue": "그럼, 우측에 보이는 기계 내부에 누워주시면 되고, 시간은 말씀드린 것처럼 최대 5분 30초만 보실 수 있습니다.",
+      "position": "left",
+      "imageSprite": "ProfessorJuniper",
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 139,
+      "characterName": "주박사",
       "dialogue": "그럼, 잘 보고 오시기를···.",
       "position": "left",
       "imageSprite": "ProfessorJuniper",
-      "uiType": "Lab"
+      "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 140,
+      "characterName": "",
+      "dialogue": "Later Scene…",
+      "position": "left",
+      "imageSprite": "",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 141,
+      "characterName": "담",
+      "dialogue": "··· 여긴?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 142,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 143,
+      "characterName": "담",
+      "dialogue": "경의 기억··· 인가.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 144,
+      "characterName": "담",
+      "dialogue": "단순히 보는 거라고 들었는데",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 145,
+      "characterName": "담",
+      "dialogue": "이래서야 빙의된 것에 가까운 것 같군.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 146,
+      "characterName": "담",
+      "dialogue": "…응?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 147,
+      "characterName": "담",
+      "dialogue": "이 사람은···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 148,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 149,
+      "characterName": "담",
+      "dialogue": "먹구름도 몰려오고···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 150,
+      "characterName": "담",
+      "dialogue": "어두워지기 전에 불을 지피는 것이 좋겠어.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "End",
+      "specialAction": "FadeIn"
+    },
+    {
+      "DIdx": 152,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Start",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 153,
+      "characterName": "담",
+      "dialogue": "결국···.이리 되었군.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 154,
+      "characterName": "담",
+      "dialogue": "아무리 기억속이라지만···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 155,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 156,
+      "characterName": "담",
+      "dialogue": "경이라면 아마도···. 이렇게 했을거야.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "End",
+      "specialAction": "FadeBlue"
+    },
+    {
+      "DIdx": 157,
+      "characterName": "담",
+      "dialogue": "여긴 마포대교···?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Start",
+      "specialAction": "FadeIn"
+    },
+    {
+      "DIdx": 158,
+      "characterName": "담",
+      "dialogue": "이 글들은···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 159,
+      "characterName": "담",
+      "dialogue": "반전드라마는 끝내 완성되어야 한다···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 160,
+      "characterName": "담",
+      "dialogue": "당신이 생각하는 내일은 생각보다 괜찮을 거에요···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 161,
+      "characterName": "담",
+      "dialogue": "···!",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 162,
+      "characterName": "담",
+      "dialogue": "생명의 다리···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 163,
+      "characterName": "담",
+      "dialogue": "죽으려고 했던거냐..바보같이···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 164,
+      "characterName": "담",
+      "dialogue": "···꽃.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 165,
+      "characterName": "담",
+      "dialogue": "하얀 꽃이 필요하겠어.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "End",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 167,
+      "characterName": "담",
+      "dialogue": "···집?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "Start",
+      "specialAction": "FadeIn"
+    },
+    {
+      "DIdx": 168,
+      "characterName": "담",
+      "dialogue": "경이가 살던 곳인가?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 169,
+      "characterName": "담",
+      "dialogue": "뭘 하면서 살았는지 알아봐야겠어.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 170,
+      "characterName": "담",
+      "dialogue": "메모나 일기 같은 게 남아있으면 좋으련만.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "End",
+      "specialAction": ""
     }
   ]
 }
