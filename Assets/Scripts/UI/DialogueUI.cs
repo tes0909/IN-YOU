@@ -48,16 +48,29 @@ public class DialogueUI : MonoBehaviour
         if (currentDialogueData.dialogue.Contains(nextScene))
         {
             DialogueManager.Instance.dialogueIndex++;
-            StartCoroutine(LoadNextScene()); 
+            Managers.Scene.LoadNextScene();
             return; 
         }
-        
-        IEnumerator LoadNextScene()
+
+        if (currentDialogueData.dialogue.Contains("Later Scene"))
         {
-            yield return new WaitForSeconds(0.5f);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            DialogueManager.Instance.dialogueIndex++;
+            Managers.Scene.LoadLaterScene();
+            return; 
         }
 
+        if (currentDialogueData.specialAction == "FadeIn")
+        {
+            FadeScript fade = FindObjectOfType<FadeScript>();
+            fade.FadeIn();
+        }
+        
+        if (currentDialogueData.specialAction == "FadeBlue")
+        {
+            FadeScript fade = FindObjectOfType<FadeScript>();
+            fade.FadeBlue();
+        }
+        
         if (currentDialogueData.specialAction == "Portal")
         {
             PortalForDemo portalForDemo = FindObjectOfType<PortalForDemo>();
@@ -72,8 +85,6 @@ public class DialogueUI : MonoBehaviour
             disPlayImage.gameObject.SetActive(true);
         else 
             disPlayImage.gameObject.SetActive(false);
-        
-        // todo find 추천하지않는다. 만약쓸경우 null 체크(find에만 한정되지않음), findobjectbytype 사용권유
         
         if (currentDialogueData.position == left)
         {

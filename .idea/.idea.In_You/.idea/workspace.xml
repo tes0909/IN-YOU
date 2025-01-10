@@ -6,21 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal_test/Assembly-CSharp.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal_test/DemoPC.sln.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/1_Nostalgia.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/1_Nostalgia.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/2_Fever.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/2_Fever.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/3_Disapperance.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/3_Disapperance.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/5_Window.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/5_Window.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Intro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Intro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Lab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Lab.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/News.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/News.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/letter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/letter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6_Island_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6_Island_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMixManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMixManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/PortalForDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/PortalForDemo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +175,7 @@
       <workItem from="1736336754768" duration="11887000" />
       <workItem from="1736355195093" duration="1101000" />
       <workItem from="1736385978279" duration="19841000" />
+      <workItem from="1736473559342" duration="19337000" />
     </task>
     <servers />
   </component>

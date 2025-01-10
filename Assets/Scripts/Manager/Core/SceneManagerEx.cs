@@ -43,7 +43,7 @@ public class SceneManagerEx : IManager
 
         if (fade != null)
         {
-            fade.FadeOut();
+            fade.FadeOutIn();
             yield return new WaitForSeconds(fade.Ftime);
         }
         LoadScene();
@@ -52,6 +52,26 @@ public class SceneManagerEx : IManager
     public void LoadNextScene()
     {
         Managers.Instance.StartCoroutine(CorLoadNextScene());
+    }
+    
+    private IEnumerator CorLoadLaterScene()
+    {
+        if (fade == null)
+        {
+            fade = GameObject.FindObjectOfType<FadeScript>();
+        }
+
+        if (fade != null)
+        {
+            fade.FadeOut();
+            yield return new WaitForSeconds(fade.Ftime);
+        }
+        LoadScene();
+    }
+    
+    public void LoadLaterScene()
+    {
+        Managers.Instance.StartCoroutine(CorLoadLaterScene());
     }
 
 

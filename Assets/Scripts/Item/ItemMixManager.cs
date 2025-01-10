@@ -58,7 +58,7 @@ public class ItemMixManager : MonoBehaviour
             if (itemCount < requiredAmount)
             {
                 int missingAmount = requiredAmount - itemCount;
-                ShowPopUp(recipe.requiredItems[i].itemName + "¾ÆÀÌÅÛÀÌ " + missingAmount + "°³ ´õ ÇÊ¿äÇÕ´Ï´Ù.");
+                ShowPopUp(recipe.requiredItems[i].itemName + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + missingAmount + "ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Õ´Ï´ï¿½.");
                 return false;
             }
         }
@@ -87,17 +87,15 @@ public class ItemMixManager : MonoBehaviour
                 }
             }
             inventory.AddToInfo(recipe.resultItem);
-            ShowPopUp("¹Ì¼Ç ¼º°ø");
-            Invoke("NextMission", 2f);
+            ShowPopUp("ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½");
+            Invoke("NextMission", 3f);
             Invoke("LoadNextScene", 3f);
         }
     }
     private void LoadNextScene()
     {
-        if (sceneManager != null)
-        {
-            sceneManager.LoadNextScene();
-        }
+        DialogueManager.Instance.dialogueIndex++;
+        Managers.Scene.LoadLaterScene();
     }
     private void ShowPopUp(string message)
     {
@@ -112,6 +110,7 @@ public class ItemMixManager : MonoBehaviour
         {
             recipe = mixList.itemMixRecipes[needRecipeIdx];
             craftButton.UpdateUI(recipe);
+            isCrafting = false;
         }
         else
         {

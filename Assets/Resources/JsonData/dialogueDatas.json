@@ -1397,6 +1397,296 @@
       "position": "left",
       "imageSprite": "ProfessorJuniper",
       "uiType": "Lab",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 140,
+      "characterName": "",
+      "dialogue": "Later Scene…",
+      "position": "left",
+      "imageSprite": "",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 141,
+      "characterName": "담",
+      "dialogue": "··· 여긴?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 142,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 143,
+      "characterName": "담",
+      "dialogue": "경의 기억··· 인가.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 144,
+      "characterName": "담",
+      "dialogue": "단순히 보는 거라고 들었는데",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 145,
+      "characterName": "담",
+      "dialogue": "이래서야 빙의된 것에 가까운 것 같군.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 146,
+      "characterName": "담",
+      "dialogue": "…응?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 147,
+      "characterName": "담",
+      "dialogue": "이 사람은···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 148,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 149,
+      "characterName": "담",
+      "dialogue": "먹구름도 몰려오고···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 150,
+      "characterName": "담",
+      "dialogue": "어두워지기 전에 불을 지피는 것이 좋겠어.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_1",
+      "Action": "End",
+      "specialAction": "FadeIn"
+    },
+    {
+      "DIdx": 152,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Start",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 153,
+      "characterName": "담",
+      "dialogue": "결국···.이리 되었군.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 154,
+      "characterName": "담",
+      "dialogue": "아무리 기억속이라지만···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 155,
+      "characterName": "담",
+      "dialogue": "···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 156,
+      "characterName": "담",
+      "dialogue": "경이라면 아마도···. 이렇게 했을거야.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Island_2",
+      "Action": "End",
+      "specialAction": "FadeBlue"
+    },
+    {
+      "DIdx": 157,
+      "characterName": "담",
+      "dialogue": "여긴 마포대교···?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Start",
+      "specialAction": "FadeIn"
+    },
+    {
+      "DIdx": 158,
+      "characterName": "담",
+      "dialogue": "이 글들은···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 159,
+      "characterName": "담",
+      "dialogue": "반전드라마는 끝내 완성되어야 한다···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 160,
+      "characterName": "담",
+      "dialogue": "당신이 생각하는 내일은 생각보다 괜찮을 거에요···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 161,
+      "characterName": "담",
+      "dialogue": "···!",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 162,
+      "characterName": "담",
+      "dialogue": "생명의 다리···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 163,
+      "characterName": "담",
+      "dialogue": "죽으려고 했던거냐..바보같이···.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 164,
+      "characterName": "담",
+      "dialogue": "···꽃.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 165,
+      "characterName": "담",
+      "dialogue": "하얀 꽃이 필요하겠어.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "End",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 167,
+      "characterName": "담",
+      "dialogue": "···집?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "Start",
+      "specialAction": "FadeIn"
+    },
+    {
+      "DIdx": 168,
+      "characterName": "담",
+      "dialogue": "경이가 살던 곳인가?",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 169,
+      "characterName": "담",
+      "dialogue": "뭘 하면서 살았는지 알아봐야겠어.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
+      "Action": "Continue",
+      "specialAction": ""
+    },
+    {
+      "DIdx": 170,
+      "characterName": "담",
+      "dialogue": "메모나 일기 같은 게 남아있으면 좋으련만.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Home_1",
       "Action": "End",
       "specialAction": ""
     }
