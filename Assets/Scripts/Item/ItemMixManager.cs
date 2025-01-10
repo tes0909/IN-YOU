@@ -28,6 +28,7 @@ public class ItemMixManager : MonoBehaviour
             craftButton.UpdateUI(recipe);
             HidePopUp();
         }
+
         else
         {
             this.enabled = false;
@@ -36,7 +37,7 @@ public class ItemMixManager : MonoBehaviour
     private bool IsSceneAllowed()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-        string[] allowedScenes = { "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
+        string[] allowedScenes = { "1_Intro", "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
         return System.Array.Exists(allowedScenes, name => name == currentSceneName);
     }
     public bool CanCraft()
@@ -89,16 +90,14 @@ public class ItemMixManager : MonoBehaviour
             inventory.AddToInfo(recipe.resultItem);
             ShowPopUp("미션 성공");
             Invoke("NextMission", 2f);
-            Invoke("LoadNextScene", 3f);
+            //Invoke("LoadNextScene", 3f);
         }
     }
-    private void LoadNextScene()
-    {
-        if (sceneManager != null)
-        {
-            sceneManager.LoadNextScene();
-        }
-    }
+    //private void LoadNextScene()
+    //{
+    //    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    //    SceneManager.LoadScene(currentSceneIndex + 1);
+    //}
     private void ShowPopUp(string message)
     {
         popUpText.text = message; 
@@ -112,6 +111,7 @@ public class ItemMixManager : MonoBehaviour
         {
             recipe = mixList.itemMixRecipes[needRecipeIdx];
             craftButton.UpdateUI(recipe);
+            isCrafting = false;
         }
         else
         {
