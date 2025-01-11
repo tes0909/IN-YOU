@@ -59,6 +59,5 @@ public class SceneManagerEx : IManager
         int nextSceneNum = SceneNum + 1;
         Managers.Clear();
         SceneManager.LoadScene(nextSceneNum);
-        Debug.Log(nextSceneNum);
     }
 }

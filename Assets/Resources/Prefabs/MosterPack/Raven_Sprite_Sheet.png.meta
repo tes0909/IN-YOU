@@ -818,8 +818,8 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 360
-        width: 20
-        height: 15
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -839,8 +839,8 @@ TextureImporter:
         serializedVersion: 2
         x: 37
         y: 359
-        width: 19
-        height: 17
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,8 +860,8 @@ TextureImporter:
         serializedVersion: 2
         x: 69
         y: 357
-        width: 16
-        height: 18
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -879,10 +879,10 @@ TextureImporter:
       name: Raven_Sprite_Sheet_34
       rect:
         serializedVersion: 2
-        x: 102
+        x: 101
         y: 358
-        width: 16
-        height: 18
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -900,10 +900,10 @@ TextureImporter:
       name: Raven_Sprite_Sheet_35
       rect:
         serializedVersion: 2
-        x: 135
-        y: 362
-        width: 16
-        height: 13
+        x: 133
+        y: 359
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

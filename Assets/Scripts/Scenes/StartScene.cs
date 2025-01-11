@@ -8,7 +8,6 @@ public class StartScene : SceneBase
     {
         Managers.UI.Init();
         Managers.Sound.Init();
-        Managers.Game.Init();
         Managers.UI.LoadSceneUI<UIStartScene>();
         Managers.Sound.PlayBGM("0_StartScene");
     }

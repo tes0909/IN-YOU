@@ -17,7 +17,7 @@ public class GameManager : IManager
 
     public void Init()
     {
-        
+        GameStart();
     }
 
     public void GameStart()
@@ -26,6 +26,7 @@ public class GameManager : IManager
         monsterSpawner = new MonsterSpawner();
         LevelContainer level = GameObject.FindFirstObjectByType<LevelContainer>();
         monsterSpawner.Initialize(level);
+        SetMonsterID(10001);
         monsterSpawner.StartMonsterSpawn();
     }
 
@@ -43,7 +44,7 @@ public class GameManager : IManager
         }
 
         player.gameObject.name = nameof(Player);
-        //player.Condition.OnDead += GameOver;
+        player.Condition.OnDead += GameOver;
         Player = player;
     }
 
@@ -101,5 +102,10 @@ public class GameManager : IManager
     public void LoadGame()
     {
         //게임 불러오기 로직
+    }
+
+    public void SetMonsterID(int monsterId)
+    {
+        monsterSpawner.monsterID = monsterId;
     }
 }

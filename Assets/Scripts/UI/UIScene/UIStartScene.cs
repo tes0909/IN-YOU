@@ -29,7 +29,7 @@ public class UIStartScene : UISceneBase
     public void LoadStartScene()
     {     
         // 게임시작시 씬 불러오기 전 저장 데이터 삭제
-        Managers.Scene.LoadScene(Defines.SceneType.Intro);
+        Managers.Scene.LoadNextScene();
         gameObject.SetActive(false);
     }
 

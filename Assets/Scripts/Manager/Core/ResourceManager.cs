@@ -29,7 +29,9 @@ public class ResourceManager : IManager
             {
                 prefab = Resources.Load<GameObject>(path);
                 if (prefab != null)
-                    prefabDict.Add(path, prefab);
+                prefabDict.Add(path, prefab);
+                Debug.Log(prefabDict.Keys);
+                Debug.Log(prefabDict.Values);
             }
             return prefab as T;
         }

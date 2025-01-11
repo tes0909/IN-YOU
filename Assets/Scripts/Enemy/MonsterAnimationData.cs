@@ -14,6 +14,7 @@ public class MonsterAnimationData
 
     public void Initialize()
     {
+        Debug.Log($"Wandering: {wanderingParameterName}, Attack: {attackParameterName}, Dead: {deadParameterName}");
         WanderingParameterHash = Animator.StringToHash(wanderingParameterName);
         AttackParameterHash = Animator.StringToHash(attackParameterName);
         DeadParameterHash = Animator.StringToHash(deadParameterName);

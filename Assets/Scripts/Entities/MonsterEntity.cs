@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class MonsterEntity : EntityBase
 {
     public string prefabPath;
-    public string iconPath;
 
     public float maxHp;
     public float moveSpeed;

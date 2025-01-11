@@ -11,7 +11,9 @@ public class Player : MonoBehaviour
     
     [field:Header("Animation")] 
     [field:SerializeField] public PlayerAnimationData AnimationData { get; private set; }
-    
+    [field: SerializeField] public PlayerCondition Condition { get; private set; }
+
+
     public Animator Animator { get; private set; }
     public PlayerController input { get; private set; }
     public Rigidbody2D rigidbody2D { get; private set; }

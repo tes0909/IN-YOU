@@ -69,7 +69,7 @@ public class DBManager : IManager
                 return value as T;
             }
         }
-        
+
         return null;
     }
 

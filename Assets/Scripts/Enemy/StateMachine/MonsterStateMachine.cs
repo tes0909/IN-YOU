@@ -21,7 +21,5 @@ public class MonsterStateMachine : StateMachine
         WanderingState = new MonsterWanderingState(this);
         AttackState = new MonsterAttackState(this);
         ChasingState = new MonsterChasingState(this);
-        Debug.Log(Monster.Stat);
-        MovementSpeed = monster.Stat.moveSpeed;
     }
 }

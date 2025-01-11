@@ -12,12 +12,10 @@ GameObject:
   - component: {fileID: 1495903068555135951}
   - component: {fileID: 2972270874815171741}
   - component: {fileID: 5006638663308640775}
-  - component: {fileID: 353369311237792000}
   - component: {fileID: 3532039698570576741}
   - component: {fileID: 7793328767282174896}
-  - component: {fileID: 7039161387134620979}
-  - component: {fileID: 3614733724361444197}
   - component: {fileID: 9122895742227051632}
+  - component: {fileID: 9144086523355507443}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -158,33 +156,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.09}
   m_EdgeRadius: 0
---- !u!50 &353369311237792000
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6131638772975596908}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!195 &3532039698570576741
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -252,34 +223,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.09}
   m_EdgeRadius: 0
---- !u!114 &7039161387134620979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6131638772975596908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NavAgent: {fileID: 0}
---- !u!114 &3614733724361444197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6131638772975596908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd67fc494bb3694e842b19c6d080282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <IsDead>k__BackingField: 0
-  <MaxHp>k__BackingField: 10
-  <CurrentHp>k__BackingField: 10
 --- !u!114 &9122895742227051632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,3 +235,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dca6be7496c22c4989fd96d162c3b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9144086523355507443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131638772975596908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <AnimationData>k__BackingField:
+    wanderingParameterName: Wandering
+    attackParameterName: Attack
+    deadParameterName: Dead

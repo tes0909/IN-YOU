@@ -10,13 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4808826155825149644}
   - component: {fileID: 161811694908686012}
-  - component: {fileID: 3654876831177239181}
   - component: {fileID: 2812858872844411389}
   - component: {fileID: -4672930620673789187}
   - component: {fileID: 5096937522279584924}
-  - component: {fileID: 3075639256076275796}
-  - component: {fileID: 3311894052793914001}
-  - component: {fileID: -4581250832121853549}
+  - component: {fileID: 1168423764007690797}
+  - component: {fileID: -6089484382743022621}
   m_Layer: 0
   m_Name: Raven
   m_TagString: Untagged
@@ -33,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 6218637295744437145}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18, y: -0.39, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,33 +58,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &3654876831177239181
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6218637295744437145}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &2812858872844411389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -206,35 +177,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21105826, y: 0.16572925}
   m_EdgeRadius: 0
---- !u!114 &3075639256076275796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6218637295744437145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NavAgent: {fileID: 0}
---- !u!114 &3311894052793914001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6218637295744437145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd67fc494bb3694e842b19c6d080282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <IsDead>k__BackingField: 0
-  <MaxHp>k__BackingField: 10
-  <CurrentHp>k__BackingField: 10
---- !u!114 &-4581250832121853549
+--- !u!114 &1168423764007690797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,3 +189,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dca6be7496c22c4989fd96d162c3b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6089484382743022621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218637295744437145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <AnimationData>k__BackingField:
+    wanderingParameterName: Wandering
+    attackParameterName: Attack
+    deadParameterName: Dead

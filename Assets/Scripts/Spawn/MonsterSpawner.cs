@@ -8,18 +8,21 @@ public class MonsterSpawner : MonoBehaviour
 {
     private List<List<Vector3>> spawnPoints;
     private Dictionary<int, GameObject> WorldMonster;
+    private Dictionary<string, ObjectPool> poolDict = new Dictionary<string, ObjectPool>();
     public static List<int> pointNum = new List<int>();
 
     private int Identifier;
     public int pointGroup;
     public int monsterID;
     public int monsterCount;
+    private int defaultCapacity = 10;
 
     public int spawnCount { get; private set; }
     [SerializeField] private float spawnTime = 5.0f;
 
     public void Initialize(LevelContainer levelContainer)
     {
+        Debug.Log("levelcontainer Init");
         spawnPoints = new List<List<Vector3>>();
         List<Vector3> spawnPointsInner;
         foreach (MonsterSpawnPointGroup spawnPointGroup in levelContainer.MonsterSpawnPoints)
@@ -32,9 +35,26 @@ public class MonsterSpawner : MonoBehaviour
             spawnPoints.Add(spawnPointsInner);
             pointNum.Add(spawnPointsInner.Count);
         }
-
+        Debug.Log(spawnPoints.Count);
+        Debug.Log(pointNum.Count);
         WorldMonster = new Dictionary<int, GameObject>();
     }
+
+    //public GameObject Spawn(string prefabPath, Transform parent = null)
+    //{
+    //    string name = prefabPath.Substring(prefabPath.LastIndexOf('/') + 1);
+    //    if (prefabPath.StartsWith("/"))
+    //        prefabPath = prefabPath.Substring(1);
+
+    //    GameObject prefab = Managers.Resource.Load<GameObject>($"Prefabs/{prefabPath}");
+    //    if (prefab == null)
+    //    {
+    //        Debug.Log($"Failed to load prefab : {prefabPath}");
+    //        return null;
+    //    }
+
+    //    return prefab;
+    //}
 
     public GameObject Spawn(string prefabPath, Transform parent = null)
     {
@@ -42,14 +62,19 @@ public class MonsterSpawner : MonoBehaviour
         if (prefabPath.StartsWith("/"))
             prefabPath = prefabPath.Substring(1);
 
-        GameObject prefab = Managers.Resource.Load<GameObject>($"Prefabs/{prefabPath}");
-        if (prefab == null)
+        if (poolDict.TryGetValue(name, out ObjectPool pool) == false)
         {
-            Debug.Log($"Failed to load prefab : {prefabPath}");
-            return null;
+            GameObject prefab = Managers.Resource.Load<GameObject>($"Prefabs/{prefabPath}");
+            if (prefab == null)
+            {
+                Debug.Log($"Failed to load prefab : {prefabPath}");
+                return null;
+            }
+
+            pool = CreatePool(prefab, parent);
         }
 
-        return prefab;
+        return pool.Pop();
     }
 
     private void SpawnEntity(int pointGroup, int point, int monsterID)
@@ -57,6 +82,7 @@ public class MonsterSpawner : MonoBehaviour
         GameObject go = Spawn("/Monster");
         if (go == null)
         {
+            Debug.Log("SpawnError");
             return;
         }
 
@@ -66,39 +92,54 @@ public class MonsterSpawner : MonoBehaviour
             Despawn(go);
             return;
         }
-
+        
         Identifier++;
         Vector3 spawnPoint = spawnPoints[pointGroup][point];
-        spawnPoint += new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0 );
+        Debug.Log(pointGroup);
+        Debug.Log(point);
+
+        //spawnPoint += new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0 );
         if (monster.Initialize(Identifier, monsterID, spawnPoint) == false)
         {
             Despawn(go);
             return;
         }
-
-        monster.OnDead += Die;
+        Debug.Log(spawnPoint);
+        Debug.Log(go);
+        Debug.Log(go.name);
         spawnCount++;
         WorldMonster.Add(Identifier, go);
+        monster.OnDead += Die;
     }
 
     private void Despawn(GameObject go)
     {
-        GameObject.Destroy(go);
+        if (poolDict.TryGetValue(go.name, out ObjectPool pool))
+        {
+            pool.Push(go);
+        }
+        else
+        {
+            Debug.Log($"Failed to despawn : {go.name}");
+            GameObject.Destroy(go);
+        }
     }
 
     //NevMash 사용해서 스폰이 가능한 곳에서만 스폰 될 수 있도록 할 것
     public void MonsterSpawn()
     {
-        for (int i = 0; i < pointNum[pointGroup]; i++)
+        if(spawnCount < 5.0f)
         {
-            SpawnEntity(pointGroup, i, monsterID);
+            for (int i = 0; i < pointNum[pointGroup]; i++)
+            {
+                SpawnEntity(pointGroup, i, monsterID);
+            }
         }
     }
 
     private void Die(int identifier)
     {
         spawnCount--;
-        Debug.Log(identifier);
     }
 
     private IEnumerator SpawnMonsters()
@@ -112,6 +153,13 @@ public class MonsterSpawner : MonoBehaviour
 
     public void StartMonsterSpawn()
     {
-        StartCoroutine(SpawnMonsters());
+        MonsterSpawn();
+    }
+
+    private ObjectPool CreatePool(GameObject prefab, Transform parent = null)
+    {
+        ObjectPool pool = new ObjectPool(prefab, parent, defaultCapacity);
+        poolDict.Add(prefab.name, pool);
+        return pool;
     }
 }
