@@ -39,10 +39,4 @@ public class MonsterAttackState : MonsterBaseState
             return;
         }
     }
-
-    //애니메이션 이벤트에 추가
-    public void DealDamage()
-    {
-        playerCondition.TakeDamage(stateMachine.Monster.Stat.attackDamage);
-    }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,15 +13,17 @@ public class Monster : MonoBehaviour
     public MonsterCondition Condition { get; private set; }
     public BoxCollider2D HitCollider { get; private set; }
     public Rigidbody2D Rigidbody { get; private set; }
-    public MonsterAnimationData AnimationData { get; private set; }
-
+    [field: SerializeField] public MonsterAnimationData AnimationData { get; private set; }
+    private PlayerCondition playerCondition;
     public Animator Animator { get; private set; }
 
     public CharacterController Controller { get; private set; }
 
     private MonsterStateMachine stateMachine;
 
-    public NavMeshAgent NavAgent;
+    public NavMeshAgent NavAgent {  get; private set; }
+
+    public event Action<int> OnDead;
 
     private void Awake()
     {
@@ -28,28 +31,52 @@ public class Monster : MonoBehaviour
         HitCollider = GetComponent<BoxCollider2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        Condition = GetComponent<MonsterCondition>();
 
+        Condition.OnDead += Die;
         stateMachine = new MonsterStateMachine(this);
     }
 
     public bool Initialize(int identifier, int monsterID, Vector3 spawnPoint)
     {
         Identifier = identifier;
+        Debug.Log(identifier);
+        Debug.Log(monsterID);
+        Debug.Log(spawnPoint);
 
         this.transform.localPosition = spawnPoint;
         MonsterEntity monsterEntity = Managers.DB.Get<MonsterEntity>(monsterID);
         if (monsterEntity == null) return false;
+        Debug.Log(this.transform.name);
         GameObject go = Managers.Resource.Instantiate(monsterEntity.prefabPath, this.transform);
+        Debug.Log(go.name);
         if (go == null) return false;
+        Rigidbody.gravityScale = 0f;
 
+        AnimationData.Initialize();
         Stat = monsterEntity;
         Condition.SetData(Stat.maxHp);
-
         return true;
     }
 
     private void Update()
     {
         stateMachine.Update();
+    }
+
+    private void Die()
+    {
+        Animator.SetTrigger("Dead");
+        Invoke("DisableAfterDeath", 1);
+    }
+
+    private void DisableAfterDeath()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void DealDamage()
+    {
+        playerCondition.TakeDamage(stateMachine.Monster.Stat.attackDamage);
     }
 }

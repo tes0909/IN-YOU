@@ -35,9 +35,4 @@ public class MonsterCondition : MonoBehaviour
             OnHit?.Invoke(damage);
         }
     }
-
-    public void Heal(float heal)
-    {
-        CurrentHp = Mathf.Clamp(CurrentHp + heal, 0, MaxHp);
-    }
 }

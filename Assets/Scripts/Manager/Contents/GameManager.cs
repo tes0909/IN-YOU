@@ -7,7 +7,8 @@ public class GameManager : IManager
 {
     public Player Player { get; private set; }
     public bool IsPaused = false;
-    //private MonsterSpawner monsterSpawner;
+
+    private MonsterSpawner monsterSpawner;
 
     public void Clear()
     {
@@ -16,13 +17,17 @@ public class GameManager : IManager
 
     public void Init()
     {
-        
+        GameStart();
     }
 
     public void GameStart()
     {
-        //// 실제로 게임을 시작하는 함수
-        //monsterSpawner = new MonsterSpawner();
+        // 실제로 게임을 시작하는 함수
+        monsterSpawner = new MonsterSpawner();
+        LevelContainer level = GameObject.FindFirstObjectByType<LevelContainer>();
+        monsterSpawner.Initialize(level);
+        SetMonsterID(10001);
+        monsterSpawner.StartMonsterSpawn();
     }
 
     public void CreatePlayer()
@@ -39,7 +44,7 @@ public class GameManager : IManager
         }
 
         player.gameObject.name = nameof(Player);
-        //player.Condition.OnDead += GameOver;
+        player.Condition.OnDead += GameOver;
         Player = player;
     }
 
@@ -97,5 +102,10 @@ public class GameManager : IManager
     public void LoadGame()
     {
         //게임 불러오기 로직
+    }
+
+    public void SetMonsterID(int monsterId)
+    {
+        monsterSpawner.monsterID = monsterId;
     }
 }

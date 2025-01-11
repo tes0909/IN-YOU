@@ -10,7 +10,8 @@ public class PlayerCondition : MonoBehaviour
     public PlayerStatData playerStatData;
     public Slider healthBar;
     public TextMeshProUGUI healthText;
-    
+    public event Action OnDead;
+
     private float currentHealth;
     private float maxHealth;
 

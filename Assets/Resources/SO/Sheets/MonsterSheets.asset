@@ -16,96 +16,50 @@ MonoBehaviour:
   - id: 10001
     displayTitle: Raven
     description: Raven
-    prefabPath: 
+    monsterID: 0
+    prefabPath: /Prefabs/Monster/Raven
     iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
-    maxHp: 0
-    moveSpeed: 0
-    baseRotationDamping: 0
-    attractDistance: 0
-    chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    maxHp: 5
+    moveSpeed: 1.1
+    attractDistance: 1
+    attackDamage: 1
   - id: 10002
-    displayTitle: Bug
-    description: Bug
-    prefabPath: 
-    iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
-    maxHp: 0
-    moveSpeed: 0
-    baseRotationDamping: 0
-    attractDistance: 0
-    chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
-  - id: 10003
     displayTitle: Spider
     description: Spider
-    prefabPath: 
+    monsterID: 0
+    prefabPath: /Prefabs/Monster/Spider
     iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
-    maxHp: 0
-    moveSpeed: 0
-    baseRotationDamping: 0
-    attractDistance: 0
-    chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
-  - id: 10004
+    maxHp: 5
+    moveSpeed: 0.8
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10003
     displayTitle: RedZombie
     description: RedZombie
-    prefabPath: 
+    monsterID: 0
+    prefabPath: /Prefabs/Monster/RedZombie
     iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
-    maxHp: 0
-    moveSpeed: 0
-    baseRotationDamping: 0
-    attractDistance: 0
-    chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
-  - id: 10005
+    maxHp: 5
+    moveSpeed: 1
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10004
     displayTitle: PurpleZombie
     description: PurpleZombie
-    prefabPath: 
+    monsterID: 0
+    prefabPath: /Prefabs/Monster/PurpleZombie
     iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
-    maxHp: 0
-    moveSpeed: 0
-    baseRotationDamping: 0
-    attractDistance: 0
-    chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
-  - id: 10006
+    maxHp: 5
+    moveSpeed: 1
+    attractDistance: 1
+    attackDamage: 1
+  - id: 10005
     displayTitle: CrawlZombie
     description: CrawlZombie
-    prefabPath: 
+    monsterID: 0
+    prefabPath: /Prefabs/Monster/CrawlZombie
     iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
-    maxHp: 0
-    moveSpeed: 0
-    baseRotationDamping: 0
-    attractDistance: 0
-    chasePeriod: 0
-    attackDamage: 0
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
+    maxHp: 5
+    moveSpeed: 0.7
+    attractDistance: 1
+    attackDamage: 1
