@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,7 +59,7 @@ public class ItemMixManager : MonoBehaviour
             if (itemCount < requiredAmount)
             {
                 int missingAmount = requiredAmount - itemCount;
-                ShowPopUp(recipe.requiredItems[i].itemName + "�������� " + missingAmount + "�� �� �ʿ��մϴ�.");
+                ShowPopUp(recipe.requiredItems[i].itemName + "아이템이 " + missingAmount + "개 더 필요합니다.");
                 return false;
             }
         }
@@ -86,15 +87,16 @@ public class ItemMixManager : MonoBehaviour
                     }
                 }
             }
+            inventory.inventoryUI.UpdateBagPanel(playerInventory);
             inventory.AddToInfo(recipe.resultItem);
-            ShowPopUp("�̼� ����");
+            ShowPopUp("미션 성공");
+            //Invoke("LoadNextScene", 3f);
             Invoke("NextMission", 3f);
-            Invoke("LoadNextScene", 3f);
         }
     }
     private void LoadNextScene()
     {
-        DialogueManager.Instance.dialogueIndex++;
+        //DialogueManager.Instance.dialogueIndex++;
         Managers.Scene.LoadLaterScene();
     }
     private void ShowPopUp(string message)
@@ -105,7 +107,10 @@ public class ItemMixManager : MonoBehaviour
     }
     public void NextMission()
     {
+        Debug.Log($"현재 {needRecipeIdx}");
         needRecipeIdx++;
+        Debug.Log($"씬전환후 {needRecipeIdx}");
+    
         if (needRecipeIdx < mixList.itemMixRecipes.Count)
         {
             recipe = mixList.itemMixRecipes[needRecipeIdx];
@@ -114,7 +119,7 @@ public class ItemMixManager : MonoBehaviour
         }
         else
         {
-            ShowPopUp("Clear");
+            ShowPopUp("레시피 완료");
         }
     }
     private void HidePopUp()

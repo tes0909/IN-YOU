@@ -15,6 +15,7 @@ public class DialogueData
     public string uiType;
     public string Action;
     public string specialAction;
+    public string PortalAction;
 }
 
 [Serializable]

@@ -15,7 +15,7 @@ public class Island_2 : SceneBase
 
     protected override void OnSceneLoaded()
     {
-        Managers.Sound.PlayBGM("BGM");
+        Managers.Sound.PlayBGM("7_rain_and_fire");
         Managers.Sound.SetMasterVolume();
         Managers.Resource.Instantiate("Map/IslandMap");
     }

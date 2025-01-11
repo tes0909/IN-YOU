@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -9,6 +10,23 @@ public class Inventory : MonoBehaviour
     public List<ItemData> missionItems = new List<ItemData>();
     public InventoryUI inventoryUI;
     public ItemMixManager itemMixManager;
+    private static Inventory instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    
+    
+    
     public void AddToBag(ItemData newItem)
     {
         ItemData existingItem = bagItems.Find(item => item.itemName == newItem.itemName);

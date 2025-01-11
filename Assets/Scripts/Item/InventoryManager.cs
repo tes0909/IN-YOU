@@ -11,6 +11,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
         inventoryUI.gameObject.SetActive(false);
     }
 

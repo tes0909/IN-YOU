@@ -71,12 +71,19 @@ public class DialogueUI : MonoBehaviour
             fade.FadeBlue();
         }
         
-        if (currentDialogueData.specialAction == "Portal")
+        if (currentDialogueData.PortalAction == "Portal")
         {
             PortalForDemo portalForDemo = FindObjectOfType<PortalForDemo>();
+            PortalFadeOut portalFadeOut = FindObjectOfType<PortalFadeOut>();
             if (portalForDemo != null)
             {
                 SpriteRenderer portalRenderer = portalForDemo.GetComponent<SpriteRenderer>();
+                portalRenderer.enabled = true;
+            }
+
+            if (portalFadeOut != null)
+            {
+                SpriteRenderer portalRenderer = portalFadeOut.GetComponent<SpriteRenderer>();
                 portalRenderer.enabled = true;
             }
         }

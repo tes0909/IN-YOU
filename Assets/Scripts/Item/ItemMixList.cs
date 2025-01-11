@@ -19,8 +19,8 @@ public class ItemMixList : MonoBehaviour
         {
             resultItem = new ItemData
             {
-                itemName = "¸ğ´ÚºÒ",
-                description = "½±°Ô ²¨Áú °Í °°ÀÌ ¾Æ½½¾Æ½½ÇÏ´Ù.",
+                itemName = "ëª¨ë‹¥ë¶ˆ",
+                description = "ì‰½ê²Œ êº¼ì§ˆ ê²ƒ ê°™ì´ ì•„ìŠ¬ì•„ìŠ¬í•˜ë‹¤.",
                 icon = campfireIcon,
                 itemType = ItemType.Info,
                 quantity = 1
@@ -37,8 +37,8 @@ public class ItemMixList : MonoBehaviour
         {
             resultItem = new ItemData
             {
-                itemName = "¹«´ı",
-                description = "ÀÖ¾î¾ß ÇÒ °÷Àº ¿©±â°¡ ¾Æ´Ñµ¥.",
+                itemName = "ë¬´ë¤",
+                description = "ìˆì–´ì•¼ í•  ê³³ì€ ì—¬ê¸°ê°€ ì•„ë‹Œë°.",
                 icon = grave,
                 itemType = ItemType.Info,
                 quantity = 1
@@ -55,8 +55,8 @@ public class ItemMixList : MonoBehaviour
         {
             resultItem = new ItemData
             {
-                itemName = "±¹È­´Ù¹ß",
-                description = "Á×Àº »ç¶÷¿¡°Ô´Â ²ÉÀ» ÁÖ¾ú´ø °Í °°Àºµ¥.",
+                itemName = "êµ­í™”ë‹¤ë°œ",
+                description = "ì£½ì€ ì‚¬ëŒì—ê²ŒëŠ” ê½ƒì„ ì£¼ì—ˆë˜ ê²ƒ ê°™ì€ë°.",
                 icon = flowerpot,
                 itemType = ItemType.Info,
                 quantity = 1
@@ -73,8 +73,8 @@ public class ItemMixList : MonoBehaviour
         {
             resultItem = new ItemData
             {
-                itemName = "¿À·¡µÈ ÀÏ±âÀå",
-                description = "¸î ¹øÀ» ¹İº¹ÇØµµ Ã¹¸¶µğ´Â '¹Ì¾ÈÇÕ´Ï´Ù' ¿´´Ù.",
+                itemName = "ì˜¤ë˜ëœ ì¼ê¸°ì¥",
+                description = "ëª‡ ë²ˆì„ ë°˜ë³µí•´ë„ ì²« ë§ˆë””ëŠ” 'ë¯¸ì•ˆí•©ë‹ˆë‹¤'ì˜€ë‹¤.",
                 icon = olddiary,
                 itemType = ItemType.Info,
                 quantity = 1

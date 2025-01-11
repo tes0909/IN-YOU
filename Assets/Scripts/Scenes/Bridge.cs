@@ -8,6 +8,7 @@ public class Bridge : SceneBase
     protected override void OnSceneLoad()
     {
         Invoke("SetStart", 1f);
+        Managers.Sound.PlayBGM("8_Fragment");
     }
 
     protected override void OnSceneLoaded()
