@@ -7,6 +7,9 @@ public class Home : SceneBase
     public DialogueUI dialogueUI;
     protected override void OnSceneLoad()
     {
+        Managers.UI.Init();
+        Managers.Sound.Init();
+        Managers.Game.Init();
         Invoke("SetStart", 1f);
         Managers.Sound.PlayBGM("9_Reminiscene");
     }

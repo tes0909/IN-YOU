@@ -40,22 +40,6 @@ public class MonsterSpawner : MonoBehaviour
         WorldMonster = new Dictionary<int, GameObject>();
     }
 
-    //public GameObject Spawn(string prefabPath, Transform parent = null)
-    //{
-    //    string name = prefabPath.Substring(prefabPath.LastIndexOf('/') + 1);
-    //    if (prefabPath.StartsWith("/"))
-    //        prefabPath = prefabPath.Substring(1);
-
-    //    GameObject prefab = Managers.Resource.Load<GameObject>($"Prefabs/{prefabPath}");
-    //    if (prefab == null)
-    //    {
-    //        Debug.Log($"Failed to load prefab : {prefabPath}");
-    //        return null;
-    //    }
-
-    //    return prefab;
-    //}
-
     public GameObject Spawn(string prefabPath, Transform parent = null)
     {
         string name = prefabPath.Substring(prefabPath.LastIndexOf('/') + 1);
@@ -125,10 +109,9 @@ public class MonsterSpawner : MonoBehaviour
         }
     }
 
-    //NevMash 사용해서 스폰이 가능한 곳에서만 스폰 될 수 있도록 할 것
     public void MonsterSpawn()
     {
-        if(spawnCount < 5.0f)
+        if(spawnCount < 6.0f)
         {
             for (int i = 0; i < pointNum[pointGroup]; i++)
             {

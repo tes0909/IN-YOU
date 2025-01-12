@@ -10,11 +10,11 @@ public class Monster : MonoBehaviour
     public int Identifier { get; private set; }
 
     public MonsterEntity Stat { get; private set; }
-    public MonsterCondition Condition { get; private set; }
+    [field: SerializeField] public MonsterCondition Condition { get; private set; }
     public BoxCollider2D HitCollider { get; private set; }
     public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public MonsterAnimationData AnimationData { get; private set; }
-    private PlayerCondition playerCondition;
+    public PlayerCondition playerCondition;
     public Animator Animator { get; private set; }
 
     public CharacterController Controller { get; private set; }
