@@ -8,7 +8,20 @@ public class InventoryManager : MonoBehaviour
     public Inventory inventory;
     public InventoryUI inventoryUI;
     private bool isInventoryActive = false;
+    public static InventoryManager instance;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); 
+        }
+    }
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -26,6 +39,17 @@ public class InventoryManager : MonoBehaviour
     {
         isInventoryActive = !isInventoryActive;
         inventoryUI.gameObject.SetActive(isInventoryActive);
-        Debug.Log(isInventoryActive);
+    }
+    public void SetInventory(Inventory inven)
+    {
+        ResetInventoryUI();
+        inven = inventory;       
+    }
+
+    public void ResetInventoryUI()
+    {
+        inventory.bagItems.Clear();
+        inventoryUI.UpdateBagPanel(inventory.bagItems);
+
     }
 }

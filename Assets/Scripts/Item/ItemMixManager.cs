@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,21 +9,39 @@ public class ItemMixManager : MonoBehaviour
     private ItemMixRecipe recipe;
     private ItemMixList mixList;
     public CraftItemUI craftButton;
-    public MixeditemUI mixedItemUI;
     public int needRecipeIdx;
     public TextMeshProUGUI popUpText;
     private bool isCrafting;
     private SceneManagerEx sceneManager;
-
+    private InventoryUI inventoryUI;
+    private static ItemMixManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+    }
     private void Start()
     {
         if (IsSceneAllowed())
         {
+            
             if (inventory == null)
             {
                 inventory = FindObjectOfType<Inventory>();
             }
             mixList = GetComponent<ItemMixList>();
+            if (needRecipeIdx < mixList.itemMixRecipes.Count)
+            {
+                recipe = mixList.itemMixRecipes[needRecipeIdx];
+                craftButton.UpdateUI(recipe);
+            }
+            else
+            {
+                ShowPopUp("Clear");
+            }
             recipe = mixList.itemMixRecipes[needRecipeIdx];
             craftButton.UpdateUI(recipe);
             HidePopUp();
@@ -34,10 +51,11 @@ public class ItemMixManager : MonoBehaviour
             this.enabled = false;
         }
     }
+   
     private bool IsSceneAllowed()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-        string[] allowedScenes = { "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
+        string[] allowedScenes = { "Intro","6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
         return System.Array.Exists(allowedScenes, name => name == currentSceneName);
     }
     public bool CanCraft()
@@ -59,7 +77,7 @@ public class ItemMixManager : MonoBehaviour
             if (itemCount < requiredAmount)
             {
                 int missingAmount = requiredAmount - itemCount;
-                ShowPopUp(recipe.requiredItems[i].itemName + "ì•„ì´í…œì´ " + missingAmount + "ê°œ ë” í•„ìš”í•©ë‹ˆë‹¤.");
+                ShowPopUp(recipe.requiredItems[i].itemName + "¾ÆÀÌÅÛÀÌ " + missingAmount + "°³ ´õ ÇÊ¿äÇÕ´Ï´Ù.");
                 return false;
             }
         }
@@ -82,22 +100,34 @@ public class ItemMixManager : MonoBehaviour
                         if (playerInventory[j].quantity >= requiredAmount)
                         {
                             playerInventory[j].quantity -= requiredAmount;
+                            
                             break;
                         }
                     }
                 }
             }
-            inventory.inventoryUI.UpdateBagPanel(playerInventory);
             inventory.AddToInfo(recipe.resultItem);
-            ShowPopUp("ë¯¸ì…˜ ì„±ê³µ");
-            //Invoke("LoadNextScene", 3f);
-            Invoke("NextMission", 3f);
+            ShowPopUp("¹Ì¼Ç ¼º°ø");
+            Invoke("LoadNextScene", 3f);
+
+            inventory.inventoryUI.ClearBagPanel();
         }
     }
     private void LoadNextScene()
     {
-        //DialogueManager.Instance.dialogueIndex++;
-        Managers.Scene.LoadLaterScene();
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        if (inventoryUI != null)
+        {
+            inventoryUI.UpdateBagPanel(new List<ItemData>());
+        }
+        NextMission();
     }
     private void ShowPopUp(string message)
     {
@@ -107,10 +137,7 @@ public class ItemMixManager : MonoBehaviour
     }
     public void NextMission()
     {
-        Debug.Log($"í˜„ìž¬ {needRecipeIdx}");
         needRecipeIdx++;
-        Debug.Log($"ì”¬ì „í™˜í›„ {needRecipeIdx}");
-    
         if (needRecipeIdx < mixList.itemMixRecipes.Count)
         {
             recipe = mixList.itemMixRecipes[needRecipeIdx];
@@ -119,7 +146,7 @@ public class ItemMixManager : MonoBehaviour
         }
         else
         {
-            ShowPopUp("ë ˆì‹œí”¼ ì™„ë£Œ");
+            ShowPopUp("Clear");
         }
     }
     private void HidePopUp()
