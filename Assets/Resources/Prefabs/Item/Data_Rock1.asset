@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Data_Rock1
   m_EditorClassIdentifier: 
   itemName: "\uD070 \uB3CC"
-  description: 
+  description: "\uD070 \uB3CC"
   icon: {fileID: 21300000, guid: 28d8264b780b5b344861fb0815cd1ee7, type: 3}
   itemType: 2
   attackPower: 0

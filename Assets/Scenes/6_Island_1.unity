@@ -373,6 +373,7 @@ MonoBehaviour:
     moveXParameterName: moveX
     moveYParameterName: moveY
     attackParameterName: Attack
+  <Condition>k__BackingField: {fileID: 0}
   inventory: {fileID: 944526065}
 --- !u!95 &192207876
 Animator:
@@ -1157,12 +1158,12 @@ PrefabInstance:
     - target: {fileID: 873564149081827260, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 873564149081827260, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 3019019837447173948, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
@@ -1222,7 +1223,7 @@ PrefabInstance:
     - target: {fileID: 4929676869079123676, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5402350484498509338, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
@@ -1232,12 +1233,12 @@ PrefabInstance:
     - target: {fileID: 5874906093709380980, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5874906093709380980, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7053103132346915688, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
@@ -1292,12 +1293,12 @@ PrefabInstance:
     - target: {fileID: 7273233514369822153, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7273233514369822153, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 7445044185140698821, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
@@ -1307,32 +1308,32 @@ PrefabInstance:
     - target: {fileID: 7516553284278346975, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7516553284278346975, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7516553284278346975, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 7516553284278346975, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 7919914152704492055, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7919914152704492055, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8026623899848735907, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}
@@ -2441,6 +2442,7 @@ MonoBehaviour:
     uiType: 
     Action: 
     specialAction: 
+    PortalAction: 
   startNpcId: 0
 --- !u!61 &1731335299
 BoxCollider2D:
