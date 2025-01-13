@@ -94,10 +94,7 @@ public class DialogueUI : MonoBehaviour
             }
         }
 
-        if (currentDialogueData.specialAction == Hana)
-            disPlayImage.gameObject.SetActive(true);
-        else 
-            disPlayImage.gameObject.SetActive(false);
+        disPlayImage.gameObject.SetActive(currentDialogueData.specialAction == "Hana");
         
         if (currentDialogueData.position == left)
         {
