@@ -9,35 +9,53 @@ public class ItemMixManager : MonoBehaviour
     private ItemMixRecipe recipe;
     private ItemMixList mixList;
     public CraftItemUI craftButton;
-    public MixeditemUI mixedItemUI;
     public int needRecipeIdx;
     public TextMeshProUGUI popUpText;
     private bool isCrafting;
     private SceneManagerEx sceneManager;
-
+    private InventoryUI inventoryUI;
+    private static ItemMixManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+    }
     private void Start()
     {
         if (IsSceneAllowed())
         {
+            
             if (inventory == null)
             {
                 inventory = FindObjectOfType<Inventory>();
             }
             mixList = GetComponent<ItemMixList>();
+            if (needRecipeIdx < mixList.itemMixRecipes.Count)
+            {
+                recipe = mixList.itemMixRecipes[needRecipeIdx];
+                craftButton.UpdateUI(recipe);
+            }
+            else
+            {
+                ShowPopUp("Clear");
+            }
             recipe = mixList.itemMixRecipes[needRecipeIdx];
             craftButton.UpdateUI(recipe);
             HidePopUp();
         }
-
         else
         {
             this.enabled = false;
         }
     }
+   
     private bool IsSceneAllowed()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-        string[] allowedScenes = { "1_Intro", "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
+        string[] allowedScenes = { "Intro","6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
         return System.Array.Exists(allowedScenes, name => name == currentSceneName);
     }
     public bool CanCraft()
@@ -82,6 +100,7 @@ public class ItemMixManager : MonoBehaviour
                         if (playerInventory[j].quantity >= requiredAmount)
                         {
                             playerInventory[j].quantity -= requiredAmount;
+                            
                             break;
                         }
                     }
@@ -89,15 +108,27 @@ public class ItemMixManager : MonoBehaviour
             }
             inventory.AddToInfo(recipe.resultItem);
             ShowPopUp("미션 성공");
-            Invoke("NextMission", 2f);
-            //Invoke("LoadNextScene", 3f);
+            Invoke("LoadNextScene", 3f);
+
+            inventory.inventoryUI.ClearBagPanel();
         }
     }
-    //private void LoadNextScene()
-    //{
-    //    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-    //    SceneManager.LoadScene(currentSceneIndex + 1);
-    //}
+    private void LoadNextScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        if (inventoryUI != null)
+        {
+            inventoryUI.UpdateBagPanel(new List<ItemData>());
+        }
+        NextMission();
+    }
     private void ShowPopUp(string message)
     {
         popUpText.text = message; 
