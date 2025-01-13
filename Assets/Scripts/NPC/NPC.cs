@@ -12,7 +12,7 @@ public class NPC : MonoBehaviour
     private SortingGroup sortingGroup;
     private readonly int sortingOrderModifier = -10;
     public int startNpcId;
-    private bool waitEndDialogue; // 대화종료대기
+    private bool waitEndDialogue; 
 
     private void Start()
     {
@@ -70,7 +70,7 @@ public class NPC : MonoBehaviour
 
                     case "End": 
                         DialogueManager.Instance.StartDialogue(); 
-                        waitEndDialogue = true; // 종료 대기 상태 
+                        waitEndDialogue = true; 
                         break; 
                     
                     default:

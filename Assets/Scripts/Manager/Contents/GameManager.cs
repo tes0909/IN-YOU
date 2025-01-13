@@ -44,7 +44,7 @@ public class GameManager : IManager
         }
 
         player.gameObject.name = nameof(Player);
-        player.Condition.OnDead += GameOver;
+        //player.Condition.OnDead += GameOver;
         Player = player;
     }
 

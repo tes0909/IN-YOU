@@ -13,8 +13,9 @@ public class ItemMixManager : MonoBehaviour
     public TextMeshProUGUI popUpText;
     private bool isCrafting;
     private SceneManagerEx sceneManager;
-    private InventoryUI inventoryUI;
     private static ItemMixManager instance;
+    
+
     private void Awake()
     {
         if (instance == null)
@@ -110,7 +111,7 @@ public class ItemMixManager : MonoBehaviour
             ShowPopUp("미션 성공");
             Invoke("LoadNextScene", 3f);
 
-            inventory.inventoryUI.ClearBagPanel();
+            InventoryManager.instance.ResetInventoryUI();
         }
     }
     private void LoadNextScene()
@@ -123,17 +124,15 @@ public class ItemMixManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        if (inventoryUI != null)
-        {
-            inventoryUI.UpdateBagPanel(new List<ItemData>());
-        }
         NextMission();
+        inventory.inventoryUI.UpdateBagPanel(inventory.bagItems);
     }
     private void ShowPopUp(string message)
     {
         popUpText.text = message; 
         popUpText.gameObject.SetActive(true);
         Invoke("HidePopUp", 2f);
+        
     }
     public void NextMission()
     {

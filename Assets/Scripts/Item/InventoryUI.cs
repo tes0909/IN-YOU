@@ -42,9 +42,9 @@ public class InventoryUI : MonoBehaviour
     }
     public void ClearBagPanel()
     {
-        for (int i = 0; i < bagPanel.transform.childCount; i++)
+        for (int i = bagPanel.transform.GetChild(0).GetChild(0).childCount - 1; i >= 0; i--)
         {
-            Destroy(bagPanel.transform.GetChild(0).GetChild(0).GetChild(0));
+            Destroy(bagPanel.transform.GetChild(0).GetChild(0).GetChild(0).gameObject);
         }
     }
     public void UpdateInventoryUI(List<ItemData> inventory, GameObject panel)

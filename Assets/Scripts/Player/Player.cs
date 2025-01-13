@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        InventoryManager.instance.SetInventory(inventory);
+        InventoryManager.instance.SetInventory(this);
         stateMachine.ChangeState(stateMachine.IdleState);
         //Cursor.lockState = CursorLockMode.Locked;
     }
