@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using DG.Tweening;
 using UnityEditor;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -69,6 +70,11 @@ public class DialogueUI : MonoBehaviour
         {
             FadeScript fade = FindObjectOfType<FadeScript>();
             fade.FadeBlue();
+            Light2D[] light2Ds = FindObjectsOfType<Light2D>();
+            foreach (Light2D light2D in light2Ds)
+            {
+                light2D.enabled = true;
+            }
         }
         
         if (currentDialogueData.PortalAction == "Portal")
