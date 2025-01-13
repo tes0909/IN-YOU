@@ -8,7 +8,7 @@ public class Intro : SceneBase
 
     protected override void OnSceneLoad()
     {  
-        Invoke("SetStart", 0.1f);
+        Invoke("SetStart", 0.01f);
         Managers.Sound.PlayBGM("2_Fever");
     }
 

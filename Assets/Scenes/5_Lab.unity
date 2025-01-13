@@ -1067,6 +1067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc2f0c740db55b42bac0a7e7cdf0c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentDialogueInfo:
+    dialogueDatas: []
   dialogueData:
     DIdx: 0
     characterName: 
@@ -1074,6 +1076,11 @@ MonoBehaviour:
     position: 
     imageSprite: 
     uiType: 
+    Action: 
+    specialAction: 
+    PortalAction: 
+  startNpcId: 92
+  endNpcId: 144
 --- !u!50 &747927852
 Rigidbody2D:
   serializedVersion: 4
@@ -1861,6 +1868,7 @@ MonoBehaviour:
     moveXParameterName: moveX
     moveYParameterName: moveY
     attackParameterName: Attack
+  <Condition>k__BackingField: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!61 &1405707383
 BoxCollider2D:

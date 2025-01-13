@@ -775,7 +775,8 @@ MonoBehaviour:
     Action: 
     specialAction: 
     PortalAction: 
-  startNpcId: 0
+  startNpcId: 169
+  endNpcId: 173
 --- !u!61 &379785327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1423,7 +1424,7 @@ Transform:
   m_GameObject: {fileID: 622215465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7110863, y: -0.20847285, z: -8.355858}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2396,52 +2397,6 @@ MonoBehaviour:
     - {fileID: 1390041996}
     - {fileID: 1068271620}
     - {fileID: 795418214}
---- !u!1 &1067379345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1067379347}
-  - component: {fileID: 1067379346}
-  m_Layer: 0
-  m_Name: Home
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1067379346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067379345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a295a78e75f181040a5e886a075f5b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneType: 10
-  dialogueUI: {fileID: 0}
---- !u!4 &1067379347
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067379345}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068271619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,6 +2635,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 1.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398763561673664676, guid: 7baed4bef79d7524bbd86def9a865558,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398763561673664676, guid: 7baed4bef79d7524bbd86def9a865558,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398763561673664676, guid: 7baed4bef79d7524bbd86def9a865558,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9074721367772082167, guid: 7baed4bef79d7524bbd86def9a865558,
         type: 3}
@@ -5832,4 +5802,3 @@ SceneRoots:
   - {fileID: 1739329638}
   - {fileID: 5937638230610457502}
   - {fileID: 379785328}
-  - {fileID: 1067379347}

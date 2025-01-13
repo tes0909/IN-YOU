@@ -13,8 +13,8 @@ public class ItemMixManager : MonoBehaviour
     public TextMeshProUGUI popUpText;
     private bool isCrafting;
     private SceneManagerEx sceneManager;
-    private static ItemMixManager instance;
-    
+    public static ItemMixManager instance;
+    private FadeScript fade;
 
     private void Awake()
     {
@@ -78,7 +78,7 @@ public class ItemMixManager : MonoBehaviour
             if (itemCount < requiredAmount)
             {
                 int missingAmount = requiredAmount - itemCount;
-                ShowPopUp(recipe.requiredItems[i].itemName + "¾ÆÀÌÅÛÀÌ " + missingAmount + "°³ ´õ ÇÊ¿äÇÕ´Ï´Ù.");
+                ShowPopUp(recipe.requiredItems[i].itemName + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + missingAmount + "ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Õ´Ï´ï¿½.");
                 return false;
             }
         }
@@ -108,13 +108,46 @@ public class ItemMixManager : MonoBehaviour
                 }
             }
             inventory.AddToInfo(recipe.resultItem);
-            ShowPopUp("¹Ì¼Ç ¼º°ø");
-            Invoke("LoadNextScene", 3f);
+            ShowPopUp("ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½");
+            SpawnPortal();
 
             InventoryManager.instance.ResetInventoryUI();
         }
     }
-    private void LoadNextScene()
+
+    private void SpawnPortal()
+    {
+        PortalFadeOut portalFadeOut = FindObjectOfType<PortalFadeOut>();
+        if (portalFadeOut != null)
+        {
+            SpriteRenderer spriteRenderer = portalFadeOut.GetComponent<SpriteRenderer>();
+            spriteRenderer.enabled = true;
+            
+            BoxCollider2D collider2D = portalFadeOut.GetComponent<BoxCollider2D>();
+            collider2D.enabled = true;
+        }
+    }
+    
+    public void LoadNextScene()
+    {
+        instance.StartCoroutine(CorLoadScene());
+    }
+    
+    private IEnumerator CorLoadScene()
+    {
+        if (fade == null)
+        {
+            fade = FindObjectOfType<FadeScript>();
+        }
+
+        if (fade != null)
+        {
+            fade.FadeOut();
+            yield return new WaitForSeconds(fade.Ftime);
+        }
+        LoadScene();
+    }
+    private void LoadScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
@@ -132,7 +165,6 @@ public class ItemMixManager : MonoBehaviour
         popUpText.text = message; 
         popUpText.gameObject.SetActive(true);
         Invoke("HidePopUp", 2f);
-        
     }
     public void NextMission()
     {
