@@ -15,12 +15,14 @@ public class PlayerAttackState : PlayerBaseState
     {
         base.Enter();
         isAttacking = true;
+        stateMachine.Player.input.playerActions.Disable();
         stateMachine.Player.StartCoroutine(AttackTime());
     }
 
     public override void Exit()
     {
         base.Exit();
+        stateMachine.Player.input.playerActions.Enable();
         isAttacking = false;
     }
 
@@ -55,7 +57,9 @@ public class PlayerAttackState : PlayerBaseState
         yield return new WaitForSeconds(stateMachine.Player.PlayerSOData.AttackData.AttackDuration);
         isAttacking = false;
         yield return new WaitForSeconds(stateMachine.Player.PlayerSOData.AttackData.AttackCooltime);
-        
-        stateMachine.ChangeState(stateMachine.IdleState);
+        if (!isAttacking)
+        {
+            stateMachine.ChangeState(stateMachine.IdleState);
+        }
     }
 }

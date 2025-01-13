@@ -1686,13 +1686,13 @@
     {
       "DIdx": 153,
       "characterName": "담",
-      "dialogue": "어두워지기 전에 불을 지피는 것이 좋겠어.",
+      "dialogue": "어두워지기 전에 불을 지피는 것이 좋겠어. ",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Island_1",
       "Action": "End",
       "specialAction": "FadeIn",
-      "PortalAction": "Portal"
+      "PortalAction": ""
     },
     {
       "DIdx": 154,
@@ -1747,12 +1747,12 @@
       "uiType": "Island_2",
       "Action": "End",
       "specialAction": "FadeBlue",
-      "PortalAction": "Portal"
+      "PortalAction": ""
     },
     {
       "DIdx": 159,
       "characterName": "담",
-      "dialogue": "여긴 마포대교···?",
+      "dialogue": "···?",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1763,18 +1763,18 @@
     {
       "DIdx": 160,
       "characterName": "담",
-      "dialogue": "이 글들은···.",
+      "dialogue": "여긴 마포대교···?",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
       "Action": "Continue",
-      "specialAction": "",
+      "specialAction": "FadeIn",
       "PortalAction": ""
     },
     {
       "DIdx": 161,
       "characterName": "담",
-      "dialogue": "반전드라마는 끝내 완성되어야 한다···.",
+      "dialogue": "이 글들은···.",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1785,7 +1785,7 @@
     {
       "DIdx": 162,
       "characterName": "담",
-      "dialogue": "당신이 생각하는 내일은 생각보다 괜찮을 거에요···.",
+      "dialogue": "반전드라마는 끝내 완성되어야 한다···.",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1796,7 +1796,7 @@
     {
       "DIdx": 163,
       "characterName": "담",
-      "dialogue": "···!",
+      "dialogue": "당신이 생각하는 내일은 생각보다 괜찮을 거에요···.",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1807,7 +1807,7 @@
     {
       "DIdx": 164,
       "characterName": "담",
-      "dialogue": "생명의 다리···.",
+      "dialogue": "···!",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1818,7 +1818,7 @@
     {
       "DIdx": 165,
       "characterName": "담",
-      "dialogue": "죽으려고 했던거냐..바보같이···.",
+      "dialogue": "생명의 다리···.",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1829,7 +1829,7 @@
     {
       "DIdx": 166,
       "characterName": "담",
-      "dialogue": "···꽃.",
+      "dialogue": "죽으려고 했던거냐..바보같이···.",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
@@ -1840,27 +1840,38 @@
     {
       "DIdx": 167,
       "characterName": "담",
+      "dialogue": "···꽃.",
+      "position": "left",
+      "imageSprite": "Dam",
+      "uiType": "Bridge",
+      "Action": "Continue",
+      "specialAction": "",
+      "PortalAction": ""
+    },
+    {
+      "DIdx": 168,
+      "characterName": "담",
       "dialogue": "하얀 꽃이 필요하겠어.",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Bridge",
       "Action": "End",
       "specialAction": "",
-      "PortalAction": "Portal"
+      "PortalAction": ""
     },
     {
-      "DIdx": 168,
+      "DIdx": 169,
       "characterName": "담",
       "dialogue": "···집?",
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Home_1",
       "Action": "Start",
-      "specialAction": "",
+      "specialAction": "FadeIn",
       "PortalAction": ""
     },
     {
-      "DIdx": 169,
+      "DIdx": 170,
       "characterName": "담",
       "dialogue": "경이가 살던 곳인가?",
       "position": "left",
@@ -1871,7 +1882,7 @@
       "PortalAction": ""
     },
     {
-      "DIdx": 170,
+      "DIdx": 171,
       "characterName": "담",
       "dialogue": "뭘 하면서 살았는지 알아봐야겠어.",
       "position": "left",
@@ -1882,7 +1893,7 @@
       "PortalAction": ""
     },
     {
-      "DIdx": 171,
+      "DIdx": 172,
       "characterName": "담",
       "dialogue": "메모나 일기 같은 게 남아있으면 좋으련만.",
       "position": "left",

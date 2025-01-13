@@ -373,7 +373,9 @@ MonoBehaviour:
     uiType: 
     Action: 
     specialAction: 
-  startNpcId: 0
+    PortalAction: 
+  startNpcId: 71
+  endNpcId: 79
 --- !u!50 &386874390
 Rigidbody2D:
   serializedVersion: 4
@@ -1218,6 +1220,7 @@ MonoBehaviour:
     moveXParameterName: moveX
     moveYParameterName: moveY
     attackParameterName: Attack
+  <Condition>k__BackingField: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!61 &863772860
 BoxCollider2D:

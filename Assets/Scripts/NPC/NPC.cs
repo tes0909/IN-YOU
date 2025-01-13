@@ -11,8 +11,7 @@ public class NPC : MonoBehaviour
     private bool isPlayerNearby;
     private SortingGroup sortingGroup;
     private readonly int sortingOrderModifier = -10;
-    public int startNpcId;
-    private bool waitEndDialogue; 
+    public int startNpcId, endNpcId;
 
     private void Start()
     {
@@ -41,7 +40,6 @@ public class NPC : MonoBehaviour
         {
             isPlayerNearby = false;
             DialogueManager.Instance.EndDialogue();
-            waitEndDialogue = false;
         }
     }
 
@@ -49,35 +47,10 @@ public class NPC : MonoBehaviour
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            if (DialogueManager.Instance.dialogueIndex >= startNpcId && !DialogueManager.Instance.dialogueUI.typing)
+            
+            if (DialogueManager.Instance.dialogueIndex >= startNpcId && DialogueManager.Instance.dialogueIndex < endNpcId)
             {
-                if (waitEndDialogue) 
-                { 
-                    DialogueManager.Instance.EndDialogue(); 
-                    waitEndDialogue = false; 
-                    this.enabled = false; 
-                    return;
-                }
-                
-                dialogueData = currentDialogueInfo.dialogueDatas[DialogueManager.Instance.dialogueIndex];
-
-                switch (dialogueData.Action) 
-                { 
-                    case "Start": 
-                    case "Continue": 
-                        DialogueManager.Instance.StartDialogue(); 
-                        break; 
-
-                    case "End": 
-                        DialogueManager.Instance.StartDialogue(); 
-                        waitEndDialogue = true; 
-                        break; 
-                    
-                    default:
-                        Debug.Log("액션이 없습니다");
-                        break;
-                } 
-                Debug.Log(DialogueManager.Instance.dialogueIndex); 
+                DialogueManager.Instance.StartDialogue(); 
             }
         }
     }
