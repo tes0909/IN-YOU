@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/10_Boss_Faintly.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/10_Boss_Faintly.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/MonsterSheets.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/MonsterSheets.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Boss.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
