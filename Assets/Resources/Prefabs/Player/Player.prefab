@@ -290,6 +290,7 @@ MonoBehaviour:
     moveXParameterName: moveX
     moveYParameterName: moveY
     attackParameterName: Attack
+  <Condition>k__BackingField: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &3631036904483870314
 MonoBehaviour:
@@ -349,9 +350,9 @@ MonoBehaviour:
   playerStatData:
     <MaxHealth>k__BackingField: 100
     <CurrentHealth>k__BackingField: 100
-  bugStats: {fileID: 11400000, guid: fca0d18590aeb484a9c75c2b495297eb, type: 2}
   healthBar: {fileID: 0}
   healthText: {fileID: 0}
+  IsDie: 0
 --- !u!210 &2696533779678483578
 SortingGroup:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8132197626340259170}
   - component: {fileID: 2048973955168560926}
   - component: {fileID: -8219676313363004329}
+  - component: {fileID: -6683686978879953104}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -75,3 +76,21 @@ MonoBehaviour:
   <IsDead>k__BackingField: 0
   <MaxHp>k__BackingField: 0
   <CurrentHp>k__BackingField: 0
+--- !u!114 &-6683686978879953104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439019464055223492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Condition>k__BackingField: {fileID: 0}
+  <AnimationData>k__BackingField:
+    wanderingParameterName: Wandering
+    attackParameterName: Attack
+    deadParameterName: Dead
+  playerCondition: {fileID: 0}

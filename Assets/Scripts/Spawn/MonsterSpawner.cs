@@ -42,6 +42,7 @@ public class MonsterSpawner : MonoBehaviour
 
     public GameObject Spawn(string prefabPath, Transform parent = null)
     {
+        Debug.Log("SpawnInit");
         string name = prefabPath.Substring(prefabPath.LastIndexOf('/') + 1);
         if (prefabPath.StartsWith("/"))
             prefabPath = prefabPath.Substring(1);
@@ -54,10 +55,9 @@ public class MonsterSpawner : MonoBehaviour
                 Debug.Log($"Failed to load prefab : {prefabPath}");
                 return null;
             }
-
             pool = CreatePool(prefab, parent);
+            Debug.Log(pool);
         }
-
         return pool.Pop();
     }
 
@@ -81,6 +81,8 @@ public class MonsterSpawner : MonoBehaviour
         Vector3 spawnPoint = spawnPoints[pointGroup][point];
         Debug.Log(pointGroup);
         Debug.Log(point);
+        Debug.Log(monsterID);
+        Debug.Log(spawnPoint);
 
         //spawnPoint += new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0 );
         if (monster.Initialize(Identifier, monsterID, spawnPoint) == false)

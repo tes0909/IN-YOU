@@ -8,8 +8,8 @@ public class Home : SceneBase
     protected override void OnSceneLoad()
     {
         Managers.Game.Init();
-        Managers.Game.SetMonsterID(10003);
-        Invoke("SetStart", 1f);
+        Managers.Game.SetMonsterID(10001);
+        //Invoke("SetStart", 1f);
         Managers.Sound.PlayBGM("9_Reminiscene");
     }
 

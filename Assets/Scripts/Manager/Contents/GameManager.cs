@@ -26,6 +26,7 @@ public class GameManager : IManager
         monsterSpawner = new MonsterSpawner();
         LevelContainer level = GameObject.FindFirstObjectByType<LevelContainer>();
         monsterSpawner.Initialize(level);
+        SetMonsterID(10001);
     }
 
     public void CreatePlayer()

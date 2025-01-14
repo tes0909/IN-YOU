@@ -14,7 +14,7 @@ public class MonsterWanderingState : MonsterBaseState
 
     public override void Enter()
     {
-        stateMachine.MovementSpeedModifier = groundData.WalkSpeedModifier;
+        stateMachine.MovementSpeedModifier = 1f;
         timer = 0;
         base.Enter();
         SetRandomDestination();
@@ -55,8 +55,11 @@ public class MonsterWanderingState : MonsterBaseState
 
     private void SetRandomDestination()
     {
-        Vector3 randomDirection = Random.insideUnitSphere * 10f;
-        randomDirection += stateMachine.Monster.NavAgent.transform.position; 
+        Vector3 randomDirection = new Vector3(Random.insideUnitSphere.x * 10f, Random.insideUnitSphere.y * 10f, 0);
+        Debug.Log(stateMachine.Monster.NavAgent);
+        Debug.Log(stateMachine.Monster.NavAgent.transform);
+        Debug.Log(stateMachine.Monster.NavAgent.transform.position);
+        stateMachine.Monster.NavAgent.transform.position += randomDirection; 
 
         Vector3 targetPosition;
 

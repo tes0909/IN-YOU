@@ -11,12 +11,14 @@ public class PlayerCondition : MonoBehaviour
     public Slider healthBar;
     public TextMeshProUGUI healthText;
     public event Action OnDead;
+    public bool IsDie;
 
     private float currentHealth;
     private float maxHealth;
 
     private void Start()
     {
+        IsDie = false;
         currentHealth = playerStatData.CurrentHealth;
         maxHealth = playerStatData.MaxHealth; 
     }
@@ -47,7 +49,8 @@ public class PlayerCondition : MonoBehaviour
 
         if (currentHealth < 0)
         {
-            Destroy(gameObject);
+            IsDie = true;
+            Managers.UI.ShowPopupUI<UIGameOverPopup>();
             Debug.Log("사망");
         }
     }
