@@ -6,33 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player_Attack_Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Animations/Rem_World/Player_Attack_Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maze_Boss/ERW - Old Prison V1.7.0/TiledMap Editor New/Old Prison example map.tmx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maze_Boss/ERW - Old Prison V1.7.0/TiledMap Editor New/Old Prison example map.tmx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal_test/Assembly-CSharp.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Portal_test/DemoPC.sln.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_Bar.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_News.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_News.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/4_Letter.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/4_Letter.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/5_Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/5_Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6_Island_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6_Island_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/10_Boss_Faintly.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/10_Boss_Faintly.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMixManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/ItemMixManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SceneManagerEx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/StateMachine/PlayerAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/StateMachine/PlayerAttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Home.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Home.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Intro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Intro.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Lab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Lab.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/PortalFadeOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/PortalFadeOut.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/PortalForDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/PortalForDemo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +173,7 @@
       <workItem from="1736560929962" duration="11810000" />
       <workItem from="1736730949904" duration="658000" />
       <workItem from="1736774952451" duration="17177000" />
+      <workItem from="1736814174183" duration="770000" />
     </task>
     <servers />
   </component>
