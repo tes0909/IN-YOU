@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: -8593725034578576184}
   - component: {fileID: 555706943368569816}
   - component: {fileID: 4716960981328193715}
-  - component: {fileID: -1648152296843758362}
   m_Layer: 0
   m_Name: CrawlZombie
   m_TagString: Untagged
@@ -202,23 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Condition>k__BackingField: {fileID: 0}
   <AnimationData>k__BackingField:
     wanderingParameterName: Wandering
     attackParameterName: Attack
     deadParameterName: Dead
---- !u!114 &-1648152296843758362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124930619793112377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <AnimationData>k__BackingField:
-    wanderingParameterName: Wandering
-    attackParameterName: Attack
-    deadParameterName: Dead
+  playerCondition: {fileID: 0}

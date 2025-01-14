@@ -3,7 +3,7 @@
 public class MonsterStateMachine : StateMachine
 {
     public Monster Monster { get; private set; }
-
+    public SpriteRenderer Renderer { get; private set; }
     public float MovementSpeed { get; private set; }
     public float MovementSpeedModifier { get; set; } = 1.0f;
 
@@ -16,8 +16,12 @@ public class MonsterStateMachine : StateMachine
     public MonsterStateMachine(Monster monster)
     {
         this.Monster = monster;
+        Debug.Log(GameObject.FindGameObjectWithTag("Player"));
+        Debug.Log(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCondition>());
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCondition>();
-
+        
+        MovementSpeed = monster.Stat.moveSpeed;
+        
         WanderingState = new MonsterWanderingState(this);
         AttackState = new MonsterAttackState(this);
         ChasingState = new MonsterChasingState(this);

@@ -13,7 +13,7 @@ public class MonsterChasingState : MonsterBaseState
 
     public override void Enter()
     {
-        stateMachine.MovementSpeedModifier = groundData.WalkSpeedModifier * 1.3f;
+        stateMachine.MovementSpeedModifier = 1.3f;
         base.Enter();
     }
 

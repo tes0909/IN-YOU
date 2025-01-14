@@ -11,10 +11,11 @@ public class Monster : MonoBehaviour
 
     public MonsterEntity Stat { get; private set; }
     [field: SerializeField] public MonsterCondition Condition { get; private set; }
-    public BoxCollider2D HitCollider { get; private set; }
     public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public MonsterAnimationData AnimationData { get; private set; }
     public PlayerCondition playerCondition;
+    public SpriteRenderer Renderer { get; private set; }
+
     public Animator Animator { get; private set; }
 
     public CharacterController Controller { get; private set; }
@@ -27,14 +28,10 @@ public class Monster : MonoBehaviour
 
     private void Awake()
     {
-        NavAgent = GetComponent<NavMeshAgent>();
-        HitCollider = GetComponent<BoxCollider2D>();
         Rigidbody = GetComponent<Rigidbody2D>();
-        Animator = GetComponent<Animator>();
         Condition = GetComponent<MonsterCondition>();
 
         Condition.OnDead += Die;
-        stateMachine = new MonsterStateMachine(this);
     }
 
     public bool Initialize(int identifier, int monsterID, Vector3 spawnPoint)
@@ -49,13 +46,18 @@ public class Monster : MonoBehaviour
         if (monsterEntity == null) return false;
         Debug.Log(this.transform.name);
         GameObject go = Managers.Resource.Instantiate(monsterEntity.prefabPath, this.transform);
+        NavAgent = GetComponentInChildren<NavMeshAgent>();
+        Animator = GetComponentInChildren<Animator>();
+        Renderer = GetComponentInChildren<SpriteRenderer>();
         Debug.Log(go.name);
         if (go == null) return false;
         Rigidbody.gravityScale = 0f;
-
         AnimationData.Initialize();
         Stat = monsterEntity;
         Condition.SetData(Stat.maxHp);
+
+        stateMachine = new MonsterStateMachine(this);
+        stateMachine.ChangeState(stateMachine.WanderingState);
         return true;
     }
 
@@ -75,8 +77,8 @@ public class Monster : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void DealDamage()
-    {
-        playerCondition.TakeDamage(stateMachine.Monster.Stat.attackDamage);
-    }
+    //public void DealDamage()
+    //{
+    //    playerCondition.TakeDamage(stateMachine.Monster.Stat.attackDamage);
+    //}
 }

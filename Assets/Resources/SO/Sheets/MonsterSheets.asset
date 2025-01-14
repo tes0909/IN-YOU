@@ -17,79 +17,39 @@ MonoBehaviour:
     displayTitle: Raven
     description: Raven
     prefabPath: /Prefabs/Monster/Raven
-    iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
     maxHp: 5
     moveSpeed: 1.1
-    baseRotationDamping: 0
     attractDistance: 1
-    chasePeriod: 0
     attackDamage: 1
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
   - id: 10002
     displayTitle: Spider
     description: Spider
     prefabPath: /Prefabs/Monster/Spider
-    iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
     maxHp: 5
     moveSpeed: 0.8
-    baseRotationDamping: 0
     attractDistance: 1
-    chasePeriod: 0
     attackDamage: 1
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
   - id: 10003
     displayTitle: RedZombie
     description: RedZombie
     prefabPath: /Prefabs/Monster/RedZombie
-    iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
     maxHp: 5
     moveSpeed: 1
-    baseRotationDamping: 0
     attractDistance: 1
-    chasePeriod: 0
     attackDamage: 1
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
   - id: 10004
     displayTitle: PurpleZombie
     description: PurpleZombie
     prefabPath: /Prefabs/Monster/PurpleZombie
-    iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
     maxHp: 5
     moveSpeed: 1
-    baseRotationDamping: 0
     attractDistance: 1
-    chasePeriod: 0
     attackDamage: 1
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0
   - id: 10005
     displayTitle: CrawlZombie
     description: CrawlZombie
     prefabPath: /Prefabs/Monster/CrawlZombie
-    iconPath: 
-    colliderRadius: 0
-    colliderHeight: 0
     maxHp: 5
     moveSpeed: 0.7
-    baseRotationDamping: 0
     attractDistance: 1
-    chasePeriod: 0
     attackDamage: 1
-    attackPeriod: 0
-    duration: 0
-    waitTime: 0

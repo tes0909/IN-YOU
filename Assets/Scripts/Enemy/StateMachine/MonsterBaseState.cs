@@ -4,7 +4,6 @@ using UnityEngine;
 public class MonsterBaseState : IState
 {
     public MonsterStateMachine stateMachine;
-    protected readonly PlayerGroundData groundData;
 
     protected MonsterBaseState(MonsterStateMachine stateMachine)
     {
@@ -44,7 +43,7 @@ public class MonsterBaseState : IState
 
     protected bool IsInChasingRange()
     {
-        if (stateMachine.Target)//IsDie)
+        if (stateMachine.Target.IsDie)
         {
             return false;
         }

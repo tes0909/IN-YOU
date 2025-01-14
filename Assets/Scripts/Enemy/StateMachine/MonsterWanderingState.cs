@@ -14,7 +14,7 @@ public class MonsterWanderingState : MonsterBaseState
 
     public override void Enter()
     {
-        stateMachine.MovementSpeedModifier = groundData.WalkSpeedModifier;
+        stateMachine.MovementSpeedModifier = 1f;
         timer = 0;
         base.Enter();
         SetRandomDestination();
@@ -36,14 +36,12 @@ public class MonsterWanderingState : MonsterBaseState
         if (timer >= changeDirectionTime)
         {
             SetRandomDestination();
-            LookForward();
             timer = 0f;
         }
 
         if (!stateMachine.Monster.NavAgent.pathPending && stateMachine.Monster.NavAgent.remainingDistance < 0.5f)
         {
             SetRandomDestination();
-            LookForward();
         }
 
         if (IsInChasingRange())
@@ -55,29 +53,21 @@ public class MonsterWanderingState : MonsterBaseState
 
     private void SetRandomDestination()
     {
-        Vector3 randomDirection = Random.insideUnitSphere * 10f;
-        randomDirection += stateMachine.Monster.NavAgent.transform.position; 
+        Vector3 randomDirection = new Vector3(Random.insideUnitSphere.x * 10f, 0, 0);
+        Debug.Log(stateMachine.Monster.NavAgent.transform.position);
+        Debug.Log(randomDirection);
+        Debug.Log(stateMachine.Monster.transform.position);
 
-        Vector3 targetPosition;
+        Vector3 targetPosition = stateMachine.Monster.NavAgent.transform.position + randomDirection;
+        stateMachine.Monster.Renderer.flipX = randomDirection.x <= 0;
 
         NavMeshHit hit;
 
-        if (NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(targetPosition, out hit, 10f, NavMesh.AllAreas))
         {
             targetPosition = hit.position;
             stateMachine.Monster.NavAgent.SetDestination(targetPosition); 
-            changeDirectionTime = Random.Range(1f, 3f); 
-        }
-    }
-
-    private void LookForward()
-    {
-        Vector3 direction = stateMachine.Monster.NavAgent.velocity.normalized;
-
-        if (direction != Vector3.zero)
-        {
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
-            stateMachine.Monster.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle)); 
+            changeDirectionTime = Random.Range(3f, 6f); 
         }
     }
 }
