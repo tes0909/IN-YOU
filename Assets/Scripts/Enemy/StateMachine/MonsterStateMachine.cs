@@ -3,8 +3,7 @@
 public class MonsterStateMachine : StateMachine
 {
     public Monster Monster { get; private set; }
-    public Player Player { get; set; }
-
+    public SpriteRenderer Renderer { get; private set; }
     public float MovementSpeed { get; private set; }
     public float MovementSpeedModifier { get; set; } = 1.0f;
 

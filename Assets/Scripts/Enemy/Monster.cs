@@ -14,6 +14,8 @@ public class Monster : MonoBehaviour
     public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public MonsterAnimationData AnimationData { get; private set; }
     public PlayerCondition playerCondition;
+    public SpriteRenderer Renderer { get; private set; }
+
     public Animator Animator { get; private set; }
 
     public CharacterController Controller { get; private set; }
@@ -46,6 +48,7 @@ public class Monster : MonoBehaviour
         GameObject go = Managers.Resource.Instantiate(monsterEntity.prefabPath, this.transform);
         NavAgent = GetComponentInChildren<NavMeshAgent>();
         Animator = GetComponentInChildren<Animator>();
+        Renderer = GetComponentInChildren<SpriteRenderer>();
         Debug.Log(go.name);
         if (go == null) return false;
         Rigidbody.gravityScale = 0f;

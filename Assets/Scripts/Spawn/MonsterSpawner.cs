@@ -113,9 +113,9 @@ public class MonsterSpawner : MonoBehaviour
 
     public void MonsterSpawn()
     {
-        if(spawnCount < 6.0f)
+        if(spawnCount < 1.0f) //6
         {
-            for (int i = 0; i < pointNum[pointGroup]; i++)
+            for (int i = 0; i < 1; i++)//pointNum[pointGroup]; i++)
             {
                 SpawnEntity(pointGroup, i, monsterID);
             }
