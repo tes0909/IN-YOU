@@ -75,7 +75,7 @@ public class SceneManagerEx : IManager
     }
 
 
-    public void LoadScene()
+    private void LoadScene()
     {
         int nextSceneNum = SceneNum + 1;
         Managers.Clear();

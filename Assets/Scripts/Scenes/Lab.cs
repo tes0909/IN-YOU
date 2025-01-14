@@ -8,7 +8,7 @@ public class Lab : SceneBase
 
     protected override void OnSceneLoad()
     {  
-        Invoke("SetStart", 1f);
+        Invoke("SetStart", 1.5f);
         Managers.Sound.PlayBGM("5_Laboratory");
     }
 

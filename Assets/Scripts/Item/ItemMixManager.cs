@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,21 +9,40 @@ public class ItemMixManager : MonoBehaviour
     private ItemMixRecipe recipe;
     private ItemMixList mixList;
     public CraftItemUI craftButton;
-    public MixeditemUI mixedItemUI;
     public int needRecipeIdx;
     public TextMeshProUGUI popUpText;
     private bool isCrafting;
     private SceneManagerEx sceneManager;
+    public static ItemMixManager instance;
+    private FadeScript fade;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+    }
     private void Start()
     {
         if (IsSceneAllowed())
         {
+            
             if (inventory == null)
             {
                 inventory = FindObjectOfType<Inventory>();
             }
             mixList = GetComponent<ItemMixList>();
+            if (needRecipeIdx < mixList.itemMixRecipes.Count)
+            {
+                recipe = mixList.itemMixRecipes[needRecipeIdx];
+                craftButton.UpdateUI(recipe);
+            }
+            else
+            {
+                ShowPopUp("Clear");
+            }
             recipe = mixList.itemMixRecipes[needRecipeIdx];
             craftButton.UpdateUI(recipe);
             HidePopUp();
@@ -34,10 +52,11 @@ public class ItemMixManager : MonoBehaviour
             this.enabled = false;
         }
     }
+   
     private bool IsSceneAllowed()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-        string[] allowedScenes = { "6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
+        string[] allowedScenes = { "Intro","6_Island_1", "7_Island_2", "8_Bridge", "9_Home_1" };
         return System.Array.Exists(allowedScenes, name => name == currentSceneName);
     }
     public bool CanCraft()
@@ -59,7 +78,7 @@ public class ItemMixManager : MonoBehaviour
             if (itemCount < requiredAmount)
             {
                 int missingAmount = requiredAmount - itemCount;
-                ShowPopUp(recipe.requiredItems[i].itemName + "아이템이 " + missingAmount + "개 더 필요합니다.");
+                ShowPopUp(recipe.requiredItems[i].itemName + "�������� " + missingAmount + "�� �� �ʿ��մϴ�.");
                 return false;
             }
         }
@@ -82,22 +101,64 @@ public class ItemMixManager : MonoBehaviour
                         if (playerInventory[j].quantity >= requiredAmount)
                         {
                             playerInventory[j].quantity -= requiredAmount;
+                            
                             break;
                         }
                     }
                 }
             }
-            inventory.inventoryUI.UpdateBagPanel(playerInventory);
             inventory.AddToInfo(recipe.resultItem);
-            ShowPopUp("미션 성공");
-            //Invoke("LoadNextScene", 3f);
-            Invoke("NextMission", 3f);
+            ShowPopUp("�̼� ����");
+            SpawnPortal();
+
+            InventoryManager.instance.ResetInventoryUI();
         }
     }
-    private void LoadNextScene()
+
+    private void SpawnPortal()
     {
-        //DialogueManager.Instance.dialogueIndex++;
-        Managers.Scene.LoadLaterScene();
+        PortalFadeOut portalFadeOut = FindObjectOfType<PortalFadeOut>();
+        if (portalFadeOut != null)
+        {
+            SpriteRenderer spriteRenderer = portalFadeOut.GetComponent<SpriteRenderer>();
+            spriteRenderer.enabled = true;
+            
+            BoxCollider2D collider2D = portalFadeOut.GetComponent<BoxCollider2D>();
+            collider2D.enabled = true;
+        }
+    }
+    
+    public void LoadNextScene()
+    {
+        instance.StartCoroutine(CorLoadScene());
+    }
+    
+    private IEnumerator CorLoadScene()
+    {
+        if (fade == null)
+        {
+            fade = FindObjectOfType<FadeScript>();
+        }
+
+        if (fade != null)
+        {
+            fade.FadeOut();
+            yield return new WaitForSeconds(fade.Ftime);
+        }
+        LoadScene();
+    }
+    private void LoadScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        NextMission();
+        inventory.inventoryUI.UpdateBagPanel(inventory.bagItems);
     }
     private void ShowPopUp(string message)
     {
@@ -107,10 +168,7 @@ public class ItemMixManager : MonoBehaviour
     }
     public void NextMission()
     {
-        Debug.Log($"현재 {needRecipeIdx}");
         needRecipeIdx++;
-        Debug.Log($"씬전환후 {needRecipeIdx}");
-    
         if (needRecipeIdx < mixList.itemMixRecipes.Count)
         {
             recipe = mixList.itemMixRecipes[needRecipeIdx];
@@ -119,7 +177,7 @@ public class ItemMixManager : MonoBehaviour
         }
         else
         {
-            ShowPopUp("레시피 완료");
+            ShowPopUp("Clear");
         }
     }
     private void HidePopUp()

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Data_Branch1
   m_EditorClassIdentifier: 
   itemName: "\uB098\uBB47\uAC00\uC9C0"
-  description: "\uC27D\uAC8C \uBD88\uD0C8 \uAC83 \uCC98\uB7FC \uBA54\uB9D0\uB77C\uC788\uB2E4."
+  description: "\uBA54\uB9C8\uB978 \uB098\uBB47\uAC00\uC9C0"
   icon: {fileID: 21300000, guid: acb7132f8acfacc4b8babe1365154ac5, type: 3}
   itemType: 2
   attackPower: 0

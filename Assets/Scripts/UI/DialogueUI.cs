@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using DG.Tweening;
 using UnityEditor;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -33,28 +34,22 @@ public class DialogueUI : MonoBehaviour
         // 대화 종료(인덱스 길이 초과시)
         if (DialogueManager.Instance.dialogueIndex >= currentDialogueInfo.dialogueDatas.Length)
         {
-            EndDialogue();
+            ClearUI();
             return;
         }
         
-        // 대화데이터 로드 및 인덱스 증가
+        // 대화 데이터, 인덱스 증가
         DialogueData currentDialogueData = currentDialogueInfo.dialogueDatas[DialogueManager.Instance.dialogueIndex];
         DialogueManager.Instance.dialogueIndex++;
-        
-        // 텍스트 출력
-        DialogueText.text = string.Empty;
-        typing = true; // 출력 상태
 
         if (currentDialogueData.dialogue.Contains(nextScene))
         {
-            DialogueManager.Instance.dialogueIndex++;
             Managers.Scene.LoadNextScene();
             return; 
         }
 
         if (currentDialogueData.dialogue.Contains("Later Scene"))
         {
-            DialogueManager.Instance.dialogueIndex++;
             Managers.Scene.LoadLaterScene();
             return; 
         }
@@ -69,6 +64,11 @@ public class DialogueUI : MonoBehaviour
         {
             FadeScript fade = FindObjectOfType<FadeScript>();
             fade.FadeBlue();
+            Light2D[] light2Ds = FindObjectsOfType<Light2D>();
+            foreach (Light2D light2D in light2Ds)
+            {
+                light2D.enabled = true;
+            }
         }
         
         if (currentDialogueData.PortalAction == "Portal")
@@ -87,11 +87,11 @@ public class DialogueUI : MonoBehaviour
                 portalRenderer.enabled = true;
             }
         }
+        // 텍스트 출력
+        DialogueText.text = string.Empty;
+        typing = true; // 출력 상태
 
-        if (currentDialogueData.specialAction == Hana)
-            disPlayImage.gameObject.SetActive(true);
-        else 
-            disPlayImage.gameObject.SetActive(false);
+        disPlayImage.gameObject.SetActive(currentDialogueData.specialAction == "Hana");
         
         if (currentDialogueData.position == left)
         {
@@ -103,7 +103,14 @@ public class DialogueUI : MonoBehaviour
         }   
 
         DialogueText.DOText(currentDialogueData.dialogue, DOTextDelay)
-            .OnComplete(() => typing = false); // 완료시에만 애니메이션 활성화    
+            .OnComplete(() =>
+            {
+                typing = false;
+                if (currentDialogueData.Action == "End")
+                {
+                    DialogueManager.Instance.EndDialogue();
+                }
+            }); // 완료시에만 애니메이션 활성화    
         
         // 캐릭터 이름, 이미지 로드
         NameText.text = currentDialogueData.characterName;
@@ -111,7 +118,7 @@ public class DialogueUI : MonoBehaviour
         image.sprite = Resources.Load<Sprite>(imagePath);    
     }
     
-    public void EndDialogue()
+    public void ClearUI()
     {
         DialogueText.text = string.Empty;
         NameText.text = string.Empty;

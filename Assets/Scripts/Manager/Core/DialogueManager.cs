@@ -43,13 +43,13 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.NextDialogue(currentDialogueInfo);
         // 첫 대화 출력
         
-        playerController.OnDisable();
+        playerController.OnDisable();     
     }
 
     public void EndDialogue()
     {
         dialogueUI.gameObject.SetActive(false);
+        dialogueUI.ClearUI();
         playerController.OnEnable();
     }
-
 }

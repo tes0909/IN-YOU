@@ -40,7 +40,13 @@ public class InventoryUI : MonoBehaviour
     {
         UpdateInventoryUI(items, missionPanel);
     }
-
+    public void ClearBagPanel()
+    {
+        for (int i = bagPanel.transform.GetChild(0).GetChild(0).childCount - 1; i >= 0; i--)
+        {
+            Destroy(bagPanel.transform.GetChild(0).GetChild(0).GetChild(0).gameObject);
+        }
+    }
     public void UpdateInventoryUI(List<ItemData> inventory, GameObject panel)
     {
         foreach (ItemData item in inventory)
@@ -73,5 +79,6 @@ public class InventoryUI : MonoBehaviour
                 }
             }
         }
+
     }
 }

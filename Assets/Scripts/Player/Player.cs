@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     public Inventory inventory;
     private UIPausePopup currentPausePopup;
     private const string filePath = "Prefabs/UI/Popup/UIPausePopup";
+
+    
     void Awake()
     {
         AnimationData.Initialize();
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        InventoryManager.instance.SetInventory(this);
         stateMachine.ChangeState(stateMachine.IdleState);
         //Cursor.lockState = CursorLockMode.Locked;
     }
