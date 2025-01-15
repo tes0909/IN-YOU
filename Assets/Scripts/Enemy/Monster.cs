@@ -13,7 +13,6 @@ public class Monster : MonoBehaviour
     [field: SerializeField] public MonsterCondition Condition { get; private set; }
     public Rigidbody2D Rigidbody { get; private set; }
     [field: SerializeField] public MonsterAnimationData AnimationData { get; private set; }
-    public PlayerCondition playerCondition;
     public SpriteRenderer Renderer { get; private set; }
 
     public Animator Animator { get; private set; }
@@ -37,25 +36,22 @@ public class Monster : MonoBehaviour
     public bool Initialize(int identifier, int monsterID, Vector3 spawnPoint)
     {
         Identifier = identifier;
-        Debug.Log(identifier);
-        Debug.Log(monsterID);
-        Debug.Log(spawnPoint);
 
         this.transform.localPosition = spawnPoint;
         MonsterEntity monsterEntity = Managers.DB.Get<MonsterEntity>(monsterID);
         if (monsterEntity == null) return false;
-        Debug.Log(this.transform.name);
         GameObject go = Managers.Resource.Instantiate(monsterEntity.prefabPath, this.transform);
+        if (go == null) return false;
+
         NavAgent = GetComponentInChildren<NavMeshAgent>();
         Animator = GetComponentInChildren<Animator>();
         Renderer = GetComponentInChildren<SpriteRenderer>();
-        Debug.Log(go.name);
-        if (go == null) return false;
+
         Rigidbody.gravityScale = 0f;
         AnimationData.Initialize();
         Stat = monsterEntity;
         Condition.SetData(Stat.maxHp);
-
+        Debug.Log(Stat.maxHp);
         stateMachine = new MonsterStateMachine(this);
         stateMachine.ChangeState(stateMachine.WanderingState);
         return true;
@@ -77,8 +73,12 @@ public class Monster : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    //public void DealDamage()
-    //{
-    //    playerCondition.TakeDamage(stateMachine.Monster.Stat.attackDamage);
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other == null) return;
+        if (other.transform.TryGetComponent(out PlayerCondition playerCondition))
+        {
+            playerCondition.TakeDamage(Stat.attackDamage);
+        }
+    }
 }
