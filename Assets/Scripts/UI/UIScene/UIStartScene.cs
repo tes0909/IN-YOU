@@ -40,7 +40,11 @@ public class UIStartScene : UISceneBase
 
     public void QuitButtonEvent()
     {
-        UnityEditor.EditorApplication.isPlaying = false; //play모드를 false로.
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif   
     }   
 
     public void SettingPopupButtonEvent()

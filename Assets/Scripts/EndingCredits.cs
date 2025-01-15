@@ -64,8 +64,12 @@ public class EndingCredits : MonoBehaviour
             creditImages[i].gameObject.SetActive(false);
         }
         yield return new WaitForSeconds(6f);
-        //Application.Quit();
+
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
     private IEnumerator FadeImage(Image image, float startAlpha, float endAlpha, float duration)
     {

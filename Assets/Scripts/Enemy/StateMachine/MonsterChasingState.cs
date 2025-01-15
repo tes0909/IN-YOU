@@ -1,7 +1,7 @@
-using SuperTiled2Unity.Editor.LibTessDotNet;
+//using SuperTiled2Unity.Editor.LibTessDotNet;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph;
+//using UnityEditor.ShaderGraph;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
