@@ -7,9 +7,9 @@ public class Home : SceneBase
     public DialogueUI dialogueUI;
     protected override void OnSceneLoad()
     {
+        Invoke("SetStart", 1f);
         Managers.Game.Init();
         Managers.Game.SetMonsterID(10001);
-        //Invoke("SetStart", 1f);
         Managers.Sound.PlayBGM("9_Reminiscene");
     }
 

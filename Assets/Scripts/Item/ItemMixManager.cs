@@ -78,7 +78,7 @@ public class ItemMixManager : MonoBehaviour
             if (itemCount < requiredAmount)
             {
                 int missingAmount = requiredAmount - itemCount;
-                ShowPopUp(recipe.requiredItems[i].itemName + "�������� " + missingAmount + "�� �� �ʿ��մϴ�.");
+                ShowPopUp(recipe.requiredItems[i].itemName + "(이)가 " + missingAmount + "개 더 필요합니다.");
                 return false;
             }
         }
@@ -108,7 +108,7 @@ public class ItemMixManager : MonoBehaviour
                 }
             }
             inventory.AddToInfo(recipe.resultItem);
-            ShowPopUp("�̼� ����");
+            ShowPopUp("조합 성공, 생성된 포탈을 통하여 다음 지역으로 이동하세요.");
             SpawnPortal();
 
             InventoryManager.instance.ResetInventoryUI();
@@ -177,7 +177,7 @@ public class ItemMixManager : MonoBehaviour
         }
         else
         {
-            ShowPopUp("Clear");
+            ShowPopUp("조합 미션 완료, 포탈을 타고 다음으로 넘어가세요.");
         }
     }
     private void HidePopUp()

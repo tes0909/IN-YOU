@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/MonsterSheets.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SO/Sheets/MonsterSheets.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/9_Home_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Boss.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +22,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BonfireLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NPC/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Bar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/Intro.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/letter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FadeScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LightFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.9/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/2D/Light2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.9/Runtime/2D/Light2DManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,7 +59,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Unity 에디터에 연결.Unity 에디터에 연결.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature-JBR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature__JBR&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -174,6 +168,7 @@
       <workItem from="1736730949904" duration="658000" />
       <workItem from="1736774952451" duration="17177000" />
       <workItem from="1736814174183" duration="770000" />
+      <workItem from="1736900350100" duration="707000" />
     </task>
     <servers />
   </component>
@@ -201,5 +196,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Scenes/Island_1.cs</url>
+          <line>9</line>
+          <properties documentPath="C:\Unity\2D project\In_You\Assets\Scripts\Scenes\Island_1.cs" containingFunctionPresentation="메서드 'OnSceneLoad'">
+            <startOffsets>
+              <option value="206" />
+            </startOffsets>
+            <endOffsets>
+              <option value="229" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs</url>
+          <line>52</line>
+          <properties documentPath="C:\Unity\2D project\In_You\Assets\Scripts\NPC\NPC.cs" containingFunctionPresentation="메서드 'Update'">
+            <startOffsets>
+              <option value="1415" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1456" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#UnityEngine.Behaviour" memberName="isActiveAndEnabled" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

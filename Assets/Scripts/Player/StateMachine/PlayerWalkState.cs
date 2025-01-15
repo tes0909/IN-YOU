@@ -10,35 +10,35 @@ public class PlayerWalkState : PlayerBaseState
     private readonly float sortingOrderOffest = 0.5f;
     public PlayerWalkState(PlayerStateMachine stateMachine) : base(stateMachine)
     {
-        sortingGroup = base.stateMachine.Player.GetComponent<SortingGroup>();
+        sortingGroup = base.StateMachine.Player.GetComponent<SortingGroup>();
     }
 
     public override void Enter()
     {
-        stateMachine.MovementSpeedModifier = 1f;
+        StateMachine.MovementSpeedModifier = 1f;
         base.Enter();
-        StartAnimation(stateMachine.Player.AnimationData.WalkParameterHash);
+        StartAnimation(StateMachine.Player.AnimationData.WalkParameterHash);
     }
 
     public override void Exit()
     {
         base.Exit();
-        StopAnimation(stateMachine.Player.AnimationData.WalkParameterHash);
+        StopAnimation(StateMachine.Player.AnimationData.WalkParameterHash);
     }
 
     public override void Update()
     {
         base.Update();
 
-        if (stateMachine.movementInput == Vector2.zero)
+        if (StateMachine.movementInput == Vector2.zero)
         {
-            stateMachine.ChangeState(stateMachine.IdleState);
+            StateMachine.ChangeState(StateMachine.IdleState);
         }
 
         if (sortingGroup != null)
         {
             sortingGroup.sortingOrder = 
-                (int)((stateMachine.Player.transform.position.y - sortingOrderOffest) * sortingOrderModifier);
+                (int)((StateMachine.Player.transform.position.y - sortingOrderOffest) * sortingOrderModifier);
         }
     }
 }

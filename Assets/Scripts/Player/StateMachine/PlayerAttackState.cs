@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class PlayerAttackState : PlayerBaseState
 {
@@ -15,14 +13,14 @@ public class PlayerAttackState : PlayerBaseState
     {
         base.Enter();
         isAttacking = true;
-        stateMachine.Player.input.playerActions.Disable();
-        stateMachine.Player.StartCoroutine(AttackTime());
+        StateMachine.Player.input.playerActions.Disable();
+        StateMachine.Player.StartCoroutine(AttackTime());
     }
 
     public override void Exit()
     {
         base.Exit();
-        stateMachine.Player.input.playerActions.Enable();
+        StateMachine.Player.input.playerActions.Enable();
         isAttacking = false;
     }
 
@@ -31,14 +29,14 @@ public class PlayerAttackState : PlayerBaseState
         base.Update();
         if (!isAttacking)
         {
-            stateMachine.ChangeState(stateMachine.IdleState);
+            StateMachine.ChangeState(StateMachine.IdleState);
         }
     }
 
     private void OnAttack()
     {
-        Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(stateMachine.Player.transform.position,
-            stateMachine.Player.PlayerSOData.AttackData.AttackRange);
+        Collider2D[] hitEnemy = Physics2D.OverlapCircleAll(StateMachine.Player.transform.position,
+            StateMachine.Player.PlayerSOData.AttackData.AttackRange);
 
         foreach (Collider2D enemy in hitEnemy)
         {
@@ -54,12 +52,12 @@ public class PlayerAttackState : PlayerBaseState
     {
         OnAttack();
         
-        yield return new WaitForSeconds(stateMachine.Player.PlayerSOData.AttackData.AttackDuration);
+        yield return new WaitForSeconds(StateMachine.Player.PlayerSOData.AttackData.AttackDuration);
         isAttacking = false;
-        yield return new WaitForSeconds(stateMachine.Player.PlayerSOData.AttackData.AttackCooltime);
+        yield return new WaitForSeconds(StateMachine.Player.PlayerSOData.AttackData.AttackCooltime);
         if (!isAttacking)
         {
-            stateMachine.ChangeState(stateMachine.IdleState);
+            StateMachine.ChangeState(StateMachine.IdleState);
         }
     }
 }
