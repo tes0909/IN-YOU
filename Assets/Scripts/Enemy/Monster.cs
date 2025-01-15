@@ -60,7 +60,7 @@ public class Monster : MonoBehaviour
 
     private void Update()
     {
-        SetTransform();
+        //SetTransform();
         stateMachine.Update();
     }
 

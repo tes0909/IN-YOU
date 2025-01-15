@@ -27,7 +27,7 @@ public class UIGameOverPopup : UIPopupBase
  
     public void IntroSceneEvent()
     {
-        Managers.Game.ResumeGame();
+        Managers.Scene.LoadScene(Defines.SceneType.StartScene);
         //저장지점 불러오기
     }
 }

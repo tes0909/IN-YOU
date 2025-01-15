@@ -70,7 +70,7 @@ public class MonsterSpawner : MonoBehaviour
             return;
         }
 
-        Monster monster = go.GetComponent<Monster>();
+        Monster monster = go.GetComponentInChildren<Monster>();
         if (monster == null)
         {
             Despawn(go);

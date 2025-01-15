@@ -9,6 +9,7 @@ public class SheetToDataList
     private const string _soDirPath = "Assets/Resources/SO";
     private const string _sheetDirName = "Sheets";
     private const string _dataDirName = "DataList";
+#if UNITY_EDITOR
 
     [MenuItem("Assets/Create/Convert to DataList", false)]
     static void Convert()
@@ -40,7 +41,6 @@ public class SheetToDataList
         }
         AssetDatabase.Refresh();
     }
-
     [MenuItem("Assets/Create/Convert to DataList", true)]
     static bool CanConvert()
     {
@@ -49,4 +49,5 @@ public class SheetToDataList
         var path = AssetDatabase.GetAssetPath(selectedAssets[0]);
         return path.EndsWith($"{_soDirPath}/{_sheetDirName}");
     }
+#endif
 }
