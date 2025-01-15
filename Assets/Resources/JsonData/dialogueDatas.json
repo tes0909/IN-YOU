@@ -1580,7 +1580,7 @@
       "position": "left",
       "imageSprite": "",
       "uiType": "Island_1",
-      "Action": "Continue",
+      "Action": "End",
       "specialAction": "",
       "PortalAction": ""
     },
@@ -1591,7 +1591,7 @@
       "position": "left",
       "imageSprite": "Dam",
       "uiType": "Island_1",
-      "Action": "Continue",
+      "Action": "Start",
       "specialAction": "",
       "PortalAction": ""
     },
@@ -1911,7 +1911,7 @@
       "imageSprite": "",
       "uiType": "Boss",
       "Action": "Start",
-      "specialAction": "",
+      "specialAction": "FadeIn",
       "PortalAction": ""
     }
   ]

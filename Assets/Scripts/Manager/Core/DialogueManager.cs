@@ -1,13 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
-using TMPro;
-using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -34,7 +26,6 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         currentDialogueInfo = DataManager.instance.dialogueInfo;
-        playerController = FindObjectOfType<PlayerController>();
     }
 
     public void StartDialogue()
@@ -42,7 +33,6 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.gameObject.SetActive(true);
         dialogueUI.NextDialogue(currentDialogueInfo);
         // 첫 대화 출력
-        
         playerController.OnDisable();     
     }
 
@@ -51,5 +41,20 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.gameObject.SetActive(false);
         dialogueUI.ClearUI();
         playerController.OnEnable();
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        playerController = FindObjectOfType<PlayerController>();
+    }
+    
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

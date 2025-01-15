@@ -1,26 +1,24 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GridSpawn : MonoBehaviour
 {
     [SerializeField] private GameObject gridPrefab;
-    private HashSet<Vector3> spawnPositions = new HashSet<Vector3>();
+    private readonly HashSet<Vector3> spawnPositions = new HashSet<Vector3>();
     private float xPosition;
-    private float nextYposition = 20f;
+    private readonly float nextYposition = 20f;
     private float zPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<PlayerController>() != null)
         {
-            Vector3 spawnPostion = new Vector3(xPosition, transform.position.y + nextYposition, zPosition);
+            Vector3 spawnPosition = new Vector3(xPosition, transform.position.y + nextYposition, zPosition);
     
-            if (!spawnPositions.Contains(spawnPostion))
+            if (!spawnPositions.Contains(spawnPosition))
             {
-                spawnPositions.Add(spawnPostion);
-                Instantiate(gridPrefab, spawnPostion, Quaternion.identity);
+                spawnPositions.Add(spawnPosition);
+                Instantiate(gridPrefab, spawnPosition, Quaternion.identity);
             }
         }
     }
