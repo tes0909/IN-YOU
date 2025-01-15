@@ -37,7 +37,7 @@ public class Monster : MonoBehaviour
     {
         Identifier = identifier;
 
-        this.transform.localPosition = spawnPoint;
+        this.transform.position = spawnPoint;
         MonsterEntity monsterEntity = Managers.DB.Get<MonsterEntity>(monsterID);
         if (monsterEntity == null) return false;
         GameObject go = Managers.Resource.Instantiate(monsterEntity.prefabPath, this.transform);
@@ -51,7 +51,8 @@ public class Monster : MonoBehaviour
         AnimationData.Initialize();
         Stat = monsterEntity;
         Condition.SetData(Stat.maxHp);
-        Debug.Log(Stat.maxHp);
+        NavAgent.speed = Stat.moveSpeed;
+
         stateMachine = new MonsterStateMachine(this);
         stateMachine.ChangeState(stateMachine.WanderingState);
         return true;
@@ -59,6 +60,7 @@ public class Monster : MonoBehaviour
 
     private void Update()
     {
+        SetTransform();
         stateMachine.Update();
     }
 
@@ -81,5 +83,10 @@ public class Monster : MonoBehaviour
         {
             playerCondition.TakeDamage(Stat.attackDamage);
         }
+    }
+
+    private void SetTransform()
+    {
+        stateMachine.Monster.transform.position = stateMachine.Monster.NavAgent.transform.position * Time.deltaTime;
     }
 }

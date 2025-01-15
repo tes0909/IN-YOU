@@ -26,8 +26,6 @@ public class MonsterAttackState : MonsterBaseState
     {
         base.Update();
 
-        LookAtPlayer();
-
         if (IsInChasingRange())
         {
             stateMachine.ChangeState(stateMachine.ChasingState);

@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class MonsterWanderingState : MonsterBaseState
 {
-    private float changeDirectionTime;
-    private float timer;
+   
 
     public MonsterWanderingState(MonsterStateMachine stateMachine) : base(stateMachine)
     {
@@ -48,26 +47,6 @@ public class MonsterWanderingState : MonsterBaseState
         {
             stateMachine.ChangeState(stateMachine.ChasingState);
             return;
-        }
-    }
-
-    private void SetRandomDestination()
-    {
-        Vector3 randomDirection = new Vector3(Random.insideUnitSphere.x * 10f, 0, 0);
-        Debug.Log(stateMachine.Monster.NavAgent.transform.position);
-        Debug.Log(randomDirection);
-        Debug.Log(stateMachine.Monster.transform.position);
-
-        Vector3 targetPosition = stateMachine.Monster.NavAgent.transform.position + randomDirection;
-        stateMachine.Monster.Renderer.flipX = randomDirection.x <= 0;
-
-        NavMeshHit hit;
-
-        if (NavMesh.SamplePosition(targetPosition, out hit, 10f, NavMesh.AllAreas))
-        {
-            targetPosition = hit.position;
-            stateMachine.Monster.NavAgent.SetDestination(targetPosition); 
-            changeDirectionTime = Random.Range(3f, 6f); 
         }
     }
 }

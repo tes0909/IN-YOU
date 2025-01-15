@@ -26,7 +26,6 @@ public class MonsterChasingState : MonsterBaseState
     {
         base.Update();
 
-        LookAtPlayer();
         stateMachine.Monster.NavAgent.SetDestination(stateMachine.Target.transform.position);
 
         if (!IsInChasingRange())
