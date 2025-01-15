@@ -9,8 +9,8 @@ public class Home : SceneBase
     {
         Invoke("SetStart", 1f);
         Managers.Game.Init();
-        Managers.Game.SetMonsterID(10003);
         Managers.Sound.PlayBGM("9_Reminiscene");
+        Managers.Game.SetMonsterID(10003);
     }
 
     protected override void OnSceneLoaded()

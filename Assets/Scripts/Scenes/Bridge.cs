@@ -9,8 +9,8 @@ public class Bridge : SceneBase
     {
         Invoke("SetStart", 1f);
         Managers.Game.Init();
-        Managers.Game.SetMonsterID(10001);
         Managers.Sound.PlayBGM("8_Fragment");
+        Managers.Game.SetMonsterID(10001);
     }
 
     protected override void OnSceneLoaded()

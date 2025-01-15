@@ -10,6 +10,8 @@ public class Island_2 : SceneBase
         Invoke("SetStart", 1f);
         Managers.Game.CreatePlayer();
         Managers.Game.Init();
+        Managers.Sound.PlayBGM("7_rain_and_fire");
+        Managers.Sound.SetMasterVolume();
         Managers.Game.SetMonsterID(10002);
 
         Managers.UI.LoadSceneUI<UIGameScene>();
@@ -17,8 +19,6 @@ public class Island_2 : SceneBase
 
     protected override void OnSceneLoaded()
     {
-        Managers.Sound.PlayBGM("7_rain_and_fire");
-        Managers.Sound.SetMasterVolume();
         Managers.Resource.Instantiate("Map/IslandMap");
     }
 

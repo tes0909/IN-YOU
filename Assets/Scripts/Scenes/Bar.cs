@@ -10,7 +10,7 @@ public class Bar : SceneBase
     protected override void OnSceneLoad()
     {  
        Invoke("SetStart", 2f);
-       Managers.Sound.PlayBGM("1_Nostalgia");
+       Managers.Sound.PlayBGM("2_Fever");
     }
 
     protected override void OnSceneLoaded()
