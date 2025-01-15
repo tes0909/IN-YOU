@@ -48,7 +48,7 @@ public class MonsterBaseState : IState
             return false;
         }
 
-        float playerDistanceSqr = (stateMachine.Target.transform.position - stateMachine.Monster.NavAgent.transform.position).sqrMagnitude;
+        float playerDistanceSqr = (stateMachine.Target.transform.position - stateMachine.Monster.transform.position).sqrMagnitude;
         return playerDistanceSqr <= stateMachine.Monster.Stat.attractDistance * stateMachine.Monster.Stat.attractDistance;
     }
 
@@ -62,7 +62,7 @@ public class MonsterBaseState : IState
     {
         if (stateMachine.Target != null)
         {
-            Vector3 direction = stateMachine.Target.transform.position - stateMachine.Monster.NavAgent.transform.position;
+            Vector3 direction = stateMachine.Target.transform.position - stateMachine.Monster.transform.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             stateMachine.Monster.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }

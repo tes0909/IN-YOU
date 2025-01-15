@@ -16,8 +16,6 @@ public class MonsterStateMachine : StateMachine
     public MonsterStateMachine(Monster monster)
     {
         this.Monster = monster;
-        Debug.Log(GameObject.FindGameObjectWithTag("Player"));
-        Debug.Log(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCondition>());
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCondition>();
         
         MovementSpeed = monster.Stat.moveSpeed;

@@ -21,7 +21,7 @@ public class Monster : MonoBehaviour
 
     private MonsterStateMachine stateMachine;
 
-    public NavMeshAgent NavAgent {  get; private set; }
+    public NavMeshAgent NavAgent { get; private set; }
 
     public event Action<int> OnDead;
 
@@ -73,10 +73,11 @@ public class Monster : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other == null) return;
-        if (other.transform.TryGetComponent(out PlayerCondition playerCondition))
+        Debug.Log(collision);
+        if (collision == null) return;
+        if (collision.transform.TryGetComponent(out PlayerCondition playerCondition))
         {
             playerCondition.TakeDamage(Stat.attackDamage);
         }

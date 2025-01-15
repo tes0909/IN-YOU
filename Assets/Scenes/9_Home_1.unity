@@ -1466,6 +1466,16 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 805687240598824616, guid: 7baed4bef79d7524bbd86def9a865558,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 805687240598824616, guid: 7baed4bef79d7524bbd86def9a865558,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.89
+      objectReference: {fileID: 0}
     - target: {fileID: 968073789124564817, guid: 7baed4bef79d7524bbd86def9a865558,
         type: 3}
       propertyPath: m_Name
@@ -2743,6 +2753,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1029836544234192812, guid: 84076a419e474f04caf4ba5a3c5e0f72,
+        type: 3}
+      propertyPath: m_DefaultArea
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029836544234192812, guid: 84076a419e474f04caf4ba5a3c5e0f72,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: abb06a3e67ee4324c8229d7607d8e958,
+        type: 2}
     - target: {fileID: 4120943454528782185, guid: 84076a419e474f04caf4ba5a3c5e0f72,
         type: 3}
       propertyPath: m_Name

@@ -3191,13 +3191,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Map
       objectReference: {fileID: 0}
-    - target: {fileID: 4521817565666928447, guid: a9d3a5f02b2ed954fb442e9db79448cc,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1428721451924092900, guid: a9d3a5f02b2ed954fb442e9db79448cc, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
