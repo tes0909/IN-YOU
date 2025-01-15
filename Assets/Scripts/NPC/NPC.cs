@@ -39,6 +39,11 @@ public class NPC : MonoBehaviour
         if (player)
         {
             isPlayerNearby = false;
+            if (DialogueManager.Instance == null || DialogueManager.Instance.dialogueUI == null)
+            {
+                Debug.Log("DialogueManager or DialogueUI is not available.");
+                return;
+            }
             DialogueManager.Instance.EndDialogue();
         }
     }

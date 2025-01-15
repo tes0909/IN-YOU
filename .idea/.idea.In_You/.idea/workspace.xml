@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Overworld.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Overworld.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Sprite Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Sprite Atlas.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Town.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterSet/Sprites/Tilesets/Town.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/2DML_SET4/Sliced/water_env.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/2DML_SET4/Sliced/water_env.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/2DML_SET4/water_env.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/2DML_SET4/water_env.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bar_2/Japanese Bar Game Assets/Tilemaps/Day/TilemapDay.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bar_2/Japanese Bar Game Assets/Tilemaps/Day/TilemapDay.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bar_2/Japanese Bar Game Assets/Tilemaps/Night/TilemapNight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bar_2/Japanese Bar Game Assets/Tilemaps/Night/TilemapNight.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Buildings.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Buildings.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Buildings_winter.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Buildings_winter.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Houses.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Houses.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Terrain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Terrain.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Terrain_winter.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/CLT_Terrain_winter.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/Sliced/CLT_Buildings.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/Sliced/CLT_Buildings.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/Sliced/CLT_Terrain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Bridge_1/Sliced/CLT_Terrain.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Island/Island.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Island/Island.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Tilemap/City/CP_V1.0.4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Tilemap/City/CP_V1.0.4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map_base/Tilemap/Osaka/Tilemap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map_base/Tilemap/Osaka/Tilemap.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/JsonData/dialogueDatas.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/12_The Amazing Digital Circus.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/BGM_Scene/12_The Amazing Digital Circus.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/10_Boss.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/12_EndingCredits.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/12_EndingCredits.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/8_Bridge.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Intro.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Core/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Home.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Home.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/Island_2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Util/Defines.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Util/Defines.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Unity 에디터에 연결.Unity 에디터에 연결.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop-Backup&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;독립실행형 플레이어.Unity 시작.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
+    "git-widget-placeholder": "Feature__JBR",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true",
+    "독립실행형 플레이어.Unity 시작.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe" />
@@ -118,10 +84,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="32300">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="32300" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />

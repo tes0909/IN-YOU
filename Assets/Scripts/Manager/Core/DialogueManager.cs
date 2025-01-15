@@ -42,9 +42,17 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        if (dialogueUI == null)
+        {
+            Debug.Log("dialogueui is not ready yet.");
+            return;
+        }
         dialogueUI.gameObject.SetActive(false);
         dialogueUI.ClearUI();
-        playerController.OnEnable();
+        if (playerController != null)
+        {
+            playerController.OnEnable();
+        }
     }
 
     void OnEnable()
@@ -58,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         dialogueUI = FindObjectOfType<DialogueUI>();
         if (dialogueUI == null)
         {
-            Debug.LogWarning("DialogueUI not found in the new scene.");
+            Debug.Log("DialogueUI not found in the new scene.");
         }
     }
     
