@@ -30,6 +30,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        if (dialogueUI == null)
+        {
+            Debug.Log("dialogueui is not ready yet.");
+        }
         dialogueUI.gameObject.SetActive(true);
         dialogueUI.NextDialogue(currentDialogueInfo);
         // 첫 대화 출력
@@ -38,9 +42,17 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        if (dialogueUI == null)
+        {
+            Debug.Log("dialogueui is not ready yet.");
+            return;
+        }
         dialogueUI.gameObject.SetActive(false);
         dialogueUI.ClearUI();
-        playerController.OnEnable();
+        if (playerController != null)
+        {
+            playerController.OnEnable();
+        }
     }
 
     void OnEnable()
@@ -51,6 +63,11 @@ public class DialogueManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         playerController = FindObjectOfType<PlayerController>();
+        dialogueUI = FindObjectOfType<DialogueUI>();
+        if (dialogueUI == null)
+        {
+            Debug.Log("DialogueUI not found in the new scene.");
+        }
     }
     
     void OnDisable()

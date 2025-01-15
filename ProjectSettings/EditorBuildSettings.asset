@@ -39,11 +39,11 @@ EditorBuildSettings:
     path: Assets/Scenes/10_Boss.unity
     guid: 09115c7bdbd30974b988d94fab66eacd
   - enabled: 1
+    path: Assets/Scenes/12_EndingCredits.unity
+    guid: 8aef0a9070b652940ad7a587387a555e
+  - enabled: 1
     path: Assets/Scenes/11_Last.unity
     guid: 304c4afdfd8ed1647a68b64da9c015a9
-  - enabled: 1
-    path: Assets/Scenes/12_EndingCredits.unity
-    guid: 623ea5feb888ee14a97d266e50d65ef7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: df7b3844002850c43bd3eefa81c75635,
       type: 2}

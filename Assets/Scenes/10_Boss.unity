@@ -406,7 +406,7 @@ MonoBehaviour:
     specialAction: 
     PortalAction: 
   startNpcId: 173
-  endNpcId: 174
+  endNpcId: 175
 --- !u!61 &377380283
 BoxCollider2D:
   m_ObjectHideFlags: 0

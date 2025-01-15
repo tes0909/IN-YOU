@@ -39,6 +39,11 @@ public class NPC : MonoBehaviour
         if (player)
         {
             isPlayerNearby = false;
+            if (DialogueManager.Instance == null || DialogueManager.Instance.dialogueUI == null)
+            {
+                Debug.Log("DialogueManager or DialogueUI is not available.");
+                return;
+            }
             DialogueManager.Instance.EndDialogue();
         }
     }
@@ -47,6 +52,11 @@ public class NPC : MonoBehaviour
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
+            if (DialogueManager.Instance == null || DialogueManager.Instance.dialogueUI == null)
+            {
+                Debug.Log("DialogueManager or DialogueUI is not ready.");
+                return;
+            }
             
             if (DialogueManager.Instance.dialogueIndex >= startNpcId && DialogueManager.Instance.dialogueIndex < endNpcId)
             {
