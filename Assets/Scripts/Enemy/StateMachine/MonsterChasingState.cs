@@ -43,7 +43,7 @@ public class MonsterChasingState : MonsterBaseState
 
     protected bool IsInAttack()
     {
-        float playerDistanceSqr = (stateMachine.Target.transform.position - stateMachine.Monster.transform.position).sqrMagnitude;
+        float playerDistanceSqr = (stateMachine.Target.transform.position - stateMachine.Monster.NavAgent.transform.position).sqrMagnitude;
         return playerDistanceSqr <= stateMachine.Monster.Stat.attractDistance * stateMachine.Monster.Stat.attractDistance;
     }
 }

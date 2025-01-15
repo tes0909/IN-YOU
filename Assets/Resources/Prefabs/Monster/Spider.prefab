@@ -168,7 +168,7 @@ NavMeshAgent:
   m_Radius: 0.075
   m_Speed: 3.5
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 99
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5124af431d565a44ea1c068939e4cfc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Condition>k__BackingField: {fileID: 0}
   <AnimationData>k__BackingField:
     wanderingParameterName: Wandering
     attackParameterName: Attack

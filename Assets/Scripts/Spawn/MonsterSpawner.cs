@@ -91,8 +91,7 @@ public class MonsterSpawner : MonoBehaviour
             return;
         }
         Debug.Log(spawnPoint);
-        Debug.Log(go);
-        Debug.Log(go.name);
+
         spawnCount++;
         WorldMonster.Add(Identifier, go);
         monster.OnDead += Die;
@@ -113,9 +112,9 @@ public class MonsterSpawner : MonoBehaviour
 
     public void MonsterSpawn()
     {
-        if(spawnCount < 1.0f) //6
+        if(spawnCount < 4.0f)
         {
-            for (int i = 0; i < 1; i++)//pointNum[pointGroup]; i++)
+            for (int i = 0; i < pointNum[pointGroup]; i++)
             {
                 SpawnEntity(pointGroup, i, monsterID);
             }

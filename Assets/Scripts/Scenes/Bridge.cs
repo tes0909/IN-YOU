@@ -7,8 +7,9 @@ public class Bridge : SceneBase
     public DialogueUI dialogueUI;
     protected override void OnSceneLoad()
     {
-        //Managers.Game.SetMonsterID(10001);
         Invoke("SetStart", 1f);
+        Managers.Game.Init();
+        Managers.Game.SetMonsterID(10001);
         Managers.Sound.PlayBGM("8_Fragment");
     }
 
