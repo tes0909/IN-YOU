@@ -139,6 +139,11 @@ public class SoundManager : IManager
     {
         if (bgmClips.TryGetValue(name, out AudioClip clip))
         {
+            if (BgmSource.clip == clip) 
+            {
+                Debug.Log($"BGM '{name}' 이 이미 재생중입니다.");
+                return;
+            }
             BgmSource.clip = clip;
             BgmSource.Play();
         }

@@ -1913,6 +1913,17 @@
       "Action": "Start",
       "specialAction": "FadeIn",
       "PortalAction": ""
+    },
+    {
+      "DIdx": 174,
+      "characterName": "",
+      "dialogue": "Next Scene…",
+      "position": "left",
+      "imageSprite": "",
+      "uiType": "Ending",
+      "Action": "Continue",
+      "specialAction": "",
+      "PortalAction": ""
     }
   ]
 }

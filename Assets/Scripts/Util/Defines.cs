@@ -20,6 +20,7 @@ public static class Defines
         Home_2,
         Boss,
         Last,
+        EndingCredit
     }
 
     public enum ItemType
