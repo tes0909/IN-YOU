@@ -54,4 +54,10 @@ public class PlayerCondition : MonoBehaviour
             Debug.Log("사망");
         }
     }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 1.0f); // 몬스터 충돌 영역
+    }
 }
