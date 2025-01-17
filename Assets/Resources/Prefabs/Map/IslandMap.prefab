@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 7872333959070862332}
   - component: {fileID: 4656304273576876244}
   - component: {fileID: 2815360126249182141}
-  - component: {fileID: 667262045684572403}
-  - component: {fileID: 1170607740560244445}
   m_Layer: 4
   m_Name: Tree1A (7)
   m_TagString: Untagged
@@ -125,30 +123,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &667262045684572403
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639946829888455449}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &1170607740560244445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639946829888455449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &685913603920764431
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +171,6 @@ GameObject:
   - component: {fileID: 3185470282095891142}
   - component: {fileID: 3018092215237140943}
   - component: {fileID: 7140658812592268083}
-  - component: {fileID: 4352272206905888054}
-  - component: {fileID: 2790259430885878888}
   m_Layer: 4
   m_Name: Tree1A (4)
   m_TagString: Untagged
@@ -310,30 +282,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &4352272206905888054
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794381340475636603}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &2790259430885878888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794381340475636603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1072120327449926625
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,8 +325,6 @@ GameObject:
   - component: {fileID: 3988848650160086673}
   - component: {fileID: 8340264618475057591}
   - component: {fileID: 7304091599408047958}
-  - component: {fileID: 8568947694153859545}
-  - component: {fileID: 3810365537285256717}
   m_Layer: 4
   m_Name: Tree1A (5)
   m_TagString: Untagged
@@ -490,30 +436,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &8568947694153859545
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200073878543548837}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &3810365537285256717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200073878543548837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1888847240840527464
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,8 +448,6 @@ GameObject:
   - component: {fileID: 7271135433318274092}
   - component: {fileID: 8168159827537948882}
   - component: {fileID: 6549431146122840649}
-  - component: {fileID: 2777820617160338685}
-  - component: {fileID: 5966463617248662399}
   m_Layer: 4
   m_Name: Tree1A (2)
   m_TagString: Untagged
@@ -639,30 +559,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &2777820617160338685
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888847240840527464}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &5966463617248662399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888847240840527464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2121637601268978954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,8 +2941,6 @@ GameObject:
   - component: {fileID: 8357022947827838328}
   - component: {fileID: 856032887809487358}
   - component: {fileID: 6240712104493827662}
-  - component: {fileID: 6534621032492552679}
-  - component: {fileID: 147053913660155070}
   m_Layer: 4
   m_Name: Tree1A
   m_TagString: Untagged
@@ -3158,30 +3052,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &6534621032492552679
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2683612728103859999}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &147053913660155070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2683612728103859999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2940504175075359213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,8 +3126,6 @@ GameObject:
   - component: {fileID: 5300666411286422239}
   - component: {fileID: 2155353021294961759}
   - component: {fileID: 4874415241687207722}
-  - component: {fileID: 2241835200304869396}
-  - component: {fileID: 8930579547212490865}
   m_Layer: 4
   m_Name: Tree1A (6)
   m_TagString: Untagged
@@ -3369,30 +3237,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &2241835200304869396
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613795735500733136}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &8930579547212490865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3613795735500733136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4275175185759603228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3405,8 +3249,6 @@ GameObject:
   - component: {fileID: 659114501272685303}
   - component: {fileID: 4577782125065839043}
   - component: {fileID: 8808377425844203518}
-  - component: {fileID: 1636303675532199908}
-  - component: {fileID: 1764770558833486798}
   m_Layer: 4
   m_Name: Tree1A (3)
   m_TagString: Untagged
@@ -3518,30 +3360,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &1636303675532199908
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4275175185759603228}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &1764770558833486798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4275175185759603228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4521817565666928447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3626,8 +3444,6 @@ GameObject:
   - component: {fileID: 9096904384935914070}
   - component: {fileID: 5445043013633320639}
   - component: {fileID: 1843060692621289771}
-  - component: {fileID: 5725708802356894324}
-  - component: {fileID: 4392507984824586088}
   m_Layer: 4
   m_Name: Tree1A (9)
   m_TagString: Untagged
@@ -3739,30 +3555,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &5725708802356894324
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5843795903591880878}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &4392507984824586088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5843795903591880878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6017320585379664516
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,8 +5266,6 @@ GameObject:
   - component: {fileID: 538913614577551922}
   - component: {fileID: 8040481535181759200}
   - component: {fileID: 7069032749344287811}
-  - component: {fileID: 1367351298418396909}
-  - component: {fileID: 6485196803023304993}
   m_Layer: 4
   m_Name: Collider
   m_TagString: Untagged
@@ -7772,30 +7562,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!210 &1367351298418396909
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6920401046831557545}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &6485196803023304993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6920401046831557545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7112367935192233411
 GameObject:
   m_ObjectHideFlags: 0
@@ -27749,8 +27515,6 @@ GameObject:
   - component: {fileID: 8122283140154042038}
   - component: {fileID: 3699029140470821754}
   - component: {fileID: 7820750186774709051}
-  - component: {fileID: 9221929426078232639}
-  - component: {fileID: 5472019361446287319}
   m_Layer: 4
   m_Name: Tree1A (1)
   m_TagString: Untagged
@@ -27862,30 +27626,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &9221929426078232639
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7121888038834363775}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &5472019361446287319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7121888038834363775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8560695773816188130
 GameObject:
   m_ObjectHideFlags: 0
@@ -27983,8 +27723,6 @@ GameObject:
   - component: {fileID: 3930571219940382876}
   - component: {fileID: 6339618771234192810}
   - component: {fileID: 2853856379287853511}
-  - component: {fileID: 7966760067373527047}
-  - component: {fileID: 3951446819522828025}
   m_Layer: 4
   m_Name: Tree1A (8)
   m_TagString: Untagged
@@ -28096,27 +27834,3 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -1, z: 0}
   m_TimeToStationary: 0.5
---- !u!210 &7966760067373527047
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8949423015594393216}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
---- !u!114 &3951446819522828025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8949423015594393216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133b2aba74f433746a28edafb7b71aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

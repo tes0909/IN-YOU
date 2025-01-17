@@ -949,6 +949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: IslandMap_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5616427072385013995, guid: 2cd56ea1ce8472c4d888a59146998507,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8449632569635107925, guid: 2cd56ea1ce8472c4d888a59146998507,
         type: 3}
       propertyPath: m_ChunkCullingBounds.x
