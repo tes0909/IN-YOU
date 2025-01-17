@@ -37,15 +37,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Run"",
-                    ""type"": ""Button"",
-                    ""id"": ""adc9654e-ef16-4dfa-ba50-0a5722ea8a14"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""31490992-0588-472e-aad3-19bc019bb08e"",
@@ -140,19 +131,8 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""2d75e094-7ba8-4128-b3a4-b5a9d2cc2b99"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Run"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""20cad76e-93df-4976-9910-c6265510d2db"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -163,7 +143,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""04eecb13-3d0e-4161-8e5b-05021548efa3"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""path"": ""<Keyboard>/ctrl"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -201,7 +181,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
-        m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_PickUp = m_Player.FindAction("PickUp", throwIfNotFound: true);
@@ -268,7 +247,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Movement;
-    private readonly InputAction m_Player_Run;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_PickUp;
@@ -278,7 +256,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         private @PlayerInput m_Wrapper;
         public PlayerActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
-        public InputAction @Run => m_Wrapper.m_Player_Run;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputAction @PickUp => m_Wrapper.m_Player_PickUp;
@@ -295,9 +272,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
-            @Run.started += instance.OnRun;
-            @Run.performed += instance.OnRun;
-            @Run.canceled += instance.OnRun;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
@@ -317,9 +291,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
-            @Run.started -= instance.OnRun;
-            @Run.performed -= instance.OnRun;
-            @Run.canceled -= instance.OnRun;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
@@ -352,7 +323,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnRun(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnPickUp(InputAction.CallbackContext context);

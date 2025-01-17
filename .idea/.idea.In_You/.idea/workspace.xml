@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maze_Boss/ERW - Old Prison V1.7.0/TiledMap Editor New/Old Prison example map.tmx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Maze_Boss/ERW - Old Prison V1.7.0/TiledMap Editor New/Old Prison example map.tmx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInput.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/NPC.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Unity 에디터에 연결.Unity 에디터에 연결.executor&quot;: &quot;Debug&quot;,
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5621118&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop-Backup&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature__JBR&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -172,7 +172,8 @@
       <workItem from="1736814174183" duration="770000" />
       <workItem from="1736900350100" duration="707000" />
       <workItem from="1736908468368" duration="4259000" />
-      <workItem from="1736987500069" duration="9605000" />
+      <workItem from="1736987500069" duration="10815000" />
+      <workItem from="1737083209579" duration="327000" />
     </task>
     <servers />
   </component>
