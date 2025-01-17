@@ -84,6 +84,9 @@ public class DialogueUI : MonoBehaviour
             {
                 SpriteRenderer portalRenderer = portalForDemo.GetComponent<SpriteRenderer>();
                 portalRenderer.enabled = true;
+                
+                BoxCollider2D boxCollider2D = portalForDemo.GetComponent<BoxCollider2D>();
+                boxCollider2D.enabled = true;
             }
 
             if (portalFadeOut != null)
