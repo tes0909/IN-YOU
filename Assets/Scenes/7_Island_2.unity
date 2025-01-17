@@ -3371,6 +3371,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Map
       objectReference: {fileID: 0}
+    - target: {fileID: 4521817565666928447, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426340022883300636, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_Data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426340022883300636, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[12].m_Data
+      value: 
+      objectReference: {fileID: 21300078, guid: f82f3751c0cd9d34fb53739288b11291,
+        type: 3}
+    - target: {fileID: 6426340022883300636, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426340022883300636, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[12].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6426340022883300636, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[23].second.m_TileSpriteIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560695773816188130, guid: a9d3a5f02b2ed954fb442e9db79448cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8669525797116094018, guid: a9d3a5f02b2ed954fb442e9db79448cc,
         type: 3}
       propertyPath: m_ChunkCullingBounds.x
