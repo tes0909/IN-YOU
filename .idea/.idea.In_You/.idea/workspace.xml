@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="72853d8e-8c81-4e9a-8a24-07e5e5b05865" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In_You/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Map/IslandMap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Map/IslandMap.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/6_Island_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/6_Island_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/7_Island_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerCondition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DialogueUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +89,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14688">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="42516">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14688" />
+      <option name="pid" value="42516" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -176,6 +174,7 @@
       <workItem from="1736908468368" duration="4259000" />
       <workItem from="1736987500069" duration="10815000" />
       <workItem from="1737083209579" duration="2031000" />
+      <workItem from="1737252055582" duration="3466000" />
     </task>
     <servers />
   </component>
@@ -208,17 +207,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Item/InventoryManager.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Unity\2D project\In_You\Assets\Scripts\Item\InventoryManager.cs" containingFunctionPresentation="메서드 'Start'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Scenes/Bridge.cs</url>
+          <line>9</line>
+          <properties documentPath="C:\Unity\2D project\In_You\Assets\Scripts\Scenes\Bridge.cs" containingFunctionPresentation="메서드 'OnSceneLoad'">
             <startOffsets>
-              <option value="599" />
+              <option value="204" />
             </startOffsets>
             <endOffsets>
-              <option value="643" />
+              <option value="227" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

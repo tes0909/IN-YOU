@@ -20,7 +20,24 @@ public class PlayerCondition : MonoBehaviour
     {
         IsDie = false;
         currentHealth = playerStatData.CurrentHealth;
-        maxHealth = playerStatData.MaxHealth; 
+        maxHealth = playerStatData.MaxHealth;
+
+        StartCoroutine(waitForHealth());
+    }
+
+    private IEnumerator waitForHealth()
+    {
+        while (GameObject.Find("@UI_Root/UIGameScene/Health") == null)
+        {
+            yield return null;
+        }
+        
+        GameObject health = GameObject.Find("@UI_Root/UIGameScene/Health");
+        if (health != null)
+        {
+            healthBar = health.transform.Find("HealthBar")?.GetComponent<Slider>();
+            healthText = health.transform.Find("HealthBar/HealthText")?.GetComponent<TextMeshProUGUI>();
+        }
     }
 
     private void Update()

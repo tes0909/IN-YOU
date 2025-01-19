@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,6 +17,7 @@ public class DialogueUI : MonoBehaviour
     public Image disPlayImage;
     public bool typing; // 텍스트 출력 중 여부
     private float DOTextDelay = 1.5f;
+   
     private const string JsonFilePath = "JsonData/";
     private const string NextSceneAction = "Next Scene";
     private const string LaterSceneAction = "Later Scene";
@@ -25,7 +27,20 @@ public class DialogueUI : MonoBehaviour
     private const string SpecialActionPortal = "Portal";
     private const string ActionEnd = "End";
     private const string CharacterHana = "Hana";
-   
+    
+    private FadeScript fadeScript;
+    private PortalForDemo portalForDemo;
+    private PortalFadeOut portalFadeOut;
+    private Light2D[] light2Ds;
+
+    private void Awake()
+    {
+        fadeScript = FindObjectOfType<FadeScript>();
+        portalForDemo = FindObjectOfType<PortalForDemo>();
+        portalFadeOut = FindObjectOfType<PortalFadeOut>();
+        light2Ds = FindObjectsOfType<Light2D>();
+    }
+
     public void NextDialogue(DialogueInfo currentDialogueInfo)
     {
         // 텍스트 출력 중 애니메이션 완료 후 반환
@@ -61,15 +76,12 @@ public class DialogueUI : MonoBehaviour
 
         if (currentDialogueData.specialAction == SpecialActionFadeIn)
         {
-            FadeScript fade = FindObjectOfType<FadeScript>();
-            fade.FadeIn();
+           fadeScript?.FadeIn();
         }
         
         if (currentDialogueData.specialAction == SpecialActionFadeBlue)
         {
-            FadeScript fade = FindObjectOfType<FadeScript>();
-            fade.FadeBlue();
-            Light2D[] light2Ds = FindObjectsOfType<Light2D>();
+            fadeScript?.FadeBlue();
             foreach (Light2D light2D in light2Ds)
             {
                 light2D.enabled = true;
@@ -78,8 +90,6 @@ public class DialogueUI : MonoBehaviour
         
         if (currentDialogueData.PortalAction == SpecialActionPortal)
         {
-            PortalForDemo portalForDemo = FindObjectOfType<PortalForDemo>();
-            PortalFadeOut portalFadeOut = FindObjectOfType<PortalFadeOut>();
             if (portalForDemo != null)
             {
                 SpriteRenderer portalRenderer = portalForDemo.GetComponent<SpriteRenderer>();
