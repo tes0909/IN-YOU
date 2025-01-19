@@ -74,4 +74,9 @@ public class DialogueManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+    
+    public bool DialogueActive()
+    {
+        return dialogueUI != null && dialogueUI.gameObject.activeSelf;
+    }
 }

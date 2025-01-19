@@ -25,28 +25,23 @@ public class InventoryManager : MonoBehaviour
     }
     private void Start()
     {
-        dialogueUI = FindObjectOfType<DialogueUI>();
-        if(dialogueUI == null) Debug.Log("Dialogue UI not found");
         inventoryUI.gameObject.SetActive(false);
     }
 
     private void Update()
     {
-        if (!DialogueActive() && Input.GetKeyDown(KeyCode.Tab))
+        if (!DialogueManager.Instance.DialogueActive() && Input.GetKeyDown(KeyCode.Tab))
         {
             ToggleInventory();
         }
     }
 
-    private bool DialogueActive()
-    {
-        return dialogueUI != null && dialogueUI.gameObject.activeSelf;
-    }
     private void ToggleInventory()
     {
         isInventoryActive = !isInventoryActive;
         inventoryUI.gameObject.SetActive(isInventoryActive);
     }
+
     public void SetInventory(Player player)
     {
         ResetInventoryUI();
