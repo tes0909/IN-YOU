@@ -87,21 +87,7 @@ public class Player : MonoBehaviour
             Destroy(item.gameObject); // 아이템 오브젝트 삭제
         }
     }
-    
-    public void EscPopupInput()
-    {
-        if (currentPausePopup == null)
-        {
-            UIPausePopup prefab = Resources.Load<UIPausePopup>(filePath);
-            currentPausePopup = Instantiate(prefab);
-        }
-        else
-        {
-            Destroy(currentPausePopup.gameObject);
-            currentPausePopup = null;
-        }
-    }
-    
+
     private void OnDrawGizmos() 
     {
         if (stateMachine != null && stateMachine.Player != null) 

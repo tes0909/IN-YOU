@@ -9,6 +9,7 @@ public class InventoryManager : MonoBehaviour
     public InventoryUI inventoryUI;
     private bool isInventoryActive = false;
     public static InventoryManager instance;
+    public DialogueUI dialogueUI;
 
     private void Awake()
     {
@@ -29,16 +30,18 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (!DialogueManager.Instance.DialogueActive() && Input.GetKeyDown(KeyCode.Tab))
         {
             ToggleInventory();
         }
     }
+
     private void ToggleInventory()
     {
         isInventoryActive = !isInventoryActive;
         inventoryUI.gameObject.SetActive(isInventoryActive);
     }
+
     public void SetInventory(Player player)
     {
         ResetInventoryUI();

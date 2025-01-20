@@ -50,7 +50,7 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.Space))
         {
             if (DialogueManager.Instance == null || DialogueManager.Instance.dialogueUI == null)
             {

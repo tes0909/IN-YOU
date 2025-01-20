@@ -794,7 +794,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2872553008619416954, guid: a6fa33bf895deec4aa96df44b64703ed, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6fa33bf895deec4aa96df44b64703ed, type: 3}
@@ -948,6 +949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: IslandMap_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5616427072385013995, guid: 2cd56ea1ce8472c4d888a59146998507,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8449632569635107925, guid: 2cd56ea1ce8472c4d888a59146998507,
         type: 3}
@@ -1485,6 +1491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929676869079123676, guid: 271320d6f48fa0743a70a2559bfa6037,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4935994262418410099, guid: 271320d6f48fa0743a70a2559bfa6037,
         type: 3}

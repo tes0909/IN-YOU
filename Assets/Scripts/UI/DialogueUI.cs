@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,11 +17,30 @@ public class DialogueUI : MonoBehaviour
     public Image disPlayImage;
     public bool typing; // 텍스트 출력 중 여부
     private float DOTextDelay = 1.5f;
-    private readonly string filePath = "JsonData/";
-    private readonly string nextScene = "Next Scene";
-    private readonly string left = "left";
-    private readonly string Hana = "Hana";
    
+    private const string JsonFilePath = "JsonData/";
+    private const string NextSceneAction = "Next Scene";
+    private const string LaterSceneAction = "Later Scene";
+    private const string PositionLeft = "left";
+    private const string SpecialActionFadeIn = "FadeIn";
+    private const string SpecialActionFadeBlue = "FadeBlue";
+    private const string SpecialActionPortal = "Portal";
+    private const string ActionEnd = "End";
+    private const string CharacterHana = "Hana";
+    
+    private FadeScript fadeScript;
+    private PortalForDemo portalForDemo;
+    private PortalFadeOut portalFadeOut;
+    private Light2D[] light2Ds;
+
+    private void Awake()
+    {
+        fadeScript = FindObjectOfType<FadeScript>();
+        portalForDemo = FindObjectOfType<PortalForDemo>();
+        portalFadeOut = FindObjectOfType<PortalFadeOut>();
+        light2Ds = FindObjectsOfType<Light2D>();
+    }
+
     public void NextDialogue(DialogueInfo currentDialogueInfo)
     {
         // 텍스트 출력 중 애니메이션 완료 후 반환
@@ -42,43 +62,41 @@ public class DialogueUI : MonoBehaviour
         DialogueData currentDialogueData = currentDialogueInfo.dialogueDatas[DialogueManager.Instance.dialogueIndex];
         DialogueManager.Instance.dialogueIndex++;
 
-        if (currentDialogueData.dialogue.Contains(nextScene))
+        if (currentDialogueData.dialogue.Contains(NextSceneAction))
         {
             Managers.Scene.LoadNextScene();
             return; 
         }
 
-        if (currentDialogueData.dialogue.Contains("Later Scene"))
+        if (currentDialogueData.dialogue.Contains(LaterSceneAction))
         {
             Managers.Scene.LoadLaterScene();
             return; 
         }
 
-        if (currentDialogueData.specialAction == "FadeIn")
+        if (currentDialogueData.specialAction == SpecialActionFadeIn)
         {
-            FadeScript fade = FindObjectOfType<FadeScript>();
-            fade.FadeIn();
+           fadeScript?.FadeIn();
         }
         
-        if (currentDialogueData.specialAction == "FadeBlue")
+        if (currentDialogueData.specialAction == SpecialActionFadeBlue)
         {
-            FadeScript fade = FindObjectOfType<FadeScript>();
-            fade.FadeBlue();
-            Light2D[] light2Ds = FindObjectsOfType<Light2D>();
+            fadeScript?.FadeBlue();
             foreach (Light2D light2D in light2Ds)
             {
                 light2D.enabled = true;
             }
         }
         
-        if (currentDialogueData.PortalAction == "Portal")
+        if (currentDialogueData.PortalAction == SpecialActionPortal)
         {
-            PortalForDemo portalForDemo = FindObjectOfType<PortalForDemo>();
-            PortalFadeOut portalFadeOut = FindObjectOfType<PortalFadeOut>();
             if (portalForDemo != null)
             {
                 SpriteRenderer portalRenderer = portalForDemo.GetComponent<SpriteRenderer>();
                 portalRenderer.enabled = true;
+                
+                BoxCollider2D boxCollider2D = portalForDemo.GetComponent<BoxCollider2D>();
+                boxCollider2D.enabled = true;
             }
 
             if (portalFadeOut != null)
@@ -91,9 +109,9 @@ public class DialogueUI : MonoBehaviour
         DialogueText.text = string.Empty;
         typing = true; // 출력 상태
 
-        disPlayImage.gameObject.SetActive(currentDialogueData.specialAction == "Hana");
+        disPlayImage.gameObject.SetActive(currentDialogueData.specialAction == CharacterHana);
         
-        if (currentDialogueData.position == left)
+        if (currentDialogueData.position == PositionLeft)
         {
             DialogueText.transform.SetAsLastSibling();
         }
@@ -106,7 +124,7 @@ public class DialogueUI : MonoBehaviour
             .OnComplete(() =>
             {
                 typing = false;
-                if (currentDialogueData.Action == "End")
+                if (currentDialogueData.Action == ActionEnd)
                 {
                     DialogueManager.Instance.EndDialogue();
                 }
@@ -114,7 +132,7 @@ public class DialogueUI : MonoBehaviour
         
         // 캐릭터 이름, 이미지 로드
         NameText.text = currentDialogueData.characterName;
-        string imagePath = $"{filePath}{currentDialogueData.imageSprite}";
+        string imagePath = $"{JsonFilePath}{currentDialogueData.imageSprite}";
         image.sprite = Resources.Load<Sprite>(imagePath);    
     }
     
