@@ -54,11 +54,6 @@ public class PlayerCondition : MonoBehaviour
         }
     }
 
-    public float GetCurrentHealth()
-    {
-        return currentHealth;
-    }
-
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -70,11 +65,5 @@ public class PlayerCondition : MonoBehaviour
             Managers.UI.ShowPopupUI<UIGameOverPopup>();
             Debug.Log("사망");
         }
-    }
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 1.0f); // 몬스터 충돌 영역
     }
 }
