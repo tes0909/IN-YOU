@@ -46,7 +46,7 @@
     },
     {
       "DIdx": 4,
-      "characterName": "샛별고아원 원장",
+      "characterName": "고아원 원장",
       "dialogue": "그래, 담이 왔느냐. 경이를 찾고 있나 보구나.",
       "position": "right",
       "imageSprite": "Director",
@@ -68,7 +68,7 @@
     },
     {
       "DIdx": 6,
-      "characterName": "샛별고아원 원장",
+      "characterName": "고아원 원장",
       "dialogue": "보자···. 좀 전에 왼쪽에 있는 연못에 있던 것 같은데 그리로 가보려무나.",
       "position": "right",
       "imageSprite": "Director",
@@ -79,7 +79,7 @@
     },
     {
       "DIdx": 7,
-      "characterName": "샛별고아원 원장",
+      "characterName": "고아원 원장",
       "dialogue": "준비는 잘 되었니?",
       "position": "right",
       "imageSprite": "Director",
@@ -112,7 +112,7 @@
     },
     {
       "DIdx": 10,
-      "characterName": "샛별고아원 원장",
+      "characterName": "고아원 원장",
       "dialogue": "뭘···. 나라에서 기간이 오늘까지로 정해진 게 너희들에겐 미안할 따름이지.",
       "position": "right",
       "imageSprite": "Director",
@@ -134,7 +134,7 @@
     },
     {
       "DIdx": 12,
-      "characterName": "샛별고아원 원장",
+      "characterName": "고아원 원장",
       "dialogue": "그래, 잘 먹고 아프지 말고.",
       "position": "right",
       "imageSprite": "Director",
