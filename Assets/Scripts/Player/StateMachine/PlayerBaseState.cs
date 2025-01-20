@@ -57,7 +57,7 @@ public class PlayerBaseState : IState
     }
     private void OnEscStarted(InputAction.CallbackContext context)
     {
-        StateMachine.Player.EscPopupInput();
+        Managers.UI.EscPopupInput();
     }
 
     private void OnEscCanceld(InputAction.CallbackContext context)

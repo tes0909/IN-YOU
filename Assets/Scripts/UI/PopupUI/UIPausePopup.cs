@@ -46,7 +46,9 @@ public class UIPausePopup : UIPopupBase
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             TogglePauseMenu();
-            Managers.UI.CloseAllPopup();
+            {
+                Managers.UI.CloseAllPopup();
+            }
         }
     }
 
@@ -64,7 +66,6 @@ public class UIPausePopup : UIPopupBase
 
     public void OpenSettingMenu()
     {
-        Managers.Game.ResumeGame();
         Managers.UI.ShowPopupUI<UISettingPopup>();
     }
 

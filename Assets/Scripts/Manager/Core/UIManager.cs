@@ -9,6 +9,10 @@ public class UIManager : IManager
     private UISceneBase currentSceneUI;
 
     private GameObject root;
+    
+    private UIPausePopup currentPausePopup;
+    private const string filePath = "Prefabs/UI/Popup/UIPausePopup";
+
     public GameObject Root
     {
         get
@@ -96,9 +100,9 @@ public class UIManager : IManager
 
         popup.GetComponent<Canvas>().sortingOrder = popupOrder++;
 
-        // ¾Ö´Ï¸ÞÀÌ¼Ç È¿°ú ¾ø´Â ¹öÀü
+        // ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ È¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         //popup.Open();
-        //¾Ö´Ï¸ÞÀÌ¼Ç È¿°ú ÀÖ´Â ¹öÀü
+        //ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ È¿ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½
         popup.Open(Defines.UIAnimationType.Bounce);
 
         return popup as T;
@@ -135,5 +139,19 @@ public class UIManager : IManager
                 return popup as T;
 
         return null;
+    }
+    
+    public void EscPopupInput()
+    {
+        if (currentPausePopup == null)
+        {
+            UIPausePopup prefab = Resources.Load<UIPausePopup>(filePath);
+            currentPausePopup = GameObject.Instantiate(prefab);
+        }
+        else
+        {
+            GameObject.Destroy(currentPausePopup.gameObject);
+            currentPausePopup = null;
+        }
     }
 }
