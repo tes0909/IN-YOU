@@ -16,40 +16,45 @@ MonoBehaviour:
   - id: 10001
     displayTitle: Raven
     description: Raven
-    prefabPath: /Prefabs/Monster/Raven
+    prefabPath: Monster/Raven
     maxHp: 5
     moveSpeed: 1.1
-    attractDistance: 4
+    attractDistance: 3
     attackDamage: 10
+    attackDistance: 1.5
   - id: 10002
     displayTitle: Spider
     description: Spider
-    prefabPath: /Prefabs/Monster/Spider
+    prefabPath: Monster/Spider
     maxHp: 5
     moveSpeed: 0.8
-    attractDistance: 4
+    attractDistance: 3
     attackDamage: 10
+    attackDistance: 1.5
   - id: 10003
     displayTitle: RedZombie
     description: RedZombie
-    prefabPath: /Prefabs/Monster/RedZombie
+    prefabPath: Monster/RedZombie
     maxHp: 5
     moveSpeed: 1
-    attractDistance: 4
+    attractDistance: 3
     attackDamage: 10
+    attackDistance: 1.5
   - id: 10004
     displayTitle: PurpleZombie
     description: PurpleZombie
-    prefabPath: /Prefabs/Monster/PurpleZombie
+    prefabPath: Monster/PurpleZombie
     maxHp: 5
     moveSpeed: 1
-    attractDistance: 4
+    attractDistance: 3
     attackDamage: 10
+    attackDistance: 1.5
   - id: 10005
     displayTitle: CrawlZombie
     description: CrawlZombie
-    prefabPath: /Prefabs/Monster/CrawlZombie
+    prefabPath: Monster/CrawlZombie
     maxHp: 5
     moveSpeed: 0.7
-    attractDistance: 4
+    attractDistance: 3
     attackDamage: 10
+    attackDistance: 1.5

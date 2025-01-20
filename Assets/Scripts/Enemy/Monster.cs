@@ -29,25 +29,20 @@ public class Monster : MonoBehaviour
     {
         Rigidbody = GetComponent<Rigidbody2D>();
         Condition = GetComponent<MonsterCondition>();
+        NavAgent = GetComponent<NavMeshAgent>();
+        Animator = GetComponent<Animator>();
+        Renderer = GetComponent<SpriteRenderer>();
 
         Condition.OnDead += Die;
     }
 
-    public bool Initialize(int identifier, int monsterID, Vector3 spawnPoint)
+    public bool Initialize(int identifier, MonsterEntity monsterEntity, Vector3 spawnPoint)
     {
         Identifier = identifier;
-
         this.transform.position = spawnPoint;
-        MonsterEntity monsterEntity = Managers.DB.Get<MonsterEntity>(monsterID);
+
         if (monsterEntity == null) return false;
-        GameObject go = Managers.Resource.Instantiate(monsterEntity.prefabPath, this.transform);
-        if (go == null) return false;
 
-        NavAgent = GetComponentInChildren<NavMeshAgent>();
-        Animator = GetComponentInChildren<Animator>();
-        Renderer = GetComponentInChildren<SpriteRenderer>();
-
-        Rigidbody.gravityScale = 0f;
         AnimationData.Initialize();
         Stat = monsterEntity;
         Condition.SetData(Stat.maxHp);

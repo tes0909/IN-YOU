@@ -12,4 +12,5 @@ public class MonsterEntity : EntityBase
     public float attractDistance;
 
     public float attackDamage;
+    public float attackDistance;
 }

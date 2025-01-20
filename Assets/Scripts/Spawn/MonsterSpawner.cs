@@ -35,14 +35,12 @@ public class MonsterSpawner : MonoBehaviour
             spawnPoints.Add(spawnPointsInner);
             pointNum.Add(spawnPointsInner.Count);
         }
-        Debug.Log(spawnPoints.Count);
-        Debug.Log(pointNum.Count);
+
         WorldMonster = new Dictionary<int, GameObject>();
     }
 
     public GameObject Spawn(string prefabPath, Transform parent = null)
     {
-        Debug.Log("SpawnInit");
         string name = prefabPath.Substring(prefabPath.LastIndexOf('/') + 1);
         if (prefabPath.StartsWith("/"))
             prefabPath = prefabPath.Substring(1);
@@ -50,47 +48,33 @@ public class MonsterSpawner : MonoBehaviour
         if (poolDict.TryGetValue(name, out ObjectPool pool) == false)
         {
             GameObject prefab = Managers.Resource.Load<GameObject>($"Prefabs/{prefabPath}");
+
             if (prefab == null)
             {
                 Debug.Log($"Failed to load prefab : {prefabPath}");
                 return null;
             }
             pool = CreatePool(prefab, parent);
-            Debug.Log(pool);
         }
         return pool.Pop();
     }
 
     private void SpawnEntity(int pointGroup, int point, int monsterID)
     {
-        GameObject go = Spawn("/Monster");
-        if (go == null)
-        {
-            Debug.Log("SpawnError");
-            return;
-        }
-
-        Monster monster = go.GetComponentInChildren<Monster>();
-        if (monster == null)
-        {
-            Despawn(go);
-            return;
-        }
-        
         Identifier++;
         Vector3 spawnPoint = spawnPoints[pointGroup][point];
-        Debug.Log(pointGroup);
-        Debug.Log(point);
-        Debug.Log(monsterID);
-        Debug.Log(spawnPoint);
+
+        MonsterEntity monsterEntity = Managers.DB.Get<MonsterEntity>(monsterID);
+        GameObject go = Spawn(monsterEntity.prefabPath);
+
+        Monster monster = go.GetComponent<Monster>();
 
         //spawnPoint += new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0 );
-        if (monster.Initialize(Identifier, monsterID, spawnPoint) == false)
+        if (monster.Initialize(Identifier, monsterEntity, spawnPoint) == false)
         {
             Despawn(go);
             return;
         }
-        Debug.Log(spawnPoint);
 
         spawnCount++;
         WorldMonster.Add(Identifier, go);

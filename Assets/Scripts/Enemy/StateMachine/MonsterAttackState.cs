@@ -26,14 +26,9 @@ public class MonsterAttackState : MonsterBaseState
     {
         base.Update();
 
-        if (IsInChasingRange())
+        if (!IsInAttack())
         {
             stateMachine.ChangeState(stateMachine.ChasingState);
-            return;
-        }
-        else
-        {
-            stateMachine.ChangeState(stateMachine.WanderingState);
             return;
         }
     }

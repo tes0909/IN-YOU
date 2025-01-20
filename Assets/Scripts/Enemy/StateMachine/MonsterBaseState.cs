@@ -75,9 +75,6 @@ public class MonsterBaseState : IState
     public void SetRandomDestination()
     {
         Vector3 randomDirection = new Vector3(Random.insideUnitSphere.x * 10f, 0, 0);
-        Debug.Log(stateMachine.Monster.NavAgent.transform.position);
-        Debug.Log(randomDirection);
-        Debug.Log(stateMachine.Monster.transform.position);
 
         Vector3 targetPosition = stateMachine.Monster.NavAgent.transform.position + randomDirection;
         stateMachine.Monster.Renderer.flipX = randomDirection.x <= 0;
@@ -90,5 +87,18 @@ public class MonsterBaseState : IState
             stateMachine.Monster.NavAgent.SetDestination(targetPosition);
             changeDirectionTime = Random.Range(3f, 6f);
         }
+    }
+
+    protected void ChasePlayer()
+    {
+        stateMachine.Monster.NavAgent.SetDestination(stateMachine.Target.transform.position);
+        float playerX = stateMachine.Target.transform.position.x - stateMachine.Monster.NavAgent.transform.position.x;
+        stateMachine.Monster.Renderer.flipX = playerX <= 0;
+    }
+
+    protected bool IsInAttack()
+    {
+        float playerDistanceSqr = (stateMachine.Target.transform.position - stateMachine.Monster.transform.position).sqrMagnitude;
+        return playerDistanceSqr <= stateMachine.Monster.Stat.attackDistance * stateMachine.Monster.Stat.attackDistance;
     }
 }
