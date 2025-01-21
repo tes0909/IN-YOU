@@ -79,9 +79,4 @@ public class Monster : MonoBehaviour
             playerCondition.TakeDamage(Stat.attackDamage);
         }
     }
-
-    private void SetTransform()
-    {
-        stateMachine.Monster.transform.position = stateMachine.Monster.NavAgent.transform.position * Time.deltaTime;
-    }
 }
