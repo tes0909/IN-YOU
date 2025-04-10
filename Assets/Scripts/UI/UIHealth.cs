@@ -14,6 +14,6 @@ public class UIHealth : MonoBehaviour
     public static Action<Slider, TextMeshProUGUI> UIReady;
     void Start()
     {
-        UIReady?.Invoke(healthBar, healthText); // UI 준비 이벤트 
+        UIReady?.Invoke(healthBar, healthText);// UI 준비 이벤트 
     }
 }
