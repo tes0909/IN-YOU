@@ -30,7 +30,7 @@ public class DataManager : MonoBehaviour
 
    private void LoadDialogueData()
    {
-       var dialogueJson = Resources.Load(DialogueJsonDataPath) as TextAsset;
+       var dialogueJson = Resources.Load<TextAsset>(DialogueJsonDataPath);
        if (dialogueJson != null)
        {
            dialogueInfo = JsonUtility.FromJson<DialogueInfo>(dialogueJson.ToString());
