@@ -55,10 +55,7 @@ public class Managers : MonoBehaviour
         get { return Instance?._db; }
     }
 
-    public static UIManager UI
-    {
-        get { return Instance?._ui; }
-    }
+    public static UIManager UI => Instance?._ui;
 
     public static SoundManager Sound
     {
@@ -69,7 +66,7 @@ public class Managers : MonoBehaviour
     {
         get { return Instance?._resource; }
     }
-    
+
     public static SceneManagerEx Scene
     {
         get { return Instance?._scene; }
@@ -88,4 +85,3 @@ public class Managers : MonoBehaviour
         Game?.Clear();
     }
 }
-

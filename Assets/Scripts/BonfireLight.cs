@@ -16,8 +16,7 @@ public class BonfireLight : MonoBehaviour
 
         if (distance <= maxRange)
         {
-            float t = 1 - (distance / maxRange);
-            bonfireLight.intensity = Mathf.Lerp(minIntensity, maxIntensity, t);
+            bonfireLight.intensity = Mathf.Lerp(minIntensity, maxIntensity, distance / maxRange);
         }
         else
         {

@@ -9390,6 +9390,12 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 986473961}
+    - target: {fileID: 7069476834746327702, guid: 7baed4bef79d7524bbd86def9a865558,
+        type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4451c2389ef61014fa7d048ced8aefda,
+        type: 2}
     - target: {fileID: 7398763561673664676, guid: 7baed4bef79d7524bbd86def9a865558,
         type: 3}
       propertyPath: m_Color.b
@@ -23826,6 +23832,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188457595261653144, guid: 524651e4143ff4d4a9a601c194d4637e,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010071345124901480, guid: 524651e4143ff4d4a9a601c194d4637e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230323700488870941, guid: 524651e4143ff4d4a9a601c194d4637e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230323700488870941, guid: 524651e4143ff4d4a9a601c194d4637e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230323700488870941, guid: 524651e4143ff4d4a9a601c194d4637e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5355222404601560595, guid: 524651e4143ff4d4a9a601c194d4637e,
         type: 3}
       propertyPath: m_AnchorMax.x

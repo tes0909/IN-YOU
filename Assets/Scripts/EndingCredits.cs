@@ -62,6 +62,7 @@ public class EndingCredits : MonoBehaviour
             yield return StartCoroutine(FadeImage(creditImages[i], 1f, 0f, fadeDuration));
 
             creditImages[i].gameObject.SetActive(false);
+            
         }
         yield return new WaitForSeconds(6f);
 

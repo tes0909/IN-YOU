@@ -10,12 +10,9 @@ public class Choice : MonoBehaviour
     public Button eatButton;
     public Button doNotEatButton;
     public TextMeshProUGUI outputText;
-    private SceneManagerEx sceneManagerEx;
-
 
     public void Start()
     {
-        
         eatButton.onClick.AddListener(() => OnChoiceMade(true));
         doNotEatButton.onClick.AddListener(() => OnChoiceMade(false));
         eatButton.gameObject.SetActive(true);
@@ -31,11 +28,11 @@ public class Choice : MonoBehaviour
     {
         if (isEating)
         {
-            outputText.text = "³×°¡ ¿øÇÑ °Ç ¸Ô´Â °Å°ÚÁö. ±×·¡, ¸Ô¾îÁÙ°Ô";
+            outputText.text = "ï¿½×°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô´ï¿½ ï¿½Å°ï¿½ï¿½ï¿½. ï¿½×·ï¿½, ï¿½Ô¾ï¿½ï¿½Ù°ï¿½";
         }
         else
         {
-            outputText.text = "³×°¡ ¹Ù¶õ°ÅÁö¸¸, ³­ ¸øÇØ. ¾È¸Ô°Ú¾î";
+            outputText.text = "ï¿½×°ï¿½ ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. ï¿½È¸Ô°Ú¾ï¿½";
         }
         eatButton.gameObject.SetActive(false);
         doNotEatButton.gameObject.SetActive(false);
@@ -46,7 +43,6 @@ public class Choice : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene("12_EndingCredits");
-
+        SceneManager.LoadScene("12_EndingCredits");
     }
 }
