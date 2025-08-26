@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e729411de389be84383bf687a0546bd9, type: 3}
-  m_Name: Bar_Gyeong
+  m_Script: {fileID: 11500000, guid: 579be8110cadd83419c6ddb8a67afcdd, type: 3}
+  m_Name: DialogueSheet
   m_EditorClassIdentifier: 
-  position: []
-  name: []
-  dialogue: []
-  imageSprite: []
+  sheetUrl: 'https://docs.google.com/spreadsheets/d/17ah32bnouK_VyhkuyTCQMJjwrbcaiP0jY1o-Z3QNYbY/gviz/tq?tqx=out:csv&sheet=Datas '

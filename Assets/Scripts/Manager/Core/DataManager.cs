@@ -8,11 +8,10 @@ public class DataManager : MonoBehaviour
    public static DataManager instance;
    public DialogueInfo dialogueInfo;
    
-   private const string DialogueJsonDataPath = "JsonData/dialogueDatas";
    private void Awake()
    {
        InitializeSingleton();
-       LoadDialogueData();
+       StartCoroutine(LoadDialogueData());
    }
    
    private void InitializeSingleton()
@@ -28,17 +27,19 @@ public class DataManager : MonoBehaviour
        }
    }
 
-   private void LoadDialogueData()
+   private IEnumerator LoadDialogueData()
    {
-       TextAsset dialogueJson = Resources.Load<TextAsset>(DialogueJsonDataPath);
-       if (dialogueJson != null)
+       while (GoogleSheetManager.Instance == null || !GoogleSheetManager.Instance.IsInitialized)
        {
-           dialogueInfo = JsonUtility.FromJson<DialogueInfo>(dialogueJson.ToString());
-           Debug.Log("JSON 파일 로드 성공");
+           yield return null;
        }
-       else
+
+       // CSV에서 불러온 데이터를 DialogueInfo로 변환
+       dialogueInfo = new DialogueInfo
        {
-           Debug.LogError("JSON 파일 로드 실패");
-       }
+           dialogueDatas = GoogleSheetManager.Instance.dialogueList.ToArray()
+       };
+
+       Debug.Log($"[DataManager] DialogueInfo initialized with {dialogueInfo.dialogueDatas.Length} entries!");
    }
 }

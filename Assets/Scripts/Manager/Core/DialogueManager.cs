@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,8 +24,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private IEnumerator  Start()
     {
+        while (DataManager.instance == null || DataManager.instance.dialogueInfo == null)
+        {
+            yield return null;
+        }
+        
         currentDialogueInfo = DataManager.instance.dialogueInfo;
     }
 

@@ -49,33 +49,18 @@ public class Managers : MonoBehaviour
     private ResourceManager _resource = new ResourceManager();
     private SceneManagerEx _scene = new SceneManagerEx();
     private GameManager _game = new GameManager();
-
-    public static DBManager DB
-    {
-        get { return Instance?._db; }
-    }
+    
+    public static DBManager DB => Instance?._db;
 
     public static UIManager UI => Instance?._ui;
 
-    public static SoundManager Sound
-    {
-        get { return Instance?._sound; }
-    }
+    public static SoundManager Sound => Instance?._sound;
 
-    public static ResourceManager Resource
-    {
-        get { return Instance?._resource; }
-    }
+    public static ResourceManager Resource => Instance?._resource;
 
-    public static SceneManagerEx Scene
-    {
-        get { return Instance?._scene; }
-    }
+    public static SceneManagerEx Scene => Instance?._scene;
 
-    public static GameManager Game
-    {
-        get { return Instance?._game; }
-    }
+    public static GameManager Game => Instance?._game;
 
     // 매니저 정리 메서드
     public static void Clear()
